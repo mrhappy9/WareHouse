@@ -13,7 +13,7 @@ namespace Course1
     public partial class SmartPhonesControl : UserControl
     {
         public SmartPhonesControl(string _title, int _internalMemory, int _ram, int _cameraResolution, double _screenDiagonal, int _capaticy, 
-                                  int _price, int _quantity, string[] _quantityCombo, Basket basketItem, string nameTable)
+                                  int _price, int _quantity, string[] _quantityCombo, Basket basketItem)
         {
             InitializeComponent();
             Title = _title;
@@ -27,9 +27,7 @@ namespace Course1
             QuantityCombo = _quantityCombo;
 
             basket = basketItem;
-            this.nameTable = nameTable;
         }
-        private string nameTable;
         private Basket basket;
 
         private string _title;
@@ -41,8 +39,6 @@ namespace Course1
         private int _price;
         private int _quantity;
         private string[] _quantityCombo;
-
-        public string getNameTable() { return nameTable; }
 
         public string Title
         {
@@ -123,10 +119,10 @@ namespace Course1
         private List<SmartPhonesControl> smartPhonesControlsItems = new List<SmartPhonesControl>();
         public ManageSmartPhone() { }
         public void createSmartPhone(string _title, int _internalMemory, int _ram, int _cameraResolution, double _screenDiagonal, int _capaticy,
-                                     int _price, int _quantity, string[] _quantityCombo, Basket basketItem, string nameTable)
+                                     int _price, int _quantity, string[] _quantityCombo, Basket basketItem)
         {
             smartPhonesControlsItems.Add(new SmartPhonesControl(_title, _internalMemory, _ram, _cameraResolution, _screenDiagonal,
-                                         _capaticy, _price, _quantity, _quantityCombo, basketItem, nameTable));
+                                         _capaticy, _price, _quantity, _quantityCombo, basketItem));
         }
 
         public List<SmartPhonesControl> getAllSmartPhones()

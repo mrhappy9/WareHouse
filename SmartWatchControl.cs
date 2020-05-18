@@ -13,7 +13,7 @@ namespace Course1
     public partial class SmartWatchControl : UserControl
     {
         public SmartWatchControl(string _title, string _compatibleOS, string _sensors, string _screenResolution,
-                                     int _price, int _quantity, string[] _quantityCombo, Basket basketItems, string nameTable)
+                                     int _price, int _quantity, string[] _quantityCombo, Basket basketItems)
         {
             InitializeComponent();
             Title = _title;
@@ -25,9 +25,7 @@ namespace Course1
             QuantityCombo = _quantityCombo;
 
             basket = basketItems;
-            this.nameTable = nameTable;
         }
-        private string nameTable;
         private Basket basket;
 
         private string _title;
@@ -37,8 +35,6 @@ namespace Course1
         private int _price;
         private int _quantity;
         private string[] _quantityCombo;
-
-        public string getNameTable() { return nameTable; }
 
         public string Title
         {
@@ -108,10 +104,9 @@ namespace Course1
         public ManageSmartWatch() { }
 
         public void createSmartWatch(string _title, string _compatibleOS, string _sensors, string _screenResolution, 
-                                     int _price, int _quantity, string[] _quantityCombo, Basket basketItems, string nameTable)
+                                     int _price, int _quantity, string[] _quantityCombo, Basket basketItems)
         {
-            smartWatchControlsItems.Add(new SmartWatchControl(_title, _compatibleOS, _sensors, _screenResolution, _price, 
-                                                              _quantity, _quantityCombo, basketItems, nameTable));
+            smartWatchControlsItems.Add(new SmartWatchControl(_title, _compatibleOS, _sensors, _screenResolution, _price, _quantity, _quantityCombo, basketItems));
         }
 
         public List<SmartWatchControl> getAllSmartWatch()

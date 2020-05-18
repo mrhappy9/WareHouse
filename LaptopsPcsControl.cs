@@ -7,14 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace Course1
 {
     public partial class LaptopsPcsControl : UserControl
     {
         public LaptopsPcsControl(string _name, string _cpu, int _ram, int _hdd, int _ssd, string _gpu, string _os, int _price,
-                              int _quantity, string[] _quantityCombo, Basket basketItem, string nameTable)
+                              int _quantity, string[] _quantityCombo, Basket basketItem)
         {
             InitializeComponent();
             Title = _name;
@@ -29,9 +28,7 @@ namespace Course1
             QuantityCombo = _quantityCombo;
 
             basket = basketItem;
-            this.nameTable = nameTable;
         }
-        private string nameTable;
         private Basket basket;
 
         private string _name;
@@ -45,8 +42,6 @@ namespace Course1
         private int _quantity;
         private string[] _quantityCombo;
         private Image _picture;
-
-        public string getNameTable() { return nameTable; }
 
         public string Title
         {
@@ -141,10 +136,10 @@ namespace Course1
         public ManageLaptopsPcs() { }
         
         public void createLaptopPcs(string _name, string _cpu, int _ram, int _hdd, int _ssd, string _gpu, string _os, int _price,
-                                 int _quantity, string[] _quantityCombo, Basket basketItem, string nameTable)
+                                 int _quantity, string[] _quantityCombo, Basket basketItem)
         {
             laptopsControlItems.Add(new LaptopsPcsControl(_name, _cpu, _ram, _hdd, _ssd, _gpu, _os, _price, _quantity,
-                                    _quantityCombo, basketItem, nameTable));
+                                    _quantityCombo, basketItem));
         }
 
         public List<LaptopsPcsControl> getAllManageLaptops()

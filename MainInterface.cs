@@ -31,6 +31,7 @@ namespace Course1
         {
             InitializeComponent();
         }
+
         
         public MainInterface(string user)
         {
@@ -215,7 +216,7 @@ namespace Course1
                     string[] quantityCombo = new string[quantity[i]+1];
                     for(int j = 0; j < quantityCombo.Length; j++) 
                         quantityCombo[j] = (j).ToString();
-                    manageBook.createBook(title[i], author[i], price[i], quantity[i], quantityCombo, basketItems, table/*, new Bitmap(@"D:\Лабораторки_С#\Course\ProjectImages\cancel.png")*/);
+                    manageBook.createBook(title[i], author[i], price[i], quantity[i], quantityCombo, basketItems/*, new Bitmap(@"D:\Лабораторки_С#\Course\ProjectImages\cancel.png")*/);
                 }
 
                 for(int i = 0; i < manageBook.getAllManageBooks().Count; i++)
@@ -282,7 +283,7 @@ namespace Course1
                     string[] quantityCombo = new string[quantity[i]+1];
                     for (int j = 0; j < quantityCombo.Length; j++)
                         quantityCombo[j] = (j).ToString();
-                    manageHphones.createHphones(titles[i], mic[i], type[i], workingHours[i], resistance[i], price[i], quantity[i], quantityCombo, basketItems, table);
+                    manageHphones.createHphones(titles[i], mic[i], type[i], workingHours[i], resistance[i], price[i], quantity[i], quantityCombo, basketItems);
                 }
 
                 for(int i = 0; i < manageHphones.getAllHphones().Count; i++)
@@ -316,7 +317,7 @@ namespace Course1
                     string[] quantityCombo = new string[quantity[i]+1];
                     for (int j = 0; j < quantityCombo.Length; j++)
                         quantityCombo[j] = (j).ToString();
-                    manageTvs.createTvs(titles[i], screenDiagonal[i], resolution[i], features[i], price[i], quantity[i], quantityCombo, basketItems, table);
+                    manageTvs.createTvs(titles[i], screenDiagonal[i], resolution[i], features[i], price[i], quantity[i], quantityCombo, basketItems);
                 }
 
                 for(int i = 0; i < manageTvs.getAllTvs().Count; i++)
@@ -356,7 +357,7 @@ namespace Course1
                     for (int j = 0; j < quantityCombo.Length; j++)
                         quantityCombo[j] = (j).ToString();
                     manageLaptopPcs.createLaptopPcs(titles[i], cpu[i], ram[i], hdd[i], ssd[i], gpu[i], os[i], price[i], quantity[i],
-                                                    quantityCombo, basketItems, table);
+                                                    quantityCombo, basketItems);
                 }
 
                 for (int i = 0; i < manageLaptopPcs.getAllManageLaptops().Count; i++)
@@ -393,7 +394,7 @@ namespace Course1
                     string[] quantityCombo = new string[quantity[i]+1];
                     for (int j = 0; j < quantityCombo.Length; j++)
                         quantityCombo[j] = (j).ToString();
-                    manageSmartWatch.createSmartWatch(titles[i], compatibleOS[i], sensors[i], screenResolution[i], price[i], quantity[i], quantityCombo, basketItems, table);
+                    manageSmartWatch.createSmartWatch(titles[i], compatibleOS[i], sensors[i], screenResolution[i], price[i], quantity[i], quantityCombo, basketItems);
                 }
 
                 for (int i = 0; i < manageSmartWatch.getAllSmartWatch().Count; i++)
@@ -429,7 +430,7 @@ namespace Course1
                     for (int j = 0; j < quantityCombo.Length; j++)
                         quantityCombo[j] = (j).ToString();
                     manageSmartPhone.createSmartPhone(titles[i], internalMemory[i], ram[i], cameraResolution[i], screenDiagonal[i], capacity[i], 
-                                                      price[i], quantity[i], quantityCombo, basketItems, table);
+                                                      price[i], quantity[i], quantityCombo, basketItems);
                 }
 
                 for(int i = 0; i < manageSmartPhone.getAllSmartPhones().Count; i++)
@@ -465,7 +466,7 @@ namespace Course1
                     string[] quantityCombo = new string[quantity[i]+1];
                     for (int j = 0; j < quantityCombo.Length; j++)
                         quantityCombo[j] = (j).ToString();
-                    manageClothes.createClothes(titles[i], brand[i], materials[i], sex[i], price[i], quantity[i], quantityCombo, basketItems, table);
+                    manageClothes.createClothes(titles[i], brand[i], materials[i], sex[i], price[i], quantity[i], quantityCombo, basketItems);
                 }
                 for (int i = 0; i < manageClothes.getAllClothes().Count; i++)
                 {
@@ -669,7 +670,6 @@ namespace Course1
         }
         private void pictureBoxBasket_Click(object sender, EventArgs e)
         {
-            pictureBoxWareHouse_Click(sender, e);
             basketItems.totalPrice();
             basketItems.Show();
         }

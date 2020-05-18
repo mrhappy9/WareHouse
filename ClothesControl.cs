@@ -13,7 +13,7 @@ namespace Course1
     public partial class ClothesControl : UserControl
     {
         public ClothesControl(string _title, string _brand, string _material,
-                              string _sex, int _price, int _quantity, string[] _quantityCombo, Basket basketItem, string nameTable)
+                              string _sex, int _price, int _quantity, string[] _quantityCombo, Basket basketItem)
         {
             InitializeComponent();
             Title = _title;
@@ -25,9 +25,7 @@ namespace Course1
             QuantityCombo = _quantityCombo;
 
             basket = basketItem;
-            this.nameTable = nameTable;
         }
-        private string nameTable;
         private Basket basket;
 
         private string _title;
@@ -37,8 +35,6 @@ namespace Course1
         private int _price;
         private int _quantity;
         private string[] _quantityCombo;
-
-        public string getNameTable() { return nameTable; }
 
         public string Title
         {
@@ -108,9 +104,9 @@ namespace Course1
         public ManageClothes() { }
         
         public void createClothes(string _title, string _brand, string _material,
-                                  string _sex,  int _price, int _quantity, string[] _quantityCombo, Basket basketItem, string nameTable)
+                                  string _sex,  int _price, int _quantity, string[] _quantityCombo, Basket basketItem)
         {
-            clothesControlsItems.Add(new ClothesControl(_title, _brand, _material, _sex, _price, _quantity, _quantityCombo, basketItem, nameTable));
+            clothesControlsItems.Add(new ClothesControl(_title, _brand, _material, _sex, _price, _quantity, _quantityCombo, basketItem));
         }
 
         public List<ClothesControl> getAllClothes()

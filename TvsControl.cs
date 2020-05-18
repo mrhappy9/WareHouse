@@ -13,7 +13,7 @@ namespace Course1
     public partial class TvsControl : UserControl
     {
         public TvsControl(string _title, double _screenDiagonal, string _resolution, string _features, int _price, int _quantity, 
-                          string[] _quantityCombo, Basket basketItem, string nameTable)
+                          string[] _quantityCombo, Basket basketItem)
         {
             InitializeComponent();
             Title = _title;
@@ -25,9 +25,7 @@ namespace Course1
             QuantityCombo = _quantityCombo;
 
             basket = basketItem;
-            this.nameTable = nameTable;
         }
-        private string nameTable;
         private Basket basket;
 
         private string _title;
@@ -37,8 +35,6 @@ namespace Course1
         private int _price;
         private int _quantity;
         private string[] _quantityCombo;
-
-        public string getNameTable() { return nameTable; }
 
         public string Title
         {
@@ -109,9 +105,9 @@ namespace Course1
         public ManageTvs() { }
 
         public void createTvs(string _title, double _screenDiagonal, string _resolution, string _features, int _price, 
-                              int _quantity, string[] _quantityCombo, Basket basketItem, string nameTable)
+                              int _quantity, string[] _quantityCombo, Basket basketItem)
         {
-            tvsControlsItems.Add(new TvsControl(_title, _screenDiagonal, _resolution, _features, _price, _quantity, _quantityCombo, basketItem, nameTable));
+            tvsControlsItems.Add(new TvsControl(_title, _screenDiagonal, _resolution, _features, _price, _quantity, _quantityCombo, basketItem));
         }
 
         public List<TvsControl> getAllTvs()

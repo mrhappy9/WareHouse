@@ -166,7 +166,7 @@ namespace Course1
         {
             try
             {
-                createInfoStringFields(table, ref titles, "Name");
+                createInfoStringFields(table, ref titles, "Title");
                 createInfoStringFields(table, ref author, "Author");
                 createInfoIntFields(table, ref price, "Price");
                 createInfoIntFields(table, ref quantity, "Quantity");
@@ -307,7 +307,7 @@ namespace Course1
             try
             {
                 MySqlCommand command = new MySqlCommand(connString, connection);
-                command.CommandText = "INSERT INTO BookPurchase(Name, Author, Price, Quantity, Users_id) VALUES" +
+                command.CommandText = "INSERT INTO BookPurchase(Title, Author, Price, Quantity, Users_id) VALUES" +
                                       "(@title, @author, @price, @quantity, @users_id);";
                 command.Parameters.AddWithValue("@title", title);
                 command.Parameters.AddWithValue("@author", author);
@@ -461,30 +461,6 @@ namespace Course1
                 command.Parameters.AddWithValue("@quantity", quantity);
                 command.Parameters.AddWithValue("@users_id", users_id);
                 command.ExecuteNonQuery();
-                loseConnection();
-            }
-            catch (MySqlException e)
-            {
-                throw new Exception("Error executing into inster sql statement", e);
-            }
-        }
-
-        ///////
-        ///    Updating tables in the MySQL after order is confirmed
-        //////
-        
-        public void updateQuantityItemsInTables(String table, String name, int newQuantityItems)
-        {
-            createConnection();
-            try
-            {
-                MySqlCommand updateItems = new MySqlCommand(connString, connection);
-                /*updateItems.CommandText = ($"UPDATE Childrenbooks SET Quantity = 1011 WHERE Name = '{name}'");*/
-                updateItems.CommandText = ($"UPDATE {table} SET Quantity = {newQuantityItems} WHERE Name = '{name}';");
-                /*updateItems.Parameters.AddWithValue("@table", table);
-                updateItems.Parameters.AddWithValue("@newQuantityItems", newQuantityItems);
-                updateItems.Parameters.AddWithValue("@name", name);*/
-                updateItems.ExecuteNonQuery();
                 loseConnection();
             }
             catch (MySqlException e)
