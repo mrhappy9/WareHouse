@@ -20,7 +20,6 @@ namespace Course1
 
         private WorkServer workServerBasket;
 
-
         public void totalPrice()
         {
             int total = getPriceBooksInBasket() + getPriceClothesInBasket() + getPriceHphonesInBasket() + getPriceLaptopsPcsInBasket() +
@@ -520,6 +519,8 @@ namespace Course1
                         workServerBasket.createBookPurchaseTable(getBooksInBasket()[i].Title, getBooksInBasket()[i].Author, getBooksInBasket()[i].Price,
                                                                  getBooksInBasket()[i].infoComboQuantitySelected(), 
                                                                  workServerBasket.UsersId(UserNameLabelBasket.Text));
+                        workServerBasket.updateQuantityItemsInTables(getBooksInBasket()[i].getNameTable(), getBooksInBasket()[i].Title,
+                                                                     getBooksInBasket()[i].infoComboQuantityAmount() - getBooksInBasket()[i].infoComboQuantitySelected());
                     }
                 }
             }
@@ -533,6 +534,8 @@ namespace Course1
                                                                     getClothesInBasket()[i].Sex, getClothesInBasket()[i].Price, 
                                                                     getClothesInBasket()[i].infoComboQuantitySelected(),
                                                                     workServerBasket.UsersId(UserNameLabelBasket.Text));
+                        workServerBasket.updateQuantityItemsInTables(getClothesInBasket()[i].getNameTable(), getClothesInBasket()[i].Title,
+                                                                     getClothesInBasket()[i].infoComboQuantityAmount() - getClothesInBasket()[i].infoComboQuantitySelected());
                     }
                 }
             }
@@ -547,6 +550,8 @@ namespace Course1
                                                                        getLaptopsPcsInBasket()[i].OS, getLaptopsPcsInBasket()[i].Price, 
                                                                        getLaptopsPcsInBasket()[i].infoComboQuantitySelected(),
                                                                        workServerBasket.UsersId(UserNameLabelBasket.Text));
+                        workServerBasket.updateQuantityItemsInTables(getLaptopsPcsInBasket()[i].getNameTable(), getLaptopsPcsInBasket()[i].Title,
+                                         getLaptopsPcsInBasket()[i].infoComboQuantityAmount() - getLaptopsPcsInBasket()[i].infoComboQuantitySelected());
                     }
                 }
             }
@@ -560,6 +565,8 @@ namespace Course1
                                                                     getHphonesInBasket()[i].WorkingHours, getHphonesInBasket()[i].Resistance,
                                                                     getHphonesInBasket()[i].Price, getHphonesInBasket()[i].infoComboQuantitySelected(),
                                                                     workServerBasket.UsersId(UserNameLabelBasket.Text));
+                        workServerBasket.updateQuantityItemsInTables(getHphonesInBasket()[i].getNameTable(), getHphonesInBasket()[i].Title,
+                                         getHphonesInBasket()[i].infoComboQuantityAmount() - getHphonesInBasket()[i].infoComboQuantitySelected());
                     }
                 }
             }
@@ -572,6 +579,8 @@ namespace Course1
                         workServerBasket.createTvsPurchaseTable(getTvsInBasket()[i].Title, getTvsInBasket()[i].ScreenDiagonal, getTvsInBasket()[i].Resolution,
                                                                 getTvsInBasket()[i].Features, getTvsInBasket()[i].Price, getTvsInBasket()[i].infoComboQuantitySelected(),
                                                                 workServerBasket.UsersId(UserNameLabelBasket.Text));
+                        workServerBasket.updateQuantityItemsInTables(getTvsInBasket()[i].getNameTable(), getTvsInBasket()[i].Title,
+                                         getTvsInBasket()[i].infoComboQuantityAmount() - getTvsInBasket()[i].infoComboQuantitySelected());
                     }
                 }
             }
@@ -585,6 +594,8 @@ namespace Course1
                                                                 getSmartWatchInBasket()[i].Sensors, getSmartWatchInBasket()[i].ScreenResolution,
                                                                 getSmartWatchInBasket()[i].Price, getSmartWatchInBasket()[i].infoComboQuantitySelected(),
                                                                 workServerBasket.UsersId(UserNameLabelBasket.Text));
+                        workServerBasket.updateQuantityItemsInTables(getSmartWatchInBasket()[i].getNameTable(), getSmartWatchInBasket()[i].Title,
+                                         getSmartWatchInBasket()[i].infoComboQuantityAmount() - getSmartWatchInBasket()[i].infoComboQuantitySelected());
                     }
                 }
             }
@@ -599,6 +610,8 @@ namespace Course1
                                                                 getSmartPhonesInBasket()[i].ScreenDiagonal, getSmartPhonesInBasket()[i].Capacity,
                                                                 getSmartPhonesInBasket()[i].Price, getSmartPhonesInBasket()[i].infoComboQuantitySelected(),
                                                                 workServerBasket.UsersId(UserNameLabelBasket.Text));
+                        workServerBasket.updateQuantityItemsInTables(getSmartPhonesInBasket()[i].getNameTable(), getSmartPhonesInBasket()[i].Title,
+                                         getSmartPhonesInBasket()[i].infoComboQuantityAmount() - getSmartPhonesInBasket()[i].infoComboQuantitySelected());
                     }
                 }
             }
@@ -611,12 +624,26 @@ namespace Course1
             addingToSmartWatchesPurchase();
             addingToSmartPhonesPurchase();
         }
+
+        private void clearBasketItems() // clearing basket and flowlayoutpanel after order is confirmed
+        {
+            booksControlsInBasket.Clear();
+            clothesControlsInBasket.Clear();
+            laptopsPcsControlsInBasket.Clear();
+            hphonesControlsInBasket.Clear();
+            tvsControlsInBasket.Clear();
+            smartWatchControlsInBasket.Clear();
+            smartPhonesControlsInBasket.Clear();
+            flowLayoutPanelBasket.Controls.Clear();
+        }
         private void buttonCheckout_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Вы уверены, что хотите продолжить?", "Оформление заказа",
                MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 createOrder();
+                this.Hide();
+                clearBasketItems();
             }
         }
     }

@@ -16,7 +16,7 @@ namespace Course1
         {
             InitializeComponent();
         }
-        public BooksControl(string _title, string _author, int _price, int _quantity, string[] _quantityCombo, Basket basketItems/*, Image _picture*/)
+        public BooksControl(string _title, string _author, int _price, int _quantity, string[] _quantityCombo, Basket basketItems, string nameTable/*, Image _picture*/)
         {
             InitializeComponent();
             Title = _title;
@@ -26,8 +26,10 @@ namespace Course1
             QuantityCombo = _quantityCombo;
 
             basket = basketItems;
+            this.nameTable = nameTable;
         }
         private Basket basket;
+        private string nameTable;
 
         private string _title;
         private string _author;
@@ -35,6 +37,11 @@ namespace Course1
         private int _quantity;
         private string[] _quantityCombo;
         private Image _picture;
+
+        public string getNameTable()
+        {
+            return nameTable;
+        }
 
         public Image PictureBook
         {
@@ -102,9 +109,9 @@ namespace Course1
     {
         private List<BooksControl> booksControlsItems = new List<BooksControl>();
 
-        public void createBook(string _title, string _author, int _price, int _quantity, string[] _quantityCombo, Basket basketItems)
+        public void createBook(string _title, string _author, int _price, int _quantity, string[] _quantityCombo, Basket basketItems, string nameTable)
         {
-            booksControlsItems.Add(new BooksControl(_title, _author, _price, _quantity, _quantityCombo, basketItems));
+            booksControlsItems.Add(new BooksControl(_title, _author, _price, _quantity, _quantityCombo, basketItems, nameTable));
         }
         public ManageBook() { }
         public List<BooksControl> getAllManageBooks()
