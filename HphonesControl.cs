@@ -13,7 +13,7 @@ namespace Course1
     public partial class HphonesControl : UserControl
     {
         public HphonesControl(string _title, string _mic, string _type, int _workingHours, int _resistance,
-                              int _price, int _quantity, string[] _quantityCombo, Basket basketItem)
+                              int _price, int _quantity, string[] _quantityCombo, Basket basketItem, string nameTable)
         {
             InitializeComponent();
             Title = _title;
@@ -26,7 +26,9 @@ namespace Course1
             QuantityCombo = _quantityCombo;
 
             basket = basketItem;
+            this.nameTable = nameTable;
         }
+        private string nameTable;
         private Basket basket;
 
         private string _title;
@@ -37,6 +39,8 @@ namespace Course1
         private int _price;
         private int _quantity;
         private string[] _quantityCombo;
+
+        public string getNameTable() { return nameTable; }
 
         public string Title
         {
@@ -111,9 +115,10 @@ namespace Course1
         private List<HphonesControl> hphonesControlsItems = new List<HphonesControl>();
         public ManageHphones() { }
 
-        public void createHphones(string _title, string _mic, string _type, int _workingHours, int _resistance, int _price, int _quantity, string[] _quantityCombo, Basket basketItem)
+        public void createHphones(string _title, string _mic, string _type, int _workingHours, int _resistance, int _price, int _quantity, 
+                                  string[] _quantityCombo, Basket basketItem, string nameTable)
         {
-            hphonesControlsItems.Add(new HphonesControl(_title, _mic, _type, _workingHours, _resistance, _price, _quantity, _quantityCombo, basketItem));
+            hphonesControlsItems.Add(new HphonesControl(_title, _mic, _type, _workingHours, _resistance, _price, _quantity, _quantityCombo, basketItem, nameTable));
         }
 
         public List<HphonesControl> getAllHphones()

@@ -132,10 +132,10 @@
             // 
             // buttonCheckout
             // 
-            this.buttonCheckout.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCheckout.Location = new System.Drawing.Point(810, 578);
+            this.buttonCheckout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCheckout.Location = new System.Drawing.Point(934, 577);
             this.buttonCheckout.Name = "buttonCheckout";
-            this.buttonCheckout.Size = new System.Drawing.Size(122, 34);
+            this.buttonCheckout.Size = new System.Drawing.Size(144, 56);
             this.buttonCheckout.TabIndex = 26;
             this.buttonCheckout.Text = "Оформить заказ";
             this.buttonCheckout.UseVisualStyleBackColor = true;
