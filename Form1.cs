@@ -17,9 +17,13 @@ namespace Course1
             InitializeComponent();
         }
 
+        static private string admin = "admin";
+        static private string adminPassword = "%%a%%d%%m%%i%%n%%";
+
         private Point mouseOffset;
         private bool isMouseDown = false;
 
+        AdminForm adminForm = new AdminForm();
         SignUp signupForm = new SignUp();
         Recovery recovery = new Recovery();
         WorkServer workserver = new WorkServer();
@@ -106,6 +110,12 @@ namespace Course1
                 workserver.loseConnection();
                 this.Hide();
                 mainInterface.Show();
+            }
+            else if(PassswordWithLogin(logintext.Text, passwordtext.Text) &&
+                    logintext.Text == admin && passwordtext.Text == adminPassword)
+            {
+                this.Hide();
+                adminForm.Show();
             }
             else { setWarningLabel(true); passwordReset(); }
             workserver.loseConnection();

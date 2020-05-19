@@ -492,5 +492,11 @@ namespace Course1
                 throw new Exception("Error executing into inster sql statement", e);
             }
         }
+
+        ////////
+        ///     For Admin user
+        ///////
+        
+
     }
 }
