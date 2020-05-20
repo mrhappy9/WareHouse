@@ -494,9 +494,51 @@ namespace Course1
         }
 
         ////////
+        ///
         ///     For Admin user
+        ///     
         ///////
         
+        ///-------------Changing books---------------///
 
+        public List<String> getParticularBook(string table, string name)
+        {
+            List<String> books = new List<String>();
+            createConnection();
+            try
+            {
+                MySqlCommand getBook = new MySqlCommand(connString, connection);
+                getBook.CommandText = $" SELECT Author, Price, Quantity FROM {table} WHERE Name = '{name}'";
+                MySqlDataReader reader = getBook.ExecuteReader();
+                while (reader.Read())
+                {
+                    books.Add(reader[0].ToString());
+                    books.Add(reader[1].ToString());
+                    books.Add(reader[2].ToString());
+                }
+                loseConnection();
+                return books;
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void updateBookTable(string table, string name, string author, int price, int quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand updateBook = new MySqlCommand(connString, connection);
+                updateBook.CommandText = $"UPDATE {table} SET Author = '{author}', Price = {price}, Quantity = {quantity} " +
+                                         $"WHERE Name = '{name}';";
+                updateBook.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
     }
 }

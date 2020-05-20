@@ -49,72 +49,69 @@
             this.pictureBoxChange = new System.Windows.Forms.PictureBox();
             this.changeLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBoxBookItems = new System.Windows.Forms.ComboBox();
-            this.comboBoxElectroItems = new System.Windows.Forms.ComboBox();
-            this.comboBoxClothes = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelNameBook = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.информацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.комиксыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.секретыЧеловекаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.приключениеБуратиноToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.гарриПоттерКомплектКнигToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.хроникиНарнииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.маленькийПринцToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.головаПрофессораДоуэляToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.тимурИЕгоКомандаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.белыйБимЧерноеУхоToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.кортикToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.путешествиеГулливераToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.художеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.триумфальнаяАркаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.поФаренгейтуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.портретДорианаГреяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.крестныйОтецToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.лезвиеБритвыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.великийГэтсбиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.идиотToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.десятьНегритятToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.вишневыйСадToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.детскаяЛитраToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рикИМортиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.гравитиФолзToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.бэтменToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ходячиеМертвецыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.блэксэдToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.времяПриключенийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.росомахаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.человекПаукToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.суперменToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.маусToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.учебникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.историяРоссииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.нагляднаяБиохимияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.дискретнаяМатематикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.косметологияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.основыКомпозицииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.нагляднаяФизиологияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.фармакологияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.бухгалтерскийУчетToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.терапияУчебноеПособиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.техникаРечиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.зарубежнаяЛитраToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.нИСЫToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.тонкоеИскусствоПофигизмаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.магическаяУборкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.всёХреновоToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.неНавредиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.бегствоОтСвободыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.стивДжобсToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.грокаемАлгоритмыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.яМанипулируюТобойToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.квадрантДенежногоПотокаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.разноеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.booksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.childrenBooksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.humanSecretsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pinocchioMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.harryPotterMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cNarniaMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.littlePrinceMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.headDoylMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timurTeamMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.whiteBimMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.daggerMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gulliverMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.artBooksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.arkaMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.farengateMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dorianMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.godFatherMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shaverMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.greatGatsbyMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.foolishMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.r1984MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blacksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сherryOrchardMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comicsBooksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rikMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.folzMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.batmenMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diedMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blacksadMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timeTripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wolverineMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.spiderManMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.superManMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mouseMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBooksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.historyRusMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bioChMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dMathMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cosmetologyMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.compositionMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phyMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pharmacologyMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.byhMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teraphyMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.speechMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diffBooksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gvMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chillMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.magicCleanMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doNoРarmMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.runAwayMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stiveMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.algorithmMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manipMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moneyStreamMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.foreignBooksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.theMisterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.theClockmakersDaughterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.бэтменToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.batmanMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pSIStillLoveYouToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.murakami2020DiaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.senseAndSensibilityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -122,7 +119,7 @@
             this.aClashOfKingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wutheringHeightsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.theExploitsOfMoominpappaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.скидкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.electroMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.компьютерыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hPPavilionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lenovoLegionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -178,7 +175,7 @@
             this.iPhone8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.honor20SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.samsungGalaxyS20ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.одеждаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clothesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.обувьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.кроссовкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.кроссовкиStrutterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -187,23 +184,37 @@
             this.мокасиныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.лоферыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.рюкзакиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.нижнееБельеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.разноеToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.рюкзакToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сумкаНаПоясToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сумкаКроссбодиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сумкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.рюкзакUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.рюкзакLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.нижнееБельеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.бодиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.бюстгальтерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.комплектБельяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.корректирующееБельеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.трусыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.майкаБельеваяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.разноеToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.пуловерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.курткаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.брюкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.курткаAnorakToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.брюкиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.textNameBook = new System.Windows.Forms.TextBox();
+            this.textAuthor = new System.Windows.Forms.TextBox();
+            this.labelAuthor = new System.Windows.Forms.Label();
+            this.textPrice = new System.Windows.Forms.TextBox();
+            this.labelPrice = new System.Windows.Forms.Label();
+            this.labelQuantity = new System.Windows.Forms.Label();
+            this.comboQuantityBooks = new System.Windows.Forms.ComboBox();
+            this.panelBookItems = new System.Windows.Forms.Panel();
+            this.labelAddingQuantity = new System.Windows.Forms.Label();
+            this.labelNameTable = new System.Windows.Forms.Label();
+            this.buttonBookUpdate = new System.Windows.Forms.Button();
+            this.buttonChangeBook = new System.Windows.Forms.Button();
             this.panelMain.SuspendLayout();
             this.panelWarehouse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWareHouse)).BeginInit();
@@ -215,6 +226,7 @@
             this.panelChange.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChange)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.panelBookItems.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMain
@@ -420,504 +432,496 @@
             this.panel1.Size = new System.Drawing.Size(210, 1);
             this.panel1.TabIndex = 22;
             // 
-            // comboBoxBookItems
+            // labelNameBook
             // 
-            this.comboBoxBookItems.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxBookItems.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxBookItems.DropDownHeight = 160;
-            this.comboBoxBookItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxBookItems.DropDownWidth = 30;
-            this.comboBoxBookItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBoxBookItems.FormattingEnabled = true;
-            this.comboBoxBookItems.IntegralHeight = false;
-            this.comboBoxBookItems.Items.AddRange(new object[] {
-            "Комиксы",
-            "Художественная лит-ра",
-            "Детская лит-ра",
-            "Учебники",
-            "Зарубежная лит-ра",
-            "Разное"});
-            this.comboBoxBookItems.Location = new System.Drawing.Point(28, 357);
-            this.comboBoxBookItems.Name = "comboBoxBookItems";
-            this.comboBoxBookItems.Size = new System.Drawing.Size(131, 24);
-            this.comboBoxBookItems.TabIndex = 44;
-            // 
-            // comboBoxElectroItems
-            // 
-            this.comboBoxElectroItems.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxElectroItems.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxElectroItems.DropDownHeight = 160;
-            this.comboBoxElectroItems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxElectroItems.DropDownWidth = 30;
-            this.comboBoxElectroItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBoxElectroItems.FormattingEnabled = true;
-            this.comboBoxElectroItems.IntegralHeight = false;
-            this.comboBoxElectroItems.Items.AddRange(new object[] {
-            "Компьютеры",
-            "Наушники",
-            "Телевизоры",
-            "Ноутбуки",
-            "Умные часы",
-            "Смартфоны"});
-            this.comboBoxElectroItems.Location = new System.Drawing.Point(28, 441);
-            this.comboBoxElectroItems.Name = "comboBoxElectroItems";
-            this.comboBoxElectroItems.Size = new System.Drawing.Size(131, 24);
-            this.comboBoxElectroItems.TabIndex = 45;
-            // 
-            // comboBoxClothes
-            // 
-            this.comboBoxClothes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxClothes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxClothes.DropDownHeight = 160;
-            this.comboBoxClothes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxClothes.DropDownWidth = 30;
-            this.comboBoxClothes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBoxClothes.FormattingEnabled = true;
-            this.comboBoxClothes.IntegralHeight = false;
-            this.comboBoxClothes.Items.AddRange(new object[] {
-            "Обувь",
-            "Рюкзаки",
-            "Нижнее белье",
-            "Разное"});
-            this.comboBoxClothes.Location = new System.Drawing.Point(28, 526);
-            this.comboBoxClothes.Name = "comboBoxClothes";
-            this.comboBoxClothes.Size = new System.Drawing.Size(131, 24);
-            this.comboBoxClothes.TabIndex = 46;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 341);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "label1";
+            this.labelNameBook.AutoSize = true;
+            this.labelNameBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNameBook.Location = new System.Drawing.Point(58, 29);
+            this.labelNameBook.Name = "labelNameBook";
+            this.labelNameBook.Size = new System.Drawing.Size(114, 16);
+            this.labelNameBook.TabIndex = 47;
+            this.labelNameBook.Text = "Название книги";
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.информацияToolStripMenuItem,
-            this.скидкиToolStripMenuItem,
-            this.одеждаToolStripMenuItem});
+            this.booksMenuItem,
+            this.electroMenuItem,
+            this.clothesMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(9, 112);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(399, 26);
             this.menuStrip1.TabIndex = 48;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // информацияToolStripMenuItem
-            // 
-            this.информацияToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.комиксыToolStripMenuItem,
-            this.художеToolStripMenuItem,
-            this.детскаяЛитраToolStripMenuItem,
-            this.учебникиToolStripMenuItem,
-            this.зарубежнаяЛитраToolStripMenuItem,
-            this.разноеToolStripMenuItem});
-            this.информацияToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.информацияToolStripMenuItem.Name = "информацияToolStripMenuItem";
-            this.информацияToolStripMenuItem.Size = new System.Drawing.Size(60, 22);
-            this.информацияToolStripMenuItem.Text = "Книги";
-            // 
-            // комиксыToolStripMenuItem
-            // 
-            this.комиксыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.секретыЧеловекаToolStripMenuItem,
-            this.приключениеБуратиноToolStripMenuItem,
-            this.гарриПоттерКомплектКнигToolStripMenuItem,
-            this.хроникиНарнииToolStripMenuItem,
-            this.маленькийПринцToolStripMenuItem,
-            this.головаПрофессораДоуэляToolStripMenuItem,
-            this.тимурИЕгоКомандаToolStripMenuItem,
-            this.белыйБимЧерноеУхоToolStripMenuItem,
-            this.кортикToolStripMenuItem,
-            this.путешествиеГулливераToolStripMenuItem});
-            this.комиксыToolStripMenuItem.Name = "комиксыToolStripMenuItem";
-            this.комиксыToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.комиксыToolStripMenuItem.Text = "Детская лит-ра";
-            // 
-            // секретыЧеловекаToolStripMenuItem
-            // 
-            this.секретыЧеловекаToolStripMenuItem.Name = "секретыЧеловекаToolStripMenuItem";
-            this.секретыЧеловекаToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
-            this.секретыЧеловекаToolStripMenuItem.Text = "Секреты Человека";
-            // 
-            // приключениеБуратиноToolStripMenuItem
-            // 
-            this.приключениеБуратиноToolStripMenuItem.Name = "приключениеБуратиноToolStripMenuItem";
-            this.приключениеБуратиноToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
-            this.приключениеБуратиноToolStripMenuItem.Text = "Приключение Буратино";
-            // 
-            // гарриПоттерКомплектКнигToolStripMenuItem
-            // 
-            this.гарриПоттерКомплектКнигToolStripMenuItem.Name = "гарриПоттерКомплектКнигToolStripMenuItem";
-            this.гарриПоттерКомплектКнигToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
-            this.гарриПоттерКомплектКнигToolStripMenuItem.Text = "Гарри Поттер. Комплект книг";
-            // 
-            // хроникиНарнииToolStripMenuItem
-            // 
-            this.хроникиНарнииToolStripMenuItem.Name = "хроникиНарнииToolStripMenuItem";
-            this.хроникиНарнииToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
-            this.хроникиНарнииToolStripMenuItem.Text = "Хроники Нарнии";
-            // 
-            // маленькийПринцToolStripMenuItem
-            // 
-            this.маленькийПринцToolStripMenuItem.Name = "маленькийПринцToolStripMenuItem";
-            this.маленькийПринцToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
-            this.маленькийПринцToolStripMenuItem.Text = "Маленький Принц";
-            // 
-            // головаПрофессораДоуэляToolStripMenuItem
-            // 
-            this.головаПрофессораДоуэляToolStripMenuItem.Name = "головаПрофессораДоуэляToolStripMenuItem";
-            this.головаПрофессораДоуэляToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
-            this.головаПрофессораДоуэляToolStripMenuItem.Text = "Голова профессора Доуэля";
-            // 
-            // тимурИЕгоКомандаToolStripMenuItem
-            // 
-            this.тимурИЕгоКомандаToolStripMenuItem.Name = "тимурИЕгоКомандаToolStripMenuItem";
-            this.тимурИЕгоКомандаToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
-            this.тимурИЕгоКомандаToolStripMenuItem.Text = "Тимур и его команда";
-            // 
-            // белыйБимЧерноеУхоToolStripMenuItem
-            // 
-            this.белыйБимЧерноеУхоToolStripMenuItem.Name = "белыйБимЧерноеУхоToolStripMenuItem";
-            this.белыйБимЧерноеУхоToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
-            this.белыйБимЧерноеУхоToolStripMenuItem.Text = "Белый Бим Черное Ухо";
-            // 
-            // кортикToolStripMenuItem
-            // 
-            this.кортикToolStripMenuItem.Name = "кортикToolStripMenuItem";
-            this.кортикToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
-            this.кортикToolStripMenuItem.Text = "Кортик";
-            // 
-            // путешествиеГулливераToolStripMenuItem
-            // 
-            this.путешествиеГулливераToolStripMenuItem.Name = "путешествиеГулливераToolStripMenuItem";
-            this.путешествиеГулливераToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
-            this.путешествиеГулливераToolStripMenuItem.Text = "Путешествие Гулливера";
-            // 
-            // художеToolStripMenuItem
-            // 
-            this.художеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.триумфальнаяАркаToolStripMenuItem,
-            this.поФаренгейтуToolStripMenuItem,
-            this.портретДорианаГреяToolStripMenuItem,
-            this.крестныйОтецToolStripMenuItem,
-            this.лезвиеБритвыToolStripMenuItem,
-            this.великийГэтсбиToolStripMenuItem,
-            this.идиотToolStripMenuItem,
-            this.toolStripMenuItem2,
-            this.десятьНегритятToolStripMenuItem,
-            this.вишневыйСадToolStripMenuItem});
-            this.художеToolStripMenuItem.Name = "художеToolStripMenuItem";
-            this.художеToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.художеToolStripMenuItem.Text = "Художественная лит-ра";
-            // 
-            // триумфальнаяАркаToolStripMenuItem
-            // 
-            this.триумфальнаяАркаToolStripMenuItem.Name = "триумфальнаяАркаToolStripMenuItem";
-            this.триумфальнаяАркаToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.триумфальнаяАркаToolStripMenuItem.Text = "Триумфальная арка";
-            // 
-            // поФаренгейтуToolStripMenuItem
-            // 
-            this.поФаренгейтуToolStripMenuItem.Name = "поФаренгейтуToolStripMenuItem";
-            this.поФаренгейтуToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.поФаренгейтуToolStripMenuItem.Text = "451 по Фаренгейту";
-            // 
-            // портретДорианаГреяToolStripMenuItem
-            // 
-            this.портретДорианаГреяToolStripMenuItem.Name = "портретДорианаГреяToolStripMenuItem";
-            this.портретДорианаГреяToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.портретДорианаГреяToolStripMenuItem.Text = "Портрет Дориана Грея";
-            // 
-            // крестныйОтецToolStripMenuItem
-            // 
-            this.крестныйОтецToolStripMenuItem.Name = "крестныйОтецToolStripMenuItem";
-            this.крестныйОтецToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.крестныйОтецToolStripMenuItem.Text = "Крестный Отец";
-            // 
-            // лезвиеБритвыToolStripMenuItem
-            // 
-            this.лезвиеБритвыToolStripMenuItem.Name = "лезвиеБритвыToolStripMenuItem";
-            this.лезвиеБритвыToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.лезвиеБритвыToolStripMenuItem.Text = "Лезвие Бритвы";
-            // 
-            // великийГэтсбиToolStripMenuItem
-            // 
-            this.великийГэтсбиToolStripMenuItem.Name = "великийГэтсбиToolStripMenuItem";
-            this.великийГэтсбиToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.великийГэтсбиToolStripMenuItem.Text = "Великий Гэтсби";
-            // 
-            // идиотToolStripMenuItem
-            // 
-            this.идиотToolStripMenuItem.Name = "идиотToolStripMenuItem";
-            this.идиотToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.идиотToolStripMenuItem.Text = "Идиот";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(236, 22);
-            this.toolStripMenuItem2.Text = "1984";
-            // 
-            // десятьНегритятToolStripMenuItem
-            // 
-            this.десятьНегритятToolStripMenuItem.Name = "десятьНегритятToolStripMenuItem";
-            this.десятьНегритятToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.десятьНегритятToolStripMenuItem.Text = "Десять негритят";
-            // 
-            // вишневыйСадToolStripMenuItem
-            // 
-            this.вишневыйСадToolStripMenuItem.Name = "вишневыйСадToolStripMenuItem";
-            this.вишневыйСадToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.вишневыйСадToolStripMenuItem.Text = "Вишневый Сад";
-            // 
-            // детскаяЛитраToolStripMenuItem
-            // 
-            this.детскаяЛитраToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.рикИМортиToolStripMenuItem,
-            this.гравитиФолзToolStripMenuItem,
-            this.бэтменToolStripMenuItem,
-            this.ходячиеМертвецыToolStripMenuItem,
-            this.блэксэдToolStripMenuItem,
-            this.времяПриключенийToolStripMenuItem,
-            this.росомахаToolStripMenuItem,
-            this.человекПаукToolStripMenuItem,
-            this.суперменToolStripMenuItem,
-            this.маусToolStripMenuItem});
-            this.детскаяЛитраToolStripMenuItem.Name = "детскаяЛитраToolStripMenuItem";
-            this.детскаяЛитраToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.детскаяЛитраToolStripMenuItem.Text = "Комиксы";
-            // 
-            // рикИМортиToolStripMenuItem
-            // 
-            this.рикИМортиToolStripMenuItem.Name = "рикИМортиToolStripMenuItem";
-            this.рикИМортиToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.рикИМортиToolStripMenuItem.Text = "Рик и Морти";
-            // 
-            // гравитиФолзToolStripMenuItem
-            // 
-            this.гравитиФолзToolStripMenuItem.Name = "гравитиФолзToolStripMenuItem";
-            this.гравитиФолзToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.гравитиФолзToolStripMenuItem.Text = "Гравити Фолз";
-            // 
-            // бэтменToolStripMenuItem
-            // 
-            this.бэтменToolStripMenuItem.Name = "бэтменToolStripMenuItem";
-            this.бэтменToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.бэтменToolStripMenuItem.Text = "Бэтмен";
-            // 
-            // ходячиеМертвецыToolStripMenuItem
-            // 
-            this.ходячиеМертвецыToolStripMenuItem.Name = "ходячиеМертвецыToolStripMenuItem";
-            this.ходячиеМертвецыToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.ходячиеМертвецыToolStripMenuItem.Text = "Ходячие мертвецы";
-            // 
-            // блэксэдToolStripMenuItem
-            // 
-            this.блэксэдToolStripMenuItem.Name = "блэксэдToolStripMenuItem";
-            this.блэксэдToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.блэксэдToolStripMenuItem.Text = "Блэксэд";
-            // 
-            // времяПриключенийToolStripMenuItem
-            // 
-            this.времяПриключенийToolStripMenuItem.Name = "времяПриключенийToolStripMenuItem";
-            this.времяПриключенийToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.времяПриключенийToolStripMenuItem.Text = "Время приключений";
-            // 
-            // росомахаToolStripMenuItem
-            // 
-            this.росомахаToolStripMenuItem.Name = "росомахаToolStripMenuItem";
-            this.росомахаToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.росомахаToolStripMenuItem.Text = "Росомаха";
-            // 
-            // человекПаукToolStripMenuItem
-            // 
-            this.человекПаукToolStripMenuItem.Name = "человекПаукToolStripMenuItem";
-            this.человекПаукToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.человекПаукToolStripMenuItem.Text = "Человек-Паук";
-            // 
-            // суперменToolStripMenuItem
-            // 
-            this.суперменToolStripMenuItem.Name = "суперменToolStripMenuItem";
-            this.суперменToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.суперменToolStripMenuItem.Text = "Супермен";
-            // 
-            // маусToolStripMenuItem
-            // 
-            this.маусToolStripMenuItem.Name = "маусToolStripMenuItem";
-            this.маусToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.маусToolStripMenuItem.Text = "Маус";
-            // 
-            // учебникиToolStripMenuItem
-            // 
-            this.учебникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.историяРоссииToolStripMenuItem,
-            this.нагляднаяБиохимияToolStripMenuItem,
-            this.дискретнаяМатематикаToolStripMenuItem,
-            this.косметологияToolStripMenuItem,
-            this.основыКомпозицииToolStripMenuItem,
-            this.нагляднаяФизиологияToolStripMenuItem,
-            this.фармакологияToolStripMenuItem,
-            this.бухгалтерскийУчетToolStripMenuItem,
-            this.терапияУчебноеПособиеToolStripMenuItem,
-            this.техникаРечиToolStripMenuItem});
-            this.учебникиToolStripMenuItem.Name = "учебникиToolStripMenuItem";
-            this.учебникиToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.учебникиToolStripMenuItem.Text = "Учебники";
-            // 
-            // историяРоссииToolStripMenuItem
-            // 
-            this.историяРоссииToolStripMenuItem.Name = "историяРоссииToolStripMenuItem";
-            this.историяРоссииToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.историяРоссииToolStripMenuItem.Text = "История России";
-            // 
-            // нагляднаяБиохимияToolStripMenuItem
-            // 
-            this.нагляднаяБиохимияToolStripMenuItem.Name = "нагляднаяБиохимияToolStripMenuItem";
-            this.нагляднаяБиохимияToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.нагляднаяБиохимияToolStripMenuItem.Text = "Наглядная биохимия";
-            // 
-            // дискретнаяМатематикаToolStripMenuItem
-            // 
-            this.дискретнаяМатематикаToolStripMenuItem.Name = "дискретнаяМатематикаToolStripMenuItem";
-            this.дискретнаяМатематикаToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.дискретнаяМатематикаToolStripMenuItem.Text = "Дискретная математика";
-            // 
-            // косметологияToolStripMenuItem
-            // 
-            this.косметологияToolStripMenuItem.Name = "косметологияToolStripMenuItem";
-            this.косметологияToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.косметологияToolStripMenuItem.Text = "Косметология";
-            // 
-            // основыКомпозицииToolStripMenuItem
-            // 
-            this.основыКомпозицииToolStripMenuItem.Name = "основыКомпозицииToolStripMenuItem";
-            this.основыКомпозицииToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.основыКомпозицииToolStripMenuItem.Text = "Основы композиции";
-            // 
-            // нагляднаяФизиологияToolStripMenuItem
-            // 
-            this.нагляднаяФизиологияToolStripMenuItem.Name = "нагляднаяФизиологияToolStripMenuItem";
-            this.нагляднаяФизиологияToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.нагляднаяФизиологияToolStripMenuItem.Text = "Наглядная физиология";
-            // 
-            // фармакологияToolStripMenuItem
-            // 
-            this.фармакологияToolStripMenuItem.Name = "фармакологияToolStripMenuItem";
-            this.фармакологияToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.фармакологияToolStripMenuItem.Text = "Фармакология";
-            // 
-            // бухгалтерскийУчетToolStripMenuItem
-            // 
-            this.бухгалтерскийУчетToolStripMenuItem.Name = "бухгалтерскийУчетToolStripMenuItem";
-            this.бухгалтерскийУчетToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.бухгалтерскийУчетToolStripMenuItem.Text = "Бухгалтерский учет";
-            // 
-            // терапияУчебноеПособиеToolStripMenuItem
-            // 
-            this.терапияУчебноеПособиеToolStripMenuItem.Name = "терапияУчебноеПособиеToolStripMenuItem";
-            this.терапияУчебноеПособиеToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.терапияУчебноеПособиеToolStripMenuItem.Text = "Терапия. Учебное пособие";
-            // 
-            // техникаРечиToolStripMenuItem
-            // 
-            this.техникаРечиToolStripMenuItem.Name = "техникаРечиToolStripMenuItem";
-            this.техникаРечиToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
-            this.техникаРечиToolStripMenuItem.Text = "Техника речи";
-            // 
-            // зарубежнаяЛитраToolStripMenuItem
-            // 
-            this.зарубежнаяЛитраToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.нИСЫToolStripMenuItem,
-            this.тонкоеИскусствоПофигизмаToolStripMenuItem,
-            this.магическаяУборкаToolStripMenuItem,
-            this.всёХреновоToolStripMenuItem,
-            this.неНавредиToolStripMenuItem,
-            this.бегствоОтСвободыToolStripMenuItem,
-            this.стивДжобсToolStripMenuItem,
-            this.грокаемАлгоритмыToolStripMenuItem,
-            this.яМанипулируюТобойToolStripMenuItem,
-            this.квадрантДенежногоПотокаToolStripMenuItem});
-            this.зарубежнаяЛитраToolStripMenuItem.Name = "зарубежнаяЛитраToolStripMenuItem";
-            this.зарубежнаяЛитраToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.зарубежнаяЛитраToolStripMenuItem.Text = "Разное";
-            // 
-            // нИСЫToolStripMenuItem
-            // 
-            this.нИСЫToolStripMenuItem.Name = "нИСЫToolStripMenuItem";
-            this.нИСЫToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
-            this.нИСЫToolStripMenuItem.Text = "НИ СЫ";
-            // 
-            // тонкоеИскусствоПофигизмаToolStripMenuItem
-            // 
-            this.тонкоеИскусствоПофигизмаToolStripMenuItem.Name = "тонкоеИскусствоПофигизмаToolStripMenuItem";
-            this.тонкоеИскусствоПофигизмаToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
-            this.тонкоеИскусствоПофигизмаToolStripMenuItem.Text = "Тонкое искусство пофигизма";
-            // 
-            // магическаяУборкаToolStripMenuItem
-            // 
-            this.магическаяУборкаToolStripMenuItem.Name = "магическаяУборкаToolStripMenuItem";
-            this.магическаяУборкаToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
-            this.магическаяУборкаToolStripMenuItem.Text = "Магическая Уборка";
-            // 
-            // всёХреновоToolStripMenuItem
-            // 
-            this.всёХреновоToolStripMenuItem.Name = "всёХреновоToolStripMenuItem";
-            this.всёХреновоToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
-            this.всёХреновоToolStripMenuItem.Text = "Всё хреново";
-            // 
-            // неНавредиToolStripMenuItem
-            // 
-            this.неНавредиToolStripMenuItem.Name = "неНавредиToolStripMenuItem";
-            this.неНавредиToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
-            this.неНавредиToolStripMenuItem.Text = "Не навреди";
-            // 
-            // бегствоОтСвободыToolStripMenuItem
-            // 
-            this.бегствоОтСвободыToolStripMenuItem.Name = "бегствоОтСвободыToolStripMenuItem";
-            this.бегствоОтСвободыToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
-            this.бегствоОтСвободыToolStripMenuItem.Text = "Бегство от свободы";
-            // 
-            // стивДжобсToolStripMenuItem
-            // 
-            this.стивДжобсToolStripMenuItem.Name = "стивДжобсToolStripMenuItem";
-            this.стивДжобсToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
-            this.стивДжобсToolStripMenuItem.Text = "Стив Джобс";
-            // 
-            // грокаемАлгоритмыToolStripMenuItem
-            // 
-            this.грокаемАлгоритмыToolStripMenuItem.Name = "грокаемАлгоритмыToolStripMenuItem";
-            this.грокаемАлгоритмыToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
-            this.грокаемАлгоритмыToolStripMenuItem.Text = "Грокаем Алгоритмы";
-            // 
-            // яМанипулируюТобойToolStripMenuItem
-            // 
-            this.яМанипулируюТобойToolStripMenuItem.Name = "яМанипулируюТобойToolStripMenuItem";
-            this.яМанипулируюТобойToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
-            this.яМанипулируюТобойToolStripMenuItem.Text = "Я манипулирую тобой";
-            // 
-            // квадрантДенежногоПотокаToolStripMenuItem
-            // 
-            this.квадрантДенежногоПотокаToolStripMenuItem.Name = "квадрантДенежногоПотокаToolStripMenuItem";
-            this.квадрантДенежногоПотокаToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
-            this.квадрантДенежногоПотокаToolStripMenuItem.Text = "Квадрант денежного потока";
-            // 
-            // разноеToolStripMenuItem
-            // 
-            this.разноеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            // booksMenuItem
+            // 
+            this.booksMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.childrenBooksMenuItem,
+            this.artBooksMenuItem,
+            this.comicsBooksMenuItem,
+            this.textBooksMenuItem,
+            this.diffBooksMenuItem,
+            this.foreignBooksMenuItem});
+            this.booksMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.booksMenuItem.Name = "booksMenuItem";
+            this.booksMenuItem.Size = new System.Drawing.Size(60, 22);
+            this.booksMenuItem.Text = "Книги";
+            this.booksMenuItem.Click += new System.EventHandler(this.booksMenuItem_Click);
+            // 
+            // childrenBooksMenuItem
+            // 
+            this.childrenBooksMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.humanSecretsMenuItem,
+            this.pinocchioMenuItem,
+            this.harryPotterMenuItem,
+            this.cNarniaMenuItem,
+            this.littlePrinceMenuItem,
+            this.headDoylMenuItem,
+            this.timurTeamMenuItem,
+            this.whiteBimMenuItem,
+            this.daggerMenuItem,
+            this.gulliverMenuItem});
+            this.childrenBooksMenuItem.Name = "childrenBooksMenuItem";
+            this.childrenBooksMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.childrenBooksMenuItem.Tag = "Childrenbooks";
+            this.childrenBooksMenuItem.Text = "Детская лит-ра";
+            this.childrenBooksMenuItem.Click += new System.EventHandler(this.childrenBooksMenuItem_Click);
+            // 
+            // humanSecretsMenuItem
+            // 
+            this.humanSecretsMenuItem.Name = "humanSecretsMenuItem";
+            this.humanSecretsMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.humanSecretsMenuItem.Text = "Секреты Человека";
+            this.humanSecretsMenuItem.Click += new System.EventHandler(this.humanSecretsMenuItem_Click);
+            // 
+            // pinocchioMenuItem
+            // 
+            this.pinocchioMenuItem.Name = "pinocchioMenuItem";
+            this.pinocchioMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.pinocchioMenuItem.Text = "Приключение Буратино";
+            this.pinocchioMenuItem.Click += new System.EventHandler(this.pinocchioMenuItem_Click);
+            // 
+            // harryPotterMenuItem
+            // 
+            this.harryPotterMenuItem.Name = "harryPotterMenuItem";
+            this.harryPotterMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.harryPotterMenuItem.Text = "Гарри Поттер. Комплект книг";
+            this.harryPotterMenuItem.Click += new System.EventHandler(this.harryPotterMenuItem_Click);
+            // 
+            // cNarniaMenuItem
+            // 
+            this.cNarniaMenuItem.Name = "cNarniaMenuItem";
+            this.cNarniaMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.cNarniaMenuItem.Text = "Хроники Нарнии";
+            this.cNarniaMenuItem.Click += new System.EventHandler(this.сhroniclesNarniaMenuItem_Click);
+            // 
+            // littlePrinceMenuItem
+            // 
+            this.littlePrinceMenuItem.Name = "littlePrinceMenuItem";
+            this.littlePrinceMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.littlePrinceMenuItem.Text = "Маленький Принц";
+            this.littlePrinceMenuItem.Click += new System.EventHandler(this.littlePrinceMenuItem_Click);
+            // 
+            // headDoylMenuItem
+            // 
+            this.headDoylMenuItem.Name = "headDoylMenuItem";
+            this.headDoylMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.headDoylMenuItem.Text = "Голова профессора Доуэля";
+            this.headDoylMenuItem.Click += new System.EventHandler(this.headDoylMenuItem_Click);
+            // 
+            // timurTeamMenuItem
+            // 
+            this.timurTeamMenuItem.Name = "timurTeamMenuItem";
+            this.timurTeamMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.timurTeamMenuItem.Text = "Тимур и его команда";
+            this.timurTeamMenuItem.Click += new System.EventHandler(this.timurTeamMenuItem_Click);
+            // 
+            // whiteBimMenuItem
+            // 
+            this.whiteBimMenuItem.Name = "whiteBimMenuItem";
+            this.whiteBimMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.whiteBimMenuItem.Text = "Белый Бим Черное Ухо";
+            this.whiteBimMenuItem.Click += new System.EventHandler(this.whiteBimMenuItem_Click);
+            // 
+            // daggerMenuItem
+            // 
+            this.daggerMenuItem.Name = "daggerMenuItem";
+            this.daggerMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.daggerMenuItem.Text = "Кортик";
+            this.daggerMenuItem.Click += new System.EventHandler(this.daggerMenuItem_Click);
+            // 
+            // gulliverMenuItem
+            // 
+            this.gulliverMenuItem.Name = "gulliverMenuItem";
+            this.gulliverMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.gulliverMenuItem.Text = "Путешествие Гулливера";
+            this.gulliverMenuItem.Click += new System.EventHandler(this.gulliverMenuItem_Click);
+            // 
+            // artBooksMenuItem
+            // 
+            this.artBooksMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.arkaMenuItem,
+            this.farengateMenuItem,
+            this.dorianMenuItem,
+            this.godFatherMenuItem,
+            this.shaverMenuItem,
+            this.greatGatsbyMenuItem,
+            this.foolishMenuItem,
+            this.r1984MenuItem,
+            this.blacksMenuItem,
+            this.сherryOrchardMenuItem});
+            this.artBooksMenuItem.Name = "artBooksMenuItem";
+            this.artBooksMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.artBooksMenuItem.Tag = "Artbooks";
+            this.artBooksMenuItem.Text = "Художественная лит-ра";
+            this.artBooksMenuItem.Click += new System.EventHandler(this.artBooksMenuItem_Click);
+            // 
+            // arkaMenuItem
+            // 
+            this.arkaMenuItem.Name = "arkaMenuItem";
+            this.arkaMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.arkaMenuItem.Text = "Триумфальная арка";
+            this.arkaMenuItem.Click += new System.EventHandler(this.arkaMenuItem_Click);
+            // 
+            // farengateMenuItem
+            // 
+            this.farengateMenuItem.Name = "farengateMenuItem";
+            this.farengateMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.farengateMenuItem.Text = "451 по Фаренгейту";
+            this.farengateMenuItem.Click += new System.EventHandler(this.farengateMenuItem_Click);
+            // 
+            // dorianMenuItem
+            // 
+            this.dorianMenuItem.Name = "dorianMenuItem";
+            this.dorianMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.dorianMenuItem.Text = "Портрет Дориана Грея";
+            this.dorianMenuItem.Click += new System.EventHandler(this.dorianMenuItem_Click_1);
+            // 
+            // godFatherMenuItem
+            // 
+            this.godFatherMenuItem.Name = "godFatherMenuItem";
+            this.godFatherMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.godFatherMenuItem.Text = "Крестный Отец";
+            this.godFatherMenuItem.Click += new System.EventHandler(this.godFatherMenuItem_Click);
+            // 
+            // shaverMenuItem
+            // 
+            this.shaverMenuItem.Name = "shaverMenuItem";
+            this.shaverMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.shaverMenuItem.Text = "Лезвие Бритвы";
+            this.shaverMenuItem.Click += new System.EventHandler(this.shaverMenuItem_Click);
+            // 
+            // greatGatsbyMenuItem
+            // 
+            this.greatGatsbyMenuItem.Name = "greatGatsbyMenuItem";
+            this.greatGatsbyMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.greatGatsbyMenuItem.Text = "Великий Гэтсби";
+            this.greatGatsbyMenuItem.Click += new System.EventHandler(this.greatGatsbyMenuItem_Click);
+            // 
+            // foolishMenuItem
+            // 
+            this.foolishMenuItem.Name = "foolishMenuItem";
+            this.foolishMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.foolishMenuItem.Text = "Идиот";
+            this.foolishMenuItem.Click += new System.EventHandler(this.foolishMenuItem_Click);
+            // 
+            // r1984MenuItem
+            // 
+            this.r1984MenuItem.Name = "r1984MenuItem";
+            this.r1984MenuItem.Size = new System.Drawing.Size(236, 22);
+            this.r1984MenuItem.Text = "1984";
+            this.r1984MenuItem.Click += new System.EventHandler(this.r1984MenuItem_Click);
+            // 
+            // blacksMenuItem
+            // 
+            this.blacksMenuItem.Name = "blacksMenuItem";
+            this.blacksMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.blacksMenuItem.Text = "Десять негритят";
+            this.blacksMenuItem.Click += new System.EventHandler(this.blacksMenuItem_Click);
+            // 
+            // сherryOrchardMenuItem
+            // 
+            this.сherryOrchardMenuItem.Name = "сherryOrchardMenuItem";
+            this.сherryOrchardMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.сherryOrchardMenuItem.Text = "Вишневый Сад";
+            this.сherryOrchardMenuItem.Click += new System.EventHandler(this.сherryOrchardMenuItem_Click);
+            // 
+            // comicsBooksMenuItem
+            // 
+            this.comicsBooksMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rikMenuItem,
+            this.folzMenuItem,
+            this.batmenMenuItem,
+            this.diedMenuItem,
+            this.blacksadMenuItem,
+            this.timeTripMenuItem,
+            this.wolverineMenuItem,
+            this.spiderManMenuItem,
+            this.superManMenuItem,
+            this.mouseMenuItem});
+            this.comicsBooksMenuItem.Name = "comicsBooksMenuItem";
+            this.comicsBooksMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.comicsBooksMenuItem.Tag = "Comicbooks";
+            this.comicsBooksMenuItem.Text = "Комиксы";
+            this.comicsBooksMenuItem.Click += new System.EventHandler(this.comicsBooksMenuItem_Click);
+            // 
+            // rikMenuItem
+            // 
+            this.rikMenuItem.Name = "rikMenuItem";
+            this.rikMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.rikMenuItem.Text = "Рик и Морти";
+            this.rikMenuItem.Click += new System.EventHandler(this.rikMenuItem_Click);
+            // 
+            // folzMenuItem
+            // 
+            this.folzMenuItem.Name = "folzMenuItem";
+            this.folzMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.folzMenuItem.Text = "Гравити Фолз";
+            this.folzMenuItem.Click += new System.EventHandler(this.folzMenuItem_Click);
+            // 
+            // batmenMenuItem
+            // 
+            this.batmenMenuItem.Name = "batmenMenuItem";
+            this.batmenMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.batmenMenuItem.Text = "Бэтмен";
+            this.batmenMenuItem.Click += new System.EventHandler(this.batmenMenuItem_Click);
+            // 
+            // diedMenuItem
+            // 
+            this.diedMenuItem.Name = "diedMenuItem";
+            this.diedMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.diedMenuItem.Text = "Ходячие мертвецы";
+            this.diedMenuItem.Click += new System.EventHandler(this.diedMenuItem_Click);
+            // 
+            // blacksadMenuItem
+            // 
+            this.blacksadMenuItem.Name = "blacksadMenuItem";
+            this.blacksadMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.blacksadMenuItem.Text = "Блэксэд";
+            this.blacksadMenuItem.Click += new System.EventHandler(this.blacksadMenuItem_Click);
+            // 
+            // timeTripMenuItem
+            // 
+            this.timeTripMenuItem.Name = "timeTripMenuItem";
+            this.timeTripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.timeTripMenuItem.Text = "Время приключений";
+            this.timeTripMenuItem.Click += new System.EventHandler(this.timeTripMenuItem_Click);
+            // 
+            // wolverineMenuItem
+            // 
+            this.wolverineMenuItem.Name = "wolverineMenuItem";
+            this.wolverineMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.wolverineMenuItem.Text = "Росомаха";
+            this.wolverineMenuItem.Click += new System.EventHandler(this.wolverineMenuItem_Click);
+            // 
+            // spiderManMenuItem
+            // 
+            this.spiderManMenuItem.Name = "spiderManMenuItem";
+            this.spiderManMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.spiderManMenuItem.Text = "Человек-Паук";
+            this.spiderManMenuItem.Click += new System.EventHandler(this.spiderManMenuItem_Click);
+            // 
+            // superManMenuItem
+            // 
+            this.superManMenuItem.Name = "superManMenuItem";
+            this.superManMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.superManMenuItem.Text = "Супермен";
+            this.superManMenuItem.Click += new System.EventHandler(this.superManMenuItem_Click);
+            // 
+            // mouseMenuItem
+            // 
+            this.mouseMenuItem.Name = "mouseMenuItem";
+            this.mouseMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.mouseMenuItem.Text = "Маус";
+            this.mouseMenuItem.Click += new System.EventHandler(this.mouseMenuItem_Click);
+            // 
+            // textBooksMenuItem
+            // 
+            this.textBooksMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.historyRusMenuItem,
+            this.bioChMenuItem,
+            this.dMathMenuItem,
+            this.cosmetologyMenuItem,
+            this.compositionMenuItem,
+            this.phyMenuItem,
+            this.pharmacologyMenuItem,
+            this.byhMenuItem,
+            this.teraphyMenuItem,
+            this.speechMenuItem});
+            this.textBooksMenuItem.Name = "textBooksMenuItem";
+            this.textBooksMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.textBooksMenuItem.Tag = "Textbooks";
+            this.textBooksMenuItem.Text = "Учебники";
+            this.textBooksMenuItem.Click += new System.EventHandler(this.textBooksMenuItem_Click);
+            // 
+            // historyRusMenuItem
+            // 
+            this.historyRusMenuItem.Name = "historyRusMenuItem";
+            this.historyRusMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.historyRusMenuItem.Text = "История России";
+            this.historyRusMenuItem.Click += new System.EventHandler(this.historyRusMenuItem_Click);
+            // 
+            // bioChMenuItem
+            // 
+            this.bioChMenuItem.Name = "bioChMenuItem";
+            this.bioChMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.bioChMenuItem.Text = "Наглядная биохимия";
+            this.bioChMenuItem.Click += new System.EventHandler(this.bioChMenuItem_Click);
+            // 
+            // dMathMenuItem
+            // 
+            this.dMathMenuItem.Name = "dMathMenuItem";
+            this.dMathMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.dMathMenuItem.Text = "Дискретная математика";
+            this.dMathMenuItem.Click += new System.EventHandler(this.dMathMenuItem_Click);
+            // 
+            // cosmetologyMenuItem
+            // 
+            this.cosmetologyMenuItem.Name = "cosmetologyMenuItem";
+            this.cosmetologyMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.cosmetologyMenuItem.Text = "Косметология";
+            this.cosmetologyMenuItem.Click += new System.EventHandler(this.cosmetologyMenuItem_Click);
+            // 
+            // compositionMenuItem
+            // 
+            this.compositionMenuItem.Name = "compositionMenuItem";
+            this.compositionMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.compositionMenuItem.Text = "Основы композиции";
+            this.compositionMenuItem.Click += new System.EventHandler(this.compositionMenuItem_Click);
+            // 
+            // phyMenuItem
+            // 
+            this.phyMenuItem.Name = "phyMenuItem";
+            this.phyMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.phyMenuItem.Text = "Наглядная физиология";
+            this.phyMenuItem.Click += new System.EventHandler(this.phyMenuItem_Click);
+            // 
+            // pharmacologyMenuItem
+            // 
+            this.pharmacologyMenuItem.Name = "pharmacologyMenuItem";
+            this.pharmacologyMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.pharmacologyMenuItem.Text = "Фармакология";
+            this.pharmacologyMenuItem.Click += new System.EventHandler(this.pharmacologyMenuItem_Click);
+            // 
+            // byhMenuItem
+            // 
+            this.byhMenuItem.Name = "byhMenuItem";
+            this.byhMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.byhMenuItem.Text = "Бухгалтерский учет";
+            this.byhMenuItem.Click += new System.EventHandler(this.byhMenuItem_Click);
+            // 
+            // teraphyMenuItem
+            // 
+            this.teraphyMenuItem.Name = "teraphyMenuItem";
+            this.teraphyMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.teraphyMenuItem.Text = "Терапия. Учебное пособие";
+            this.teraphyMenuItem.Click += new System.EventHandler(this.teraphyMenuItem_Click);
+            // 
+            // speechMenuItem
+            // 
+            this.speechMenuItem.Name = "speechMenuItem";
+            this.speechMenuItem.Size = new System.Drawing.Size(264, 22);
+            this.speechMenuItem.Text = "Техника речи";
+            this.speechMenuItem.Click += new System.EventHandler(this.speechMenuItem_Click);
+            // 
+            // diffBooksMenuItem
+            // 
+            this.diffBooksMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gvMenuItem,
+            this.chillMenuItem,
+            this.magicCleanMenuItem,
+            this.shitMenuItem,
+            this.doNoРarmMenuItem,
+            this.runAwayMenuItem,
+            this.stiveMenuItem,
+            this.algorithmMenuItem,
+            this.manipMenuItem,
+            this.moneyStreamMenuItem});
+            this.diffBooksMenuItem.Name = "diffBooksMenuItem";
+            this.diffBooksMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.diffBooksMenuItem.Tag = "Notartbooks";
+            this.diffBooksMenuItem.Text = "Разное";
+            this.diffBooksMenuItem.Click += new System.EventHandler(this.diffBooksMenuItem_Click);
+            // 
+            // gvMenuItem
+            // 
+            this.gvMenuItem.Name = "gvMenuItem";
+            this.gvMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.gvMenuItem.Text = "НИ СЫ";
+            this.gvMenuItem.Click += new System.EventHandler(this.gvMenuItem_Click);
+            // 
+            // chillMenuItem
+            // 
+            this.chillMenuItem.Name = "chillMenuItem";
+            this.chillMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.chillMenuItem.Text = "Тонкое искусство пофигизма";
+            this.chillMenuItem.Click += new System.EventHandler(this.chillMenuItem_Click);
+            // 
+            // magicCleanMenuItem
+            // 
+            this.magicCleanMenuItem.Name = "magicCleanMenuItem";
+            this.magicCleanMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.magicCleanMenuItem.Text = "Магическая Уборка";
+            this.magicCleanMenuItem.Click += new System.EventHandler(this.magicCleanMenuItem_Click);
+            // 
+            // shitMenuItem
+            // 
+            this.shitMenuItem.Name = "shitMenuItem";
+            this.shitMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.shitMenuItem.Text = "Всё хреново";
+            this.shitMenuItem.Click += new System.EventHandler(this.shitMenuItem_Click);
+            // 
+            // doNoРarmMenuItem
+            // 
+            this.doNoРarmMenuItem.Name = "doNoРarmMenuItem";
+            this.doNoРarmMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.doNoРarmMenuItem.Text = "Не навреди";
+            this.doNoРarmMenuItem.Click += new System.EventHandler(this.doNoРarmMenuItem_Click);
+            // 
+            // runAwayMenuItem
+            // 
+            this.runAwayMenuItem.Name = "runAwayMenuItem";
+            this.runAwayMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.runAwayMenuItem.Text = "Бегство от свободы";
+            this.runAwayMenuItem.Click += new System.EventHandler(this.runAwayMenuItem_Click);
+            // 
+            // stiveMenuItem
+            // 
+            this.stiveMenuItem.Name = "stiveMenuItem";
+            this.stiveMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.stiveMenuItem.Text = "Стив Джобс";
+            this.stiveMenuItem.Click += new System.EventHandler(this.stiveMenuItem_Click);
+            // 
+            // algorithmMenuItem
+            // 
+            this.algorithmMenuItem.Name = "algorithmMenuItem";
+            this.algorithmMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.algorithmMenuItem.Text = "Грокаем Алгоритмы";
+            this.algorithmMenuItem.Click += new System.EventHandler(this.algorithmMenuItem_Click);
+            // 
+            // manipMenuItem
+            // 
+            this.manipMenuItem.Name = "manipMenuItem";
+            this.manipMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.manipMenuItem.Text = "Я манипулирую тобой";
+            this.manipMenuItem.Click += new System.EventHandler(this.manipMenuItem_Click);
+            // 
+            // moneyStreamMenuItem
+            // 
+            this.moneyStreamMenuItem.Name = "moneyStreamMenuItem";
+            this.moneyStreamMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.moneyStreamMenuItem.Text = "Квадрант денежного потока";
+            this.moneyStreamMenuItem.Click += new System.EventHandler(this.moneyStreamMenuItem_Click);
+            // 
+            // foreignBooksMenuItem
+            // 
+            this.foreignBooksMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.theMisterToolStripMenuItem,
             this.theClockmakersDaughterToolStripMenuItem,
-            this.бэтменToolStripMenuItem1,
+            this.batmanMenuItem1,
             this.pSIStillLoveYouToolStripMenuItem,
             this.murakami2020DiaryToolStripMenuItem,
             this.senseAndSensibilityToolStripMenuItem,
@@ -925,83 +929,95 @@
             this.aClashOfKingsToolStripMenuItem,
             this.wutheringHeightsToolStripMenuItem,
             this.theExploitsOfMoominpappaToolStripMenuItem});
-            this.разноеToolStripMenuItem.Name = "разноеToolStripMenuItem";
-            this.разноеToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.разноеToolStripMenuItem.Text = "Зарубежная лит-ра";
+            this.foreignBooksMenuItem.Name = "foreignBooksMenuItem";
+            this.foreignBooksMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.foreignBooksMenuItem.Tag = "Foreignbooks";
+            this.foreignBooksMenuItem.Text = "Зарубежная лит-ра";
+            this.foreignBooksMenuItem.Click += new System.EventHandler(this.foreignBooksMenuItem_Click);
             // 
             // theMisterToolStripMenuItem
             // 
             this.theMisterToolStripMenuItem.Name = "theMisterToolStripMenuItem";
             this.theMisterToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
             this.theMisterToolStripMenuItem.Text = "The Mister";
+            this.theMisterToolStripMenuItem.Click += new System.EventHandler(this.theMisterToolStripMenuItem_Click);
             // 
             // theClockmakersDaughterToolStripMenuItem
             // 
             this.theClockmakersDaughterToolStripMenuItem.Name = "theClockmakersDaughterToolStripMenuItem";
             this.theClockmakersDaughterToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
             this.theClockmakersDaughterToolStripMenuItem.Text = "The Clockmakers Daughter";
+            this.theClockmakersDaughterToolStripMenuItem.Click += new System.EventHandler(this.theClockmakersDaughterToolStripMenuItem_Click);
             // 
-            // бэтменToolStripMenuItem1
+            // batmanMenuItem1
             // 
-            this.бэтменToolStripMenuItem1.Name = "бэтменToolStripMenuItem1";
-            this.бэтменToolStripMenuItem1.Size = new System.Drawing.Size(310, 22);
-            this.бэтменToolStripMenuItem1.Text = "Бэтмен";
+            this.batmanMenuItem1.Name = "batmanMenuItem1";
+            this.batmanMenuItem1.Size = new System.Drawing.Size(310, 22);
+            this.batmanMenuItem1.Text = "Бэтмен";
+            this.batmanMenuItem1.Click += new System.EventHandler(this.batmanMenuItem1_Click);
             // 
             // pSIStillLoveYouToolStripMenuItem
             // 
             this.pSIStillLoveYouToolStripMenuItem.Name = "pSIStillLoveYouToolStripMenuItem";
             this.pSIStillLoveYouToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
             this.pSIStillLoveYouToolStripMenuItem.Text = "P.S. I Still Love You";
+            this.pSIStillLoveYouToolStripMenuItem.Click += new System.EventHandler(this.pSIStillLoveYouToolStripMenuItem_Click);
             // 
             // murakami2020DiaryToolStripMenuItem
             // 
             this.murakami2020DiaryToolStripMenuItem.Name = "murakami2020DiaryToolStripMenuItem";
             this.murakami2020DiaryToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
             this.murakami2020DiaryToolStripMenuItem.Text = "Murakami 2020 Diary";
+            this.murakami2020DiaryToolStripMenuItem.Click += new System.EventHandler(this.murakami2020DiaryToolStripMenuItem_Click);
             // 
             // senseAndSensibilityToolStripMenuItem
             // 
             this.senseAndSensibilityToolStripMenuItem.Name = "senseAndSensibilityToolStripMenuItem";
             this.senseAndSensibilityToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
             this.senseAndSensibilityToolStripMenuItem.Text = "Sense and Sensibility";
+            this.senseAndSensibilityToolStripMenuItem.Click += new System.EventHandler(this.senseAndSensibilityToolStripMenuItem_Click);
             // 
             // theAdventuresOfHuckleberryFinnToolStripMenuItem
             // 
             this.theAdventuresOfHuckleberryFinnToolStripMenuItem.Name = "theAdventuresOfHuckleberryFinnToolStripMenuItem";
             this.theAdventuresOfHuckleberryFinnToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
             this.theAdventuresOfHuckleberryFinnToolStripMenuItem.Text = "The Adventures of Huckleberry Finn";
+            this.theAdventuresOfHuckleberryFinnToolStripMenuItem.Click += new System.EventHandler(this.theAdventuresOfHuckleberryFinnToolStripMenuItem_Click);
             // 
             // aClashOfKingsToolStripMenuItem
             // 
             this.aClashOfKingsToolStripMenuItem.Name = "aClashOfKingsToolStripMenuItem";
             this.aClashOfKingsToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
             this.aClashOfKingsToolStripMenuItem.Text = "A Clash of Kings";
+            this.aClashOfKingsToolStripMenuItem.Click += new System.EventHandler(this.aClashOfKingsToolStripMenuItem_Click);
             // 
             // wutheringHeightsToolStripMenuItem
             // 
             this.wutheringHeightsToolStripMenuItem.Name = "wutheringHeightsToolStripMenuItem";
             this.wutheringHeightsToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
             this.wutheringHeightsToolStripMenuItem.Text = "Wuthering Heights";
+            this.wutheringHeightsToolStripMenuItem.Click += new System.EventHandler(this.wutheringHeightsToolStripMenuItem_Click);
             // 
             // theExploitsOfMoominpappaToolStripMenuItem
             // 
             this.theExploitsOfMoominpappaToolStripMenuItem.Name = "theExploitsOfMoominpappaToolStripMenuItem";
             this.theExploitsOfMoominpappaToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
             this.theExploitsOfMoominpappaToolStripMenuItem.Text = "The Exploits of Moominpappa";
+            this.theExploitsOfMoominpappaToolStripMenuItem.Click += new System.EventHandler(this.theExploitsOfMoominpappaToolStripMenuItem_Click);
             // 
-            // скидкиToolStripMenuItem
+            // electroMenuItem
             // 
-            this.скидкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.electroMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.компьютерыToolStripMenuItem,
             this.наушникиToolStripMenuItem,
             this.телевизорыToolStripMenuItem,
             this.ноутбукиToolStripMenuItem,
             this.умныеЧасыToolStripMenuItem,
             this.смартфоныToolStripMenuItem});
-            this.скидкиToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.скидкиToolStripMenuItem.Name = "скидкиToolStripMenuItem";
-            this.скидкиToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.скидкиToolStripMenuItem.Text = "Электротехника";
+            this.electroMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.electroMenuItem.Name = "electroMenuItem";
+            this.electroMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.electroMenuItem.Text = "Электротехника";
             // 
             // компьютерыToolStripMenuItem
             // 
@@ -1388,17 +1404,17 @@
             this.samsungGalaxyS20ToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.samsungGalaxyS20ToolStripMenuItem.Text = "Samsung Galaxy S20";
             // 
-            // одеждаToolStripMenuItem
+            // clothesMenuItem
             // 
-            this.одеждаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clothesMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.обувьToolStripMenuItem,
             this.рюкзакиToolStripMenuItem,
             this.нижнееБельеToolStripMenuItem,
             this.разноеToolStripMenuItem1});
-            this.одеждаToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.одеждаToolStripMenuItem.Name = "одеждаToolStripMenuItem";
-            this.одеждаToolStripMenuItem.Size = new System.Drawing.Size(77, 22);
-            this.одеждаToolStripMenuItem.Text = "Одежда";
+            this.clothesMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.clothesMenuItem.Name = "clothesMenuItem";
+            this.clothesMenuItem.Size = new System.Drawing.Size(77, 22);
+            this.clothesMenuItem.Text = "Одежда";
             // 
             // обувьToolStripMenuItem
             // 
@@ -1410,7 +1426,7 @@
             this.мокасиныToolStripMenuItem,
             this.лоферыToolStripMenuItem});
             this.обувьToolStripMenuItem.Name = "обувьToolStripMenuItem";
-            this.обувьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.обувьToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.обувьToolStripMenuItem.Text = "Обувь";
             // 
             // кроссовкиToolStripMenuItem
@@ -1455,41 +1471,18 @@
             this.рюкзакToolStripMenuItem,
             this.сумкаНаПоясToolStripMenuItem,
             this.сумкаКроссбодиToolStripMenuItem,
-            this.сумкаToolStripMenuItem});
+            this.сумкаToolStripMenuItem,
+            this.рюкзакUToolStripMenuItem,
+            this.рюкзакLToolStripMenuItem});
             this.рюкзакиToolStripMenuItem.Name = "рюкзакиToolStripMenuItem";
-            this.рюкзакиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.рюкзакиToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.рюкзакиToolStripMenuItem.Text = "Рюкзаки";
-            // 
-            // нижнееБельеToolStripMenuItem
-            // 
-            this.нижнееБельеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.бодиToolStripMenuItem,
-            this.бюстгальтерToolStripMenuItem,
-            this.комплектБельяToolStripMenuItem,
-            this.корректирующееБельеToolStripMenuItem,
-            this.трусыToolStripMenuItem,
-            this.майкаБельеваяToolStripMenuItem});
-            this.нижнееБельеToolStripMenuItem.Name = "нижнееБельеToolStripMenuItem";
-            this.нижнееБельеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.нижнееБельеToolStripMenuItem.Text = "Нижнее белье";
-            // 
-            // разноеToolStripMenuItem1
-            // 
-            this.разноеToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.пуловерToolStripMenuItem,
-            this.курткаToolStripMenuItem,
-            this.брюкиToolStripMenuItem,
-            this.курткаAnorakToolStripMenuItem,
-            this.брюкиToolStripMenuItem1});
-            this.разноеToolStripMenuItem1.Name = "разноеToolStripMenuItem1";
-            this.разноеToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.разноеToolStripMenuItem1.Text = "Разное";
             // 
             // рюкзакToolStripMenuItem
             // 
             this.рюкзакToolStripMenuItem.Name = "рюкзакToolStripMenuItem";
             this.рюкзакToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.рюкзакToolStripMenuItem.Text = "Рюкзак";
+            this.рюкзакToolStripMenuItem.Text = "Рюкзак X";
             // 
             // сумкаНаПоясToolStripMenuItem
             // 
@@ -1508,6 +1501,31 @@
             this.сумкаToolStripMenuItem.Name = "сумкаToolStripMenuItem";
             this.сумкаToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.сумкаToolStripMenuItem.Text = "Сумка";
+            // 
+            // рюкзакUToolStripMenuItem
+            // 
+            this.рюкзакUToolStripMenuItem.Name = "рюкзакUToolStripMenuItem";
+            this.рюкзакUToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.рюкзакUToolStripMenuItem.Text = "Рюкзак U";
+            // 
+            // рюкзакLToolStripMenuItem
+            // 
+            this.рюкзакLToolStripMenuItem.Name = "рюкзакLToolStripMenuItem";
+            this.рюкзакLToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.рюкзакLToolStripMenuItem.Text = "Рюкзак L";
+            // 
+            // нижнееБельеToolStripMenuItem
+            // 
+            this.нижнееБельеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.бодиToolStripMenuItem,
+            this.бюстгальтерToolStripMenuItem,
+            this.комплектБельяToolStripMenuItem,
+            this.корректирующееБельеToolStripMenuItem,
+            this.трусыToolStripMenuItem,
+            this.майкаБельеваяToolStripMenuItem});
+            this.нижнееБельеToolStripMenuItem.Name = "нижнееБельеToolStripMenuItem";
+            this.нижнееБельеToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.нижнееБельеToolStripMenuItem.Text = "Нижнее белье";
             // 
             // бодиToolStripMenuItem
             // 
@@ -1545,52 +1563,211 @@
             this.майкаБельеваяToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
             this.майкаБельеваяToolStripMenuItem.Text = "Майка бельевая";
             // 
+            // разноеToolStripMenuItem1
+            // 
+            this.разноеToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.пуловерToolStripMenuItem,
+            this.курткаToolStripMenuItem,
+            this.брюкиToolStripMenuItem,
+            this.курткаAnorakToolStripMenuItem,
+            this.брюкиToolStripMenuItem1});
+            this.разноеToolStripMenuItem1.Name = "разноеToolStripMenuItem1";
+            this.разноеToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
+            this.разноеToolStripMenuItem1.Text = "Разное";
+            // 
             // пуловерToolStripMenuItem
             // 
             this.пуловерToolStripMenuItem.Name = "пуловерToolStripMenuItem";
-            this.пуловерToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.пуловерToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.пуловерToolStripMenuItem.Text = "Пуловер";
             // 
             // курткаToolStripMenuItem
             // 
             this.курткаToolStripMenuItem.Name = "курткаToolStripMenuItem";
-            this.курткаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.курткаToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.курткаToolStripMenuItem.Text = "Куртка";
             // 
             // брюкиToolStripMenuItem
             // 
             this.брюкиToolStripMenuItem.Name = "брюкиToolStripMenuItem";
-            this.брюкиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.брюкиToolStripMenuItem.Text = "Брюки";
+            this.брюкиToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.брюкиToolStripMenuItem.Text = "Джинсы";
             // 
             // курткаAnorakToolStripMenuItem
             // 
             this.курткаAnorakToolStripMenuItem.Name = "курткаAnorakToolStripMenuItem";
-            this.курткаAnorakToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.курткаAnorakToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.курткаAnorakToolStripMenuItem.Text = "Куртка Anorak";
             // 
             // брюкиToolStripMenuItem1
             // 
             this.брюкиToolStripMenuItem1.Name = "брюкиToolStripMenuItem1";
-            this.брюкиToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.брюкиToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
             this.брюкиToolStripMenuItem1.Text = "Брюки";
+            // 
+            // textNameBook
+            // 
+            this.textNameBook.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textNameBook.CausesValidation = false;
+            this.textNameBook.Location = new System.Drawing.Point(34, 48);
+            this.textNameBook.MaxLength = 50;
+            this.textNameBook.Name = "textNameBook";
+            this.textNameBook.ReadOnly = true;
+            this.textNameBook.Size = new System.Drawing.Size(159, 20);
+            this.textNameBook.TabIndex = 49;
+            this.textNameBook.TabStop = false;
+            // 
+            // textAuthor
+            // 
+            this.textAuthor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textAuthor.CausesValidation = false;
+            this.textAuthor.Location = new System.Drawing.Point(35, 94);
+            this.textAuthor.MaxLength = 50;
+            this.textAuthor.Name = "textAuthor";
+            this.textAuthor.Size = new System.Drawing.Size(159, 20);
+            this.textAuthor.TabIndex = 51;
+            this.textAuthor.TabStop = false;
+            // 
+            // labelAuthor
+            // 
+            this.labelAuthor.AutoSize = true;
+            this.labelAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAuthor.Location = new System.Drawing.Point(83, 75);
+            this.labelAuthor.Name = "labelAuthor";
+            this.labelAuthor.Size = new System.Drawing.Size(48, 16);
+            this.labelAuthor.TabIndex = 50;
+            this.labelAuthor.Text = "Автор";
+            // 
+            // textPrice
+            // 
+            this.textPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textPrice.CausesValidation = false;
+            this.textPrice.Location = new System.Drawing.Point(35, 146);
+            this.textPrice.MaxLength = 50;
+            this.textPrice.Name = "textPrice";
+            this.textPrice.Size = new System.Drawing.Size(159, 20);
+            this.textPrice.TabIndex = 53;
+            this.textPrice.TabStop = false;
+            // 
+            // labelPrice
+            // 
+            this.labelPrice.AutoSize = true;
+            this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPrice.Location = new System.Drawing.Point(87, 127);
+            this.labelPrice.Name = "labelPrice";
+            this.labelPrice.Size = new System.Drawing.Size(41, 16);
+            this.labelPrice.TabIndex = 52;
+            this.labelPrice.Text = "Цена";
+            // 
+            // labelQuantity
+            // 
+            this.labelQuantity.AutoSize = true;
+            this.labelQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelQuantity.Location = new System.Drawing.Point(45, 179);
+            this.labelQuantity.Name = "labelQuantity";
+            this.labelQuantity.Size = new System.Drawing.Size(86, 16);
+            this.labelQuantity.TabIndex = 54;
+            this.labelQuantity.Text = "Количество";
+            // 
+            // comboQuantityBooks
+            // 
+            this.comboQuantityBooks.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboQuantityBooks.CausesValidation = false;
+            this.comboQuantityBooks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboQuantityBooks.DropDownHeight = 70;
+            this.comboQuantityBooks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboQuantityBooks.DropDownWidth = 30;
+            this.comboQuantityBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboQuantityBooks.FormattingEnabled = true;
+            this.comboQuantityBooks.IntegralHeight = false;
+            this.comboQuantityBooks.Location = new System.Drawing.Point(87, 198);
+            this.comboQuantityBooks.Name = "comboQuantityBooks";
+            this.comboQuantityBooks.Size = new System.Drawing.Size(44, 24);
+            this.comboQuantityBooks.TabIndex = 94;
+            this.comboQuantityBooks.TabStop = false;
+            // 
+            // panelBookItems
+            // 
+            this.panelBookItems.Controls.Add(this.labelAddingQuantity);
+            this.panelBookItems.Controls.Add(this.labelNameTable);
+            this.panelBookItems.Controls.Add(this.labelNameBook);
+            this.panelBookItems.Controls.Add(this.comboQuantityBooks);
+            this.panelBookItems.Controls.Add(this.textNameBook);
+            this.panelBookItems.Controls.Add(this.labelQuantity);
+            this.panelBookItems.Controls.Add(this.labelAuthor);
+            this.panelBookItems.Controls.Add(this.textPrice);
+            this.panelBookItems.Controls.Add(this.textAuthor);
+            this.panelBookItems.Controls.Add(this.labelPrice);
+            this.panelBookItems.Location = new System.Drawing.Point(12, 183);
+            this.panelBookItems.Name = "panelBookItems";
+            this.panelBookItems.Size = new System.Drawing.Size(224, 231);
+            this.panelBookItems.TabIndex = 95;
+            // 
+            // labelAddingQuantity
+            // 
+            this.labelAddingQuantity.AutoSize = true;
+            this.labelAddingQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAddingQuantity.Location = new System.Drawing.Point(148, 179);
+            this.labelAddingQuantity.Name = "labelAddingQuantity";
+            this.labelAddingQuantity.Size = new System.Drawing.Size(24, 16);
+            this.labelAddingQuantity.TabIndex = 96;
+            this.labelAddingQuantity.Text = "чл";
+            // 
+            // labelNameTable
+            // 
+            this.labelNameTable.AutoSize = true;
+            this.labelNameTable.Location = new System.Drawing.Point(14, 9);
+            this.labelNameTable.Name = "labelNameTable";
+            this.labelNameTable.Size = new System.Drawing.Size(103, 13);
+            this.labelNameTable.TabIndex = 95;
+            this.labelNameTable.Text = "Название таблицы";
+            // 
+            // buttonBookUpdate
+            // 
+            this.buttonBookUpdate.Location = new System.Drawing.Point(29, 420);
+            this.buttonBookUpdate.Name = "buttonBookUpdate";
+            this.buttonBookUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonBookUpdate.TabIndex = 96;
+            this.buttonBookUpdate.TabStop = false;
+            this.buttonBookUpdate.Text = "Обновить";
+            this.buttonBookUpdate.UseVisualStyleBackColor = true;
+            this.buttonBookUpdate.Click += new System.EventHandler(this.buttonBookUpdate_Click);
+            // 
+            // buttonChangeBook
+            // 
+            this.buttonChangeBook.Location = new System.Drawing.Point(130, 420);
+            this.buttonChangeBook.Name = "buttonChangeBook";
+            this.buttonChangeBook.Size = new System.Drawing.Size(75, 23);
+            this.buttonChangeBook.TabIndex = 97;
+            this.buttonChangeBook.TabStop = false;
+            this.buttonChangeBook.Text = "Изменить";
+            this.buttonChangeBook.UseVisualStyleBackColor = true;
+            this.buttonChangeBook.Click += new System.EventHandler(this.buttonChangeBook_Click);
             // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(741, 594);
+            this.Controls.Add(this.buttonChangeBook);
+            this.Controls.Add(this.buttonBookUpdate);
+            this.Controls.Add(this.panelBookItems);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBoxClothes);
-            this.Controls.Add(this.comboBoxElectroItems);
-            this.Controls.Add(this.comboBoxBookItems);
             this.Controls.Add(this.panelMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";
+            this.Load += new System.EventHandler(this.AdminForm_Load);
             this.panelMain.ResumeLayout(false);
             this.panelWarehouse.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWareHouse)).EndInit();
@@ -1606,6 +1783,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChange)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panelBookItems.ResumeLayout(false);
+            this.panelBookItems.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1632,80 +1811,77 @@
         private System.Windows.Forms.Label changeLabel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBoxAdminClose;
-        private System.Windows.Forms.ComboBox comboBoxBookItems;
-        private System.Windows.Forms.ComboBox comboBoxElectroItems;
-        private System.Windows.Forms.ComboBox comboBoxClothes;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelNameBook;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem информацияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem скидкиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem комиксыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem художеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem одеждаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem детскаяЛитраToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem учебникиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem зарубежнаяЛитраToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem разноеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem booksMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem electroMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem childrenBooksMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem artBooksMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clothesMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem comicsBooksMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem textBooksMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diffBooksMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem foreignBooksMenuItem;
         private System.Windows.Forms.ToolStripMenuItem компьютерыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem наушникиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem телевизорыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ноутбукиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem умныеЧасыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem смартфоныToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem секретыЧеловекаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem приключениеБуратиноToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem гарриПоттерКомплектКнигToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem хроникиНарнииToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem маленькийПринцToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem головаПрофессораДоуэляToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem тимурИЕгоКомандаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem белыйБимЧерноеУхоToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem кортикToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem путешествиеГулливераToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem триумфальнаяАркаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem поФаренгейтуToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem портретДорианаГреяToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem крестныйОтецToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem лезвиеБритвыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem великийГэтсбиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem идиотToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem десятьНегритятToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem вишневыйСадToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem рикИМортиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem гравитиФолзToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem бэтменToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ходячиеМертвецыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem блэксэдToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem времяПриключенийToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem росомахаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem человекПаукToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem суперменToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem маусToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem историяРоссииToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem нагляднаяБиохимияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem дискретнаяМатематикаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem косметологияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem основыКомпозицииToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem нагляднаяФизиологияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem фармакологияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem бухгалтерскийУчетToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem терапияУчебноеПособиеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem техникаРечиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem нИСЫToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem тонкоеИскусствоПофигизмаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem магическаяУборкаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem всёХреновоToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem неНавредиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem бегствоОтСвободыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem стивДжобсToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem грокаемАлгоритмыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem яМанипулируюТобойToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem квадрантДенежногоПотокаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem humanSecretsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pinocchioMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem harryPotterMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cNarniaMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem littlePrinceMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem headDoylMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timurTeamMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem whiteBimMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem daggerMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gulliverMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem arkaMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem farengateMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dorianMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem godFatherMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shaverMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem greatGatsbyMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem foolishMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem r1984MenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blacksMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сherryOrchardMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rikMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem folzMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem batmenMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diedMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blacksadMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timeTripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem wolverineMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem spiderManMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem superManMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mouseMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem historyRusMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bioChMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dMathMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cosmetologyMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem compositionMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phyMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pharmacologyMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem byhMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem teraphyMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem speechMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gvMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chillMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem magicCleanMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shitMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem doNoРarmMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem runAwayMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stiveMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem algorithmMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manipMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem moneyStreamMenuItem;
         private System.Windows.Forms.ToolStripMenuItem theMisterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem theClockmakersDaughterToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem бэтменToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem batmanMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pSIStillLoveYouToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem murakami2020DiaryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem senseAndSensibilityToolStripMenuItem;
@@ -1787,5 +1963,19 @@
         private System.Windows.Forms.ToolStripMenuItem брюкиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem курткаAnorakToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem брюкиToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem рюкзакUToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem рюкзакLToolStripMenuItem;
+        private System.Windows.Forms.TextBox textNameBook;
+        private System.Windows.Forms.TextBox textAuthor;
+        private System.Windows.Forms.Label labelAuthor;
+        private System.Windows.Forms.TextBox textPrice;
+        private System.Windows.Forms.Label labelPrice;
+        private System.Windows.Forms.Label labelQuantity;
+        private System.Windows.Forms.ComboBox comboQuantityBooks;
+        private System.Windows.Forms.Panel panelBookItems;
+        private System.Windows.Forms.Label labelNameTable;
+        private System.Windows.Forms.Button buttonBookUpdate;
+        private System.Windows.Forms.Label labelAddingQuantity;
+        private System.Windows.Forms.Button buttonChangeBook;
     }
 }
