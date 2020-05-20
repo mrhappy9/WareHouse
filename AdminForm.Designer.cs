@@ -120,7 +120,7 @@
             this.wutheringHeightsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.theExploitsOfMoominpappaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.electroMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.компьютерыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.computersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hPPavilionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lenovoLegionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lenovoIdeaCentreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -128,7 +128,7 @@
             this.hPOMENToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.robotCompToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.classicGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.наушникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hPhonesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.airPodsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xiaomiRedmiAirDotsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jBLC100SIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -137,7 +137,7 @@
             this.sennheiserHDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.damixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.qCYT5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.телевизорыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tvsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.samsungUE55RU7300UXRUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lG43UK6200PLAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kIVI55UC50GRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -147,7 +147,7 @@
             this.asano32LH7010TToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eCONSMARTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sonyKDL32RE303ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ноутбукиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laptopsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lenovoIdeaPad33015ASTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aSUSZenBook14ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acerExtensa15ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -157,7 +157,7 @@
             this.acerSwiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.honorMagicBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acerAspire3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.умныеЧасыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.smartWatchMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xiaomiAmazfitBipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.samsungGalaxyWatchActiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.appleWatchSeries3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -166,7 +166,7 @@
             this.honorMagicWatch2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.samsungGalaxyWatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.samsungGalaxyWatchActive2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.смартфоныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.smartPhonesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.honor10iToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.samsungGalaxyA51ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iPhone7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -176,45 +176,62 @@
             this.honor20SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.samsungGalaxyS20ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clothesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.обувьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.кроссовкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.кроссовкиStrutterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.слипоныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.кроссовкиXRayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.мокасиныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.лоферыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рюкзакиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рюкзакToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сумкаНаПоясToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сумкаКроссбодиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сумкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рюкзакUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рюкзакLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.нижнееБельеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.бодиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.бюстгальтерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.комплектБельяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.корректирующееБельеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.трусыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.майкаБельеваяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.разноеToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.пуловерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.курткаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.брюкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.курткаAnorakToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.брюкиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.shoesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.snickersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.snickersStrutterMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sliponMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.XRayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loafersMocMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loafersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.packPAcksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backpackXMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.waistBagMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crossBagMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bagMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backpackUMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backpackLMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.UnderWearMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bodyMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.braMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.underwearSetMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shapewearMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.underpantsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tShortMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diffClothesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pulloverMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jacketMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jeansMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jacketAnorakMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pantsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textNameBook = new System.Windows.Forms.TextBox();
             this.textAuthor = new System.Windows.Forms.TextBox();
             this.labelAuthor = new System.Windows.Forms.Label();
             this.textPrice = new System.Windows.Forms.TextBox();
             this.labelPrice = new System.Windows.Forms.Label();
-            this.labelQuantity = new System.Windows.Forms.Label();
+            this.labelQuantityBook = new System.Windows.Forms.Label();
             this.comboQuantityBooks = new System.Windows.Forms.ComboBox();
             this.panelBookItems = new System.Windows.Forms.Panel();
             this.labelAddingQuantity = new System.Windows.Forms.Label();
             this.labelNameTable = new System.Windows.Forms.Label();
             this.buttonBookUpdate = new System.Windows.Forms.Button();
             this.buttonChangeBook = new System.Windows.Forms.Button();
+            this.buttonClothesChange = new System.Windows.Forms.Button();
+            this.buttonClothesUpdate = new System.Windows.Forms.Button();
+            this.panelClothesItems = new System.Windows.Forms.Panel();
+            this.labelClothesPrice = new System.Windows.Forms.Label();
+            this.comboClothesSex = new System.Windows.Forms.ComboBox();
+            this.labelClothesSex = new System.Windows.Forms.Label();
+            this.textClothesPrice = new System.Windows.Forms.TextBox();
+            this.labelClothesAddingQuantity = new System.Windows.Forms.Label();
+            this.labelClothesNameTable = new System.Windows.Forms.Label();
+            this.labelClothesName = new System.Windows.Forms.Label();
+            this.comboQuantityClothes = new System.Windows.Forms.ComboBox();
+            this.textClothesName = new System.Windows.Forms.TextBox();
+            this.labelQuantityClothes = new System.Windows.Forms.Label();
+            this.labelClothesBrand = new System.Windows.Forms.Label();
+            this.textClothesMaterial = new System.Windows.Forms.TextBox();
+            this.textClothesBrand = new System.Windows.Forms.TextBox();
+            this.labelClothesMaterial = new System.Windows.Forms.Label();
             this.panelMain.SuspendLayout();
             this.panelWarehouse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWareHouse)).BeginInit();
@@ -227,6 +244,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChange)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panelBookItems.SuspendLayout();
+            this.panelClothesItems.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMain
@@ -1008,20 +1026,21 @@
             // electroMenuItem
             // 
             this.electroMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.компьютерыToolStripMenuItem,
-            this.наушникиToolStripMenuItem,
-            this.телевизорыToolStripMenuItem,
-            this.ноутбукиToolStripMenuItem,
-            this.умныеЧасыToolStripMenuItem,
-            this.смартфоныToolStripMenuItem});
+            this.computersMenuItem,
+            this.hPhonesMenuItem,
+            this.tvsMenuItem,
+            this.laptopsMenuItem,
+            this.smartWatchMenuItem,
+            this.smartPhonesMenuItem});
             this.electroMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.electroMenuItem.Name = "electroMenuItem";
             this.electroMenuItem.Size = new System.Drawing.Size(134, 22);
             this.electroMenuItem.Text = "Электротехника";
+            this.electroMenuItem.Click += new System.EventHandler(this.electroMenuItem_Click);
             // 
-            // компьютерыToolStripMenuItem
+            // computersMenuItem
             // 
-            this.компьютерыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.computersMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hPPavilionToolStripMenuItem,
             this.lenovoLegionToolStripMenuItem,
             this.lenovoIdeaCentreToolStripMenuItem,
@@ -1029,9 +1048,10 @@
             this.hPOMENToolStripMenuItem,
             this.robotCompToolStripMenuItem,
             this.classicGameToolStripMenuItem});
-            this.компьютерыToolStripMenuItem.Name = "компьютерыToolStripMenuItem";
-            this.компьютерыToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.компьютерыToolStripMenuItem.Text = "Компьютеры";
+            this.computersMenuItem.Name = "computersMenuItem";
+            this.computersMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.computersMenuItem.Tag = "PCs";
+            this.computersMenuItem.Text = "Компьютеры";
             // 
             // hPPavilionToolStripMenuItem
             // 
@@ -1075,9 +1095,9 @@
             this.classicGameToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.classicGameToolStripMenuItem.Text = "ClassicGame";
             // 
-            // наушникиToolStripMenuItem
+            // hPhonesMenuItem
             // 
-            this.наушникиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hPhonesMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.airPodsToolStripMenuItem,
             this.xiaomiRedmiAirDotsToolStripMenuItem,
             this.jBLC100SIToolStripMenuItem,
@@ -1086,9 +1106,10 @@
             this.sennheiserHDToolStripMenuItem,
             this.damixToolStripMenuItem,
             this.qCYT5ToolStripMenuItem});
-            this.наушникиToolStripMenuItem.Name = "наушникиToolStripMenuItem";
-            this.наушникиToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.наушникиToolStripMenuItem.Text = "Наушники";
+            this.hPhonesMenuItem.Name = "hPhonesMenuItem";
+            this.hPhonesMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hPhonesMenuItem.Tag = "Headphones";
+            this.hPhonesMenuItem.Text = "Наушники";
             // 
             // airPodsToolStripMenuItem
             // 
@@ -1138,9 +1159,9 @@
             this.qCYT5ToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.qCYT5ToolStripMenuItem.Text = "QCY T5";
             // 
-            // телевизорыToolStripMenuItem
+            // tvsMenuItem
             // 
-            this.телевизорыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tvsMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.samsungUE55RU7300UXRUToolStripMenuItem,
             this.lG43UK6200PLAToolStripMenuItem,
             this.kIVI55UC50GRToolStripMenuItem,
@@ -1150,9 +1171,10 @@
             this.asano32LH7010TToolStripMenuItem,
             this.eCONSMARTToolStripMenuItem,
             this.sonyKDL32RE303ToolStripMenuItem});
-            this.телевизорыToolStripMenuItem.Name = "телевизорыToolStripMenuItem";
-            this.телевизорыToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.телевизорыToolStripMenuItem.Text = "Телевизоры";
+            this.tvsMenuItem.Name = "tvsMenuItem";
+            this.tvsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tvsMenuItem.Tag = "TVs";
+            this.tvsMenuItem.Text = "Телевизоры";
             // 
             // samsungUE55RU7300UXRUToolStripMenuItem
             // 
@@ -1208,9 +1230,9 @@
             this.sonyKDL32RE303ToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.sonyKDL32RE303ToolStripMenuItem.Text = "Sony KDL-32RE303";
             // 
-            // ноутбукиToolStripMenuItem
+            // laptopsMenuItem
             // 
-            this.ноутбукиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.laptopsMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lenovoIdeaPad33015ASTToolStripMenuItem,
             this.aSUSZenBook14ToolStripMenuItem,
             this.acerExtensa15ToolStripMenuItem,
@@ -1220,9 +1242,10 @@
             this.acerSwiftToolStripMenuItem,
             this.honorMagicBookToolStripMenuItem,
             this.acerAspire3ToolStripMenuItem});
-            this.ноутбукиToolStripMenuItem.Name = "ноутбукиToolStripMenuItem";
-            this.ноутбукиToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.ноутбукиToolStripMenuItem.Text = "Ноутбуки";
+            this.laptopsMenuItem.Name = "laptopsMenuItem";
+            this.laptopsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.laptopsMenuItem.Tag = "Laptops";
+            this.laptopsMenuItem.Text = "Ноутбуки";
             // 
             // lenovoIdeaPad33015ASTToolStripMenuItem
             // 
@@ -1278,9 +1301,9 @@
             this.acerAspire3ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
             this.acerAspire3ToolStripMenuItem.Text = "Acer Aspire 3";
             // 
-            // умныеЧасыToolStripMenuItem
+            // smartWatchMenuItem
             // 
-            this.умныеЧасыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.smartWatchMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.xiaomiAmazfitBipToolStripMenuItem,
             this.samsungGalaxyWatchActiveToolStripMenuItem,
             this.appleWatchSeries3ToolStripMenuItem,
@@ -1289,9 +1312,10 @@
             this.honorMagicWatch2ToolStripMenuItem,
             this.samsungGalaxyWatchToolStripMenuItem,
             this.samsungGalaxyWatchActive2ToolStripMenuItem});
-            this.умныеЧасыToolStripMenuItem.Name = "умныеЧасыToolStripMenuItem";
-            this.умныеЧасыToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.умныеЧасыToolStripMenuItem.Text = "Умные часы";
+            this.smartWatchMenuItem.Name = "smartWatchMenuItem";
+            this.smartWatchMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.smartWatchMenuItem.Tag = "Smartwhatches";
+            this.smartWatchMenuItem.Text = "Умные часы";
             // 
             // xiaomiAmazfitBipToolStripMenuItem
             // 
@@ -1341,9 +1365,9 @@
             this.samsungGalaxyWatchActive2ToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
             this.samsungGalaxyWatchActive2ToolStripMenuItem.Text = "Samsung Galaxy Watch Active 2";
             // 
-            // смартфоныToolStripMenuItem
+            // smartPhonesMenuItem
             // 
-            this.смартфоныToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.smartPhonesMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.honor10iToolStripMenuItem,
             this.samsungGalaxyA51ToolStripMenuItem,
             this.iPhone7ToolStripMenuItem,
@@ -1352,9 +1376,10 @@
             this.iPhone8ToolStripMenuItem,
             this.honor20SToolStripMenuItem,
             this.samsungGalaxyS20ToolStripMenuItem});
-            this.смартфоныToolStripMenuItem.Name = "смартфоныToolStripMenuItem";
-            this.смартфоныToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.смартфоныToolStripMenuItem.Text = "Смартфоны";
+            this.smartPhonesMenuItem.Name = "smartPhonesMenuItem";
+            this.smartPhonesMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.smartPhonesMenuItem.Tag = "Smartphones";
+            this.smartPhonesMenuItem.Text = "Смартфоны";
             // 
             // honor10iToolStripMenuItem
             // 
@@ -1407,203 +1432,235 @@
             // clothesMenuItem
             // 
             this.clothesMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.обувьToolStripMenuItem,
-            this.рюкзакиToolStripMenuItem,
-            this.нижнееБельеToolStripMenuItem,
-            this.разноеToolStripMenuItem1});
+            this.shoesMenuItem,
+            this.packPAcksMenuItem,
+            this.UnderWearMenuItem,
+            this.diffClothesMenuItem});
             this.clothesMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.clothesMenuItem.Name = "clothesMenuItem";
             this.clothesMenuItem.Size = new System.Drawing.Size(77, 22);
             this.clothesMenuItem.Text = "Одежда";
+            this.clothesMenuItem.Click += new System.EventHandler(this.clothesMenuItem_Click);
             // 
-            // обувьToolStripMenuItem
+            // shoesMenuItem
             // 
-            this.обувьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.кроссовкиToolStripMenuItem,
-            this.кроссовкиStrutterToolStripMenuItem,
-            this.слипоныToolStripMenuItem,
-            this.кроссовкиXRayToolStripMenuItem,
-            this.мокасиныToolStripMenuItem,
-            this.лоферыToolStripMenuItem});
-            this.обувьToolStripMenuItem.Name = "обувьToolStripMenuItem";
-            this.обувьToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.обувьToolStripMenuItem.Text = "Обувь";
+            this.shoesMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.snickersMenuItem,
+            this.snickersStrutterMenuItem,
+            this.sliponMenuItem,
+            this.XRayToolStripMenuItem,
+            this.loafersMocMenuItem,
+            this.loafersMenuItem});
+            this.shoesMenuItem.Name = "shoesMenuItem";
+            this.shoesMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.shoesMenuItem.Tag = "Shoes";
+            this.shoesMenuItem.Text = "Обувь";
+            this.shoesMenuItem.Click += new System.EventHandler(this.shoesMenuItem_Click);
             // 
-            // кроссовкиToolStripMenuItem
+            // snickersMenuItem
             // 
-            this.кроссовкиToolStripMenuItem.Name = "кроссовкиToolStripMenuItem";
-            this.кроссовкиToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.кроссовкиToolStripMenuItem.Text = "Кроссовки";
+            this.snickersMenuItem.Name = "snickersMenuItem";
+            this.snickersMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.snickersMenuItem.Text = "Кроссовки";
+            this.snickersMenuItem.Click += new System.EventHandler(this.snickersMenuItem_Click);
             // 
-            // кроссовкиStrutterToolStripMenuItem
+            // snickersStrutterMenuItem
             // 
-            this.кроссовкиStrutterToolStripMenuItem.Name = "кроссовкиStrutterToolStripMenuItem";
-            this.кроссовкиStrutterToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.кроссовкиStrutterToolStripMenuItem.Text = "Кроссовки Strutter";
+            this.snickersStrutterMenuItem.Name = "snickersStrutterMenuItem";
+            this.snickersStrutterMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.snickersStrutterMenuItem.Text = "Кроссовки Strutter";
+            this.snickersStrutterMenuItem.Click += new System.EventHandler(this.snickersStrutterMenuItem_Click);
             // 
-            // слипоныToolStripMenuItem
+            // sliponMenuItem
             // 
-            this.слипоныToolStripMenuItem.Name = "слипоныToolStripMenuItem";
-            this.слипоныToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.слипоныToolStripMenuItem.Text = "Слипоны";
+            this.sliponMenuItem.Name = "sliponMenuItem";
+            this.sliponMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.sliponMenuItem.Text = "Слипоны";
+            this.sliponMenuItem.Click += new System.EventHandler(this.sliponMenuItem_Click);
             // 
-            // кроссовкиXRayToolStripMenuItem
+            // XRayToolStripMenuItem
             // 
-            this.кроссовкиXRayToolStripMenuItem.Name = "кроссовкиXRayToolStripMenuItem";
-            this.кроссовкиXRayToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.кроссовкиXRayToolStripMenuItem.Text = "Кроссовки X-Ray";
+            this.XRayToolStripMenuItem.Name = "XRayToolStripMenuItem";
+            this.XRayToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.XRayToolStripMenuItem.Text = "Кроссовки X-Ray";
+            this.XRayToolStripMenuItem.Click += new System.EventHandler(this.XRayToolStripMenuItem_Click);
             // 
-            // мокасиныToolStripMenuItem
+            // loafersMocMenuItem
             // 
-            this.мокасиныToolStripMenuItem.Name = "мокасиныToolStripMenuItem";
-            this.мокасиныToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.мокасиныToolStripMenuItem.Text = "Мокасины";
+            this.loafersMocMenuItem.Name = "loafersMocMenuItem";
+            this.loafersMocMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.loafersMocMenuItem.Text = "Мокасины";
+            this.loafersMocMenuItem.Click += new System.EventHandler(this.loafersMocMenuItem_Click);
             // 
-            // лоферыToolStripMenuItem
+            // loafersMenuItem
             // 
-            this.лоферыToolStripMenuItem.Name = "лоферыToolStripMenuItem";
-            this.лоферыToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.лоферыToolStripMenuItem.Text = "Лоферы";
+            this.loafersMenuItem.Name = "loafersMenuItem";
+            this.loafersMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.loafersMenuItem.Text = "Лоферы";
+            this.loafersMenuItem.Click += new System.EventHandler(this.loafersMenuItem_Click);
             // 
-            // рюкзакиToolStripMenuItem
+            // packPAcksMenuItem
             // 
-            this.рюкзакиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.рюкзакToolStripMenuItem,
-            this.сумкаНаПоясToolStripMenuItem,
-            this.сумкаКроссбодиToolStripMenuItem,
-            this.сумкаToolStripMenuItem,
-            this.рюкзакUToolStripMenuItem,
-            this.рюкзакLToolStripMenuItem});
-            this.рюкзакиToolStripMenuItem.Name = "рюкзакиToolStripMenuItem";
-            this.рюкзакиToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.рюкзакиToolStripMenuItem.Text = "Рюкзаки";
+            this.packPAcksMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backpackXMenuItem,
+            this.waistBagMenuItem,
+            this.crossBagMenuItem,
+            this.bagMenuItem,
+            this.backpackUMenuItem,
+            this.backpackLMenuItem});
+            this.packPAcksMenuItem.Name = "packPAcksMenuItem";
+            this.packPAcksMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.packPAcksMenuItem.Tag = "Backpacks";
+            this.packPAcksMenuItem.Text = "Рюкзаки";
+            this.packPAcksMenuItem.Click += new System.EventHandler(this.packPAcksMenuItem_Click);
             // 
-            // рюкзакToolStripMenuItem
+            // backpackXMenuItem
             // 
-            this.рюкзакToolStripMenuItem.Name = "рюкзакToolStripMenuItem";
-            this.рюкзакToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.рюкзакToolStripMenuItem.Text = "Рюкзак X";
+            this.backpackXMenuItem.Name = "backpackXMenuItem";
+            this.backpackXMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.backpackXMenuItem.Text = "Рюкзак X";
+            this.backpackXMenuItem.Click += new System.EventHandler(this.backpackXMenuItem_Click);
             // 
-            // сумкаНаПоясToolStripMenuItem
+            // waistBagMenuItem
             // 
-            this.сумкаНаПоясToolStripMenuItem.Name = "сумкаНаПоясToolStripMenuItem";
-            this.сумкаНаПоясToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.сумкаНаПоясToolStripMenuItem.Text = "Сумка на пояс";
+            this.waistBagMenuItem.Name = "waistBagMenuItem";
+            this.waistBagMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.waistBagMenuItem.Text = "Сумка на пояс";
+            this.waistBagMenuItem.Click += new System.EventHandler(this.waistBagMenuItem_Click);
             // 
-            // сумкаКроссбодиToolStripMenuItem
+            // crossBagMenuItem
             // 
-            this.сумкаКроссбодиToolStripMenuItem.Name = "сумкаКроссбодиToolStripMenuItem";
-            this.сумкаКроссбодиToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.сумкаКроссбодиToolStripMenuItem.Text = "Сумка кросс-боди";
+            this.crossBagMenuItem.Name = "crossBagMenuItem";
+            this.crossBagMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.crossBagMenuItem.Text = "Сумка кросс-боди";
+            this.crossBagMenuItem.Click += new System.EventHandler(this.crossBagMenuItem_Click);
             // 
-            // сумкаToolStripMenuItem
+            // bagMenuItem
             // 
-            this.сумкаToolStripMenuItem.Name = "сумкаToolStripMenuItem";
-            this.сумкаToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.сумкаToolStripMenuItem.Text = "Сумка";
+            this.bagMenuItem.Name = "bagMenuItem";
+            this.bagMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.bagMenuItem.Text = "Сумка";
+            this.bagMenuItem.Click += new System.EventHandler(this.bagMenuItem_Click);
             // 
-            // рюкзакUToolStripMenuItem
+            // backpackUMenuItem
             // 
-            this.рюкзакUToolStripMenuItem.Name = "рюкзакUToolStripMenuItem";
-            this.рюкзакUToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.рюкзакUToolStripMenuItem.Text = "Рюкзак U";
+            this.backpackUMenuItem.Name = "backpackUMenuItem";
+            this.backpackUMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.backpackUMenuItem.Text = "Рюкзак U";
+            this.backpackUMenuItem.Click += new System.EventHandler(this.backpackUMenuItem_Click);
             // 
-            // рюкзакLToolStripMenuItem
+            // backpackLMenuItem
             // 
-            this.рюкзакLToolStripMenuItem.Name = "рюкзакLToolStripMenuItem";
-            this.рюкзакLToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.рюкзакLToolStripMenuItem.Text = "Рюкзак L";
+            this.backpackLMenuItem.Name = "backpackLMenuItem";
+            this.backpackLMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.backpackLMenuItem.Text = "Рюкзак L";
+            this.backpackLMenuItem.Click += new System.EventHandler(this.backpackLMenuItem_Click);
             // 
-            // нижнееБельеToolStripMenuItem
+            // UnderWearMenuItem
             // 
-            this.нижнееБельеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.бодиToolStripMenuItem,
-            this.бюстгальтерToolStripMenuItem,
-            this.комплектБельяToolStripMenuItem,
-            this.корректирующееБельеToolStripMenuItem,
-            this.трусыToolStripMenuItem,
-            this.майкаБельеваяToolStripMenuItem});
-            this.нижнееБельеToolStripMenuItem.Name = "нижнееБельеToolStripMenuItem";
-            this.нижнееБельеToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.нижнееБельеToolStripMenuItem.Text = "Нижнее белье";
+            this.UnderWearMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bodyMenuItem,
+            this.braMenuItem,
+            this.underwearSetMenuItem,
+            this.shapewearMenuItem,
+            this.underpantsMenuItem,
+            this.tShortMenuItem});
+            this.UnderWearMenuItem.Name = "UnderWearMenuItem";
+            this.UnderWearMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.UnderWearMenuItem.Tag = "Underwear";
+            this.UnderWearMenuItem.Text = "Нижнее белье";
+            this.UnderWearMenuItem.Click += new System.EventHandler(this.UnderWearMenuItem_Click);
             // 
-            // бодиToolStripMenuItem
+            // bodyMenuItem
             // 
-            this.бодиToolStripMenuItem.Name = "бодиToolStripMenuItem";
-            this.бодиToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
-            this.бодиToolStripMenuItem.Text = "Боди";
+            this.bodyMenuItem.Name = "bodyMenuItem";
+            this.bodyMenuItem.Size = new System.Drawing.Size(241, 22);
+            this.bodyMenuItem.Text = "Боди";
+            this.bodyMenuItem.Click += new System.EventHandler(this.bodyMenuItem_Click);
             // 
-            // бюстгальтерToolStripMenuItem
+            // braMenuItem
             // 
-            this.бюстгальтерToolStripMenuItem.Name = "бюстгальтерToolStripMenuItem";
-            this.бюстгальтерToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
-            this.бюстгальтерToolStripMenuItem.Text = "Бюстгальтер";
+            this.braMenuItem.Name = "braMenuItem";
+            this.braMenuItem.Size = new System.Drawing.Size(241, 22);
+            this.braMenuItem.Text = "Бюстгальтер";
+            this.braMenuItem.Click += new System.EventHandler(this.braMenuItem_Click);
             // 
-            // комплектБельяToolStripMenuItem
+            // underwearSetMenuItem
             // 
-            this.комплектБельяToolStripMenuItem.Name = "комплектБельяToolStripMenuItem";
-            this.комплектБельяToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
-            this.комплектБельяToolStripMenuItem.Text = "Комплект белья";
+            this.underwearSetMenuItem.Name = "underwearSetMenuItem";
+            this.underwearSetMenuItem.Size = new System.Drawing.Size(241, 22);
+            this.underwearSetMenuItem.Text = "Комплект белья";
+            this.underwearSetMenuItem.Click += new System.EventHandler(this.underwearSetMenuItem_Click);
             // 
-            // корректирующееБельеToolStripMenuItem
+            // shapewearMenuItem
             // 
-            this.корректирующееБельеToolStripMenuItem.Name = "корректирующееБельеToolStripMenuItem";
-            this.корректирующееБельеToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
-            this.корректирующееБельеToolStripMenuItem.Text = "Корректирующее белье";
+            this.shapewearMenuItem.Name = "shapewearMenuItem";
+            this.shapewearMenuItem.Size = new System.Drawing.Size(241, 22);
+            this.shapewearMenuItem.Text = "Корректирующее белье";
+            this.shapewearMenuItem.Click += new System.EventHandler(this.shapewearMenuItem_Click);
             // 
-            // трусыToolStripMenuItem
+            // underpantsMenuItem
             // 
-            this.трусыToolStripMenuItem.Name = "трусыToolStripMenuItem";
-            this.трусыToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
-            this.трусыToolStripMenuItem.Text = "Трусы";
+            this.underpantsMenuItem.Name = "underpantsMenuItem";
+            this.underpantsMenuItem.Size = new System.Drawing.Size(241, 22);
+            this.underpantsMenuItem.Text = "Трусы";
+            this.underpantsMenuItem.Click += new System.EventHandler(this.underpantsMenuItem_Click);
             // 
-            // майкаБельеваяToolStripMenuItem
+            // tShortMenuItem
             // 
-            this.майкаБельеваяToolStripMenuItem.Name = "майкаБельеваяToolStripMenuItem";
-            this.майкаБельеваяToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
-            this.майкаБельеваяToolStripMenuItem.Text = "Майка бельевая";
+            this.tShortMenuItem.Name = "tShortMenuItem";
+            this.tShortMenuItem.Size = new System.Drawing.Size(241, 22);
+            this.tShortMenuItem.Text = "Майка бельевая";
+            this.tShortMenuItem.Click += new System.EventHandler(this.tShortMenuItem_Click);
             // 
-            // разноеToolStripMenuItem1
+            // diffClothesMenuItem
             // 
-            this.разноеToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.пуловерToolStripMenuItem,
-            this.курткаToolStripMenuItem,
-            this.брюкиToolStripMenuItem,
-            this.курткаAnorakToolStripMenuItem,
-            this.брюкиToolStripMenuItem1});
-            this.разноеToolStripMenuItem1.Name = "разноеToolStripMenuItem1";
-            this.разноеToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
-            this.разноеToolStripMenuItem1.Text = "Разное";
+            this.diffClothesMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pulloverMenuItem,
+            this.jacketMenuItem,
+            this.jeansMenuItem,
+            this.jacketAnorakMenuItem,
+            this.pantsMenuItem});
+            this.diffClothesMenuItem.Name = "diffClothesMenuItem";
+            this.diffClothesMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.diffClothesMenuItem.Tag = "Clothes";
+            this.diffClothesMenuItem.Text = "Разное";
+            this.diffClothesMenuItem.Click += new System.EventHandler(this.diffClothesMenuItem_Click);
             // 
-            // пуловерToolStripMenuItem
+            // pulloverMenuItem
             // 
-            this.пуловерToolStripMenuItem.Name = "пуловерToolStripMenuItem";
-            this.пуловерToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.пуловерToolStripMenuItem.Text = "Пуловер";
+            this.pulloverMenuItem.Name = "pulloverMenuItem";
+            this.pulloverMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pulloverMenuItem.Text = "Пуловер";
+            this.pulloverMenuItem.Click += new System.EventHandler(this.pulloverMenuItem_Click);
             // 
-            // курткаToolStripMenuItem
+            // jacketMenuItem
             // 
-            this.курткаToolStripMenuItem.Name = "курткаToolStripMenuItem";
-            this.курткаToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.курткаToolStripMenuItem.Text = "Куртка";
+            this.jacketMenuItem.Name = "jacketMenuItem";
+            this.jacketMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jacketMenuItem.Text = "Куртка";
+            this.jacketMenuItem.Click += new System.EventHandler(this.jacketMenuItem_Click);
             // 
-            // брюкиToolStripMenuItem
+            // jeansMenuItem
             // 
-            this.брюкиToolStripMenuItem.Name = "брюкиToolStripMenuItem";
-            this.брюкиToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.брюкиToolStripMenuItem.Text = "Джинсы";
+            this.jeansMenuItem.Name = "jeansMenuItem";
+            this.jeansMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jeansMenuItem.Text = "Джинсы";
+            this.jeansMenuItem.Click += new System.EventHandler(this.jeansMenuItem_Click);
             // 
-            // курткаAnorakToolStripMenuItem
+            // jacketAnorakMenuItem
             // 
-            this.курткаAnorakToolStripMenuItem.Name = "курткаAnorakToolStripMenuItem";
-            this.курткаAnorakToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.курткаAnorakToolStripMenuItem.Text = "Куртка Anorak";
+            this.jacketAnorakMenuItem.Name = "jacketAnorakMenuItem";
+            this.jacketAnorakMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jacketAnorakMenuItem.Text = "Куртка Anorak";
+            this.jacketAnorakMenuItem.Click += new System.EventHandler(this.jacketAnorakMenuItem_Click);
             // 
-            // брюкиToolStripMenuItem1
+            // pantsMenuItem
             // 
-            this.брюкиToolStripMenuItem1.Name = "брюкиToolStripMenuItem1";
-            this.брюкиToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
-            this.брюкиToolStripMenuItem1.Text = "Брюки";
+            this.pantsMenuItem.Name = "pantsMenuItem";
+            this.pantsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pantsMenuItem.Text = "Брюки";
+            this.pantsMenuItem.Click += new System.EventHandler(this.pantsMenuItem_Click);
             // 
             // textNameBook
             // 
@@ -1665,15 +1722,15 @@
             this.labelPrice.TabIndex = 52;
             this.labelPrice.Text = "Цена";
             // 
-            // labelQuantity
+            // labelQuantityBook
             // 
-            this.labelQuantity.AutoSize = true;
-            this.labelQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelQuantity.Location = new System.Drawing.Point(45, 179);
-            this.labelQuantity.Name = "labelQuantity";
-            this.labelQuantity.Size = new System.Drawing.Size(86, 16);
-            this.labelQuantity.TabIndex = 54;
-            this.labelQuantity.Text = "Количество";
+            this.labelQuantityBook.AutoSize = true;
+            this.labelQuantityBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelQuantityBook.Location = new System.Drawing.Point(45, 179);
+            this.labelQuantityBook.Name = "labelQuantityBook";
+            this.labelQuantityBook.Size = new System.Drawing.Size(86, 16);
+            this.labelQuantityBook.TabIndex = 54;
+            this.labelQuantityBook.Text = "Количество";
             // 
             // comboQuantityBooks
             // 
@@ -1701,7 +1758,7 @@
             this.panelBookItems.Controls.Add(this.labelNameBook);
             this.panelBookItems.Controls.Add(this.comboQuantityBooks);
             this.panelBookItems.Controls.Add(this.textNameBook);
-            this.panelBookItems.Controls.Add(this.labelQuantity);
+            this.panelBookItems.Controls.Add(this.labelQuantityBook);
             this.panelBookItems.Controls.Add(this.labelAuthor);
             this.panelBookItems.Controls.Add(this.textPrice);
             this.panelBookItems.Controls.Add(this.textAuthor);
@@ -1752,11 +1809,228 @@
             this.buttonChangeBook.UseVisualStyleBackColor = true;
             this.buttonChangeBook.Click += new System.EventHandler(this.buttonChangeBook_Click);
             // 
+            // buttonClothesChange
+            // 
+            this.buttonClothesChange.Location = new System.Drawing.Point(433, 486);
+            this.buttonClothesChange.Name = "buttonClothesChange";
+            this.buttonClothesChange.Size = new System.Drawing.Size(75, 23);
+            this.buttonClothesChange.TabIndex = 100;
+            this.buttonClothesChange.TabStop = false;
+            this.buttonClothesChange.Text = "Изменить";
+            this.buttonClothesChange.UseVisualStyleBackColor = true;
+            this.buttonClothesChange.Click += new System.EventHandler(this.buttonClothesChange_Click);
+            // 
+            // buttonClothesUpdate
+            // 
+            this.buttonClothesUpdate.Location = new System.Drawing.Point(318, 486);
+            this.buttonClothesUpdate.Name = "buttonClothesUpdate";
+            this.buttonClothesUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonClothesUpdate.TabIndex = 99;
+            this.buttonClothesUpdate.TabStop = false;
+            this.buttonClothesUpdate.Text = "Обновить";
+            this.buttonClothesUpdate.UseVisualStyleBackColor = true;
+            this.buttonClothesUpdate.Click += new System.EventHandler(this.buttonClothesUpdate_Click);
+            // 
+            // panelClothesItems
+            // 
+            this.panelClothesItems.Controls.Add(this.labelClothesPrice);
+            this.panelClothesItems.Controls.Add(this.comboClothesSex);
+            this.panelClothesItems.Controls.Add(this.labelClothesSex);
+            this.panelClothesItems.Controls.Add(this.textClothesPrice);
+            this.panelClothesItems.Controls.Add(this.labelClothesAddingQuantity);
+            this.panelClothesItems.Controls.Add(this.labelClothesNameTable);
+            this.panelClothesItems.Controls.Add(this.labelClothesName);
+            this.panelClothesItems.Controls.Add(this.comboQuantityClothes);
+            this.panelClothesItems.Controls.Add(this.textClothesName);
+            this.panelClothesItems.Controls.Add(this.labelQuantityClothes);
+            this.panelClothesItems.Controls.Add(this.labelClothesBrand);
+            this.panelClothesItems.Controls.Add(this.textClothesMaterial);
+            this.panelClothesItems.Controls.Add(this.textClothesBrand);
+            this.panelClothesItems.Controls.Add(this.labelClothesMaterial);
+            this.panelClothesItems.Location = new System.Drawing.Point(304, 139);
+            this.panelClothesItems.Name = "panelClothesItems";
+            this.panelClothesItems.Size = new System.Drawing.Size(224, 341);
+            this.panelClothesItems.TabIndex = 98;
+            // 
+            // labelClothesPrice
+            // 
+            this.labelClothesPrice.AutoSize = true;
+            this.labelClothesPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelClothesPrice.Location = new System.Drawing.Point(92, 236);
+            this.labelClothesPrice.Name = "labelClothesPrice";
+            this.labelClothesPrice.Size = new System.Drawing.Size(41, 16);
+            this.labelClothesPrice.TabIndex = 100;
+            this.labelClothesPrice.Text = "Цена";
+            // 
+            // comboClothesSex
+            // 
+            this.comboClothesSex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboClothesSex.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboClothesSex.DropDownHeight = 70;
+            this.comboClothesSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboClothesSex.DropDownWidth = 30;
+            this.comboClothesSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboClothesSex.FormattingEnabled = true;
+            this.comboClothesSex.IntegralHeight = false;
+            this.comboClothesSex.Items.AddRange(new object[] {
+            "Мужской",
+            "Женский"});
+            this.comboClothesSex.Location = new System.Drawing.Point(65, 198);
+            this.comboClothesSex.Name = "comboClothesSex";
+            this.comboClothesSex.Size = new System.Drawing.Size(99, 24);
+            this.comboClothesSex.TabIndex = 99;
+            // 
+            // labelClothesSex
+            // 
+            this.labelClothesSex.AutoSize = true;
+            this.labelClothesSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelClothesSex.Location = new System.Drawing.Point(97, 179);
+            this.labelClothesSex.Name = "labelClothesSex";
+            this.labelClothesSex.Size = new System.Drawing.Size(34, 16);
+            this.labelClothesSex.TabIndex = 97;
+            this.labelClothesSex.Text = "Пол";
+            // 
+            // textClothesPrice
+            // 
+            this.textClothesPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textClothesPrice.CausesValidation = false;
+            this.textClothesPrice.Location = new System.Drawing.Point(35, 255);
+            this.textClothesPrice.MaxLength = 10;
+            this.textClothesPrice.Name = "textClothesPrice";
+            this.textClothesPrice.Size = new System.Drawing.Size(159, 20);
+            this.textClothesPrice.TabIndex = 98;
+            this.textClothesPrice.TabStop = false;
+            // 
+            // labelClothesAddingQuantity
+            // 
+            this.labelClothesAddingQuantity.AutoSize = true;
+            this.labelClothesAddingQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelClothesAddingQuantity.Location = new System.Drawing.Point(155, 284);
+            this.labelClothesAddingQuantity.Name = "labelClothesAddingQuantity";
+            this.labelClothesAddingQuantity.Size = new System.Drawing.Size(24, 16);
+            this.labelClothesAddingQuantity.TabIndex = 96;
+            this.labelClothesAddingQuantity.Text = "чл";
+            // 
+            // labelClothesNameTable
+            // 
+            this.labelClothesNameTable.AutoSize = true;
+            this.labelClothesNameTable.Location = new System.Drawing.Point(14, 9);
+            this.labelClothesNameTable.Name = "labelClothesNameTable";
+            this.labelClothesNameTable.Size = new System.Drawing.Size(103, 13);
+            this.labelClothesNameTable.TabIndex = 95;
+            this.labelClothesNameTable.Text = "Название таблицы";
+            // 
+            // labelClothesName
+            // 
+            this.labelClothesName.AutoSize = true;
+            this.labelClothesName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelClothesName.Location = new System.Drawing.Point(58, 29);
+            this.labelClothesName.Name = "labelClothesName";
+            this.labelClothesName.Size = new System.Drawing.Size(127, 16);
+            this.labelClothesName.TabIndex = 47;
+            this.labelClothesName.Text = "Название одежды";
+            // 
+            // comboQuantityClothes
+            // 
+            this.comboQuantityClothes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboQuantityClothes.CausesValidation = false;
+            this.comboQuantityClothes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboQuantityClothes.DropDownHeight = 70;
+            this.comboQuantityClothes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboQuantityClothes.DropDownWidth = 30;
+            this.comboQuantityClothes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboQuantityClothes.FormattingEnabled = true;
+            this.comboQuantityClothes.IntegralHeight = false;
+            this.comboQuantityClothes.Location = new System.Drawing.Point(94, 303);
+            this.comboQuantityClothes.Name = "comboQuantityClothes";
+            this.comboQuantityClothes.Size = new System.Drawing.Size(44, 24);
+            this.comboQuantityClothes.TabIndex = 94;
+            this.comboQuantityClothes.TabStop = false;
+            // 
+            // textClothesName
+            // 
+            this.textClothesName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textClothesName.CausesValidation = false;
+            this.textClothesName.Location = new System.Drawing.Point(34, 48);
+            this.textClothesName.MaxLength = 50;
+            this.textClothesName.Name = "textClothesName";
+            this.textClothesName.ReadOnly = true;
+            this.textClothesName.Size = new System.Drawing.Size(159, 20);
+            this.textClothesName.TabIndex = 49;
+            this.textClothesName.TabStop = false;
+            // 
+            // labelQuantityClothes
+            // 
+            this.labelQuantityClothes.AutoSize = true;
+            this.labelQuantityClothes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelQuantityClothes.Location = new System.Drawing.Point(52, 284);
+            this.labelQuantityClothes.Name = "labelQuantityClothes";
+            this.labelQuantityClothes.Size = new System.Drawing.Size(86, 16);
+            this.labelQuantityClothes.TabIndex = 54;
+            this.labelQuantityClothes.Text = "Количество";
+            // 
+            // labelClothesBrand
+            // 
+            this.labelClothesBrand.AutoSize = true;
+            this.labelClothesBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelClothesBrand.Location = new System.Drawing.Point(90, 75);
+            this.labelClothesBrand.Name = "labelClothesBrand";
+            this.labelClothesBrand.Size = new System.Drawing.Size(49, 16);
+            this.labelClothesBrand.TabIndex = 50;
+            this.labelClothesBrand.Text = "Бренд";
+            // 
+            // textClothesMaterial
+            // 
+            this.textClothesMaterial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textClothesMaterial.CausesValidation = false;
+            this.textClothesMaterial.Location = new System.Drawing.Point(3, 146);
+            this.textClothesMaterial.MaxLength = 100;
+            this.textClothesMaterial.Name = "textClothesMaterial";
+            this.textClothesMaterial.Size = new System.Drawing.Size(218, 20);
+            this.textClothesMaterial.TabIndex = 53;
+            this.textClothesMaterial.TabStop = false;
+            // 
+            // textClothesBrand
+            // 
+            this.textClothesBrand.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textClothesBrand.CausesValidation = false;
+            this.textClothesBrand.Location = new System.Drawing.Point(35, 94);
+            this.textClothesBrand.MaxLength = 50;
+            this.textClothesBrand.Name = "textClothesBrand";
+            this.textClothesBrand.Size = new System.Drawing.Size(159, 20);
+            this.textClothesBrand.TabIndex = 51;
+            this.textClothesBrand.TabStop = false;
+            // 
+            // labelClothesMaterial
+            // 
+            this.labelClothesMaterial.AutoSize = true;
+            this.labelClothesMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelClothesMaterial.Location = new System.Drawing.Point(74, 127);
+            this.labelClothesMaterial.Name = "labelClothesMaterial";
+            this.labelClothesMaterial.Size = new System.Drawing.Size(74, 16);
+            this.labelClothesMaterial.TabIndex = 52;
+            this.labelClothesMaterial.Text = "Материал";
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(741, 594);
+            this.Controls.Add(this.buttonClothesChange);
+            this.Controls.Add(this.buttonClothesUpdate);
+            this.Controls.Add(this.panelClothesItems);
             this.Controls.Add(this.buttonChangeBook);
             this.Controls.Add(this.buttonBookUpdate);
             this.Controls.Add(this.panelBookItems);
@@ -1785,6 +2059,8 @@
             this.menuStrip1.PerformLayout();
             this.panelBookItems.ResumeLayout(false);
             this.panelBookItems.PerformLayout();
+            this.panelClothesItems.ResumeLayout(false);
+            this.panelClothesItems.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1823,12 +2099,12 @@
         private System.Windows.Forms.ToolStripMenuItem textBooksMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diffBooksMenuItem;
         private System.Windows.Forms.ToolStripMenuItem foreignBooksMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem компьютерыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem наушникиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem телевизорыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ноутбукиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem умныеЧасыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem смартфоныToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem computersMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hPhonesMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tvsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem laptopsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem smartWatchMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem smartPhonesMenuItem;
         private System.Windows.Forms.ToolStripMenuItem humanSecretsMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pinocchioMenuItem;
         private System.Windows.Forms.ToolStripMenuItem harryPotterMenuItem;
@@ -1938,44 +2214,61 @@
         private System.Windows.Forms.ToolStripMenuItem iPhone8ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem honor20SToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem samsungGalaxyS20ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem обувьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem кроссовкиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem кроссовкиStrutterToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem слипоныToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem кроссовкиXRayToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem мокасиныToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem лоферыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem рюкзакиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem нижнееБельеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem разноеToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem рюкзакToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem сумкаНаПоясToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem сумкаКроссбодиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem сумкаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem бодиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem бюстгальтерToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem комплектБельяToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem корректирующееБельеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem трусыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem майкаБельеваяToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem пуловерToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem курткаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem брюкиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem курткаAnorakToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem брюкиToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem рюкзакUToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem рюкзакLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shoesMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem snickersMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem snickersStrutterMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sliponMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem XRayToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loafersMocMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loafersMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem packPAcksMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem UnderWearMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diffClothesMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backpackXMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem waistBagMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem crossBagMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bagMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bodyMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem braMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem underwearSetMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shapewearMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem underpantsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tShortMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pulloverMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem jacketMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem jeansMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem jacketAnorakMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pantsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backpackUMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backpackLMenuItem;
         private System.Windows.Forms.TextBox textNameBook;
         private System.Windows.Forms.TextBox textAuthor;
         private System.Windows.Forms.Label labelAuthor;
         private System.Windows.Forms.TextBox textPrice;
         private System.Windows.Forms.Label labelPrice;
-        private System.Windows.Forms.Label labelQuantity;
+        private System.Windows.Forms.Label labelQuantityBook;
         private System.Windows.Forms.ComboBox comboQuantityBooks;
         private System.Windows.Forms.Panel panelBookItems;
         private System.Windows.Forms.Label labelNameTable;
         private System.Windows.Forms.Button buttonBookUpdate;
         private System.Windows.Forms.Label labelAddingQuantity;
         private System.Windows.Forms.Button buttonChangeBook;
+        private System.Windows.Forms.Button buttonClothesChange;
+        private System.Windows.Forms.Button buttonClothesUpdate;
+        private System.Windows.Forms.Panel panelClothesItems;
+        private System.Windows.Forms.Label labelClothesSex;
+        private System.Windows.Forms.TextBox textClothesPrice;
+        private System.Windows.Forms.Label labelClothesAddingQuantity;
+        private System.Windows.Forms.Label labelClothesNameTable;
+        private System.Windows.Forms.Label labelClothesName;
+        private System.Windows.Forms.ComboBox comboQuantityClothes;
+        private System.Windows.Forms.TextBox textClothesName;
+        private System.Windows.Forms.Label labelQuantityClothes;
+        private System.Windows.Forms.Label labelClothesBrand;
+        private System.Windows.Forms.TextBox textClothesMaterial;
+        private System.Windows.Forms.TextBox textClothesBrand;
+        private System.Windows.Forms.Label labelClothesMaterial;
+        private System.Windows.Forms.ComboBox comboClothesSex;
+        private System.Windows.Forms.Label labelClothesPrice;
     }
 }

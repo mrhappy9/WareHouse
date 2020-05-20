@@ -34,12 +34,19 @@ namespace Course1
             pictureBoxAddItem.BackColor = pictureBoxChange.BackColor = pictureBoxDelete.BackColor = defualtColor;
         }
 
-        private void setNonVisibleBookItemsVisible()
+        private void setNonVisibleItemsVisible()
         {
+            //books items
             panelBookItems.Visible = false;
             buttonBookUpdate.Visible = false;
             buttonChangeBook.Visible = false;
+
+            //clothes items
+            panelClothesItems.Visible = false;
+            buttonClothesChange.Visible = false;
+            buttonClothesUpdate.Visible = false;
         }
+        // book items
         private void setVisibleBookItemsVisible()
         {
             panelBookItems.Visible = true;
@@ -52,6 +59,22 @@ namespace Course1
             buttonBookUpdate.Visible = false;
             buttonChangeBook.Visible = true;
         }
+        // end book items
+
+        //clothes items
+        private void setVisibleClothesItemsVisible()
+        {
+            panelClothesItems.Visible = true;
+            panelClothesItems.Enabled = false;
+            buttonClothesUpdate.Visible = true;
+        }
+        private void setEnableClothesItems()
+        {
+            panelClothesItems.Enabled = true;
+            buttonClothesUpdate.Visible = false;
+            buttonClothesChange.Visible = true;
+        }
+        //end clothes items
         private void changeItemsColor(PictureBox picture, Panel panel)
         {
             picture.BackColor = Color.FromArgb(28, 28, 28);
@@ -88,11 +111,11 @@ namespace Course1
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
-            setNonVisibleBookItemsVisible();
+            setNonVisibleItemsVisible();
         }
-        ////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         //// Book's tables and Items
-        ////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void childrenBooksMenuItem_Click(object sender, EventArgs e)
         {
             labelNameTable.Text = childrenBooksMenuItem.Tag.ToString();
@@ -132,7 +155,7 @@ namespace Course1
 
         private void booksMenuItem_Click(object sender, EventArgs e)
         {
-            setNonVisibleBookItemsVisible();
+            setNonVisibleItemsVisible();
             textNameBook.Text = "";
             textAuthor.Text = "";
             textPrice.Text = "";
@@ -150,7 +173,7 @@ namespace Course1
                     workServerAdmin.updateBookTable(labelNameTable.Text, textNameBook.Text, textAuthor.Text, 
                                                     Convert.ToInt32(textPrice.Text),
                                                     Convert.ToInt32(comboQuantityBooks.SelectedIndex));
-                    setNonVisibleBookItemsVisible();
+                    setNonVisibleItemsVisible();
                 }
             }
             else
@@ -522,6 +545,219 @@ namespace Course1
         {
             setVisibleBookItemsVisible();
             textNameBook.Text = theExploitsOfMoominpappaToolStripMenuItem.Text; 
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///          END Books Items
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void electroMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///          Start Clothes Items
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        private void clothesMenuItem_Click(object sender, EventArgs e)
+        {
+            setNonVisibleItemsVisible();
+            textClothesBrand.Text = "";
+            textClothesMaterial.Text = "";
+            textClothesPrice.Text = "";
+            labelClothesAddingQuantity.Text = "";
+        }
+
+        private void shoesMenuItem_Click(object sender, EventArgs e)
+        {
+            labelClothesNameTable.Text = shoesMenuItem.Tag.ToString();
+        }
+
+        private void buttonClothesUpdate_Click(object sender, EventArgs e)
+        {
+            int defineSex(string sex)
+            {
+                if (sex == "Мужской")
+                    return 0;
+                return 1;
+            }
+            List<String> clothes = workServerAdmin.getParticularClothes(labelClothesNameTable.Text, textClothesName.Text);
+            textClothesBrand.Text = clothes[0];
+            textClothesMaterial.Text = clothes[1];
+            comboClothesSex.SelectedIndex = defineSex(clothes[2]);
+            textClothesPrice.Text = clothes[3];
+            labelClothesAddingQuantity.Text = clothes[4];
+            comboQuantityClothes.Items.AddRange(getNormalQuantityItems());
+
+            setEnableClothesItems();
+        }
+
+        private void buttonClothesChange_Click(object sender, EventArgs e)
+        {
+            if (textClothesBrand.Text != "" && textClothesMaterial.Text != "" && comboQuantityClothes.SelectedIndex > 0
+                && comboClothesSex.SelectedIndex > - 1 && int.TryParse(textClothesPrice.Text, out int result))
+            {
+                if (MessageBox.Show("Вы уверены, что хотите продолжить?", "Обновление записи",
+                   MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    workServerAdmin.updateClothesTable(labelClothesNameTable.Text, textClothesName.Text, textClothesBrand.Text, textClothesMaterial.Text,
+                                                       comboClothesSex.Text, Convert.ToInt32(textClothesPrice.Text),
+                                                       Convert.ToInt32(comboQuantityClothes.SelectedIndex));
+                    setNonVisibleItemsVisible();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Проверьте правильность написания данных", "Предупреждение");
+            }
+        }
+        private void snickersMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = snickersMenuItem.Text;
+        }
+        private void snickersStrutterMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = snickersStrutterMenuItem.Text;
+        }
+
+        private void sliponMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = sliponMenuItem.Text; 
+        }
+
+        private void XRayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = XRayToolStripMenuItem.Text; 
+        }
+
+        private void loafersMocMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = loafersMocMenuItem.Text; 
+        }
+
+        private void loafersMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = loafersMenuItem.Text; 
+        }
+
+        private void backpackXMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = backpackXMenuItem.Text; 
+        }
+
+        private void waistBagMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = waistBagMenuItem.Text; 
+        }
+
+        private void crossBagMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = crossBagMenuItem.Text; 
+        }
+
+        private void bagMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = bagMenuItem.Text; 
+        }
+
+        private void backpackUMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = backpackUMenuItem.Text; 
+        }
+
+        private void backpackLMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = backpackLMenuItem.Text; 
+        }
+
+        private void bodyMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = bodyMenuItem.Text; 
+        }
+
+        private void braMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = braMenuItem.Text;
+        }
+
+        private void underwearSetMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = underwearSetMenuItem.Text; 
+        }
+        private void shapewearMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = shapewearMenuItem.Text; 
+        }
+
+        private void underpantsMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = underpantsMenuItem.Text; 
+        }
+
+        private void tShortMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = tShortMenuItem.Text; 
+        }
+
+        private void packPAcksMenuItem_Click(object sender, EventArgs e)
+        {
+            labelClothesNameTable.Text = packPAcksMenuItem.Tag.ToString();
+        }
+
+        private void UnderWearMenuItem_Click(object sender, EventArgs e)
+        {
+            labelClothesNameTable.Text = UnderWearMenuItem.Tag.ToString();
+        }
+        private void diffClothesMenuItem_Click(object sender, EventArgs e)
+        {
+            labelClothesNameTable.Text = diffClothesMenuItem.Tag.ToString();
+        }
+
+        private void pulloverMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = pulloverMenuItem.Text;
+        }
+
+        private void jacketMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = jacketMenuItem.Text; 
+        }
+
+        private void jeansMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = jeansMenuItem.Text; 
+        }
+
+        private void jacketAnorakMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = jacketAnorakMenuItem.Text; 
+        }
+
+        private void pantsMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleClothesItemsVisible();
+            textClothesName.Text = pantsMenuItem.Text; 
         }
     }
 }

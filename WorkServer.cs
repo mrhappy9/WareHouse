@@ -499,8 +499,10 @@ namespace Course1
         ///     
         ///////
         
-        ///-------------Changing books---------------///
 
+        ////////////////////////////////////////////////
+        ///-------------Changing books---------------///
+        ////////////////////////////////////////////////
         public List<String> getParticularBook(string table, string name)
         {
             List<String> books = new List<String>();
@@ -540,5 +542,56 @@ namespace Course1
                 throw new Exception("Error executing into inster sql statement", e);
             }
         }
+        /////////////////////////////////////////////////end changing book/////////////////////////////////////
+
+
+        ////////////////////////////////////////////////
+        ///-------------Changing clothes---------------///
+        ////////////////////////////////////////////////
+
+        public List<String> getParticularClothes(string table, string name)
+        {
+            List<String> clothes = new List<String>();
+            createConnection();
+            try
+            {
+                MySqlCommand getBook = new MySqlCommand(connString, connection);
+                getBook.CommandText = $" SELECT Brand, Material, Sex, Price, Quantity FROM {table} WHERE Name = '{name}'";
+                MySqlDataReader reader = getBook.ExecuteReader();
+                while (reader.Read())
+                {
+                    clothes.Add(reader[0].ToString());
+                    clothes.Add(reader[1].ToString());
+                    clothes.Add(reader[2].ToString());
+                    clothes.Add(reader[3].ToString());
+                    clothes.Add(reader[4].ToString());
+                }
+                loseConnection();
+                return clothes;
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void updateClothesTable(string table, string name, string brand, string material, string sex, int price, int quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand updateClothes = new MySqlCommand(connString, connection);
+                updateClothes.CommandText = $"UPDATE {table} SET Brand = @brand , Material = '{material}', Sex = '{sex}', Price = {price}, Quantity = {quantity} " +
+                                         $" WHERE Name = '{name}';";
+                updateClothes.Parameters.AddWithValue("@brand", brand); // cause one of the brands named like Marc O'Polo
+                updateClothes.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+
+        /////////////////////////////////////////////////end changing clothes///////////////////////////////////////////////////////////////////////////////
     }
 }
