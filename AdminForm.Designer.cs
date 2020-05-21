@@ -39,11 +39,11 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBoxDelete = new System.Windows.Forms.PictureBox();
             this.deleteLabel = new System.Windows.Forms.Label();
-            this.panelAddItem = new System.Windows.Forms.Panel();
+            this.panelUsersItem = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBoxAddItem = new System.Windows.Forms.PictureBox();
-            this.addItemsLabel = new System.Windows.Forms.Label();
+            this.pictureBoxUsersItem = new System.Windows.Forms.PictureBox();
+            this.usersItemsLabel = new System.Windows.Forms.Label();
             this.panelChange = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBoxChange = new System.Windows.Forms.PictureBox();
@@ -261,14 +261,19 @@
             this.textTvsFeatures = new System.Windows.Forms.TextBox();
             this.textTvsResolution = new System.Windows.Forms.TextBox();
             this.labelTvsFeatures = new System.Windows.Forms.Label();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.menuStripUsers = new System.Windows.Forms.MenuStrip();
+            this.usersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanelBookUsers = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMain.SuspendLayout();
             this.panelWarehouse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWareHouse)).BeginInit();
             this.panelDelete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdminClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelete)).BeginInit();
-            this.panelAddItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddItem)).BeginInit();
+            this.panelUsersItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsersItem)).BeginInit();
             this.panelChange.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChange)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -277,6 +282,9 @@
             this.panelPcsLaptops.SuspendLayout();
             this.panelhPhonesItems.SuspendLayout();
             this.panelTvsItems.SuspendLayout();
+            this.panelMenu.SuspendLayout();
+            this.menuStripUsers.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMain
@@ -286,7 +294,7 @@
             this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.panelMain.Controls.Add(this.panelWarehouse);
             this.panelMain.Controls.Add(this.panelDelete);
-            this.panelMain.Controls.Add(this.panelAddItem);
+            this.panelMain.Controls.Add(this.panelUsersItem);
             this.panelMain.Controls.Add(this.panelChange);
             this.panelMain.Location = new System.Drawing.Point(0, 0);
             this.panelMain.Name = "panelMain";
@@ -376,18 +384,18 @@
             this.deleteLabel.Text = "Удалить";
             this.deleteLabel.Click += new System.EventHandler(this.deleteLabel_Click);
             // 
-            // panelAddItem
+            // panelUsersItem
             // 
-            this.panelAddItem.Controls.Add(this.panel4);
-            this.panelAddItem.Controls.Add(this.panel3);
-            this.panelAddItem.Controls.Add(this.pictureBoxAddItem);
-            this.panelAddItem.Controls.Add(this.addItemsLabel);
-            this.panelAddItem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelAddItem.Location = new System.Drawing.Point(318, 0);
-            this.panelAddItem.Name = "panelAddItem";
-            this.panelAddItem.Size = new System.Drawing.Size(210, 71);
-            this.panelAddItem.TabIndex = 7;
-            this.panelAddItem.Click += new System.EventHandler(this.addItemsLabel_Click);
+            this.panelUsersItem.Controls.Add(this.panel4);
+            this.panelUsersItem.Controls.Add(this.panel3);
+            this.panelUsersItem.Controls.Add(this.pictureBoxUsersItem);
+            this.panelUsersItem.Controls.Add(this.usersItemsLabel);
+            this.panelUsersItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelUsersItem.Location = new System.Drawing.Point(318, 0);
+            this.panelUsersItem.Name = "panelUsersItem";
+            this.panelUsersItem.Size = new System.Drawing.Size(210, 71);
+            this.panelUsersItem.TabIndex = 7;
+            this.panelUsersItem.Click += new System.EventHandler(this.usersItemsLabel_Click);
             // 
             // panel4
             // 
@@ -405,29 +413,29 @@
             this.panel3.Size = new System.Drawing.Size(210, 1);
             this.panel3.TabIndex = 24;
             // 
-            // pictureBoxAddItem
+            // pictureBoxUsersItem
             // 
-            this.pictureBoxAddItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.pictureBoxAddItem.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddItem.Image")));
-            this.pictureBoxAddItem.Location = new System.Drawing.Point(18, 17);
-            this.pictureBoxAddItem.Name = "pictureBoxAddItem";
-            this.pictureBoxAddItem.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxAddItem.TabIndex = 3;
-            this.pictureBoxAddItem.TabStop = false;
-            this.pictureBoxAddItem.Click += new System.EventHandler(this.addItemsLabel_Click);
+            this.pictureBoxUsersItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.pictureBoxUsersItem.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUsersItem.Image")));
+            this.pictureBoxUsersItem.Location = new System.Drawing.Point(18, 17);
+            this.pictureBoxUsersItem.Name = "pictureBoxUsersItem";
+            this.pictureBoxUsersItem.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxUsersItem.TabIndex = 3;
+            this.pictureBoxUsersItem.TabStop = false;
+            this.pictureBoxUsersItem.Click += new System.EventHandler(this.usersItemsLabel_Click);
             // 
-            // addItemsLabel
+            // usersItemsLabel
             // 
-            this.addItemsLabel.AutoSize = true;
-            this.addItemsLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addItemsLabel.Font = new System.Drawing.Font("Bodoni MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addItemsLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addItemsLabel.Location = new System.Drawing.Point(65, 23);
-            this.addItemsLabel.Name = "addItemsLabel";
-            this.addItemsLabel.Size = new System.Drawing.Size(85, 24);
-            this.addItemsLabel.TabIndex = 6;
-            this.addItemsLabel.Text = "Добавить";
-            this.addItemsLabel.Click += new System.EventHandler(this.addItemsLabel_Click);
+            this.usersItemsLabel.AutoSize = true;
+            this.usersItemsLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.usersItemsLabel.Font = new System.Drawing.Font("Bodoni MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usersItemsLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.usersItemsLabel.Location = new System.Drawing.Point(65, 23);
+            this.usersItemsLabel.Name = "usersItemsLabel";
+            this.usersItemsLabel.Size = new System.Drawing.Size(122, 24);
+            this.usersItemsLabel.TabIndex = 6;
+            this.usersItemsLabel.Text = "Пользователи";
+            this.usersItemsLabel.Click += new System.EventHandler(this.usersItemsLabel_Click);
             // 
             // panelChange
             // 
@@ -441,6 +449,7 @@
             this.panelChange.Size = new System.Drawing.Size(210, 71);
             this.panelChange.TabIndex = 3;
             this.panelChange.Click += new System.EventHandler(this.changeLabel_Click);
+            this.panelChange.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChange_Paint);
             // 
             // panel2
             // 
@@ -500,7 +509,7 @@
             this.booksMenuItem,
             this.electroMenuItem,
             this.clothesMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(9, 112);
+            this.menuStrip1.Location = new System.Drawing.Point(7, 9);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(279, 26);
             this.menuStrip1.TabIndex = 48;
@@ -1079,7 +1088,7 @@
             this.robotCompToolStripMenuItem,
             this.classicGameToolStripMenuItem});
             this.pcsMenuItem.Name = "pcsMenuItem";
-            this.pcsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pcsMenuItem.Size = new System.Drawing.Size(167, 22);
             this.pcsMenuItem.Tag = "PCs";
             this.pcsMenuItem.Text = "Компьютеры";
             this.pcsMenuItem.Click += new System.EventHandler(this.pcsMenuItem_Click);
@@ -1145,7 +1154,7 @@
             this.damixToolStripMenuItem,
             this.qCYT5ToolStripMenuItem});
             this.hPhonesMenuItem.Name = "hPhonesMenuItem";
-            this.hPhonesMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hPhonesMenuItem.Size = new System.Drawing.Size(167, 22);
             this.hPhonesMenuItem.Tag = "Headphones";
             this.hPhonesMenuItem.Text = "Наушники";
             this.hPhonesMenuItem.Click += new System.EventHandler(this.hPhonesMenuItem_Click);
@@ -1219,7 +1228,7 @@
             this.eCONSMARTToolStripMenuItem,
             this.sonyKDL32RE303ToolStripMenuItem});
             this.tvsMenuItem.Name = "tvsMenuItem";
-            this.tvsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tvsMenuItem.Size = new System.Drawing.Size(167, 22);
             this.tvsMenuItem.Tag = "TVs";
             this.tvsMenuItem.Text = "Телевизоры";
             this.tvsMenuItem.Click += new System.EventHandler(this.tvsMenuItem_Click);
@@ -1300,7 +1309,7 @@
             this.honorMagicBookToolStripMenuItem,
             this.acerAspire3ToolStripMenuItem});
             this.laptopsMenuItem.Name = "laptopsMenuItem";
-            this.laptopsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.laptopsMenuItem.Size = new System.Drawing.Size(167, 22);
             this.laptopsMenuItem.Tag = "Laptops";
             this.laptopsMenuItem.Text = "Ноутбуки";
             this.laptopsMenuItem.Click += new System.EventHandler(this.laptopsMenuItem_Click);
@@ -1569,35 +1578,35 @@
             // pulloverMenuItem
             // 
             this.pulloverMenuItem.Name = "pulloverMenuItem";
-            this.pulloverMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.pulloverMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pulloverMenuItem.Text = "Пуловер";
             this.pulloverMenuItem.Click += new System.EventHandler(this.pulloverMenuItem_Click);
             // 
             // jacketMenuItem
             // 
             this.jacketMenuItem.Name = "jacketMenuItem";
-            this.jacketMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.jacketMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jacketMenuItem.Text = "Куртка";
             this.jacketMenuItem.Click += new System.EventHandler(this.jacketMenuItem_Click);
             // 
             // jeansMenuItem
             // 
             this.jeansMenuItem.Name = "jeansMenuItem";
-            this.jeansMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.jeansMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jeansMenuItem.Text = "Джинсы";
             this.jeansMenuItem.Click += new System.EventHandler(this.jeansMenuItem_Click);
             // 
             // jacketAnorakMenuItem
             // 
             this.jacketAnorakMenuItem.Name = "jacketAnorakMenuItem";
-            this.jacketAnorakMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.jacketAnorakMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jacketAnorakMenuItem.Text = "Куртка Anorak";
             this.jacketAnorakMenuItem.Click += new System.EventHandler(this.jacketAnorakMenuItem_Click);
             // 
             // pantsMenuItem
             // 
             this.pantsMenuItem.Name = "pantsMenuItem";
-            this.pantsMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.pantsMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pantsMenuItem.Text = "Брюки";
             this.pantsMenuItem.Click += new System.EventHandler(this.pantsMenuItem_Click);
             // 
@@ -1702,7 +1711,7 @@
             this.panelBookItems.Controls.Add(this.textPrice);
             this.panelBookItems.Controls.Add(this.textAuthor);
             this.panelBookItems.Controls.Add(this.labelPrice);
-            this.panelBookItems.Location = new System.Drawing.Point(12, 183);
+            this.panelBookItems.Location = new System.Drawing.Point(12, 171);
             this.panelBookItems.Name = "panelBookItems";
             this.panelBookItems.Size = new System.Drawing.Size(224, 231);
             this.panelBookItems.TabIndex = 95;
@@ -1728,7 +1737,7 @@
             // 
             // buttonBookUpdate
             // 
-            this.buttonBookUpdate.Location = new System.Drawing.Point(29, 420);
+            this.buttonBookUpdate.Location = new System.Drawing.Point(29, 408);
             this.buttonBookUpdate.Name = "buttonBookUpdate";
             this.buttonBookUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonBookUpdate.TabIndex = 96;
@@ -1739,7 +1748,7 @@
             // 
             // buttonChangeBook
             // 
-            this.buttonChangeBook.Location = new System.Drawing.Point(130, 420);
+            this.buttonChangeBook.Location = new System.Drawing.Point(130, 408);
             this.buttonChangeBook.Name = "buttonChangeBook";
             this.buttonChangeBook.Size = new System.Drawing.Size(75, 23);
             this.buttonChangeBook.TabIndex = 97;
@@ -1750,7 +1759,7 @@
             // 
             // buttonClothesChange
             // 
-            this.buttonClothesChange.Location = new System.Drawing.Point(399, 488);
+            this.buttonClothesChange.Location = new System.Drawing.Point(399, 476);
             this.buttonClothesChange.Name = "buttonClothesChange";
             this.buttonClothesChange.Size = new System.Drawing.Size(75, 23);
             this.buttonClothesChange.TabIndex = 100;
@@ -1761,7 +1770,7 @@
             // 
             // buttonClothesUpdate
             // 
-            this.buttonClothesUpdate.Location = new System.Drawing.Point(284, 488);
+            this.buttonClothesUpdate.Location = new System.Drawing.Point(284, 476);
             this.buttonClothesUpdate.Name = "buttonClothesUpdate";
             this.buttonClothesUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonClothesUpdate.TabIndex = 99;
@@ -1786,7 +1795,7 @@
             this.panelClothesItems.Controls.Add(this.textClothesMaterial);
             this.panelClothesItems.Controls.Add(this.textClothesBrand);
             this.panelClothesItems.Controls.Add(this.labelClothesMaterial);
-            this.panelClothesItems.Location = new System.Drawing.Point(270, 141);
+            this.panelClothesItems.Location = new System.Drawing.Point(270, 129);
             this.panelClothesItems.Name = "panelClothesItems";
             this.panelClothesItems.Size = new System.Drawing.Size(224, 341);
             this.panelClothesItems.TabIndex = 98;
@@ -1964,7 +1973,7 @@
             // 
             // buttonPcsLaptopsChange
             // 
-            this.buttonPcsLaptopsChange.Location = new System.Drawing.Point(273, 488);
+            this.buttonPcsLaptopsChange.Location = new System.Drawing.Point(273, 476);
             this.buttonPcsLaptopsChange.Name = "buttonPcsLaptopsChange";
             this.buttonPcsLaptopsChange.Size = new System.Drawing.Size(75, 23);
             this.buttonPcsLaptopsChange.TabIndex = 103;
@@ -1975,7 +1984,7 @@
             // 
             // buttonPcsLaptopsUpdate
             // 
-            this.buttonPcsLaptopsUpdate.Location = new System.Drawing.Point(158, 488);
+            this.buttonPcsLaptopsUpdate.Location = new System.Drawing.Point(158, 476);
             this.buttonPcsLaptopsUpdate.Name = "buttonPcsLaptopsUpdate";
             this.buttonPcsLaptopsUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonPcsLaptopsUpdate.TabIndex = 102;
@@ -2000,7 +2009,7 @@
             this.panelPcsLaptops.Controls.Add(this.textPcsLaptopsGPU);
             this.panelPcsLaptops.Controls.Add(this.textPcsLaptopsCPU);
             this.panelPcsLaptops.Controls.Add(this.labelPcsLaptopsGPU);
-            this.panelPcsLaptops.Location = new System.Drawing.Point(144, 141);
+            this.panelPcsLaptops.Location = new System.Drawing.Point(144, 129);
             this.panelPcsLaptops.Name = "panelPcsLaptops";
             this.panelPcsLaptops.Size = new System.Drawing.Size(224, 341);
             this.panelPcsLaptops.TabIndex = 101;
@@ -2171,7 +2180,7 @@
             // 
             // buttonhPhonesChange
             // 
-            this.buttonhPhonesChange.Location = new System.Drawing.Point(165, 434);
+            this.buttonhPhonesChange.Location = new System.Drawing.Point(165, 422);
             this.buttonhPhonesChange.Name = "buttonhPhonesChange";
             this.buttonhPhonesChange.Size = new System.Drawing.Size(75, 23);
             this.buttonhPhonesChange.TabIndex = 106;
@@ -2182,7 +2191,7 @@
             // 
             // buttonhPhonesUpdate
             // 
-            this.buttonhPhonesUpdate.Location = new System.Drawing.Point(54, 434);
+            this.buttonhPhonesUpdate.Location = new System.Drawing.Point(54, 422);
             this.buttonhPhonesUpdate.Name = "buttonhPhonesUpdate";
             this.buttonhPhonesUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonhPhonesUpdate.TabIndex = 105;
@@ -2205,7 +2214,7 @@
             this.panelhPhonesItems.Controls.Add(this.texthPhonesMic);
             this.panelhPhonesItems.Controls.Add(this.textHPhonesType);
             this.panelhPhonesItems.Controls.Add(this.labelhPhonesMic);
-            this.panelhPhonesItems.Location = new System.Drawing.Point(37, 150);
+            this.panelhPhonesItems.Location = new System.Drawing.Point(37, 138);
             this.panelhPhonesItems.Name = "panelhPhonesItems";
             this.panelhPhonesItems.Size = new System.Drawing.Size(224, 275);
             this.panelhPhonesItems.TabIndex = 104;
@@ -2353,7 +2362,7 @@
             // 
             // buttonTvsChange
             // 
-            this.buttonTvsChange.Location = new System.Drawing.Point(633, 434);
+            this.buttonTvsChange.Location = new System.Drawing.Point(628, 422);
             this.buttonTvsChange.Name = "buttonTvsChange";
             this.buttonTvsChange.Size = new System.Drawing.Size(75, 23);
             this.buttonTvsChange.TabIndex = 109;
@@ -2364,7 +2373,7 @@
             // 
             // buttonTvsUpdate
             // 
-            this.buttonTvsUpdate.Location = new System.Drawing.Point(522, 434);
+            this.buttonTvsUpdate.Location = new System.Drawing.Point(517, 422);
             this.buttonTvsUpdate.Name = "buttonTvsUpdate";
             this.buttonTvsUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonTvsUpdate.TabIndex = 108;
@@ -2387,7 +2396,7 @@
             this.panelTvsItems.Controls.Add(this.textTvsFeatures);
             this.panelTvsItems.Controls.Add(this.textTvsResolution);
             this.panelTvsItems.Controls.Add(this.labelTvsFeatures);
-            this.panelTvsItems.Location = new System.Drawing.Point(505, 150);
+            this.panelTvsItems.Location = new System.Drawing.Point(500, 138);
             this.panelTvsItems.Name = "panelTvsItems";
             this.panelTvsItems.Size = new System.Drawing.Size(224, 275);
             this.panelTvsItems.TabIndex = 107;
@@ -2533,28 +2542,76 @@
             this.labelTvsFeatures.TabIndex = 52;
             this.labelTvsFeatures.Text = "Особенности";
             // 
+            // panelMenu
+            // 
+            this.panelMenu.Controls.Add(this.menuStrip1);
+            this.panelMenu.Location = new System.Drawing.Point(12, 77);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(412, 46);
+            this.panelMenu.TabIndex = 110;
+            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            // 
+            // menuStripUsers
+            // 
+            this.menuStripUsers.BackColor = System.Drawing.SystemColors.Control;
+            this.menuStripUsers.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStripUsers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usersMenuItem});
+            this.menuStripUsers.Location = new System.Drawing.Point(17, 9);
+            this.menuStripUsers.Name = "menuStripUsers";
+            this.menuStripUsers.Size = new System.Drawing.Size(128, 28);
+            this.menuStripUsers.TabIndex = 49;
+            this.menuStripUsers.Text = "menuStrip2";
+            // 
+            // usersMenuItem
+            // 
+            this.usersMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.usersMenuItem.Name = "usersMenuItem";
+            this.usersMenuItem.Size = new System.Drawing.Size(120, 24);
+            this.usersMenuItem.Text = "Пользователи";
+            this.usersMenuItem.Click += new System.EventHandler(this.usersMenuItem_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.menuStripUsers);
+            this.panel7.Location = new System.Drawing.Point(806, 77);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(323, 43);
+            this.panel7.TabIndex = 111;
+            // 
+            // flowLayoutPanelBookUsers
+            // 
+            this.flowLayoutPanelBookUsers.AutoScroll = true;
+            this.flowLayoutPanelBookUsers.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanelBookUsers.Location = new System.Drawing.Point(178, 126);
+            this.flowLayoutPanelBookUsers.Name = "flowLayoutPanelBookUsers";
+            this.flowLayoutPanelBookUsers.Size = new System.Drawing.Size(1156, 255);
+            this.flowLayoutPanelBookUsers.TabIndex = 112;
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 594);
+            this.ClientSize = new System.Drawing.Size(1386, 594);
+            this.Controls.Add(this.flowLayoutPanelBookUsers);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.buttonTvsChange);
             this.Controls.Add(this.buttonhPhonesChange);
-            this.Controls.Add(this.buttonTvsUpdate);
-            this.Controls.Add(this.buttonPcsLaptopsChange);
-            this.Controls.Add(this.panelTvsItems);
-            this.Controls.Add(this.buttonhPhonesUpdate);
-            this.Controls.Add(this.buttonPcsLaptopsUpdate);
-            this.Controls.Add(this.panelhPhonesItems);
-            this.Controls.Add(this.panelPcsLaptops);
-            this.Controls.Add(this.buttonClothesChange);
-            this.Controls.Add(this.buttonClothesUpdate);
-            this.Controls.Add(this.panelClothesItems);
-            this.Controls.Add(this.buttonChangeBook);
-            this.Controls.Add(this.buttonBookUpdate);
-            this.Controls.Add(this.panelBookItems);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.panelTvsItems);
+            this.Controls.Add(this.buttonPcsLaptopsChange);
+            this.Controls.Add(this.buttonClothesUpdate);
+            this.Controls.Add(this.buttonTvsUpdate);
+            this.Controls.Add(this.panelClothesItems);
+            this.Controls.Add(this.buttonhPhonesUpdate);
+            this.Controls.Add(this.buttonClothesChange);
+            this.Controls.Add(this.buttonChangeBook);
+            this.Controls.Add(this.buttonPcsLaptopsUpdate);
+            this.Controls.Add(this.panelPcsLaptops);
+            this.Controls.Add(this.panelBookItems);
+            this.Controls.Add(this.buttonBookUpdate);
+            this.Controls.Add(this.panelhPhonesItems);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminForm";
@@ -2568,9 +2625,9 @@
             this.panelDelete.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdminClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelete)).EndInit();
-            this.panelAddItem.ResumeLayout(false);
-            this.panelAddItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddItem)).EndInit();
+            this.panelUsersItem.ResumeLayout(false);
+            this.panelUsersItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsersItem)).EndInit();
             this.panelChange.ResumeLayout(false);
             this.panelChange.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChange)).EndInit();
@@ -2586,8 +2643,13 @@
             this.panelhPhonesItems.PerformLayout();
             this.panelTvsItems.ResumeLayout(false);
             this.panelTvsItems.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
+            this.menuStripUsers.ResumeLayout(false);
+            this.menuStripUsers.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -2601,11 +2663,11 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBoxDelete;
         private System.Windows.Forms.Label deleteLabel;
-        private System.Windows.Forms.Panel panelAddItem;
+        private System.Windows.Forms.Panel panelUsersItem;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBoxAddItem;
-        private System.Windows.Forms.Label addItemsLabel;
+        private System.Windows.Forms.PictureBox pictureBoxUsersItem;
+        private System.Windows.Forms.Label usersItemsLabel;
         private System.Windows.Forms.Panel panelChange;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBoxChange;
@@ -2824,5 +2886,10 @@
         private System.Windows.Forms.TextBox textTvsFeatures;
         private System.Windows.Forms.TextBox textTvsResolution;
         private System.Windows.Forms.Label labelTvsFeatures;
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.MenuStrip menuStripUsers;
+        private System.Windows.Forms.ToolStripMenuItem usersMenuItem;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelBookUsers;
     }
 }

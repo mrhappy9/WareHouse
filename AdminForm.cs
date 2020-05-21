@@ -16,9 +16,21 @@ namespace Course1
         {
             InitializeComponent();
         }
+
+        ManageBook manageBookForUsers;
+
         private Color defualtColor = Color.FromArgb(21, 21, 21);
         WorkServer workServerAdmin = new WorkServer();
 
+        private void panelMenuVisible()
+        {
+            panelMenu.Visible = true;
+        }
+
+        private void panelMenuNonVisible()
+        {
+            panelMenu.Visible = false;
+        }
         private string[] getNormalQuantityItems() // For each Items from MySql tables
         {
             string[] quantity = new string[501];
@@ -28,10 +40,10 @@ namespace Course1
             }
             return quantity;
         }
-        private void setDefaultItemsColor() 
+        private void setDefaultItemsColor()
         {
-            panelAddItem.BackColor = panelChange.BackColor = panelDelete.BackColor =
-            pictureBoxAddItem.BackColor = pictureBoxChange.BackColor = pictureBoxDelete.BackColor = defualtColor;
+            panelUsersItem.BackColor = panelChange.BackColor = panelDelete.BackColor =
+            pictureBoxUsersItem.BackColor = pictureBoxChange.BackColor = pictureBoxDelete.BackColor = defualtColor;
         }
 
         private void setNonVisibleItemsVisible()
@@ -143,15 +155,18 @@ namespace Course1
 
         private void changeLabel_Click(object sender, EventArgs e)
         {
+            panelMenuVisible();
             setDefaultItemsColor();
             changeItemsColor(pictureBoxChange, panelChange);
         }
 
-        private void addItemsLabel_Click(object sender, EventArgs e)
+        private void usersItemsLabel_Click(object sender, EventArgs e)
         {
+            panelMenuNonVisible();
             setDefaultItemsColor();
-            changeItemsColor(pictureBoxAddItem, panelAddItem);
+            changeItemsColor(pictureBoxUsersItem, panelUsersItem);
         }
+
 
         private void deleteLabel_Click(object sender, EventArgs e)
         {
@@ -166,11 +181,13 @@ namespace Course1
 
         private void pictureBoxWareHouse_Click(object sender, EventArgs e)
         {
+            panelMenuNonVisible();
             setDefaultItemsColor();
         }
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
+            panelMenuNonVisible();
             setNonVisibleItemsVisible();
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -223,14 +240,14 @@ namespace Course1
         }
 
         private void buttonChangeBook_Click(object sender, EventArgs e)
-        { 
-            if(textAuthor.Text != "" && textPrice.Text != "" && comboQuantityBooks.SelectedIndex > 0
+        {
+            if (textAuthor.Text != "" && textPrice.Text != "" && comboQuantityBooks.SelectedIndex > 0
                 && int.TryParse(textPrice.Text, out int result))
-            {            
+            {
                 if (MessageBox.Show("Вы уверены, что хотите продолжить?", "Обновление записи",
                    MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    workServerAdmin.updateBookTable(labelNameTable.Text, textNameBook.Text, textAuthor.Text, 
+                    workServerAdmin.updateBookTable(labelNameTable.Text, textNameBook.Text, textAuthor.Text,
                                                     Convert.ToInt32(textPrice.Text),
                                                     Convert.ToInt32(comboQuantityBooks.SelectedIndex));
                     setNonVisibleItemsVisible();
@@ -316,13 +333,13 @@ namespace Course1
         private void shaverMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = shaverMenuItem.Text; 
+            textNameBook.Text = shaverMenuItem.Text;
         }
 
         private void greatGatsbyMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = greatGatsbyMenuItem.Text; 
+            textNameBook.Text = greatGatsbyMenuItem.Text;
         }
 
         private void foolishMenuItem_Click(object sender, EventArgs e)
@@ -340,13 +357,13 @@ namespace Course1
         private void blacksMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = blacksMenuItem.Text; 
+            textNameBook.Text = blacksMenuItem.Text;
         }
 
         private void сherryOrchardMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = сherryOrchardMenuItem.Text; 
+            textNameBook.Text = сherryOrchardMenuItem.Text;
         }
         private void comicsBooksMenuItem_Click(object sender, EventArgs e)
         {
@@ -355,61 +372,61 @@ namespace Course1
         private void rikMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = rikMenuItem.Text; 
+            textNameBook.Text = rikMenuItem.Text;
         }
 
         private void folzMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = folzMenuItem.Text; 
+            textNameBook.Text = folzMenuItem.Text;
         }
 
         private void batmenMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = batmenMenuItem.Text; 
+            textNameBook.Text = batmenMenuItem.Text;
         }
 
         private void diedMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = diedMenuItem.Text; 
+            textNameBook.Text = diedMenuItem.Text;
         }
 
         private void blacksadMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = blacksadMenuItem.Text; 
+            textNameBook.Text = blacksadMenuItem.Text;
         }
 
         private void timeTripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = timeTripMenuItem.Text; 
+            textNameBook.Text = timeTripMenuItem.Text;
         }
 
         private void wolverineMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = wolverineMenuItem.Text; 
+            textNameBook.Text = wolverineMenuItem.Text;
         }
 
         private void spiderManMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = spiderManMenuItem.Text; 
+            textNameBook.Text = spiderManMenuItem.Text;
         }
 
         private void superManMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = superManMenuItem.Text; 
+            textNameBook.Text = superManMenuItem.Text;
         }
 
         private void mouseMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = mouseMenuItem.Text; 
+            textNameBook.Text = mouseMenuItem.Text;
         }
 
         private void textBooksMenuItem_Click(object sender, EventArgs e)
@@ -420,61 +437,61 @@ namespace Course1
         private void historyRusMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = historyRusMenuItem.Text; 
+            textNameBook.Text = historyRusMenuItem.Text;
         }
 
         private void bioChMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = bioChMenuItem.Text; 
+            textNameBook.Text = bioChMenuItem.Text;
         }
 
         private void dMathMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = dMathMenuItem.Text; 
+            textNameBook.Text = dMathMenuItem.Text;
         }
 
         private void cosmetologyMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = cosmetologyMenuItem.Text; 
+            textNameBook.Text = cosmetologyMenuItem.Text;
         }
 
         private void compositionMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = compositionMenuItem.Text; 
+            textNameBook.Text = compositionMenuItem.Text;
         }
 
         private void phyMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = phyMenuItem.Text; 
+            textNameBook.Text = phyMenuItem.Text;
         }
 
         private void pharmacologyMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = pharmacologyMenuItem.Text; 
+            textNameBook.Text = pharmacologyMenuItem.Text;
         }
 
         private void byhMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = byhMenuItem.Text; 
+            textNameBook.Text = byhMenuItem.Text;
         }
 
         private void teraphyMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = teraphyMenuItem.Text; 
+            textNameBook.Text = teraphyMenuItem.Text;
         }
 
         private void speechMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = speechMenuItem.Text; 
+            textNameBook.Text = speechMenuItem.Text;
         }
 
         private void diffBooksMenuItem_Click(object sender, EventArgs e)
@@ -485,61 +502,61 @@ namespace Course1
         private void gvMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = gvMenuItem.Text; 
+            textNameBook.Text = gvMenuItem.Text;
         }
 
         private void chillMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = chillMenuItem.Text; 
+            textNameBook.Text = chillMenuItem.Text;
         }
 
         private void magicCleanMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = magicCleanMenuItem.Text; 
+            textNameBook.Text = magicCleanMenuItem.Text;
         }
 
         private void shitMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = shitMenuItem.Text; 
+            textNameBook.Text = shitMenuItem.Text;
         }
 
         private void doNoРarmMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = doNoРarmMenuItem.Text; 
+            textNameBook.Text = doNoРarmMenuItem.Text;
         }
 
         private void runAwayMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = runAwayMenuItem.Text; 
+            textNameBook.Text = runAwayMenuItem.Text;
         }
 
         private void stiveMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = stiveMenuItem.Text; 
+            textNameBook.Text = stiveMenuItem.Text;
         }
 
         private void algorithmMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = algorithmMenuItem.Text; 
+            textNameBook.Text = algorithmMenuItem.Text;
         }
 
         private void manipMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = manipMenuItem.Text; 
+            textNameBook.Text = manipMenuItem.Text;
         }
 
         private void moneyStreamMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = moneyStreamMenuItem.Text; 
+            textNameBook.Text = moneyStreamMenuItem.Text;
         }
 
         private void foreignBooksMenuItem_Click(object sender, EventArgs e)
@@ -556,55 +573,55 @@ namespace Course1
         private void theClockmakersDaughterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = theClockmakersDaughterToolStripMenuItem.Text; 
+            textNameBook.Text = theClockmakersDaughterToolStripMenuItem.Text;
         }
 
         private void batmanMenuItem1_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = batmanMenuItem1.Text; 
+            textNameBook.Text = batmanMenuItem1.Text;
         }
 
         private void pSIStillLoveYouToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = pSIStillLoveYouToolStripMenuItem.Text; 
+            textNameBook.Text = pSIStillLoveYouToolStripMenuItem.Text;
         }
 
         private void murakami2020DiaryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = murakami2020DiaryToolStripMenuItem.Text; 
+            textNameBook.Text = murakami2020DiaryToolStripMenuItem.Text;
         }
 
         private void senseAndSensibilityToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = senseAndSensibilityToolStripMenuItem.Text; 
+            textNameBook.Text = senseAndSensibilityToolStripMenuItem.Text;
         }
 
         private void theAdventuresOfHuckleberryFinnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = theAdventuresOfHuckleberryFinnToolStripMenuItem.Text; 
+            textNameBook.Text = theAdventuresOfHuckleberryFinnToolStripMenuItem.Text;
         }
 
         private void aClashOfKingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = aClashOfKingsToolStripMenuItem.Text; 
+            textNameBook.Text = aClashOfKingsToolStripMenuItem.Text;
         }
 
         private void wutheringHeightsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = wutheringHeightsToolStripMenuItem.Text; 
+            textNameBook.Text = wutheringHeightsToolStripMenuItem.Text;
         }
 
         private void theExploitsOfMoominpappaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleBookItemsVisible();
-            textNameBook.Text = theExploitsOfMoominpappaToolStripMenuItem.Text; 
+            textNameBook.Text = theExploitsOfMoominpappaToolStripMenuItem.Text;
         }
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -680,67 +697,67 @@ namespace Course1
         private void sliponMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = sliponMenuItem.Text; 
+            textClothesName.Text = sliponMenuItem.Text;
         }
 
         private void XRayToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = XRayToolStripMenuItem.Text; 
+            textClothesName.Text = XRayToolStripMenuItem.Text;
         }
 
         private void loafersMocMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = loafersMocMenuItem.Text; 
+            textClothesName.Text = loafersMocMenuItem.Text;
         }
 
         private void loafersMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = loafersMenuItem.Text; 
+            textClothesName.Text = loafersMenuItem.Text;
         }
 
         private void backpackXMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = backpackXMenuItem.Text; 
+            textClothesName.Text = backpackXMenuItem.Text;
         }
 
         private void waistBagMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = waistBagMenuItem.Text; 
+            textClothesName.Text = waistBagMenuItem.Text;
         }
 
         private void crossBagMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = crossBagMenuItem.Text; 
+            textClothesName.Text = crossBagMenuItem.Text;
         }
 
         private void bagMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = bagMenuItem.Text; 
+            textClothesName.Text = bagMenuItem.Text;
         }
 
         private void backpackUMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = backpackUMenuItem.Text; 
+            textClothesName.Text = backpackUMenuItem.Text;
         }
 
         private void backpackLMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = backpackLMenuItem.Text; 
+            textClothesName.Text = backpackLMenuItem.Text;
         }
 
         private void bodyMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = bodyMenuItem.Text; 
+            textClothesName.Text = bodyMenuItem.Text;
         }
 
         private void braMenuItem_Click(object sender, EventArgs e)
@@ -752,24 +769,24 @@ namespace Course1
         private void underwearSetMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = underwearSetMenuItem.Text; 
+            textClothesName.Text = underwearSetMenuItem.Text;
         }
         private void shapewearMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = shapewearMenuItem.Text; 
+            textClothesName.Text = shapewearMenuItem.Text;
         }
 
         private void underpantsMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = underpantsMenuItem.Text; 
+            textClothesName.Text = underpantsMenuItem.Text;
         }
 
         private void tShortMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = tShortMenuItem.Text; 
+            textClothesName.Text = tShortMenuItem.Text;
         }
 
         private void packPAcksMenuItem_Click(object sender, EventArgs e)
@@ -795,25 +812,25 @@ namespace Course1
         private void jacketMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = jacketMenuItem.Text; 
+            textClothesName.Text = jacketMenuItem.Text;
         }
 
         private void jeansMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = jeansMenuItem.Text; 
+            textClothesName.Text = jeansMenuItem.Text;
         }
 
         private void jacketAnorakMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = jacketAnorakMenuItem.Text; 
+            textClothesName.Text = jacketAnorakMenuItem.Text;
         }
 
         private void pantsMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleClothesItemsVisible();
-            textClothesName.Text = pantsMenuItem.Text; 
+            textClothesName.Text = pantsMenuItem.Text;
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////
         ///          End Clothes Items
@@ -886,7 +903,7 @@ namespace Course1
         private void lenovoLegionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = lenovoLegionToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = lenovoLegionToolStripMenuItem.Text;
         }
         private void lenovoIdeaCentreToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -897,13 +914,13 @@ namespace Course1
         private void oldiComputersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = oldiComputersToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = oldiComputersToolStripMenuItem.Text;
         }
 
         private void hPOMENToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = hPOMENToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = hPOMENToolStripMenuItem.Text;
         }
         private void robotCompToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -914,60 +931,60 @@ namespace Course1
         private void classicGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = classicGameToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = classicGameToolStripMenuItem.Text;
         }
 
         private void lenovoIdeaPad33015ASTToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = lenovoIdeaPad33015ASTToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = lenovoIdeaPad33015ASTToolStripMenuItem.Text;
         }
 
         private void aSUSZenBook14ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = aSUSZenBook14ToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = aSUSZenBook14ToolStripMenuItem.Text;
         }
 
         private void acerExtensa15ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = acerExtensa15ToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = acerExtensa15ToolStripMenuItem.Text;
         }
 
         private void hPEnvy13ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = hPEnvy13ToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = hPEnvy13ToolStripMenuItem.Text;
         }
 
         private void aSUSZenBookSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = aSUSZenBookSToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = aSUSZenBookSToolStripMenuItem.Text;
         }
 
         private void dellPrecision7730ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = dellPrecision7730ToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = dellPrecision7730ToolStripMenuItem.Text;
         }
 
         private void acerSwiftToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = acerSwiftToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = acerSwiftToolStripMenuItem.Text;
         }
         private void honorMagicBookToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = honorMagicBookToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = honorMagicBookToolStripMenuItem.Text;
         }
 
         private void acerAspire3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisiblePcsLaptopsItems();
-            textPcsLaptopsName.Text = acerAspire3ToolStripMenuItem.Text; 
+            textPcsLaptopsName.Text = acerAspire3ToolStripMenuItem.Text;
         }
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1028,7 +1045,7 @@ namespace Course1
         private void xiaomiRedmiAirDotsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleHPhonesItems();
-            textHPhonesName.Text = xiaomiRedmiAirDotsToolStripMenuItem.Text; 
+            textHPhonesName.Text = xiaomiRedmiAirDotsToolStripMenuItem.Text;
         }
 
         private void jBLC100SIToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1040,7 +1057,7 @@ namespace Course1
         private void i9STWSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleHPhonesItems();
-            textHPhonesName.Text = i9STWSToolStripMenuItem.Text; 
+            textHPhonesName.Text = i9STWSToolStripMenuItem.Text;
         }
 
         private void airPodsProToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1052,19 +1069,19 @@ namespace Course1
         private void sennheiserHDToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleHPhonesItems();
-            textHPhonesName.Text = sennheiserHDToolStripMenuItem.Text; 
+            textHPhonesName.Text = sennheiserHDToolStripMenuItem.Text;
         }
 
         private void damixToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleHPhonesItems();
-            textHPhonesName.Text = damixToolStripMenuItem.Text; 
+            textHPhonesName.Text = damixToolStripMenuItem.Text;
         }
 
         private void qCYT5ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleHPhonesItems();
-            textHPhonesName.Text = qCYT5ToolStripMenuItem.Text; 
+            textHPhonesName.Text = qCYT5ToolStripMenuItem.Text;
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////
         ///          End HPhones Items
@@ -1118,49 +1135,115 @@ namespace Course1
         private void lG43UK6200PLAToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleTvsItems();
-            textTvsName.Text = lG43UK6200PLAToolStripMenuItem.Text; 
+            textTvsName.Text = lG43UK6200PLAToolStripMenuItem.Text;
         }
 
         private void kIVI55UC50GRToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleTvsItems();
-            textTvsName.Text = kIVI55UC50GRToolStripMenuItem.Text; 
+            textTvsName.Text = kIVI55UC50GRToolStripMenuItem.Text;
         }
 
         private void lG49UK6300PLBToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleTvsItems();
-            textTvsName.Text = lG49UK6300PLBToolStripMenuItem.Text; 
+            textTvsName.Text = lG49UK6300PLBToolStripMenuItem.Text;
         }
 
         private void samsungQE75Q900RBUToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleTvsItems();
-            textTvsName.Text = samsungQE75Q900RBUToolStripMenuItem.Text; 
+            textTvsName.Text = samsungQE75Q900RBUToolStripMenuItem.Text;
         }
 
         private void thomsonT22FTE1020ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleTvsItems();
-            textTvsName.Text = thomsonT22FTE1020ToolStripMenuItem.Text; 
+            textTvsName.Text = thomsonT22FTE1020ToolStripMenuItem.Text;
         }
 
         private void asano32LH7010TToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleTvsItems();
-            textTvsName.Text = asano32LH7010TToolStripMenuItem.Text; 
+            textTvsName.Text = asano32LH7010TToolStripMenuItem.Text;
         }
 
         private void eCONSMARTToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleTvsItems();
-            textTvsName.Text = eCONSMARTToolStripMenuItem.Text; 
+            textTvsName.Text = eCONSMARTToolStripMenuItem.Text;
         }
 
         private void sonyKDL32RE303ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             setVisibleTvsItems();
-            textTvsName.Text = sonyKDL32RE303ToolStripMenuItem.Text; 
+            textTvsName.Text = sonyKDL32RE303ToolStripMenuItem.Text;
+        }
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///          End Tvs Items
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        private void panelChange_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        /// 
+        /// ////////////////////////////////////////////////////////////////////////////
+        /// ////////////////////////////////////////////////////////////////////////////
+        List<BooksControl> booksControlsUsers = new List<BooksControl>();
+        private void createBooksForUsers(string name, string author, int price, int quantity)
+        {
+            manageBookForUsers.createBook(name, author, price, quantity, new string[] { "" }, new Basket(new WorkServer()), "");
+        }
+        private void createBookControlsUsers()
+        {
+            booksControlsUsers.AddRange(manageBookForUsers.getAllManageBooks());
+        }
+        private void showOnFlowBookUsers()
+        {
+            for (int i = 0; i < booksControlsUsers.Count; i++)
+            {
+                flowLayoutPanelBookUsers.Controls.Add(booksControlsUsers[i]);
+            }
+        }
+        private void usersMenuItem_Click(object sender, EventArgs e)
+        {
+            List<String> users = workServerAdmin.getUsersList();
+            if (users.Count != usersMenuItem.DropDownItems.Count)
+            {
+                usersMenuItem.DropDownItems.Clear();
+                for (int i = 0; i < users.Count; i++)
+                {
+                    usersMenuItem.DropDownItems.Add(users[i]);
+                    usersMenuItem.DropDownItems[i].Click += new EventHandler(nameUserClick);
+                }
+            }
+        }
+        private void nameUserClick(object sender, EventArgs e)
+        {
+            manageBookForUsers = new ManageBook();
+            flowLayoutPanelBookUsers.Controls.Clear();
+            booksControlsUsers.Clear();
+            List<String> name = new List<String>();
+            List<String> author = new List<String>();
+            List<int> price = new List<int>();
+            List<int> quantity = new List<int>();
+            string userLogin = ((ToolStripMenuItem)sender).Text;
+            /*MessageBox.Show(str);*/
+            workServerAdmin.forFlowUsersBook(userLogin, ref name, ref author, ref price, ref quantity);
+            if(name.Count == author.Count && name.Count == price.Count && name.Count == quantity.Count)
+            {
+                for (int i = 0; i < name.Count; i++)
+                {
+                    createBooksForUsers(name[i], author[i], price[i], quantity[i]);
+                }
+            }
+            createBookControlsUsers();
+            showOnFlowBookUsers();
         }
     }
 }

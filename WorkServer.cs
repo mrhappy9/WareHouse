@@ -24,6 +24,7 @@ namespace Course1
         {
             connection.Close();
         }
+        
         public void addUser(string login, string password, string email)
         {
             createConnection();
@@ -696,7 +697,7 @@ namespace Course1
 
 
         ////////////////////////////////////////////////
-        ///-------------TVS PcsLaptops---------------///
+        ///-------------TVS -------------------------///
         ////////////////////////////////////////////////
 
         public List<String> getParticularTvs(string table, string name)
@@ -742,6 +743,58 @@ namespace Course1
             }
         }
         /////////////////////////////////////////////////end tvs clothes///////////////////////////////////////////////////////////////////////////////
+
+
+        ////////////////////////////////////////////////
+        ///-------------Users List---------------///
+        ////////////////////////////////////////////////
+        
+        public List<String> getUsersList()
+        {
+            List<String> users = new List<String>();
+            createConnection();
+            try
+            {
+                MySqlCommand getUsers = new MySqlCommand(connString, connection);
+                getUsers.CommandText = "SELECT Login FROM Users;";
+                MySqlDataReader reader = getUsers.ExecuteReader();
+                while (reader.Read())
+                {
+                    users.Add(reader[0].ToString());
+                }
+                loseConnection();
+                return users;
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+
+        public void forFlowUsersBook(string userLogin, ref List<String> name, ref List<String> author, ref List<int> price, ref List<int> quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand flowUsersBook = new MySqlCommand(connString, connection);
+                flowUsersBook.CommandText = "SELECT b.Name, b.Author, b.Price, b.Quantity FROM BookPurchase b " +
+                                            " JOIN Users u ON u.users_id = b.users_id " +
+                                            $" WHERE u.login = '{userLogin}';";
+                MySqlDataReader reader = flowUsersBook.ExecuteReader();
+                while (reader.Read())
+                {
+                    name.Add(reader.GetString(0));
+                    author.Add(reader.GetString(1));
+                    price.Add(reader.GetInt32(2));
+                    quantity.Add(reader.GetInt32(3));
+                }
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
     }
 
 }
