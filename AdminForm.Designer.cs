@@ -120,7 +120,7 @@
             this.wutheringHeightsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.theExploitsOfMoominpappaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.electroMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.computersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pcsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hPPavilionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lenovoLegionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lenovoIdeaCentreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -157,24 +157,6 @@
             this.acerSwiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.honorMagicBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acerAspire3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.smartWatchMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xiaomiAmazfitBipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.samsungGalaxyWatchActiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.appleWatchSeries3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xiaomiPaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.amazfitGTSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.honorMagicWatch2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.samsungGalaxyWatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.samsungGalaxyWatchActive2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.smartPhonesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.honor10iToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.samsungGalaxyA51ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iPhone7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iPhoneXRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iPhone11ProToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iPhone8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.honor20SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.samsungGalaxyS20ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clothesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shoesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snickersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -232,6 +214,53 @@
             this.textClothesMaterial = new System.Windows.Forms.TextBox();
             this.textClothesBrand = new System.Windows.Forms.TextBox();
             this.labelClothesMaterial = new System.Windows.Forms.Label();
+            this.buttonPcsLaptopsChange = new System.Windows.Forms.Button();
+            this.buttonPcsLaptopsUpdate = new System.Windows.Forms.Button();
+            this.panelPcsLaptops = new System.Windows.Forms.Panel();
+            this.textPcsLaptopsOS = new System.Windows.Forms.TextBox();
+            this.labelPcsLaptopsPrice = new System.Windows.Forms.Label();
+            this.labelPcsLaptopsOS = new System.Windows.Forms.Label();
+            this.textPcsLaptopsPrice = new System.Windows.Forms.TextBox();
+            this.labelPcsLaptopsAddingQuantity = new System.Windows.Forms.Label();
+            this.labelPcsLaptopsNameTable = new System.Windows.Forms.Label();
+            this.labelPcsLaptopsName = new System.Windows.Forms.Label();
+            this.comboQuantityPcsLaptops = new System.Windows.Forms.ComboBox();
+            this.textPcsLaptopsName = new System.Windows.Forms.TextBox();
+            this.labelPcsLaptopsQuantity = new System.Windows.Forms.Label();
+            this.labelPcsLaptopsCPU = new System.Windows.Forms.Label();
+            this.textPcsLaptopsGPU = new System.Windows.Forms.TextBox();
+            this.textPcsLaptopsCPU = new System.Windows.Forms.TextBox();
+            this.labelPcsLaptopsGPU = new System.Windows.Forms.Label();
+            this.buttonhPhonesChange = new System.Windows.Forms.Button();
+            this.buttonhPhonesUpdate = new System.Windows.Forms.Button();
+            this.panelhPhonesItems = new System.Windows.Forms.Panel();
+            this.labelhPhonesPrice = new System.Windows.Forms.Label();
+            this.texthPhonesPrice = new System.Windows.Forms.TextBox();
+            this.labelhPhonesAddingQuantity = new System.Windows.Forms.Label();
+            this.labelHPhoneNameTable = new System.Windows.Forms.Label();
+            this.labelhPhonesName = new System.Windows.Forms.Label();
+            this.combohPhonesQuantity = new System.Windows.Forms.ComboBox();
+            this.textHPhonesName = new System.Windows.Forms.TextBox();
+            this.labelhPhonesQuantity = new System.Windows.Forms.Label();
+            this.labelhPhonesType = new System.Windows.Forms.Label();
+            this.texthPhonesMic = new System.Windows.Forms.TextBox();
+            this.textHPhonesType = new System.Windows.Forms.TextBox();
+            this.labelhPhonesMic = new System.Windows.Forms.Label();
+            this.buttonTvsChange = new System.Windows.Forms.Button();
+            this.buttonTvsUpdate = new System.Windows.Forms.Button();
+            this.panelTvsItems = new System.Windows.Forms.Panel();
+            this.labelTvsPrice = new System.Windows.Forms.Label();
+            this.textTvsPrice = new System.Windows.Forms.TextBox();
+            this.labelTvsAddingQuantity = new System.Windows.Forms.Label();
+            this.labelTvsNameTable = new System.Windows.Forms.Label();
+            this.labelTvsName = new System.Windows.Forms.Label();
+            this.comboTvsQuantity = new System.Windows.Forms.ComboBox();
+            this.textTvsName = new System.Windows.Forms.TextBox();
+            this.labelTvsQuantity = new System.Windows.Forms.Label();
+            this.labelTvsResolution = new System.Windows.Forms.Label();
+            this.textTvsFeatures = new System.Windows.Forms.TextBox();
+            this.textTvsResolution = new System.Windows.Forms.TextBox();
+            this.labelTvsFeatures = new System.Windows.Forms.Label();
             this.panelMain.SuspendLayout();
             this.panelWarehouse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWareHouse)).BeginInit();
@@ -245,6 +274,9 @@
             this.menuStrip1.SuspendLayout();
             this.panelBookItems.SuspendLayout();
             this.panelClothesItems.SuspendLayout();
+            this.panelPcsLaptops.SuspendLayout();
+            this.panelhPhonesItems.SuspendLayout();
+            this.panelTvsItems.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMain
@@ -470,7 +502,7 @@
             this.clothesMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(9, 112);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(399, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(279, 26);
             this.menuStrip1.TabIndex = 48;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1026,21 +1058,19 @@
             // electroMenuItem
             // 
             this.electroMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.computersMenuItem,
+            this.pcsMenuItem,
             this.hPhonesMenuItem,
             this.tvsMenuItem,
-            this.laptopsMenuItem,
-            this.smartWatchMenuItem,
-            this.smartPhonesMenuItem});
+            this.laptopsMenuItem});
             this.electroMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.electroMenuItem.Name = "electroMenuItem";
             this.electroMenuItem.Size = new System.Drawing.Size(134, 22);
             this.electroMenuItem.Text = "Электротехника";
             this.electroMenuItem.Click += new System.EventHandler(this.electroMenuItem_Click);
             // 
-            // computersMenuItem
+            // pcsMenuItem
             // 
-            this.computersMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pcsMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hPPavilionToolStripMenuItem,
             this.lenovoLegionToolStripMenuItem,
             this.lenovoIdeaCentreToolStripMenuItem,
@@ -1048,52 +1078,60 @@
             this.hPOMENToolStripMenuItem,
             this.robotCompToolStripMenuItem,
             this.classicGameToolStripMenuItem});
-            this.computersMenuItem.Name = "computersMenuItem";
-            this.computersMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.computersMenuItem.Tag = "PCs";
-            this.computersMenuItem.Text = "Компьютеры";
+            this.pcsMenuItem.Name = "pcsMenuItem";
+            this.pcsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pcsMenuItem.Tag = "PCs";
+            this.pcsMenuItem.Text = "Компьютеры";
+            this.pcsMenuItem.Click += new System.EventHandler(this.pcsMenuItem_Click);
             // 
             // hPPavilionToolStripMenuItem
             // 
             this.hPPavilionToolStripMenuItem.Name = "hPPavilionToolStripMenuItem";
             this.hPPavilionToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.hPPavilionToolStripMenuItem.Text = "HP Pavilion";
+            this.hPPavilionToolStripMenuItem.Click += new System.EventHandler(this.hPPavilionToolStripMenuItem_Click);
             // 
             // lenovoLegionToolStripMenuItem
             // 
             this.lenovoLegionToolStripMenuItem.Name = "lenovoLegionToolStripMenuItem";
             this.lenovoLegionToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.lenovoLegionToolStripMenuItem.Text = "Lenovo Legion";
+            this.lenovoLegionToolStripMenuItem.Click += new System.EventHandler(this.lenovoLegionToolStripMenuItem_Click);
             // 
             // lenovoIdeaCentreToolStripMenuItem
             // 
             this.lenovoIdeaCentreToolStripMenuItem.Name = "lenovoIdeaCentreToolStripMenuItem";
             this.lenovoIdeaCentreToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.lenovoIdeaCentreToolStripMenuItem.Text = "Lenovo IdeaCentre";
+            this.lenovoIdeaCentreToolStripMenuItem.Click += new System.EventHandler(this.lenovoIdeaCentreToolStripMenuItem_Click);
             // 
             // oldiComputersToolStripMenuItem
             // 
             this.oldiComputersToolStripMenuItem.Name = "oldiComputersToolStripMenuItem";
             this.oldiComputersToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.oldiComputersToolStripMenuItem.Text = "Oldi Computers";
+            this.oldiComputersToolStripMenuItem.Click += new System.EventHandler(this.oldiComputersToolStripMenuItem_Click);
             // 
             // hPOMENToolStripMenuItem
             // 
             this.hPOMENToolStripMenuItem.Name = "hPOMENToolStripMenuItem";
             this.hPOMENToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.hPOMENToolStripMenuItem.Text = "HP OMEN";
+            this.hPOMENToolStripMenuItem.Click += new System.EventHandler(this.hPOMENToolStripMenuItem_Click);
             // 
             // robotCompToolStripMenuItem
             // 
             this.robotCompToolStripMenuItem.Name = "robotCompToolStripMenuItem";
             this.robotCompToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.robotCompToolStripMenuItem.Text = "RobotComp";
+            this.robotCompToolStripMenuItem.Click += new System.EventHandler(this.robotCompToolStripMenuItem_Click);
             // 
             // classicGameToolStripMenuItem
             // 
             this.classicGameToolStripMenuItem.Name = "classicGameToolStripMenuItem";
             this.classicGameToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.classicGameToolStripMenuItem.Text = "ClassicGame";
+            this.classicGameToolStripMenuItem.Click += new System.EventHandler(this.classicGameToolStripMenuItem_Click);
             // 
             // hPhonesMenuItem
             // 
@@ -1110,54 +1148,63 @@
             this.hPhonesMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hPhonesMenuItem.Tag = "Headphones";
             this.hPhonesMenuItem.Text = "Наушники";
+            this.hPhonesMenuItem.Click += new System.EventHandler(this.hPhonesMenuItem_Click);
             // 
             // airPodsToolStripMenuItem
             // 
             this.airPodsToolStripMenuItem.Name = "airPodsToolStripMenuItem";
             this.airPodsToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.airPodsToolStripMenuItem.Text = "AirPods";
+            this.airPodsToolStripMenuItem.Click += new System.EventHandler(this.airPodsToolStripMenuItem_Click);
             // 
             // xiaomiRedmiAirDotsToolStripMenuItem
             // 
             this.xiaomiRedmiAirDotsToolStripMenuItem.Name = "xiaomiRedmiAirDotsToolStripMenuItem";
             this.xiaomiRedmiAirDotsToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.xiaomiRedmiAirDotsToolStripMenuItem.Text = "Xiaomi Redmi AirDots";
+            this.xiaomiRedmiAirDotsToolStripMenuItem.Click += new System.EventHandler(this.xiaomiRedmiAirDotsToolStripMenuItem_Click);
             // 
             // jBLC100SIToolStripMenuItem
             // 
             this.jBLC100SIToolStripMenuItem.Name = "jBLC100SIToolStripMenuItem";
             this.jBLC100SIToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.jBLC100SIToolStripMenuItem.Text = "JBL C100SI";
+            this.jBLC100SIToolStripMenuItem.Click += new System.EventHandler(this.jBLC100SIToolStripMenuItem_Click);
             // 
             // i9STWSToolStripMenuItem
             // 
             this.i9STWSToolStripMenuItem.Name = "i9STWSToolStripMenuItem";
             this.i9STWSToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.i9STWSToolStripMenuItem.Text = "i9S-TWS";
+            this.i9STWSToolStripMenuItem.Click += new System.EventHandler(this.i9STWSToolStripMenuItem_Click);
             // 
             // airPodsProToolStripMenuItem
             // 
             this.airPodsProToolStripMenuItem.Name = "airPodsProToolStripMenuItem";
             this.airPodsProToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.airPodsProToolStripMenuItem.Text = "AirPods Pro";
+            this.airPodsProToolStripMenuItem.Click += new System.EventHandler(this.airPodsProToolStripMenuItem_Click);
             // 
             // sennheiserHDToolStripMenuItem
             // 
             this.sennheiserHDToolStripMenuItem.Name = "sennheiserHDToolStripMenuItem";
             this.sennheiserHDToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.sennheiserHDToolStripMenuItem.Text = "Sennheiser HD";
+            this.sennheiserHDToolStripMenuItem.Click += new System.EventHandler(this.sennheiserHDToolStripMenuItem_Click);
             // 
             // damixToolStripMenuItem
             // 
             this.damixToolStripMenuItem.Name = "damixToolStripMenuItem";
             this.damixToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.damixToolStripMenuItem.Text = "Damix";
+            this.damixToolStripMenuItem.Click += new System.EventHandler(this.damixToolStripMenuItem_Click);
             // 
             // qCYT5ToolStripMenuItem
             // 
             this.qCYT5ToolStripMenuItem.Name = "qCYT5ToolStripMenuItem";
             this.qCYT5ToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.qCYT5ToolStripMenuItem.Text = "QCY T5";
+            this.qCYT5ToolStripMenuItem.Click += new System.EventHandler(this.qCYT5ToolStripMenuItem_Click);
             // 
             // tvsMenuItem
             // 
@@ -1175,60 +1222,70 @@
             this.tvsMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tvsMenuItem.Tag = "TVs";
             this.tvsMenuItem.Text = "Телевизоры";
+            this.tvsMenuItem.Click += new System.EventHandler(this.tvsMenuItem_Click);
             // 
             // samsungUE55RU7300UXRUToolStripMenuItem
             // 
             this.samsungUE55RU7300UXRUToolStripMenuItem.Name = "samsungUE55RU7300UXRUToolStripMenuItem";
             this.samsungUE55RU7300UXRUToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.samsungUE55RU7300UXRUToolStripMenuItem.Text = "Samsung UE55RU7300UXRU";
+            this.samsungUE55RU7300UXRUToolStripMenuItem.Click += new System.EventHandler(this.samsungUE55RU7300UXRUToolStripMenuItem_Click);
             // 
             // lG43UK6200PLAToolStripMenuItem
             // 
             this.lG43UK6200PLAToolStripMenuItem.Name = "lG43UK6200PLAToolStripMenuItem";
             this.lG43UK6200PLAToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.lG43UK6200PLAToolStripMenuItem.Text = "LG 43UK6200PLA";
+            this.lG43UK6200PLAToolStripMenuItem.Click += new System.EventHandler(this.lG43UK6200PLAToolStripMenuItem_Click);
             // 
             // kIVI55UC50GRToolStripMenuItem
             // 
             this.kIVI55UC50GRToolStripMenuItem.Name = "kIVI55UC50GRToolStripMenuItem";
             this.kIVI55UC50GRToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.kIVI55UC50GRToolStripMenuItem.Text = "KIVI 55UC50GR";
+            this.kIVI55UC50GRToolStripMenuItem.Click += new System.EventHandler(this.kIVI55UC50GRToolStripMenuItem_Click);
             // 
             // lG49UK6300PLBToolStripMenuItem
             // 
             this.lG49UK6300PLBToolStripMenuItem.Name = "lG49UK6300PLBToolStripMenuItem";
             this.lG49UK6300PLBToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.lG49UK6300PLBToolStripMenuItem.Text = "LG 49UK6300PLB";
+            this.lG49UK6300PLBToolStripMenuItem.Click += new System.EventHandler(this.lG49UK6300PLBToolStripMenuItem_Click);
             // 
             // samsungQE75Q900RBUToolStripMenuItem
             // 
             this.samsungQE75Q900RBUToolStripMenuItem.Name = "samsungQE75Q900RBUToolStripMenuItem";
             this.samsungQE75Q900RBUToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.samsungQE75Q900RBUToolStripMenuItem.Text = "Samsung QE75Q900RBU";
+            this.samsungQE75Q900RBUToolStripMenuItem.Click += new System.EventHandler(this.samsungQE75Q900RBUToolStripMenuItem_Click);
             // 
             // thomsonT22FTE1020ToolStripMenuItem
             // 
             this.thomsonT22FTE1020ToolStripMenuItem.Name = "thomsonT22FTE1020ToolStripMenuItem";
             this.thomsonT22FTE1020ToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.thomsonT22FTE1020ToolStripMenuItem.Text = "Thomson T22FTE1020";
+            this.thomsonT22FTE1020ToolStripMenuItem.Click += new System.EventHandler(this.thomsonT22FTE1020ToolStripMenuItem_Click);
             // 
             // asano32LH7010TToolStripMenuItem
             // 
             this.asano32LH7010TToolStripMenuItem.Name = "asano32LH7010TToolStripMenuItem";
             this.asano32LH7010TToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.asano32LH7010TToolStripMenuItem.Text = "Asano 32LH7010T";
+            this.asano32LH7010TToolStripMenuItem.Click += new System.EventHandler(this.asano32LH7010TToolStripMenuItem_Click);
             // 
             // eCONSMARTToolStripMenuItem
             // 
             this.eCONSMARTToolStripMenuItem.Name = "eCONSMARTToolStripMenuItem";
             this.eCONSMARTToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.eCONSMARTToolStripMenuItem.Text = "ECON SMART";
+            this.eCONSMARTToolStripMenuItem.Click += new System.EventHandler(this.eCONSMARTToolStripMenuItem_Click);
             // 
             // sonyKDL32RE303ToolStripMenuItem
             // 
             this.sonyKDL32RE303ToolStripMenuItem.Name = "sonyKDL32RE303ToolStripMenuItem";
             this.sonyKDL32RE303ToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.sonyKDL32RE303ToolStripMenuItem.Text = "Sony KDL-32RE303";
+            this.sonyKDL32RE303ToolStripMenuItem.Click += new System.EventHandler(this.sonyKDL32RE303ToolStripMenuItem_Click);
             // 
             // laptopsMenuItem
             // 
@@ -1246,188 +1303,70 @@
             this.laptopsMenuItem.Size = new System.Drawing.Size(180, 22);
             this.laptopsMenuItem.Tag = "Laptops";
             this.laptopsMenuItem.Text = "Ноутбуки";
+            this.laptopsMenuItem.Click += new System.EventHandler(this.laptopsMenuItem_Click);
             // 
             // lenovoIdeaPad33015ASTToolStripMenuItem
             // 
             this.lenovoIdeaPad33015ASTToolStripMenuItem.Name = "lenovoIdeaPad33015ASTToolStripMenuItem";
             this.lenovoIdeaPad33015ASTToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
             this.lenovoIdeaPad33015ASTToolStripMenuItem.Text = "Lenovo IdeaPad 330-15AST";
+            this.lenovoIdeaPad33015ASTToolStripMenuItem.Click += new System.EventHandler(this.lenovoIdeaPad33015ASTToolStripMenuItem_Click);
             // 
             // aSUSZenBook14ToolStripMenuItem
             // 
             this.aSUSZenBook14ToolStripMenuItem.Name = "aSUSZenBook14ToolStripMenuItem";
             this.aSUSZenBook14ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
             this.aSUSZenBook14ToolStripMenuItem.Text = "ASUS ZenBook 14";
+            this.aSUSZenBook14ToolStripMenuItem.Click += new System.EventHandler(this.aSUSZenBook14ToolStripMenuItem_Click);
             // 
             // acerExtensa15ToolStripMenuItem
             // 
             this.acerExtensa15ToolStripMenuItem.Name = "acerExtensa15ToolStripMenuItem";
             this.acerExtensa15ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
             this.acerExtensa15ToolStripMenuItem.Text = "Acer Extensa 15";
+            this.acerExtensa15ToolStripMenuItem.Click += new System.EventHandler(this.acerExtensa15ToolStripMenuItem_Click);
             // 
             // hPEnvy13ToolStripMenuItem
             // 
             this.hPEnvy13ToolStripMenuItem.Name = "hPEnvy13ToolStripMenuItem";
             this.hPEnvy13ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
             this.hPEnvy13ToolStripMenuItem.Text = "HP Envy 13";
+            this.hPEnvy13ToolStripMenuItem.Click += new System.EventHandler(this.hPEnvy13ToolStripMenuItem_Click);
             // 
             // aSUSZenBookSToolStripMenuItem
             // 
             this.aSUSZenBookSToolStripMenuItem.Name = "aSUSZenBookSToolStripMenuItem";
             this.aSUSZenBookSToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
             this.aSUSZenBookSToolStripMenuItem.Text = "ASUS ZenBook S";
+            this.aSUSZenBookSToolStripMenuItem.Click += new System.EventHandler(this.aSUSZenBookSToolStripMenuItem_Click);
             // 
             // dellPrecision7730ToolStripMenuItem
             // 
             this.dellPrecision7730ToolStripMenuItem.Name = "dellPrecision7730ToolStripMenuItem";
             this.dellPrecision7730ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
             this.dellPrecision7730ToolStripMenuItem.Text = "Dell Precision 7730";
+            this.dellPrecision7730ToolStripMenuItem.Click += new System.EventHandler(this.dellPrecision7730ToolStripMenuItem_Click);
             // 
             // acerSwiftToolStripMenuItem
             // 
             this.acerSwiftToolStripMenuItem.Name = "acerSwiftToolStripMenuItem";
             this.acerSwiftToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
             this.acerSwiftToolStripMenuItem.Text = "Acer Swift";
+            this.acerSwiftToolStripMenuItem.Click += new System.EventHandler(this.acerSwiftToolStripMenuItem_Click);
             // 
             // honorMagicBookToolStripMenuItem
             // 
             this.honorMagicBookToolStripMenuItem.Name = "honorMagicBookToolStripMenuItem";
             this.honorMagicBookToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
             this.honorMagicBookToolStripMenuItem.Text = "Honor MagicBook";
+            this.honorMagicBookToolStripMenuItem.Click += new System.EventHandler(this.honorMagicBookToolStripMenuItem_Click);
             // 
             // acerAspire3ToolStripMenuItem
             // 
             this.acerAspire3ToolStripMenuItem.Name = "acerAspire3ToolStripMenuItem";
             this.acerAspire3ToolStripMenuItem.Size = new System.Drawing.Size(259, 22);
             this.acerAspire3ToolStripMenuItem.Text = "Acer Aspire 3";
-            // 
-            // smartWatchMenuItem
-            // 
-            this.smartWatchMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xiaomiAmazfitBipToolStripMenuItem,
-            this.samsungGalaxyWatchActiveToolStripMenuItem,
-            this.appleWatchSeries3ToolStripMenuItem,
-            this.xiaomiPaceToolStripMenuItem,
-            this.amazfitGTSToolStripMenuItem,
-            this.honorMagicWatch2ToolStripMenuItem,
-            this.samsungGalaxyWatchToolStripMenuItem,
-            this.samsungGalaxyWatchActive2ToolStripMenuItem});
-            this.smartWatchMenuItem.Name = "smartWatchMenuItem";
-            this.smartWatchMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.smartWatchMenuItem.Tag = "Smartwhatches";
-            this.smartWatchMenuItem.Text = "Умные часы";
-            // 
-            // xiaomiAmazfitBipToolStripMenuItem
-            // 
-            this.xiaomiAmazfitBipToolStripMenuItem.Name = "xiaomiAmazfitBipToolStripMenuItem";
-            this.xiaomiAmazfitBipToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
-            this.xiaomiAmazfitBipToolStripMenuItem.Text = "Xiaomi Amazfit Bip";
-            // 
-            // samsungGalaxyWatchActiveToolStripMenuItem
-            // 
-            this.samsungGalaxyWatchActiveToolStripMenuItem.Name = "samsungGalaxyWatchActiveToolStripMenuItem";
-            this.samsungGalaxyWatchActiveToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
-            this.samsungGalaxyWatchActiveToolStripMenuItem.Text = "Samsung Galaxy Watch Active";
-            // 
-            // appleWatchSeries3ToolStripMenuItem
-            // 
-            this.appleWatchSeries3ToolStripMenuItem.Name = "appleWatchSeries3ToolStripMenuItem";
-            this.appleWatchSeries3ToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
-            this.appleWatchSeries3ToolStripMenuItem.Text = "Apple Watch Series 3";
-            // 
-            // xiaomiPaceToolStripMenuItem
-            // 
-            this.xiaomiPaceToolStripMenuItem.Name = "xiaomiPaceToolStripMenuItem";
-            this.xiaomiPaceToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
-            this.xiaomiPaceToolStripMenuItem.Text = "Xiaomi Pace";
-            // 
-            // amazfitGTSToolStripMenuItem
-            // 
-            this.amazfitGTSToolStripMenuItem.Name = "amazfitGTSToolStripMenuItem";
-            this.amazfitGTSToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
-            this.amazfitGTSToolStripMenuItem.Text = "Amazfit GTS";
-            // 
-            // honorMagicWatch2ToolStripMenuItem
-            // 
-            this.honorMagicWatch2ToolStripMenuItem.Name = "honorMagicWatch2ToolStripMenuItem";
-            this.honorMagicWatch2ToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
-            this.honorMagicWatch2ToolStripMenuItem.Text = "Honor MagicWatch 2";
-            // 
-            // samsungGalaxyWatchToolStripMenuItem
-            // 
-            this.samsungGalaxyWatchToolStripMenuItem.Name = "samsungGalaxyWatchToolStripMenuItem";
-            this.samsungGalaxyWatchToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
-            this.samsungGalaxyWatchToolStripMenuItem.Text = "Samsung Galaxy Watch";
-            // 
-            // samsungGalaxyWatchActive2ToolStripMenuItem
-            // 
-            this.samsungGalaxyWatchActive2ToolStripMenuItem.Name = "samsungGalaxyWatchActive2ToolStripMenuItem";
-            this.samsungGalaxyWatchActive2ToolStripMenuItem.Size = new System.Drawing.Size(290, 22);
-            this.samsungGalaxyWatchActive2ToolStripMenuItem.Text = "Samsung Galaxy Watch Active 2";
-            // 
-            // smartPhonesMenuItem
-            // 
-            this.smartPhonesMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.honor10iToolStripMenuItem,
-            this.samsungGalaxyA51ToolStripMenuItem,
-            this.iPhone7ToolStripMenuItem,
-            this.iPhoneXRToolStripMenuItem,
-            this.iPhone11ProToolStripMenuItem,
-            this.iPhone8ToolStripMenuItem,
-            this.honor20SToolStripMenuItem,
-            this.samsungGalaxyS20ToolStripMenuItem});
-            this.smartPhonesMenuItem.Name = "smartPhonesMenuItem";
-            this.smartPhonesMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.smartPhonesMenuItem.Tag = "Smartphones";
-            this.smartPhonesMenuItem.Text = "Смартфоны";
-            // 
-            // honor10iToolStripMenuItem
-            // 
-            this.honor10iToolStripMenuItem.Name = "honor10iToolStripMenuItem";
-            this.honor10iToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.honor10iToolStripMenuItem.Text = "Honor 10i";
-            // 
-            // samsungGalaxyA51ToolStripMenuItem
-            // 
-            this.samsungGalaxyA51ToolStripMenuItem.Name = "samsungGalaxyA51ToolStripMenuItem";
-            this.samsungGalaxyA51ToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.samsungGalaxyA51ToolStripMenuItem.Text = "Samsung Galaxy A51";
-            // 
-            // iPhone7ToolStripMenuItem
-            // 
-            this.iPhone7ToolStripMenuItem.Name = "iPhone7ToolStripMenuItem";
-            this.iPhone7ToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.iPhone7ToolStripMenuItem.Text = "iPhone 7";
-            // 
-            // iPhoneXRToolStripMenuItem
-            // 
-            this.iPhoneXRToolStripMenuItem.Name = "iPhoneXRToolStripMenuItem";
-            this.iPhoneXRToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.iPhoneXRToolStripMenuItem.Text = "iPhone XR";
-            // 
-            // iPhone11ProToolStripMenuItem
-            // 
-            this.iPhone11ProToolStripMenuItem.Name = "iPhone11ProToolStripMenuItem";
-            this.iPhone11ProToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.iPhone11ProToolStripMenuItem.Text = "iPhone 11 Pro";
-            // 
-            // iPhone8ToolStripMenuItem
-            // 
-            this.iPhone8ToolStripMenuItem.Name = "iPhone8ToolStripMenuItem";
-            this.iPhone8ToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.iPhone8ToolStripMenuItem.Text = "iPhone 8";
-            // 
-            // honor20SToolStripMenuItem
-            // 
-            this.honor20SToolStripMenuItem.Name = "honor20SToolStripMenuItem";
-            this.honor20SToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.honor20SToolStripMenuItem.Text = "Honor 20S";
-            // 
-            // samsungGalaxyS20ToolStripMenuItem
-            // 
-            this.samsungGalaxyS20ToolStripMenuItem.Name = "samsungGalaxyS20ToolStripMenuItem";
-            this.samsungGalaxyS20ToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.samsungGalaxyS20ToolStripMenuItem.Text = "Samsung Galaxy S20";
+            this.acerAspire3ToolStripMenuItem.Click += new System.EventHandler(this.acerAspire3ToolStripMenuItem_Click);
             // 
             // clothesMenuItem
             // 
@@ -1630,35 +1569,35 @@
             // pulloverMenuItem
             // 
             this.pulloverMenuItem.Name = "pulloverMenuItem";
-            this.pulloverMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pulloverMenuItem.Size = new System.Drawing.Size(175, 22);
             this.pulloverMenuItem.Text = "Пуловер";
             this.pulloverMenuItem.Click += new System.EventHandler(this.pulloverMenuItem_Click);
             // 
             // jacketMenuItem
             // 
             this.jacketMenuItem.Name = "jacketMenuItem";
-            this.jacketMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jacketMenuItem.Size = new System.Drawing.Size(175, 22);
             this.jacketMenuItem.Text = "Куртка";
             this.jacketMenuItem.Click += new System.EventHandler(this.jacketMenuItem_Click);
             // 
             // jeansMenuItem
             // 
             this.jeansMenuItem.Name = "jeansMenuItem";
-            this.jeansMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jeansMenuItem.Size = new System.Drawing.Size(175, 22);
             this.jeansMenuItem.Text = "Джинсы";
             this.jeansMenuItem.Click += new System.EventHandler(this.jeansMenuItem_Click);
             // 
             // jacketAnorakMenuItem
             // 
             this.jacketAnorakMenuItem.Name = "jacketAnorakMenuItem";
-            this.jacketAnorakMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jacketAnorakMenuItem.Size = new System.Drawing.Size(175, 22);
             this.jacketAnorakMenuItem.Text = "Куртка Anorak";
             this.jacketAnorakMenuItem.Click += new System.EventHandler(this.jacketAnorakMenuItem_Click);
             // 
             // pantsMenuItem
             // 
             this.pantsMenuItem.Name = "pantsMenuItem";
-            this.pantsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pantsMenuItem.Size = new System.Drawing.Size(175, 22);
             this.pantsMenuItem.Text = "Брюки";
             this.pantsMenuItem.Click += new System.EventHandler(this.pantsMenuItem_Click);
             // 
@@ -1811,7 +1750,7 @@
             // 
             // buttonClothesChange
             // 
-            this.buttonClothesChange.Location = new System.Drawing.Point(433, 486);
+            this.buttonClothesChange.Location = new System.Drawing.Point(399, 488);
             this.buttonClothesChange.Name = "buttonClothesChange";
             this.buttonClothesChange.Size = new System.Drawing.Size(75, 23);
             this.buttonClothesChange.TabIndex = 100;
@@ -1822,7 +1761,7 @@
             // 
             // buttonClothesUpdate
             // 
-            this.buttonClothesUpdate.Location = new System.Drawing.Point(318, 486);
+            this.buttonClothesUpdate.Location = new System.Drawing.Point(284, 488);
             this.buttonClothesUpdate.Name = "buttonClothesUpdate";
             this.buttonClothesUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonClothesUpdate.TabIndex = 99;
@@ -1847,7 +1786,7 @@
             this.panelClothesItems.Controls.Add(this.textClothesMaterial);
             this.panelClothesItems.Controls.Add(this.textClothesBrand);
             this.panelClothesItems.Controls.Add(this.labelClothesMaterial);
-            this.panelClothesItems.Location = new System.Drawing.Point(304, 139);
+            this.panelClothesItems.Location = new System.Drawing.Point(270, 141);
             this.panelClothesItems.Name = "panelClothesItems";
             this.panelClothesItems.Size = new System.Drawing.Size(224, 341);
             this.panelClothesItems.TabIndex = 98;
@@ -2023,11 +1962,591 @@
             this.labelClothesMaterial.TabIndex = 52;
             this.labelClothesMaterial.Text = "Материал";
             // 
+            // buttonPcsLaptopsChange
+            // 
+            this.buttonPcsLaptopsChange.Location = new System.Drawing.Point(273, 488);
+            this.buttonPcsLaptopsChange.Name = "buttonPcsLaptopsChange";
+            this.buttonPcsLaptopsChange.Size = new System.Drawing.Size(75, 23);
+            this.buttonPcsLaptopsChange.TabIndex = 103;
+            this.buttonPcsLaptopsChange.TabStop = false;
+            this.buttonPcsLaptopsChange.Text = "Изменить";
+            this.buttonPcsLaptopsChange.UseVisualStyleBackColor = true;
+            this.buttonPcsLaptopsChange.Click += new System.EventHandler(this.buttonPcsLaptopsChange_Click);
+            // 
+            // buttonPcsLaptopsUpdate
+            // 
+            this.buttonPcsLaptopsUpdate.Location = new System.Drawing.Point(158, 488);
+            this.buttonPcsLaptopsUpdate.Name = "buttonPcsLaptopsUpdate";
+            this.buttonPcsLaptopsUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonPcsLaptopsUpdate.TabIndex = 102;
+            this.buttonPcsLaptopsUpdate.TabStop = false;
+            this.buttonPcsLaptopsUpdate.Text = "Обновить";
+            this.buttonPcsLaptopsUpdate.UseVisualStyleBackColor = true;
+            this.buttonPcsLaptopsUpdate.Click += new System.EventHandler(this.buttonPcsLaptopsUpdate_Click);
+            // 
+            // panelPcsLaptops
+            // 
+            this.panelPcsLaptops.Controls.Add(this.textPcsLaptopsOS);
+            this.panelPcsLaptops.Controls.Add(this.labelPcsLaptopsPrice);
+            this.panelPcsLaptops.Controls.Add(this.labelPcsLaptopsOS);
+            this.panelPcsLaptops.Controls.Add(this.textPcsLaptopsPrice);
+            this.panelPcsLaptops.Controls.Add(this.labelPcsLaptopsAddingQuantity);
+            this.panelPcsLaptops.Controls.Add(this.labelPcsLaptopsNameTable);
+            this.panelPcsLaptops.Controls.Add(this.labelPcsLaptopsName);
+            this.panelPcsLaptops.Controls.Add(this.comboQuantityPcsLaptops);
+            this.panelPcsLaptops.Controls.Add(this.textPcsLaptopsName);
+            this.panelPcsLaptops.Controls.Add(this.labelPcsLaptopsQuantity);
+            this.panelPcsLaptops.Controls.Add(this.labelPcsLaptopsCPU);
+            this.panelPcsLaptops.Controls.Add(this.textPcsLaptopsGPU);
+            this.panelPcsLaptops.Controls.Add(this.textPcsLaptopsCPU);
+            this.panelPcsLaptops.Controls.Add(this.labelPcsLaptopsGPU);
+            this.panelPcsLaptops.Location = new System.Drawing.Point(144, 141);
+            this.panelPcsLaptops.Name = "panelPcsLaptops";
+            this.panelPcsLaptops.Size = new System.Drawing.Size(224, 341);
+            this.panelPcsLaptops.TabIndex = 101;
+            // 
+            // textPcsLaptopsOS
+            // 
+            this.textPcsLaptopsOS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textPcsLaptopsOS.CausesValidation = false;
+            this.textPcsLaptopsOS.Location = new System.Drawing.Point(37, 202);
+            this.textPcsLaptopsOS.MaxLength = 50;
+            this.textPcsLaptopsOS.Name = "textPcsLaptopsOS";
+            this.textPcsLaptopsOS.Size = new System.Drawing.Size(159, 20);
+            this.textPcsLaptopsOS.TabIndex = 97;
+            this.textPcsLaptopsOS.TabStop = false;
+            // 
+            // labelPcsLaptopsPrice
+            // 
+            this.labelPcsLaptopsPrice.AutoSize = true;
+            this.labelPcsLaptopsPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPcsLaptopsPrice.Location = new System.Drawing.Point(92, 236);
+            this.labelPcsLaptopsPrice.Name = "labelPcsLaptopsPrice";
+            this.labelPcsLaptopsPrice.Size = new System.Drawing.Size(41, 16);
+            this.labelPcsLaptopsPrice.TabIndex = 100;
+            this.labelPcsLaptopsPrice.Text = "Цена";
+            // 
+            // labelPcsLaptopsOS
+            // 
+            this.labelPcsLaptopsOS.AutoSize = true;
+            this.labelPcsLaptopsOS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPcsLaptopsOS.Location = new System.Drawing.Point(39, 179);
+            this.labelPcsLaptopsOS.Name = "labelPcsLaptopsOS";
+            this.labelPcsLaptopsOS.Size = new System.Drawing.Size(162, 16);
+            this.labelPcsLaptopsOS.TabIndex = 97;
+            this.labelPcsLaptopsOS.Text = "Операционная система";
+            // 
+            // textPcsLaptopsPrice
+            // 
+            this.textPcsLaptopsPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textPcsLaptopsPrice.CausesValidation = false;
+            this.textPcsLaptopsPrice.Location = new System.Drawing.Point(35, 255);
+            this.textPcsLaptopsPrice.MaxLength = 10;
+            this.textPcsLaptopsPrice.Name = "textPcsLaptopsPrice";
+            this.textPcsLaptopsPrice.Size = new System.Drawing.Size(159, 20);
+            this.textPcsLaptopsPrice.TabIndex = 98;
+            this.textPcsLaptopsPrice.TabStop = false;
+            // 
+            // labelPcsLaptopsAddingQuantity
+            // 
+            this.labelPcsLaptopsAddingQuantity.AutoSize = true;
+            this.labelPcsLaptopsAddingQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPcsLaptopsAddingQuantity.Location = new System.Drawing.Point(155, 284);
+            this.labelPcsLaptopsAddingQuantity.Name = "labelPcsLaptopsAddingQuantity";
+            this.labelPcsLaptopsAddingQuantity.Size = new System.Drawing.Size(24, 16);
+            this.labelPcsLaptopsAddingQuantity.TabIndex = 96;
+            this.labelPcsLaptopsAddingQuantity.Text = "чл";
+            // 
+            // labelPcsLaptopsNameTable
+            // 
+            this.labelPcsLaptopsNameTable.AutoSize = true;
+            this.labelPcsLaptopsNameTable.Location = new System.Drawing.Point(14, 9);
+            this.labelPcsLaptopsNameTable.Name = "labelPcsLaptopsNameTable";
+            this.labelPcsLaptopsNameTable.Size = new System.Drawing.Size(103, 13);
+            this.labelPcsLaptopsNameTable.TabIndex = 95;
+            this.labelPcsLaptopsNameTable.Text = "Название таблицы";
+            // 
+            // labelPcsLaptopsName
+            // 
+            this.labelPcsLaptopsName.AutoSize = true;
+            this.labelPcsLaptopsName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPcsLaptopsName.Location = new System.Drawing.Point(58, 29);
+            this.labelPcsLaptopsName.Name = "labelPcsLaptopsName";
+            this.labelPcsLaptopsName.Size = new System.Drawing.Size(118, 16);
+            this.labelPcsLaptopsName.TabIndex = 47;
+            this.labelPcsLaptopsName.Text = "Название ПС/ЛТ";
+            // 
+            // comboQuantityPcsLaptops
+            // 
+            this.comboQuantityPcsLaptops.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboQuantityPcsLaptops.CausesValidation = false;
+            this.comboQuantityPcsLaptops.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboQuantityPcsLaptops.DropDownHeight = 70;
+            this.comboQuantityPcsLaptops.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboQuantityPcsLaptops.DropDownWidth = 30;
+            this.comboQuantityPcsLaptops.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboQuantityPcsLaptops.FormattingEnabled = true;
+            this.comboQuantityPcsLaptops.IntegralHeight = false;
+            this.comboQuantityPcsLaptops.Location = new System.Drawing.Point(94, 303);
+            this.comboQuantityPcsLaptops.Name = "comboQuantityPcsLaptops";
+            this.comboQuantityPcsLaptops.Size = new System.Drawing.Size(44, 24);
+            this.comboQuantityPcsLaptops.TabIndex = 94;
+            this.comboQuantityPcsLaptops.TabStop = false;
+            // 
+            // textPcsLaptopsName
+            // 
+            this.textPcsLaptopsName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textPcsLaptopsName.CausesValidation = false;
+            this.textPcsLaptopsName.Location = new System.Drawing.Point(34, 48);
+            this.textPcsLaptopsName.MaxLength = 50;
+            this.textPcsLaptopsName.Name = "textPcsLaptopsName";
+            this.textPcsLaptopsName.ReadOnly = true;
+            this.textPcsLaptopsName.Size = new System.Drawing.Size(159, 20);
+            this.textPcsLaptopsName.TabIndex = 49;
+            this.textPcsLaptopsName.TabStop = false;
+            // 
+            // labelPcsLaptopsQuantity
+            // 
+            this.labelPcsLaptopsQuantity.AutoSize = true;
+            this.labelPcsLaptopsQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPcsLaptopsQuantity.Location = new System.Drawing.Point(52, 284);
+            this.labelPcsLaptopsQuantity.Name = "labelPcsLaptopsQuantity";
+            this.labelPcsLaptopsQuantity.Size = new System.Drawing.Size(86, 16);
+            this.labelPcsLaptopsQuantity.TabIndex = 54;
+            this.labelPcsLaptopsQuantity.Text = "Количество";
+            // 
+            // labelPcsLaptopsCPU
+            // 
+            this.labelPcsLaptopsCPU.AutoSize = true;
+            this.labelPcsLaptopsCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPcsLaptopsCPU.Location = new System.Drawing.Point(90, 75);
+            this.labelPcsLaptopsCPU.Name = "labelPcsLaptopsCPU";
+            this.labelPcsLaptopsCPU.Size = new System.Drawing.Size(36, 16);
+            this.labelPcsLaptopsCPU.TabIndex = 50;
+            this.labelPcsLaptopsCPU.Text = "CPU";
+            // 
+            // textPcsLaptopsGPU
+            // 
+            this.textPcsLaptopsGPU.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textPcsLaptopsGPU.CausesValidation = false;
+            this.textPcsLaptopsGPU.Location = new System.Drawing.Point(3, 146);
+            this.textPcsLaptopsGPU.MaxLength = 100;
+            this.textPcsLaptopsGPU.Name = "textPcsLaptopsGPU";
+            this.textPcsLaptopsGPU.Size = new System.Drawing.Size(218, 20);
+            this.textPcsLaptopsGPU.TabIndex = 53;
+            this.textPcsLaptopsGPU.TabStop = false;
+            // 
+            // textPcsLaptopsCPU
+            // 
+            this.textPcsLaptopsCPU.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textPcsLaptopsCPU.CausesValidation = false;
+            this.textPcsLaptopsCPU.Location = new System.Drawing.Point(35, 94);
+            this.textPcsLaptopsCPU.MaxLength = 50;
+            this.textPcsLaptopsCPU.Name = "textPcsLaptopsCPU";
+            this.textPcsLaptopsCPU.Size = new System.Drawing.Size(159, 20);
+            this.textPcsLaptopsCPU.TabIndex = 51;
+            this.textPcsLaptopsCPU.TabStop = false;
+            // 
+            // labelPcsLaptopsGPU
+            // 
+            this.labelPcsLaptopsGPU.AutoSize = true;
+            this.labelPcsLaptopsGPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPcsLaptopsGPU.Location = new System.Drawing.Point(90, 127);
+            this.labelPcsLaptopsGPU.Name = "labelPcsLaptopsGPU";
+            this.labelPcsLaptopsGPU.Size = new System.Drawing.Size(37, 16);
+            this.labelPcsLaptopsGPU.TabIndex = 52;
+            this.labelPcsLaptopsGPU.Text = "GPU";
+            // 
+            // buttonhPhonesChange
+            // 
+            this.buttonhPhonesChange.Location = new System.Drawing.Point(165, 434);
+            this.buttonhPhonesChange.Name = "buttonhPhonesChange";
+            this.buttonhPhonesChange.Size = new System.Drawing.Size(75, 23);
+            this.buttonhPhonesChange.TabIndex = 106;
+            this.buttonhPhonesChange.TabStop = false;
+            this.buttonhPhonesChange.Text = "Изменить";
+            this.buttonhPhonesChange.UseVisualStyleBackColor = true;
+            this.buttonhPhonesChange.Click += new System.EventHandler(this.buttonhPhonesChange_Click);
+            // 
+            // buttonhPhonesUpdate
+            // 
+            this.buttonhPhonesUpdate.Location = new System.Drawing.Point(54, 434);
+            this.buttonhPhonesUpdate.Name = "buttonhPhonesUpdate";
+            this.buttonhPhonesUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonhPhonesUpdate.TabIndex = 105;
+            this.buttonhPhonesUpdate.TabStop = false;
+            this.buttonhPhonesUpdate.Text = "Обновить";
+            this.buttonhPhonesUpdate.UseVisualStyleBackColor = true;
+            this.buttonhPhonesUpdate.Click += new System.EventHandler(this.buttonhPhonesUpdate_Click);
+            // 
+            // panelhPhonesItems
+            // 
+            this.panelhPhonesItems.Controls.Add(this.labelhPhonesPrice);
+            this.panelhPhonesItems.Controls.Add(this.texthPhonesPrice);
+            this.panelhPhonesItems.Controls.Add(this.labelhPhonesAddingQuantity);
+            this.panelhPhonesItems.Controls.Add(this.labelHPhoneNameTable);
+            this.panelhPhonesItems.Controls.Add(this.labelhPhonesName);
+            this.panelhPhonesItems.Controls.Add(this.combohPhonesQuantity);
+            this.panelhPhonesItems.Controls.Add(this.textHPhonesName);
+            this.panelhPhonesItems.Controls.Add(this.labelhPhonesQuantity);
+            this.panelhPhonesItems.Controls.Add(this.labelhPhonesType);
+            this.panelhPhonesItems.Controls.Add(this.texthPhonesMic);
+            this.panelhPhonesItems.Controls.Add(this.textHPhonesType);
+            this.panelhPhonesItems.Controls.Add(this.labelhPhonesMic);
+            this.panelhPhonesItems.Location = new System.Drawing.Point(37, 150);
+            this.panelhPhonesItems.Name = "panelhPhonesItems";
+            this.panelhPhonesItems.Size = new System.Drawing.Size(224, 275);
+            this.panelhPhonesItems.TabIndex = 104;
+            // 
+            // labelhPhonesPrice
+            // 
+            this.labelhPhonesPrice.AutoSize = true;
+            this.labelhPhonesPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelhPhonesPrice.Location = new System.Drawing.Point(90, 179);
+            this.labelhPhonesPrice.Name = "labelhPhonesPrice";
+            this.labelhPhonesPrice.Size = new System.Drawing.Size(41, 16);
+            this.labelhPhonesPrice.TabIndex = 100;
+            this.labelhPhonesPrice.Text = "Цена";
+            // 
+            // texthPhonesPrice
+            // 
+            this.texthPhonesPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.texthPhonesPrice.CausesValidation = false;
+            this.texthPhonesPrice.Location = new System.Drawing.Point(33, 198);
+            this.texthPhonesPrice.MaxLength = 10;
+            this.texthPhonesPrice.Name = "texthPhonesPrice";
+            this.texthPhonesPrice.Size = new System.Drawing.Size(159, 20);
+            this.texthPhonesPrice.TabIndex = 98;
+            this.texthPhonesPrice.TabStop = false;
+            // 
+            // labelhPhonesAddingQuantity
+            // 
+            this.labelhPhonesAddingQuantity.AutoSize = true;
+            this.labelhPhonesAddingQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelhPhonesAddingQuantity.Location = new System.Drawing.Point(153, 227);
+            this.labelhPhonesAddingQuantity.Name = "labelhPhonesAddingQuantity";
+            this.labelhPhonesAddingQuantity.Size = new System.Drawing.Size(24, 16);
+            this.labelhPhonesAddingQuantity.TabIndex = 96;
+            this.labelhPhonesAddingQuantity.Text = "чл";
+            // 
+            // labelHPhoneNameTable
+            // 
+            this.labelHPhoneNameTable.AutoSize = true;
+            this.labelHPhoneNameTable.Location = new System.Drawing.Point(14, 9);
+            this.labelHPhoneNameTable.Name = "labelHPhoneNameTable";
+            this.labelHPhoneNameTable.Size = new System.Drawing.Size(103, 13);
+            this.labelHPhoneNameTable.TabIndex = 95;
+            this.labelHPhoneNameTable.Text = "Название таблицы";
+            // 
+            // labelhPhonesName
+            // 
+            this.labelhPhonesName.AutoSize = true;
+            this.labelhPhonesName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelhPhonesName.Location = new System.Drawing.Point(41, 29);
+            this.labelhPhonesName.Name = "labelhPhonesName";
+            this.labelhPhonesName.Size = new System.Drawing.Size(151, 16);
+            this.labelhPhonesName.TabIndex = 47;
+            this.labelhPhonesName.Text = "Название Наушников";
+            // 
+            // combohPhonesQuantity
+            // 
+            this.combohPhonesQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.combohPhonesQuantity.CausesValidation = false;
+            this.combohPhonesQuantity.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combohPhonesQuantity.DropDownHeight = 70;
+            this.combohPhonesQuantity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combohPhonesQuantity.DropDownWidth = 30;
+            this.combohPhonesQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.combohPhonesQuantity.FormattingEnabled = true;
+            this.combohPhonesQuantity.IntegralHeight = false;
+            this.combohPhonesQuantity.Location = new System.Drawing.Point(92, 246);
+            this.combohPhonesQuantity.Name = "combohPhonesQuantity";
+            this.combohPhonesQuantity.Size = new System.Drawing.Size(44, 24);
+            this.combohPhonesQuantity.TabIndex = 94;
+            this.combohPhonesQuantity.TabStop = false;
+            // 
+            // textHPhonesName
+            // 
+            this.textHPhonesName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textHPhonesName.CausesValidation = false;
+            this.textHPhonesName.Location = new System.Drawing.Point(34, 48);
+            this.textHPhonesName.MaxLength = 50;
+            this.textHPhonesName.Name = "textHPhonesName";
+            this.textHPhonesName.ReadOnly = true;
+            this.textHPhonesName.Size = new System.Drawing.Size(159, 20);
+            this.textHPhonesName.TabIndex = 49;
+            this.textHPhonesName.TabStop = false;
+            // 
+            // labelhPhonesQuantity
+            // 
+            this.labelhPhonesQuantity.AutoSize = true;
+            this.labelhPhonesQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelhPhonesQuantity.Location = new System.Drawing.Point(50, 227);
+            this.labelhPhonesQuantity.Name = "labelhPhonesQuantity";
+            this.labelhPhonesQuantity.Size = new System.Drawing.Size(86, 16);
+            this.labelhPhonesQuantity.TabIndex = 54;
+            this.labelhPhonesQuantity.Text = "Количество";
+            // 
+            // labelhPhonesType
+            // 
+            this.labelhPhonesType.AutoSize = true;
+            this.labelhPhonesType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelhPhonesType.Location = new System.Drawing.Point(90, 75);
+            this.labelhPhonesType.Name = "labelhPhonesType";
+            this.labelhPhonesType.Size = new System.Drawing.Size(33, 16);
+            this.labelhPhonesType.TabIndex = 50;
+            this.labelhPhonesType.Text = "Тип";
+            // 
+            // texthPhonesMic
+            // 
+            this.texthPhonesMic.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.texthPhonesMic.CausesValidation = false;
+            this.texthPhonesMic.Location = new System.Drawing.Point(3, 146);
+            this.texthPhonesMic.MaxLength = 100;
+            this.texthPhonesMic.Name = "texthPhonesMic";
+            this.texthPhonesMic.Size = new System.Drawing.Size(218, 20);
+            this.texthPhonesMic.TabIndex = 53;
+            this.texthPhonesMic.TabStop = false;
+            // 
+            // textHPhonesType
+            // 
+            this.textHPhonesType.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textHPhonesType.CausesValidation = false;
+            this.textHPhonesType.Location = new System.Drawing.Point(35, 94);
+            this.textHPhonesType.MaxLength = 50;
+            this.textHPhonesType.Name = "textHPhonesType";
+            this.textHPhonesType.Size = new System.Drawing.Size(159, 20);
+            this.textHPhonesType.TabIndex = 51;
+            this.textHPhonesType.TabStop = false;
+            // 
+            // labelhPhonesMic
+            // 
+            this.labelhPhonesMic.AutoSize = true;
+            this.labelhPhonesMic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelhPhonesMic.Location = new System.Drawing.Point(67, 127);
+            this.labelhPhonesMic.Name = "labelhPhonesMic";
+            this.labelhPhonesMic.Size = new System.Drawing.Size(77, 16);
+            this.labelhPhonesMic.TabIndex = 52;
+            this.labelhPhonesMic.Text = "Микрофон";
+            // 
+            // buttonTvsChange
+            // 
+            this.buttonTvsChange.Location = new System.Drawing.Point(633, 434);
+            this.buttonTvsChange.Name = "buttonTvsChange";
+            this.buttonTvsChange.Size = new System.Drawing.Size(75, 23);
+            this.buttonTvsChange.TabIndex = 109;
+            this.buttonTvsChange.TabStop = false;
+            this.buttonTvsChange.Text = "Изменить";
+            this.buttonTvsChange.UseVisualStyleBackColor = true;
+            this.buttonTvsChange.Click += new System.EventHandler(this.buttonTvsChange_Click);
+            // 
+            // buttonTvsUpdate
+            // 
+            this.buttonTvsUpdate.Location = new System.Drawing.Point(522, 434);
+            this.buttonTvsUpdate.Name = "buttonTvsUpdate";
+            this.buttonTvsUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonTvsUpdate.TabIndex = 108;
+            this.buttonTvsUpdate.TabStop = false;
+            this.buttonTvsUpdate.Text = "Обновить";
+            this.buttonTvsUpdate.UseVisualStyleBackColor = true;
+            this.buttonTvsUpdate.Click += new System.EventHandler(this.buttonTvsUpdate_Click);
+            // 
+            // panelTvsItems
+            // 
+            this.panelTvsItems.Controls.Add(this.labelTvsPrice);
+            this.panelTvsItems.Controls.Add(this.textTvsPrice);
+            this.panelTvsItems.Controls.Add(this.labelTvsAddingQuantity);
+            this.panelTvsItems.Controls.Add(this.labelTvsNameTable);
+            this.panelTvsItems.Controls.Add(this.labelTvsName);
+            this.panelTvsItems.Controls.Add(this.comboTvsQuantity);
+            this.panelTvsItems.Controls.Add(this.textTvsName);
+            this.panelTvsItems.Controls.Add(this.labelTvsQuantity);
+            this.panelTvsItems.Controls.Add(this.labelTvsResolution);
+            this.panelTvsItems.Controls.Add(this.textTvsFeatures);
+            this.panelTvsItems.Controls.Add(this.textTvsResolution);
+            this.panelTvsItems.Controls.Add(this.labelTvsFeatures);
+            this.panelTvsItems.Location = new System.Drawing.Point(505, 150);
+            this.panelTvsItems.Name = "panelTvsItems";
+            this.panelTvsItems.Size = new System.Drawing.Size(224, 275);
+            this.panelTvsItems.TabIndex = 107;
+            // 
+            // labelTvsPrice
+            // 
+            this.labelTvsPrice.AutoSize = true;
+            this.labelTvsPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTvsPrice.Location = new System.Drawing.Point(90, 179);
+            this.labelTvsPrice.Name = "labelTvsPrice";
+            this.labelTvsPrice.Size = new System.Drawing.Size(41, 16);
+            this.labelTvsPrice.TabIndex = 100;
+            this.labelTvsPrice.Text = "Цена";
+            // 
+            // textTvsPrice
+            // 
+            this.textTvsPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textTvsPrice.CausesValidation = false;
+            this.textTvsPrice.Location = new System.Drawing.Point(33, 198);
+            this.textTvsPrice.MaxLength = 10;
+            this.textTvsPrice.Name = "textTvsPrice";
+            this.textTvsPrice.Size = new System.Drawing.Size(159, 20);
+            this.textTvsPrice.TabIndex = 98;
+            this.textTvsPrice.TabStop = false;
+            // 
+            // labelTvsAddingQuantity
+            // 
+            this.labelTvsAddingQuantity.AutoSize = true;
+            this.labelTvsAddingQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTvsAddingQuantity.Location = new System.Drawing.Point(153, 227);
+            this.labelTvsAddingQuantity.Name = "labelTvsAddingQuantity";
+            this.labelTvsAddingQuantity.Size = new System.Drawing.Size(24, 16);
+            this.labelTvsAddingQuantity.TabIndex = 96;
+            this.labelTvsAddingQuantity.Text = "чл";
+            // 
+            // labelTvsNameTable
+            // 
+            this.labelTvsNameTable.AutoSize = true;
+            this.labelTvsNameTable.Location = new System.Drawing.Point(14, 9);
+            this.labelTvsNameTable.Name = "labelTvsNameTable";
+            this.labelTvsNameTable.Size = new System.Drawing.Size(103, 13);
+            this.labelTvsNameTable.TabIndex = 95;
+            this.labelTvsNameTable.Text = "Название таблицы";
+            // 
+            // labelTvsName
+            // 
+            this.labelTvsName.AutoSize = true;
+            this.labelTvsName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTvsName.Location = new System.Drawing.Point(41, 29);
+            this.labelTvsName.Name = "labelTvsName";
+            this.labelTvsName.Size = new System.Drawing.Size(115, 16);
+            this.labelTvsName.TabIndex = 47;
+            this.labelTvsName.Text = "Название ТВ-ов";
+            // 
+            // comboTvsQuantity
+            // 
+            this.comboTvsQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboTvsQuantity.CausesValidation = false;
+            this.comboTvsQuantity.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboTvsQuantity.DropDownHeight = 70;
+            this.comboTvsQuantity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboTvsQuantity.DropDownWidth = 30;
+            this.comboTvsQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboTvsQuantity.FormattingEnabled = true;
+            this.comboTvsQuantity.IntegralHeight = false;
+            this.comboTvsQuantity.Location = new System.Drawing.Point(92, 246);
+            this.comboTvsQuantity.Name = "comboTvsQuantity";
+            this.comboTvsQuantity.Size = new System.Drawing.Size(44, 24);
+            this.comboTvsQuantity.TabIndex = 94;
+            this.comboTvsQuantity.TabStop = false;
+            // 
+            // textTvsName
+            // 
+            this.textTvsName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textTvsName.CausesValidation = false;
+            this.textTvsName.Location = new System.Drawing.Point(34, 48);
+            this.textTvsName.MaxLength = 50;
+            this.textTvsName.Name = "textTvsName";
+            this.textTvsName.ReadOnly = true;
+            this.textTvsName.Size = new System.Drawing.Size(159, 20);
+            this.textTvsName.TabIndex = 49;
+            this.textTvsName.TabStop = false;
+            // 
+            // labelTvsQuantity
+            // 
+            this.labelTvsQuantity.AutoSize = true;
+            this.labelTvsQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTvsQuantity.Location = new System.Drawing.Point(50, 227);
+            this.labelTvsQuantity.Name = "labelTvsQuantity";
+            this.labelTvsQuantity.Size = new System.Drawing.Size(86, 16);
+            this.labelTvsQuantity.TabIndex = 54;
+            this.labelTvsQuantity.Text = "Количество";
+            // 
+            // labelTvsResolution
+            // 
+            this.labelTvsResolution.AutoSize = true;
+            this.labelTvsResolution.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTvsResolution.Location = new System.Drawing.Point(46, 75);
+            this.labelTvsResolution.Name = "labelTvsResolution";
+            this.labelTvsResolution.Size = new System.Drawing.Size(140, 16);
+            this.labelTvsResolution.TabIndex = 50;
+            this.labelTvsResolution.Text = "Разрешение экрана";
+            // 
+            // textTvsFeatures
+            // 
+            this.textTvsFeatures.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textTvsFeatures.CausesValidation = false;
+            this.textTvsFeatures.Location = new System.Drawing.Point(3, 146);
+            this.textTvsFeatures.MaxLength = 100;
+            this.textTvsFeatures.Name = "textTvsFeatures";
+            this.textTvsFeatures.Size = new System.Drawing.Size(218, 20);
+            this.textTvsFeatures.TabIndex = 53;
+            this.textTvsFeatures.TabStop = false;
+            // 
+            // textTvsResolution
+            // 
+            this.textTvsResolution.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textTvsResolution.CausesValidation = false;
+            this.textTvsResolution.Location = new System.Drawing.Point(35, 94);
+            this.textTvsResolution.MaxLength = 50;
+            this.textTvsResolution.Name = "textTvsResolution";
+            this.textTvsResolution.Size = new System.Drawing.Size(159, 20);
+            this.textTvsResolution.TabIndex = 51;
+            this.textTvsResolution.TabStop = false;
+            // 
+            // labelTvsFeatures
+            // 
+            this.labelTvsFeatures.AutoSize = true;
+            this.labelTvsFeatures.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTvsFeatures.Location = new System.Drawing.Point(64, 127);
+            this.labelTvsFeatures.Name = "labelTvsFeatures";
+            this.labelTvsFeatures.Size = new System.Drawing.Size(95, 16);
+            this.labelTvsFeatures.TabIndex = 52;
+            this.labelTvsFeatures.Text = "Особенности";
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(741, 594);
+            this.Controls.Add(this.buttonTvsChange);
+            this.Controls.Add(this.buttonhPhonesChange);
+            this.Controls.Add(this.buttonTvsUpdate);
+            this.Controls.Add(this.buttonPcsLaptopsChange);
+            this.Controls.Add(this.panelTvsItems);
+            this.Controls.Add(this.buttonhPhonesUpdate);
+            this.Controls.Add(this.buttonPcsLaptopsUpdate);
+            this.Controls.Add(this.panelhPhonesItems);
+            this.Controls.Add(this.panelPcsLaptops);
             this.Controls.Add(this.buttonClothesChange);
             this.Controls.Add(this.buttonClothesUpdate);
             this.Controls.Add(this.panelClothesItems);
@@ -2061,6 +2580,12 @@
             this.panelBookItems.PerformLayout();
             this.panelClothesItems.ResumeLayout(false);
             this.panelClothesItems.PerformLayout();
+            this.panelPcsLaptops.ResumeLayout(false);
+            this.panelPcsLaptops.PerformLayout();
+            this.panelhPhonesItems.ResumeLayout(false);
+            this.panelhPhonesItems.PerformLayout();
+            this.panelTvsItems.ResumeLayout(false);
+            this.panelTvsItems.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2099,12 +2624,10 @@
         private System.Windows.Forms.ToolStripMenuItem textBooksMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diffBooksMenuItem;
         private System.Windows.Forms.ToolStripMenuItem foreignBooksMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem computersMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pcsMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hPhonesMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tvsMenuItem;
         private System.Windows.Forms.ToolStripMenuItem laptopsMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem smartWatchMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem smartPhonesMenuItem;
         private System.Windows.Forms.ToolStripMenuItem humanSecretsMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pinocchioMenuItem;
         private System.Windows.Forms.ToolStripMenuItem harryPotterMenuItem;
@@ -2198,22 +2721,6 @@
         private System.Windows.Forms.ToolStripMenuItem acerSwiftToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem honorMagicBookToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acerAspire3ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem xiaomiAmazfitBipToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem samsungGalaxyWatchActiveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem appleWatchSeries3ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem xiaomiPaceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem amazfitGTSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem honorMagicWatch2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem samsungGalaxyWatchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem samsungGalaxyWatchActive2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem honor10iToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem samsungGalaxyA51ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iPhone7ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iPhoneXRToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iPhone11ProToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iPhone8ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem honor20SToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem samsungGalaxyS20ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem shoesMenuItem;
         private System.Windows.Forms.ToolStripMenuItem snickersMenuItem;
         private System.Windows.Forms.ToolStripMenuItem snickersStrutterMenuItem;
@@ -2270,5 +2777,52 @@
         private System.Windows.Forms.Label labelClothesMaterial;
         private System.Windows.Forms.ComboBox comboClothesSex;
         private System.Windows.Forms.Label labelClothesPrice;
+        private System.Windows.Forms.Button buttonPcsLaptopsChange;
+        private System.Windows.Forms.Button buttonPcsLaptopsUpdate;
+        private System.Windows.Forms.Panel panelPcsLaptops;
+        private System.Windows.Forms.TextBox textPcsLaptopsOS;
+        private System.Windows.Forms.Label labelPcsLaptopsPrice;
+        private System.Windows.Forms.Label labelPcsLaptopsOS;
+        private System.Windows.Forms.TextBox textPcsLaptopsPrice;
+        private System.Windows.Forms.Label labelPcsLaptopsAddingQuantity;
+        private System.Windows.Forms.Label labelPcsLaptopsNameTable;
+        private System.Windows.Forms.Label labelPcsLaptopsName;
+        private System.Windows.Forms.ComboBox comboQuantityPcsLaptops;
+        private System.Windows.Forms.TextBox textPcsLaptopsName;
+        private System.Windows.Forms.Label labelPcsLaptopsQuantity;
+        private System.Windows.Forms.Label labelPcsLaptopsCPU;
+        private System.Windows.Forms.TextBox textPcsLaptopsGPU;
+        private System.Windows.Forms.TextBox textPcsLaptopsCPU;
+        private System.Windows.Forms.Label labelPcsLaptopsGPU;
+        private System.Windows.Forms.Button buttonhPhonesChange;
+        private System.Windows.Forms.Button buttonhPhonesUpdate;
+        private System.Windows.Forms.Panel panelhPhonesItems;
+        private System.Windows.Forms.Label labelhPhonesPrice;
+        private System.Windows.Forms.TextBox texthPhonesPrice;
+        private System.Windows.Forms.Label labelhPhonesAddingQuantity;
+        private System.Windows.Forms.Label labelHPhoneNameTable;
+        private System.Windows.Forms.Label labelhPhonesName;
+        private System.Windows.Forms.ComboBox combohPhonesQuantity;
+        private System.Windows.Forms.TextBox textHPhonesName;
+        private System.Windows.Forms.Label labelhPhonesQuantity;
+        private System.Windows.Forms.Label labelhPhonesType;
+        private System.Windows.Forms.TextBox texthPhonesMic;
+        private System.Windows.Forms.TextBox textHPhonesType;
+        private System.Windows.Forms.Label labelhPhonesMic;
+        private System.Windows.Forms.Button buttonTvsChange;
+        private System.Windows.Forms.Button buttonTvsUpdate;
+        private System.Windows.Forms.Panel panelTvsItems;
+        private System.Windows.Forms.Label labelTvsPrice;
+        private System.Windows.Forms.TextBox textTvsPrice;
+        private System.Windows.Forms.Label labelTvsAddingQuantity;
+        private System.Windows.Forms.Label labelTvsNameTable;
+        private System.Windows.Forms.Label labelTvsName;
+        private System.Windows.Forms.ComboBox comboTvsQuantity;
+        private System.Windows.Forms.TextBox textTvsName;
+        private System.Windows.Forms.Label labelTvsQuantity;
+        private System.Windows.Forms.Label labelTvsResolution;
+        private System.Windows.Forms.TextBox textTvsFeatures;
+        private System.Windows.Forms.TextBox textTvsResolution;
+        private System.Windows.Forms.Label labelTvsFeatures;
     }
 }

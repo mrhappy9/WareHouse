@@ -555,9 +555,9 @@ namespace Course1
             createConnection();
             try
             {
-                MySqlCommand getBook = new MySqlCommand(connString, connection);
-                getBook.CommandText = $" SELECT Brand, Material, Sex, Price, Quantity FROM {table} WHERE Name = '{name}'";
-                MySqlDataReader reader = getBook.ExecuteReader();
+                MySqlCommand getClothes = new MySqlCommand(connString, connection);
+                getClothes.CommandText = $" SELECT Brand, Material, Sex, Price, Quantity FROM {table} WHERE Name = '{name}'";
+                MySqlDataReader reader = getClothes.ExecuteReader();
                 while (reader.Read())
                 {
                     clothes.Add(reader[0].ToString());
@@ -593,5 +593,155 @@ namespace Course1
         }
 
         /////////////////////////////////////////////////end changing clothes///////////////////////////////////////////////////////////////////////////////
+
+
+        ////////////////////////////////////////////////
+        ///-------------Changing PcsLaptops---------------///
+        ////////////////////////////////////////////////
+
+        public List<String> getParticularLaptopsPcs(string table, string name)
+        {
+            List<String> laptopsPcs = new List<String>();
+            createConnection();
+            try
+            {
+                MySqlCommand getlaptopsPcs= new MySqlCommand(connString, connection);
+                getlaptopsPcs.CommandText = $" SELECT CPU, GPU, OS, Price, Quantity FROM {table} WHERE Name = '{name}'";
+                MySqlDataReader reader = getlaptopsPcs.ExecuteReader();
+                while (reader.Read())
+                {
+                    laptopsPcs.Add(reader[0].ToString());
+                    laptopsPcs.Add(reader[1].ToString());
+                    laptopsPcs.Add(reader[2].ToString());
+                    laptopsPcs.Add(reader[3].ToString());
+                    laptopsPcs.Add(reader[4].ToString());
+                }
+                loseConnection();
+                return laptopsPcs;
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void updatePcsLaptopsTable(string table, string name, string cpu, string gpu, string os, int price, int quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand updatePcsLaptops = new MySqlCommand(connString, connection);
+                updatePcsLaptops.CommandText = $"UPDATE {table} SET CPU = @cpu , GPU = @gpu, OS = @os, Price = {price}, Quantity = {quantity} " +
+                                         $" WHERE Name = '{name}';";
+                updatePcsLaptops.Parameters.AddWithValue("@cpu", cpu);
+                updatePcsLaptops.Parameters.AddWithValue("@gpu", gpu);
+                updatePcsLaptops.Parameters.AddWithValue("@os", os);
+                updatePcsLaptops.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        /////////////////////////////////////////////////end pcsLaptops clothes///////////////////////////////////////////////////////////////////////////////
+
+
+        ////////////////////////////////////////////////
+        ///-------------HPhones PcsLaptops---------------///
+        ////////////////////////////////////////////////
+
+        public List<String> getParticularHPhones(string table, string name)
+        {
+            List<String> hPhones = new List<String>();
+            createConnection();
+            try
+            {
+                MySqlCommand gethPhones = new MySqlCommand(connString, connection);
+                gethPhones.CommandText = $" SELECT Constaction_type, Microphone, Price, Quantity FROM {table} WHERE Name = '{name}'";
+                MySqlDataReader reader = gethPhones.ExecuteReader();
+                while (reader.Read())
+                {
+                    hPhones.Add(reader[0].ToString());
+                    hPhones.Add(reader[1].ToString());
+                    hPhones.Add(reader[2].ToString());
+                    hPhones.Add(reader[3].ToString());
+                }
+                loseConnection();
+                return hPhones;
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void updateHPhonesTable(string table, string name, string type, string mic, int price, int quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand updateHPhones = new MySqlCommand(connString, connection);
+                updateHPhones.CommandText = $"UPDATE {table} SET Microphone = @mic , Constaction_type = @type, Price = {price}, Quantity = {quantity} " +
+                                         $" WHERE Name = '{name}';";
+                updateHPhones.Parameters.AddWithValue("@mic", mic);
+                updateHPhones.Parameters.AddWithValue("@type", type);
+                updateHPhones.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        /////////////////////////////////////////////////end hPhones clothes///////////////////////////////////////////////////////////////////////////////
+
+
+        ////////////////////////////////////////////////
+        ///-------------TVS PcsLaptops---------------///
+        ////////////////////////////////////////////////
+
+        public List<String> getParticularTvs(string table, string name)
+        {
+            List<String> tvs = new List<String>();
+            createConnection();
+            try
+            {
+                MySqlCommand getTvs = new MySqlCommand(connString, connection);
+                getTvs.CommandText = $" SELECT Max_resolution, Features, Price, Quantity FROM {table} WHERE Name = '{name}'";
+                MySqlDataReader reader = getTvs.ExecuteReader();
+                while (reader.Read())
+                {
+                    tvs.Add(reader[0].ToString());
+                    tvs.Add(reader[1].ToString());
+                    tvs.Add(reader[2].ToString());
+                    tvs.Add(reader[3].ToString());
+                }
+                loseConnection();
+                return tvs;
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void updateTvsTable(string table, string name, string resolution, string features, int price, int quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand updateTvs = new MySqlCommand(connString, connection);
+                updateTvs.CommandText = $"UPDATE {table} SET Max_resolution = @resolution , Features = @features, Price = {price}, Quantity = {quantity} " +
+                                         $" WHERE Name = '{name}';";
+                updateTvs.Parameters.AddWithValue("@resolution", resolution);
+                updateTvs.Parameters.AddWithValue("@features", features);
+                updateTvs.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        /////////////////////////////////////////////////end tvs clothes///////////////////////////////////////////////////////////////////////////////
     }
+
 }

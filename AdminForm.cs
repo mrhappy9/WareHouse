@@ -45,6 +45,21 @@ namespace Course1
             panelClothesItems.Visible = false;
             buttonClothesChange.Visible = false;
             buttonClothesUpdate.Visible = false;
+
+            //pcs&laptos items
+            panelPcsLaptops.Visible = false;
+            buttonPcsLaptopsUpdate.Visible = false;
+            buttonPcsLaptopsChange.Visible = false;
+
+            //hPhones items
+            panelhPhonesItems.Visible = false;
+            buttonhPhonesUpdate.Visible = false;
+            buttonhPhonesChange.Visible = false;
+
+            //tvs items
+            panelTvsItems.Visible = false;
+            buttonTvsChange.Visible = false;
+            buttonTvsUpdate.Visible = false;
         }
         // book items
         private void setVisibleBookItemsVisible()
@@ -75,6 +90,51 @@ namespace Course1
             buttonClothesChange.Visible = true;
         }
         //end clothes items
+
+        // pcs&laptops items
+        private void setVisiblePcsLaptopsItems()
+        {
+            panelPcsLaptops.Visible = true;
+            panelPcsLaptops.Enabled = false;
+            buttonPcsLaptopsUpdate.Visible = true;
+        }
+        private void setEnablePcsLaptopsItems()
+        {
+            panelPcsLaptops.Enabled = true;
+            buttonPcsLaptopsUpdate.Visible = false;
+            buttonPcsLaptopsChange.Visible = true;
+        }
+        //end pcs&laptops items
+
+        //hPhones  items
+        private void setVisibleHPhonesItems()
+        {
+            panelhPhonesItems.Visible = true;
+            panelhPhonesItems.Enabled = false;
+            buttonhPhonesUpdate.Visible = true;
+        }
+        private void setEnableHPhonesItems()
+        {
+            panelhPhonesItems.Enabled = true;
+            buttonhPhonesUpdate.Visible = false;
+            buttonhPhonesChange.Visible = true;
+        }
+        //end hPhones items
+
+        //tvs  items
+        private void setVisibleTvsItems()
+        {
+            panelTvsItems.Visible = true;
+            panelTvsItems.Enabled = false;
+            buttonTvsUpdate.Visible = true;
+        }
+        private void setEnableTvsItems()
+        {
+            panelTvsItems.Enabled = true;
+            buttonTvsUpdate.Visible = false;
+            buttonTvsChange.Visible = true;
+        }
+        //end tvs items
         private void changeItemsColor(PictureBox picture, Panel panel)
         {
             picture.BackColor = Color.FromArgb(28, 28, 28);
@@ -551,10 +611,6 @@ namespace Course1
         ///          END Books Items
         ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        private void electroMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
         ////////////////////////////////////////////////////////////////////////////////////////////////////
         ///          Start Clothes Items
         ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -594,7 +650,7 @@ namespace Course1
         private void buttonClothesChange_Click(object sender, EventArgs e)
         {
             if (textClothesBrand.Text != "" && textClothesMaterial.Text != "" && comboQuantityClothes.SelectedIndex > 0
-                && comboClothesSex.SelectedIndex > - 1 && int.TryParse(textClothesPrice.Text, out int result))
+                && comboClothesSex.SelectedIndex > -1 && int.TryParse(textClothesPrice.Text, out int result))
             {
                 if (MessageBox.Show("Вы уверены, что хотите продолжить?", "Обновление записи",
                    MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -758,6 +814,353 @@ namespace Course1
         {
             setVisibleClothesItemsVisible();
             textClothesName.Text = pantsMenuItem.Text; 
+        }
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///          End Clothes Items
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///          Start Laptops Pcs Items
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+        private void electroMenuItem_Click(object sender, EventArgs e)
+        {
+            setNonVisibleItemsVisible();
+            textPcsLaptopsName.Text = "";
+            textPcsLaptopsCPU.Text = "";
+            textPcsLaptopsGPU.Text = "";
+            textPcsLaptopsOS.Text = "";
+            textPcsLaptopsPrice.Text = "";
+            labelPcsLaptopsQuantity.Text = "";
+        }
+        private void pcsMenuItem_Click(object sender, EventArgs e)
+        {
+            labelPcsLaptopsNameTable.Text = pcsMenuItem.Tag.ToString();
+        }
+
+        private void laptopsMenuItem_Click(object sender, EventArgs e)
+        {
+            labelPcsLaptopsNameTable.Text = laptopsMenuItem.Tag.ToString();
+        }
+
+        private void buttonPcsLaptopsUpdate_Click(object sender, EventArgs e)
+        {
+            List<String> pcsLaptops = workServerAdmin.getParticularLaptopsPcs(labelPcsLaptopsNameTable.Text, textPcsLaptopsName.Text);
+            textPcsLaptopsCPU.Text = pcsLaptops[0];
+            textPcsLaptopsGPU.Text = pcsLaptops[1];
+            textPcsLaptopsOS.Text = pcsLaptops[2];
+            textPcsLaptopsPrice.Text = pcsLaptops[3];
+            labelPcsLaptopsAddingQuantity.Text = pcsLaptops[4];
+            comboQuantityPcsLaptops.Items.AddRange(getNormalQuantityItems());
+
+            setEnablePcsLaptopsItems();
+        }
+
+        private void buttonPcsLaptopsChange_Click(object sender, EventArgs e)
+        {
+            if (textPcsLaptopsCPU.Text != "" && textPcsLaptopsGPU.Text != "" && textPcsLaptopsOS.Text != ""
+               && comboQuantityPcsLaptops.SelectedIndex > 0 && int.TryParse(textPcsLaptopsPrice.Text, out int result))
+            {
+                if (MessageBox.Show("Вы уверены, что хотите продолжить?", "Обновление записи",
+                   MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    workServerAdmin.updatePcsLaptopsTable(labelPcsLaptopsNameTable.Text, textPcsLaptopsName.Text, textPcsLaptopsCPU.Text,
+                                                          textPcsLaptopsGPU.Text, textPcsLaptopsOS.Text, Convert.ToInt32(textPcsLaptopsPrice.Text),
+                                                          Convert.ToInt32(comboQuantityPcsLaptops.Text));
+                    setNonVisibleItemsVisible();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Проверьте правильность написания данных", "Предупреждение");
+            }
+        }
+        private void hPPavilionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = hPPavilionToolStripMenuItem.Text;
+        }
+
+        private void lenovoLegionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = lenovoLegionToolStripMenuItem.Text; 
+        }
+        private void lenovoIdeaCentreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = lenovoIdeaCentreToolStripMenuItem.Text;
+        }
+
+        private void oldiComputersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = oldiComputersToolStripMenuItem.Text; 
+        }
+
+        private void hPOMENToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = hPOMENToolStripMenuItem.Text; 
+        }
+        private void robotCompToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = robotCompToolStripMenuItem.Text;
+        }
+
+        private void classicGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = classicGameToolStripMenuItem.Text; 
+        }
+
+        private void lenovoIdeaPad33015ASTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = lenovoIdeaPad33015ASTToolStripMenuItem.Text; 
+        }
+
+        private void aSUSZenBook14ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = aSUSZenBook14ToolStripMenuItem.Text; 
+        }
+
+        private void acerExtensa15ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = acerExtensa15ToolStripMenuItem.Text; 
+        }
+
+        private void hPEnvy13ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = hPEnvy13ToolStripMenuItem.Text; 
+        }
+
+        private void aSUSZenBookSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = aSUSZenBookSToolStripMenuItem.Text; 
+        }
+
+        private void dellPrecision7730ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = dellPrecision7730ToolStripMenuItem.Text; 
+        }
+
+        private void acerSwiftToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = acerSwiftToolStripMenuItem.Text; 
+        }
+        private void honorMagicBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = honorMagicBookToolStripMenuItem.Text; 
+        }
+
+        private void acerAspire3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisiblePcsLaptopsItems();
+            textPcsLaptopsName.Text = acerAspire3ToolStripMenuItem.Text; 
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///          End PcsLaptops Items
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///          Start hPhones Items
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///
+
+        private void hPhonesMenuItem_Click(object sender, EventArgs e)
+        {
+            labelHPhoneNameTable.Text = hPhonesMenuItem.Tag.ToString();
+        }
+
+        private void buttonhPhonesUpdate_Click(object sender, EventArgs e)
+        {
+            List<String> hPhones = workServerAdmin.getParticularHPhones(labelHPhoneNameTable.Text, textHPhonesName.Text);
+            texthPhonesMic.Text = hPhones[0];
+            textHPhonesType.Text = hPhones[1];
+            texthPhonesPrice.Text = hPhones[2];
+            labelhPhonesAddingQuantity.Text = hPhones[3];
+
+
+            combohPhonesQuantity.Items.AddRange(getNormalQuantityItems());
+            setEnableHPhonesItems();
+        }
+
+        private void buttonhPhonesChange_Click(object sender, EventArgs e)
+        {
+            if (texthPhonesMic.Text != "" && textHPhonesType.Text != "" && combohPhonesQuantity.SelectedIndex > 0
+                && int.TryParse(texthPhonesPrice.Text, out int result))
+            {
+                if (MessageBox.Show("Вы уверены, что хотите продолжить?", "Обновление записи",
+                   MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    workServerAdmin.updateHPhonesTable(labelHPhoneNameTable.Text, textHPhonesName.Text, textHPhonesType.Text, texthPhonesMic.Text,
+                                                       Convert.ToInt32(texthPhonesPrice.Text), Convert.ToInt32(combohPhonesQuantity.Text));
+                    setNonVisibleItemsVisible();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Проверьте правильность написания данных", "Предупреждение");
+            }
+        }
+
+        private void airPodsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleHPhonesItems();
+            textHPhonesName.Text = airPodsToolStripMenuItem.Text;
+        }
+
+        private void xiaomiRedmiAirDotsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleHPhonesItems();
+            textHPhonesName.Text = xiaomiRedmiAirDotsToolStripMenuItem.Text; 
+        }
+
+        private void jBLC100SIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleHPhonesItems();
+            textHPhonesName.Text = jBLC100SIToolStripMenuItem.Text;
+        }
+
+        private void i9STWSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleHPhonesItems();
+            textHPhonesName.Text = i9STWSToolStripMenuItem.Text; 
+        }
+
+        private void airPodsProToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleHPhonesItems();
+            textHPhonesName.Text = airPodsProToolStripMenuItem.Text;
+        }
+
+        private void sennheiserHDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleHPhonesItems();
+            textHPhonesName.Text = sennheiserHDToolStripMenuItem.Text; 
+        }
+
+        private void damixToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleHPhonesItems();
+            textHPhonesName.Text = damixToolStripMenuItem.Text; 
+        }
+
+        private void qCYT5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleHPhonesItems();
+            textHPhonesName.Text = qCYT5ToolStripMenuItem.Text; 
+        }
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///          End HPhones Items
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///          Start TVs Items
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        private void tvsMenuItem_Click(object sender, EventArgs e)
+        {
+            labelTvsNameTable.Text = tvsMenuItem.Tag.ToString();
+        }
+
+        private void buttonTvsUpdate_Click(object sender, EventArgs e)
+        {
+            List<String> tvs = workServerAdmin.getParticularTvs(labelTvsNameTable.Text, textTvsName.Text);
+            textTvsResolution.Text = tvs[0];
+            textTvsFeatures.Text = tvs[1];
+            textTvsPrice.Text = tvs[2];
+            labelTvsAddingQuantity.Text = tvs[3];
+
+            comboTvsQuantity.Items.AddRange(getNormalQuantityItems());
+            setEnableTvsItems();
+        }
+
+        private void buttonTvsChange_Click(object sender, EventArgs e)
+        {
+            if (textTvsResolution.Text != "" && textTvsResolution.Text != "" && comboTvsQuantity.SelectedIndex > 0 &&
+                int.TryParse(textTvsPrice.Text, out int result))
+            {
+                if (MessageBox.Show("Вы уверены, что хотите продолжить?", "Обновление записи",
+                   MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    workServerAdmin.updateTvsTable(labelTvsNameTable.Text, textTvsName.Text, textTvsResolution.Text,
+                                                   textTvsFeatures.Text, Convert.ToInt32(textTvsPrice.Text),
+                                                   Convert.ToInt32(comboTvsQuantity.Text));
+                    setNonVisibleItemsVisible();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Проверьте правильность написания данных", "Предупреждение");
+            }
+        }
+        private void samsungUE55RU7300UXRUToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleTvsItems();
+            textTvsName.Text = samsungUE55RU7300UXRUToolStripMenuItem.Text;
+        }
+
+        private void lG43UK6200PLAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleTvsItems();
+            textTvsName.Text = lG43UK6200PLAToolStripMenuItem.Text; 
+        }
+
+        private void kIVI55UC50GRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleTvsItems();
+            textTvsName.Text = kIVI55UC50GRToolStripMenuItem.Text; 
+        }
+
+        private void lG49UK6300PLBToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleTvsItems();
+            textTvsName.Text = lG49UK6300PLBToolStripMenuItem.Text; 
+        }
+
+        private void samsungQE75Q900RBUToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleTvsItems();
+            textTvsName.Text = samsungQE75Q900RBUToolStripMenuItem.Text; 
+        }
+
+        private void thomsonT22FTE1020ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleTvsItems();
+            textTvsName.Text = thomsonT22FTE1020ToolStripMenuItem.Text; 
+        }
+
+        private void asano32LH7010TToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleTvsItems();
+            textTvsName.Text = asano32LH7010TToolStripMenuItem.Text; 
+        }
+
+        private void eCONSMARTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleTvsItems();
+            textTvsName.Text = eCONSMARTToolStripMenuItem.Text; 
+        }
+
+        private void sonyKDL32RE303ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            setVisibleTvsItems();
+            textTvsName.Text = sonyKDL32RE303ToolStripMenuItem.Text; 
         }
     }
 }
