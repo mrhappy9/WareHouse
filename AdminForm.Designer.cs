@@ -264,8 +264,8 @@
             this.panelMenu = new System.Windows.Forms.Panel();
             this.menuStripUsers = new System.Windows.Forms.MenuStrip();
             this.usersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanelBookUsers = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelUsersForMenuStrip = new System.Windows.Forms.Panel();
+            this.flowLayoutPanelUsers = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMain.SuspendLayout();
             this.panelWarehouse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWareHouse)).BeginInit();
@@ -284,7 +284,7 @@
             this.panelTvsItems.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.menuStripUsers.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.panelUsersForMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMain
@@ -292,13 +292,14 @@
             this.panelMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.panelMain.Controls.Add(this.pictureBoxAdminClose);
             this.panelMain.Controls.Add(this.panelWarehouse);
             this.panelMain.Controls.Add(this.panelDelete);
             this.panelMain.Controls.Add(this.panelUsersItem);
             this.panelMain.Controls.Add(this.panelChange);
             this.panelMain.Location = new System.Drawing.Point(0, 0);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(741, 71);
+            this.panelMain.Size = new System.Drawing.Size(1156, 71);
             this.panelMain.TabIndex = 1;
             // 
             // panelWarehouse
@@ -322,7 +323,6 @@
             // 
             // panelDelete
             // 
-            this.panelDelete.Controls.Add(this.pictureBoxAdminClose);
             this.panelDelete.Controls.Add(this.panel6);
             this.panelDelete.Controls.Add(this.panel5);
             this.panelDelete.Controls.Add(this.pictureBoxDelete);
@@ -337,7 +337,7 @@
             // pictureBoxAdminClose
             // 
             this.pictureBoxAdminClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAdminClose.Image")));
-            this.pictureBoxAdminClose.Location = new System.Drawing.Point(194, 0);
+            this.pictureBoxAdminClose.Location = new System.Drawing.Point(1140, 0);
             this.pictureBoxAdminClose.Name = "pictureBoxAdminClose";
             this.pictureBoxAdminClose.Size = new System.Drawing.Size(16, 16);
             this.pictureBoxAdminClose.TabIndex = 2;
@@ -1400,7 +1400,7 @@
             this.loafersMocMenuItem,
             this.loafersMenuItem});
             this.shoesMenuItem.Name = "shoesMenuItem";
-            this.shoesMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.shoesMenuItem.Size = new System.Drawing.Size(176, 22);
             this.shoesMenuItem.Tag = "Shoes";
             this.shoesMenuItem.Text = "Обувь";
             this.shoesMenuItem.Click += new System.EventHandler(this.shoesMenuItem_Click);
@@ -1457,7 +1457,7 @@
             this.backpackUMenuItem,
             this.backpackLMenuItem});
             this.packPAcksMenuItem.Name = "packPAcksMenuItem";
-            this.packPAcksMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.packPAcksMenuItem.Size = new System.Drawing.Size(176, 22);
             this.packPAcksMenuItem.Tag = "Backpacks";
             this.packPAcksMenuItem.Text = "Рюкзаки";
             this.packPAcksMenuItem.Click += new System.EventHandler(this.packPAcksMenuItem_Click);
@@ -1514,7 +1514,7 @@
             this.underpantsMenuItem,
             this.tShortMenuItem});
             this.UnderWearMenuItem.Name = "UnderWearMenuItem";
-            this.UnderWearMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.UnderWearMenuItem.Size = new System.Drawing.Size(176, 22);
             this.UnderWearMenuItem.Tag = "Underwear";
             this.UnderWearMenuItem.Text = "Нижнее белье";
             this.UnderWearMenuItem.Click += new System.EventHandler(this.UnderWearMenuItem_Click);
@@ -1570,7 +1570,7 @@
             this.jacketAnorakMenuItem,
             this.pantsMenuItem});
             this.diffClothesMenuItem.Name = "diffClothesMenuItem";
-            this.diffClothesMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.diffClothesMenuItem.Size = new System.Drawing.Size(176, 22);
             this.diffClothesMenuItem.Tag = "Clothes";
             this.diffClothesMenuItem.Text = "Разное";
             this.diffClothesMenuItem.Click += new System.EventHandler(this.diffClothesMenuItem_Click);
@@ -1578,35 +1578,35 @@
             // pulloverMenuItem
             // 
             this.pulloverMenuItem.Name = "pulloverMenuItem";
-            this.pulloverMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pulloverMenuItem.Size = new System.Drawing.Size(175, 22);
             this.pulloverMenuItem.Text = "Пуловер";
             this.pulloverMenuItem.Click += new System.EventHandler(this.pulloverMenuItem_Click);
             // 
             // jacketMenuItem
             // 
             this.jacketMenuItem.Name = "jacketMenuItem";
-            this.jacketMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jacketMenuItem.Size = new System.Drawing.Size(175, 22);
             this.jacketMenuItem.Text = "Куртка";
             this.jacketMenuItem.Click += new System.EventHandler(this.jacketMenuItem_Click);
             // 
             // jeansMenuItem
             // 
             this.jeansMenuItem.Name = "jeansMenuItem";
-            this.jeansMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jeansMenuItem.Size = new System.Drawing.Size(175, 22);
             this.jeansMenuItem.Text = "Джинсы";
             this.jeansMenuItem.Click += new System.EventHandler(this.jeansMenuItem_Click);
             // 
             // jacketAnorakMenuItem
             // 
             this.jacketAnorakMenuItem.Name = "jacketAnorakMenuItem";
-            this.jacketAnorakMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jacketAnorakMenuItem.Size = new System.Drawing.Size(175, 22);
             this.jacketAnorakMenuItem.Text = "Куртка Anorak";
             this.jacketAnorakMenuItem.Click += new System.EventHandler(this.jacketAnorakMenuItem_Click);
             // 
             // pantsMenuItem
             // 
             this.pantsMenuItem.Name = "pantsMenuItem";
-            this.pantsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pantsMenuItem.Size = new System.Drawing.Size(175, 22);
             this.pantsMenuItem.Text = "Брюки";
             this.pantsMenuItem.Click += new System.EventHandler(this.pantsMenuItem_Click);
             // 
@@ -2547,7 +2547,7 @@
             this.panelMenu.Controls.Add(this.menuStrip1);
             this.panelMenu.Location = new System.Drawing.Point(12, 77);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(412, 46);
+            this.panelMenu.Size = new System.Drawing.Size(294, 46);
             this.panelMenu.TabIndex = 110;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
@@ -2571,30 +2571,31 @@
             this.usersMenuItem.Text = "Пользователи";
             this.usersMenuItem.Click += new System.EventHandler(this.usersMenuItem_Click);
             // 
-            // panel7
+            // panelUsersForMenuStrip
             // 
-            this.panel7.Controls.Add(this.menuStripUsers);
-            this.panel7.Location = new System.Drawing.Point(806, 77);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(323, 43);
-            this.panel7.TabIndex = 111;
+            this.panelUsersForMenuStrip.Controls.Add(this.menuStripUsers);
+            this.panelUsersForMenuStrip.Location = new System.Drawing.Point(454, 80);
+            this.panelUsersForMenuStrip.Name = "panelUsersForMenuStrip";
+            this.panelUsersForMenuStrip.Size = new System.Drawing.Size(323, 43);
+            this.panelUsersForMenuStrip.TabIndex = 111;
             // 
-            // flowLayoutPanelBookUsers
+            // flowLayoutPanelUsers
             // 
-            this.flowLayoutPanelBookUsers.AutoScroll = true;
-            this.flowLayoutPanelBookUsers.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanelBookUsers.Location = new System.Drawing.Point(178, 126);
-            this.flowLayoutPanelBookUsers.Name = "flowLayoutPanelBookUsers";
-            this.flowLayoutPanelBookUsers.Size = new System.Drawing.Size(1156, 255);
-            this.flowLayoutPanelBookUsers.TabIndex = 112;
+            this.flowLayoutPanelUsers.AutoScroll = true;
+            this.flowLayoutPanelUsers.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanelUsers.Location = new System.Drawing.Point(0, 147);
+            this.flowLayoutPanelUsers.Name = "flowLayoutPanelUsers";
+            this.flowLayoutPanelUsers.Size = new System.Drawing.Size(1156, 446);
+            this.flowLayoutPanelUsers.TabIndex = 112;
+            this.flowLayoutPanelUsers.Visible = false;
             // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 594);
-            this.Controls.Add(this.flowLayoutPanelBookUsers);
-            this.Controls.Add(this.panel7);
+            this.ClientSize = new System.Drawing.Size(1156, 594);
+            this.Controls.Add(this.flowLayoutPanelUsers);
+            this.Controls.Add(this.panelUsersForMenuStrip);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.buttonTvsChange);
             this.Controls.Add(this.buttonhPhonesChange);
@@ -2647,8 +2648,8 @@
             this.panelMenu.PerformLayout();
             this.menuStripUsers.ResumeLayout(false);
             this.menuStripUsers.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.panelUsersForMenuStrip.ResumeLayout(false);
+            this.panelUsersForMenuStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2889,7 +2890,7 @@
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.MenuStrip menuStripUsers;
         private System.Windows.Forms.ToolStripMenuItem usersMenuItem;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelBookUsers;
+        private System.Windows.Forms.Panel panelUsersForMenuStrip;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelUsers;
     }
 }

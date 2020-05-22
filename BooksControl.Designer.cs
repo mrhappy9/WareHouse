@@ -60,7 +60,7 @@
             this.comboQuantityBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboQuantityBooks.FormattingEnabled = true;
             this.comboQuantityBooks.IntegralHeight = false;
-            this.comboQuantityBooks.Location = new System.Drawing.Point(768, 70);
+            this.comboQuantityBooks.Location = new System.Drawing.Point(738, 70);
             this.comboQuantityBooks.Name = "comboQuantityBooks";
             this.comboQuantityBooks.Size = new System.Drawing.Size(44, 24);
             this.comboQuantityBooks.TabIndex = 12;
@@ -71,7 +71,7 @@
             this.labelBooksPrice.AutoSize = true;
             this.labelBooksPrice.Font = new System.Drawing.Font("Segoe UI", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelBooksPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
-            this.labelBooksPrice.Location = new System.Drawing.Point(883, 67);
+            this.labelBooksPrice.Location = new System.Drawing.Point(853, 67);
             this.labelBooksPrice.Name = "labelBooksPrice";
             this.labelBooksPrice.Size = new System.Drawing.Size(68, 31);
             this.labelBooksPrice.TabIndex = 11;
@@ -81,7 +81,7 @@
             // 
             this.labelQuantityBooks.AutoSize = true;
             this.labelQuantityBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelQuantityBooks.Location = new System.Drawing.Point(717, 73);
+            this.labelQuantityBooks.Location = new System.Drawing.Point(687, 73);
             this.labelQuantityBooks.Name = "labelQuantityBooks";
             this.labelQuantityBooks.Size = new System.Drawing.Size(42, 18);
             this.labelQuantityBooks.TabIndex = 10;
@@ -91,7 +91,7 @@
             // 
             this.labelNameAuthor.AutoSize = true;
             this.labelNameAuthor.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelNameAuthor.Location = new System.Drawing.Point(174, 95);
+            this.labelNameAuthor.Location = new System.Drawing.Point(144, 95);
             this.labelNameAuthor.Name = "labelNameAuthor";
             this.labelNameAuthor.Size = new System.Drawing.Size(147, 23);
             this.labelNameAuthor.TabIndex = 9;
@@ -101,7 +101,7 @@
             // 
             this.labelNameBook.AutoSize = true;
             this.labelNameBook.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelNameBook.Location = new System.Drawing.Point(172, 49);
+            this.labelNameBook.Location = new System.Drawing.Point(142, 49);
             this.labelNameBook.Name = "labelNameBook";
             this.labelNameBook.Size = new System.Drawing.Size(165, 30);
             this.labelNameBook.TabIndex = 8;

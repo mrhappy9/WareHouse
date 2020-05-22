@@ -18,6 +18,12 @@ namespace Course1
         }
 
         ManageBook manageBookForUsers;
+        ManageClothes manageClothesForUsers;
+        ManageLaptopsPcs manageLaptopsPcsUsers;
+        ManageTvs manageTvsUsers;
+        ManageHphones manageHeadPhonesUsers;
+        ManageSmartWatch manageSmartWatchUsers;
+        ManageSmartPhone manageSmartPhoneUsers;
 
         private Color defualtColor = Color.FromArgb(21, 21, 21);
         WorkServer workServerAdmin = new WorkServer();
@@ -30,6 +36,17 @@ namespace Course1
         private void panelMenuNonVisible()
         {
             panelMenu.Visible = false;
+        }
+
+        private void panelWithUsersItemVisbile()
+        {
+            panelUsersForMenuStrip.Visible = true;
+            flowLayoutPanelUsers.Visible = true;
+        }
+        private void panelWithUsersItemNonVisbile()
+        {
+            panelUsersForMenuStrip.Visible = false;
+            flowLayoutPanelUsers.Visible = false;
         }
         private string[] getNormalQuantityItems() // For each Items from MySql tables
         {
@@ -158,6 +175,8 @@ namespace Course1
             panelMenuVisible();
             setDefaultItemsColor();
             changeItemsColor(pictureBoxChange, panelChange);
+
+            panelWithUsersItemNonVisbile();
         }
 
         private void usersItemsLabel_Click(object sender, EventArgs e)
@@ -165,6 +184,8 @@ namespace Course1
             panelMenuNonVisible();
             setDefaultItemsColor();
             changeItemsColor(pictureBoxUsersItem, panelUsersItem);
+
+            panelWithUsersItemVisbile();
         }
 
 
@@ -183,10 +204,13 @@ namespace Course1
         {
             panelMenuNonVisible();
             setDefaultItemsColor();
+
+            panelWithUsersItemNonVisbile();
         }
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
+            panelWithUsersItemNonVisbile();
             panelMenuNonVisible();
             setNonVisibleItemsVisible();
         }
@@ -1191,9 +1215,12 @@ namespace Course1
         {
 
         }
-        /// 
+        
+
         /// ////////////////////////////////////////////////////////////////////////////
-        /// ////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ///  BOOK CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
         List<BooksControl> booksControlsUsers = new List<BooksControl>();
         private void createBooksForUsers(string name, string author, int price, int quantity)
         {
@@ -1207,9 +1234,301 @@ namespace Course1
         {
             for (int i = 0; i < booksControlsUsers.Count; i++)
             {
-                flowLayoutPanelBookUsers.Controls.Add(booksControlsUsers[i]);
+                flowLayoutPanelUsers.Controls.Add(booksControlsUsers[i]);
             }
         }
+        private void createManageBookUsers(string userLogin)
+        {
+            List<String> name = new List<String>();
+            List<String> author = new List<String>();
+            List<int> price = new List<int>();
+            List<int> quantity = new List<int>();
+            /*MessageBox.Show(str);*/
+            workServerAdmin.forFlowUsersBook(userLogin, ref name, ref author, ref price, ref quantity);
+            if (name.Count == author.Count && name.Count == price.Count && name.Count == quantity.Count)
+            {
+                for (int i = 0; i < name.Count; i++)
+                {
+                    createBooksForUsers(name[i], author[i], price[i], quantity[i]);
+                }
+            }
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////
+        ///  END BOOK CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
+
+        ////////////////////////////////////////////////////////////////////////////////
+        ///  Clothes CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
+
+        List<ClothesControl> clothesControlsUsers = new List<ClothesControl>();
+        private void createClothesForUsers(string name, string brand, string material, string sex, int price, int quantity)
+        {
+            manageClothesForUsers.createClothes(name, brand, material, sex, price, quantity, new string[] { "" }, new Basket(new WorkServer()), "");
+        }
+
+        private void createClothesControlsUsers()
+        {
+            clothesControlsUsers.AddRange(manageClothesForUsers.getAllClothes());
+        }
+        private void showOnFlowClothesUsers()
+        {
+            for (int i = 0; i < clothesControlsUsers.Count; i++)
+            {
+                flowLayoutPanelUsers.Controls.Add(clothesControlsUsers[i]);
+            }
+        }
+        private void createManageClothesUsers(string userLogin)
+        {
+            List<String> name = new List<String>();
+            List<String> brand = new List<String>();
+            List<String> material = new List<String>();
+            List<String> sex = new List<String>();
+            List<int> price = new List<int>();
+            List<int> quantity = new List<int>();
+            workServerAdmin.forFlowUsersClothes(userLogin, ref name, ref brand, ref material, ref sex, ref price, ref quantity);
+            if(brand.Count == material.Count && brand.Count == sex.Count && brand.Count == price.Count && brand.Count == quantity.Count
+                    && brand.Count == name.Count)
+            {
+                for (int i = 0; i < brand.Count; i++)
+                {
+                    createClothesForUsers(name[i], brand[i], material[i], sex[i], price[i], quantity[i]);
+                }
+            }
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////
+        ///  END Clothes CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
+
+        ////////////////////////////////////////////////////////////////////////////////
+        ///  LaptopsPcs CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
+
+        List<LaptopsPcsControl> laptopsPcsControlsUsers = new List<LaptopsPcsControl>();
+        private void createLaptopsPcsForUsers(string name, string cpu, int ram, int hdd, int ssd, string gpu, string os, int price, int quantity)
+        {
+            manageLaptopsPcsUsers.createLaptopPcs(name, cpu, ram, hdd, ssd, gpu, os, price, quantity, new string[] { "" }, new Basket(new WorkServer()), "");
+        }
+
+        private void createLaptopsPcsControlsUsers()
+        {
+            laptopsPcsControlsUsers.AddRange(manageLaptopsPcsUsers.getAllManageLaptops());
+        }
+        private void showOnFlowLaptopsPcsUsers()
+        {
+            for (int i = 0; i < laptopsPcsControlsUsers.Count; i++)
+            {
+                flowLayoutPanelUsers.Controls.Add(laptopsPcsControlsUsers[i]);
+            }
+        }
+        private void createManageLaptopsPcsUsers(string userLogin)
+        {
+            List<String> name = new List<String>();
+            List<String> cpu = new List<String>();
+            List<int> ram = new List<int>();
+            List<int> hdd = new List<int>();
+            List<int> ssd = new List<int>();
+            List<String> gpu = new List<String>();
+            List<String> os = new List<String>();
+            List<int> price = new List<int>();
+            List<int> quantity = new List<int>();
+            workServerAdmin.forFlowUsersLaptopsPcs(userLogin, ref name, ref cpu, ref ram, ref hdd, ref ssd, ref gpu, ref os, ref price, ref quantity);
+            if (name.Count == cpu.Count && name.Count == ram.Count && name.Count == hdd.Count && name.Count == ssd.Count && name.Count == gpu.Count
+                 && name.Count == os.Count && name.Count == price.Count && name.Count == quantity.Count)
+            {
+                for (int i = 0; i < name.Count; i++)
+                {
+                    createLaptopsPcsForUsers(name[i], cpu[i], ram[i], hdd[i], ssd[i], gpu[i], os[i], price[i], quantity[i]);
+                }
+            }
+        }
+        ///////////////////////////////////////////////////////////////////////////////
+        ///  END LaptopsPcs CONTROLS USERS
+        ////////////////////////////////////////////////////////////////////////////////
+
+        ////////////////////////////////////////////////////////////////////////////////
+        ///  Tvs CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
+
+        List<TvsControl> tvsControlsUsers = new List<TvsControl>();
+        private void createTvsForUsers(string name, double diagonal, string resolution, string features, int price, int quantity)
+        {
+            manageTvsUsers.createTvs(name, diagonal, resolution, features, price, quantity, new string[] { "" }, new Basket(new WorkServer()), "");
+        }
+
+        private void createTvsControlsUsers()
+        {
+            tvsControlsUsers.AddRange(manageTvsUsers.getAllTvs());
+        }
+        private void showOnFlowTvsUsers()
+        {
+            for (int i = 0; i < tvsControlsUsers.Count; i++)
+            {
+                flowLayoutPanelUsers.Controls.Add(tvsControlsUsers[i]);
+            }
+        }
+        private void createManageTvsUsers(string userLogin)
+        {
+            List<String> name = new List<String>();
+            List<double> diagonal = new List<double>();
+            List<String> resolution = new List<String>();
+            List<String> features = new List<String>();
+            List<int> price = new List<int>();
+            List<int> quantity = new List<int>();
+            workServerAdmin.forFlowUsersTvs(userLogin, ref name, ref diagonal, ref resolution, ref features, ref price, ref quantity);
+            if (name.Count == diagonal.Count && name.Count == resolution.Count && name.Count == features.Count
+                && name.Count == price.Count && name.Count == quantity.Count)
+            {
+                for (int i = 0; i < name.Count; i++)
+                {
+                    createTvsForUsers(name[i], diagonal[i], resolution[i], features[i], price[i], quantity[i]);
+                }
+            }
+        }
+        ///////////////////////////////////////////////////////////////////////////////
+        ///  END Tvs CONTROLS USERS
+        ////////////////////////////////////////////////////////////////////////////////
+
+
+        ////////////////////////////////////////////////////////////////////////////////
+        ///  HeadPhones CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
+
+        List<HphonesControl> headPhonesControlsUsers = new List<HphonesControl>();
+        private void createHeadPhones(string name, string mic, string type, int workingHours, int resistance, int price, int quantity)
+        {
+            manageHeadPhonesUsers.createHphones(name, mic, type, workingHours, resistance, price, quantity, new string[] { "" }, new Basket(new WorkServer()), "");
+        }
+
+        private void createHeadPhonesControlsUsers()
+        {
+            headPhonesControlsUsers.AddRange(manageHeadPhonesUsers.getAllHphones());
+        }
+        private void showOnFlowHeadPhonesUsers()
+        {
+            for (int i = 0; i < headPhonesControlsUsers.Count; i++)
+            {
+                flowLayoutPanelUsers.Controls.Add(headPhonesControlsUsers[i]);
+            }
+        }
+        private void createManageHeadPhonesUsers(string userLogin)
+        {
+            List<String> name = new List<String>();
+            List<String> mic = new List<String>();
+            List<String> type = new List<String>();
+            List<int> workingHours = new List<int>();
+            List<int> resistance = new List<int>();
+            List<int> price = new List<int>();
+            List<int> quantity = new List<int>();
+            workServerAdmin.forFlowUsersHeadPhones(userLogin, ref name, ref mic, ref type, ref workingHours, ref resistance, ref price, ref quantity);
+            if (name.Count == mic.Count && name.Count == type.Count && name.Count == workingHours.Count && name.Count == resistance.Count
+                && name.Count == price.Count && name.Count == quantity.Count)
+            {
+                for (int i = 0; i < name.Count; i++)
+                {
+                    createHeadPhones(name[i], mic[i], type[i], workingHours[i], resistance[i], price[i], quantity[i]);
+                }
+            }
+        }
+        ////////////////////////////////////////////////////////////////////////////////
+        ///  END HeadPhones CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
+
+
+        ////////////////////////////////////////////////////////////////////////////////
+        ///  SmartWatches CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
+
+        List<SmartWatchControl> smartWatchControlsUsers = new List<SmartWatchControl>();
+        private void createSmartWatches(string name, string compatible, string sensors, string resolution, int price, int quantity)
+        {
+            manageSmartWatchUsers.createSmartWatch(name, compatible, sensors, resolution, price, quantity, new string[] { "" }, new Basket(new WorkServer()), "");
+        }
+
+        private void createSmartWatchesControlsUsers()
+        {
+            smartWatchControlsUsers.AddRange(manageSmartWatchUsers.getAllSmartWatch());
+        }
+        private void showOnFlowSmartWatchesUsers()
+        {
+            for (int i = 0; i < smartWatchControlsUsers.Count; i++)
+            {
+                flowLayoutPanelUsers.Controls.Add(smartWatchControlsUsers[i]);
+            }
+        }
+        private void createManageSmartWatchesUsers(string userLogin)
+        {
+            List<String> name = new List<String>();
+            List<String> compatible = new List<String>();
+            List<String> sensors = new List<String>();
+            List<String> resolution = new List<String>();
+            List<int> price = new List<int>();
+            List<int> quantity = new List<int>();
+            workServerAdmin.forFlowUsersSmartWatches(userLogin, ref name, ref compatible, ref sensors, ref resolution, ref price, ref quantity);
+            if (name.Count == compatible.Count && name.Count == sensors.Count && name.Count == resolution.Count
+                && name.Count == price.Count && name.Count == quantity.Count)
+            {
+                for (int i = 0; i < name.Count; i++)
+                {
+                    createSmartWatches(name[i], compatible[i], sensors[i], resolution[i], price[i], quantity[i]);
+                }
+            }
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////
+        ///  END SmartWatches CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
+
+
+
+        ///////////////////////////////////////////////////////////////////////////////
+        ///  SmartPhones CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
+
+        List<SmartPhonesControl> smartPhonesControlsUsers = new List<SmartPhonesControl>();
+        private void createSmartPhones(string name, int internalMemory, int ram, int resolution, double diagonal, int capacity, int price, int quantity)
+        {
+            manageSmartPhoneUsers.createSmartPhone(name, internalMemory, ram, resolution, diagonal, capacity, price, quantity, new string[] { "" }, new Basket(new WorkServer()), "");
+        }
+
+        private void createSmartPhonesControlsUsers()
+        {
+            smartPhonesControlsUsers.AddRange(manageSmartPhoneUsers.getAllSmartPhones());
+        }
+        private void showOnFlowSmartPhonesUsers()
+        {
+            for (int i = 0; i < smartPhonesControlsUsers.Count; i++)
+            {
+                flowLayoutPanelUsers.Controls.Add(smartPhonesControlsUsers[i]);
+            }
+        }
+        private void createManageSmartPhonesUsers(string userLogin)
+        {
+            List<String> name = new List<String>();
+            List<int> internalMemory = new List<int>();
+            List<int> ram = new List<int>();
+            List<int> resolution = new List<int>();
+            List<int> diagonal = new List<int>();
+            List<int> capacity = new List<int>();
+            List<int> price = new List<int>();
+            List<int> quantity = new List<int>();
+            workServerAdmin.forFlowUsersSmartPhones(userLogin, ref name, ref internalMemory, ref ram, ref resolution, 
+                                                     ref diagonal, ref capacity, ref price, ref quantity);
+            if (name.Count == internalMemory.Count && name.Count == ram.Count && name.Count == resolution.Count && name.Count == diagonal.Count 
+                && name.Count == capacity.Count && name.Count == price.Count && name.Count == quantity.Count)
+            {
+                for (int i = 0; i < name.Count; i++)
+                {
+                    createSmartPhones(name[i], internalMemory[i], ram[i], resolution[i], diagonal[i], capacity[i], price[i], quantity[i]);
+                }
+            }
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////
+        ///  ENDSmartPhones CONTROLS USERS
+        ///////////////////////////////////////////////////////////////////////////////
         private void usersMenuItem_Click(object sender, EventArgs e)
         {
             List<String> users = workServerAdmin.getUsersList();
@@ -1226,24 +1545,55 @@ namespace Course1
         private void nameUserClick(object sender, EventArgs e)
         {
             manageBookForUsers = new ManageBook();
-            flowLayoutPanelBookUsers.Controls.Clear();
+            manageClothesForUsers = new ManageClothes();
+            manageLaptopsPcsUsers = new ManageLaptopsPcs();
+            manageTvsUsers = new ManageTvs();
+            manageHeadPhonesUsers = new ManageHphones();
+            manageSmartWatchUsers = new ManageSmartWatch();
+            manageSmartPhoneUsers = new ManageSmartPhone();
+
+            //Cleaning flowlayoutpanel
+            flowLayoutPanelUsers.Controls.Clear();
             booksControlsUsers.Clear();
-            List<String> name = new List<String>();
-            List<String> author = new List<String>();
-            List<int> price = new List<int>();
-            List<int> quantity = new List<int>();
+            clothesControlsUsers.Clear();
+            laptopsPcsControlsUsers.Clear();
+            tvsControlsUsers.Clear();
+            headPhonesControlsUsers.Clear();
+            smartWatchControlsUsers.Clear();
+            smartPhonesControlsUsers.Clear();
+
             string userLogin = ((ToolStripMenuItem)sender).Text;
-            /*MessageBox.Show(str);*/
-            workServerAdmin.forFlowUsersBook(userLogin, ref name, ref author, ref price, ref quantity);
-            if(name.Count == author.Count && name.Count == price.Count && name.Count == quantity.Count)
-            {
-                for (int i = 0; i < name.Count; i++)
-                {
-                    createBooksForUsers(name[i], author[i], price[i], quantity[i]);
-                }
-            }
+
+            createManageBookUsers(userLogin);
+            createManageClothesUsers(userLogin);
+            createManageLaptopsPcsUsers(userLogin);
+            createManageTvsUsers(userLogin);
+            createManageHeadPhonesUsers(userLogin);
+            createManageSmartWatchesUsers(userLogin);
+            createManageSmartPhonesUsers(userLogin);
+            
+            //Showing on flowlayoutPanel
             createBookControlsUsers();
             showOnFlowBookUsers();
+
+            createClothesControlsUsers();
+            showOnFlowClothesUsers();
+
+            createLaptopsPcsControlsUsers();
+            showOnFlowLaptopsPcsUsers();
+
+            createTvsControlsUsers();
+            showOnFlowTvsUsers();
+
+            createHeadPhonesControlsUsers();
+            showOnFlowHeadPhonesUsers();
+
+            createSmartWatchesControlsUsers();
+            showOnFlowSmartWatchesUsers();
+
+            createSmartPhonesControlsUsers();
+            showOnFlowSmartPhonesUsers();
         }
+
     }
 }

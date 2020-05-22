@@ -75,7 +75,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(390, 108);
+            this.label4.Location = new System.Drawing.Point(428, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 13);
             this.label4.TabIndex = 40;
@@ -85,7 +85,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(273, 108);
+            this.label3.Location = new System.Drawing.Point(311, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 13);
             this.label3.TabIndex = 39;
@@ -118,7 +118,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelResistance.AutoSize = true;
             this.labelResistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelResistance.Location = new System.Drawing.Point(387, 121);
+            this.labelResistance.Location = new System.Drawing.Point(425, 121);
             this.labelResistance.Name = "labelResistance";
             this.labelResistance.Size = new System.Drawing.Size(112, 16);
             this.labelResistance.TabIndex = 36;
@@ -131,7 +131,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWorkingHours.AutoSize = true;
             this.labelWorkingHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelWorkingHours.Location = new System.Drawing.Point(276, 121);
+            this.labelWorkingHours.Location = new System.Drawing.Point(314, 121);
             this.labelWorkingHours.Name = "labelWorkingHours";
             this.labelWorkingHours.Size = new System.Drawing.Size(92, 16);
             this.labelWorkingHours.TabIndex = 35;

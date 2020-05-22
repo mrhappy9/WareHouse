@@ -745,10 +745,10 @@ namespace Course1
         /////////////////////////////////////////////////end tvs clothes///////////////////////////////////////////////////////////////////////////////
 
 
-        ////////////////////////////////////////////////
-        ///-------------Users List---------------///
-        ////////////////////////////////////////////////
-        
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                ///-------------USERS List---------------///
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         public List<String> getUsersList()
         {
             List<String> users = new List<String>();
@@ -779,7 +779,7 @@ namespace Course1
                 MySqlCommand flowUsersBook = new MySqlCommand(connString, connection);
                 flowUsersBook.CommandText = "SELECT b.Name, b.Author, b.Price, b.Quantity FROM BookPurchase b " +
                                             " JOIN Users u ON u.users_id = b.users_id " +
-                                            $" WHERE u.login = '{userLogin}';";
+                                           $" WHERE u.login = '{userLogin}';";
                 MySqlDataReader reader = flowUsersBook.ExecuteReader();
                 while (reader.Read())
                 {
@@ -795,6 +795,176 @@ namespace Course1
                 throw new Exception("Error executing into inster sql statement", e);
             }
         }
+        public void forFlowUsersClothes(string userLogin, ref List<String> name, ref List<String> brand, ref List<String> material, ref List<String> sex, 
+                                        ref List<int> price, ref List<int> quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand forUsersClothes = new MySqlCommand(connString, connection);
+                forUsersClothes.CommandText = "SELECT c.Name, c.Brand, c.Material, c.Sex, c.Price, c.Quantity FROM ClothesPurchase c " +
+                                              " JOIN Users u ON u.users_id = c.users_id " +
+                                             $" WHERE u.login = '{userLogin}';";
+                MySqlDataReader reader = forUsersClothes.ExecuteReader();
+                while (reader.Read())
+                {
+                    name.Add(reader.GetString(0));
+                    brand.Add(reader.GetString(1));
+                    material.Add(reader.GetString(2));
+                    sex.Add(reader.GetString(3));
+                    price.Add(reader.GetInt32(4));
+                    quantity.Add(reader.GetInt32(5));
+                }
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void forFlowUsersLaptopsPcs(string userLogin, ref List<string> name, ref List<string> cpu, ref List<int> ram, ref List<int> hdd, 
+                                           ref List<int> ssd, ref List<string> gpu, ref List<String> os, ref List<int> price, ref List<int> quantity)
+        {
+            createConnection();
+            try 
+            { 
+                MySqlCommand forUsersLaptopsPcs = new MySqlCommand(connString, connection);
+                forUsersLaptopsPcs.CommandText = "SELECT l.Name, l.CPU, l.RAM, l.HDD, l.SSD, l.GPU, l.OS, l.Price, l.Quantity FROM LaptopsPcsPurchase l " +
+                                                 " JOIN Users u ON u.users_id = l.users_id " +
+                                                $" WHERE u.login = '{userLogin}';";
+                MySqlDataReader reader = forUsersLaptopsPcs.ExecuteReader();
+                while (reader.Read())
+                {
+                    name.Add(reader.GetString(0));
+                    cpu.Add(reader.GetString(1));
+                    ram.Add(reader.GetInt32(2));
+                    hdd.Add(reader.GetInt32(3));
+                    ssd.Add(reader.GetInt32(4));
+                    gpu.Add(reader.GetString(5));
+                    os.Add(reader.GetString(6));
+                    price.Add(reader.GetInt32(7));
+                    quantity.Add(reader.GetInt32(8));
+                }
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void forFlowUsersTvs(string userLogin, ref List<string> name, ref List<double> diagonal, ref List<string> resolution, 
+                                    ref List<string> features, ref List<int> price, ref List<int> quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand forUsersTvs = new MySqlCommand(connString, connection);
+                forUsersTvs.CommandText = "SELECT t.Name, t.Screen_diagonal, t.Max_resolution, t.Features, t.Price, t.Quantity FROM TvsPurchase t " +
+                                          " JOIN Users u ON u.users_id = t.users_id " +
+                                         $" WHERE u.login = '{userLogin}';";
+                MySqlDataReader reader = forUsersTvs.ExecuteReader();
+                while (reader.Read())
+                {
+                    name.Add(reader.GetString(0));
+                    diagonal.Add(reader.GetDouble(1));
+                    resolution.Add(reader.GetString(2));
+                    features.Add(reader.GetString(3));
+                    price.Add(reader.GetInt32(4));
+                    quantity.Add(reader.GetInt32(5));
+                }
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void forFlowUsersHeadPhones(string userLogin, ref List<String> name, ref List<String>  mic, ref List<String> type, 
+                                         ref List<int> workingHours, ref List<int> resistance, ref List<int> price, ref List<int> quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand forUsersHeadPhones = new MySqlCommand(connString, connection);
+                forUsersHeadPhones.CommandText = "SELECT h.Name, h.Microphone, h.Constaction_type, h.Working_hours, " +
+                                                 " h.Resistance, h.Price, h.Quantity FROM HeadPhonesPurchase h " +
+                                                 " JOIN Users u ON u.users_id = h.users_id " +
+                                                $" WHERE u.login = '{userLogin}'";
+                MySqlDataReader reader = forUsersHeadPhones.ExecuteReader();
+                while (reader.Read())
+                {
+                    name.Add(reader.GetString(0));
+                    mic.Add(reader.GetString(1));
+                    type.Add(reader.GetString(2));
+                    workingHours.Add(reader.GetInt32(3));
+                    resistance.Add(reader.GetInt32(4));
+                    price.Add(reader.GetInt32(5));
+                    quantity.Add(reader.GetInt32(6));
+                }
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void forFlowUsersSmartWatches(string userLogin, ref List<String> name, ref List<String>  compatible, ref List<String> sensors,
+                                             ref List<String> resolution, ref List<int> price, ref List<int>  quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand forUsersSmartWatches = new MySqlCommand(connString, connection);
+                forUsersSmartWatches.CommandText = "SELECT s.Name, s.Compatible_OS, s.Sensors, s.Screen_resolution, " +
+                                                   " s.Price, s.Quantity FROM SmartWatchesPurchase s " +
+                                                   " JOIN Users u ON u.users_id = s.users_id " +
+                                                  $" WHERE u.login = '{userLogin}';";
+                MySqlDataReader reader = forUsersSmartWatches.ExecuteReader();
+                while (reader.Read())
+                {
+                    name.Add(reader.GetString(0));
+                    compatible.Add(reader.GetString(1));
+                    sensors.Add(reader.GetString(2));
+                    resolution.Add(reader.GetString(3));
+                    price.Add(reader.GetInt32(4));
+                    quantity.Add(reader.GetInt32(5));
+                }
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void forFlowUsersSmartPhones(string userLogin, ref List<String> name, ref List<int> internalMemory, ref List<int> ram, ref List<int> resolution,
+                                                     ref List<int> diagonal, ref List<int> capacity, ref List<int> price, ref List<int> quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand forUsersSmartPhones = new MySqlCommand(connString, connection);
+                forUsersSmartPhones.CommandText = "SELECT ss.Name, ss.Internal_memory, ss.RAM, ss.Resolution_main_camera, " +
+                                                  " ss.Screen_diagonal, ss.Capacity, ss.Price, ss.Quantity FROM SmartPhonesPurchase ss " +
+                                                  " JOIN Users u ON u.users_id = ss.users_id " +
+                                                 $" WHERE u.login = '{userLogin}';";
+                MySqlDataReader reader = forUsersSmartPhones.ExecuteReader();
+                while (reader.Read())
+                {
+                    name.Add(reader.GetString(0));
+                    internalMemory.Add(reader.GetInt32(1));
+                    ram.Add(reader.GetInt32(2));
+                    resolution.Add(reader.GetInt32(3));
+                    diagonal.Add(reader.GetInt32(4));
+                    capacity.Add(reader.GetInt32(5));
+                    price.Add(reader.GetInt32(6));
+                    quantity.Add(reader.GetInt32(7));
+                }
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
     }
-
 }
