@@ -12,10 +12,13 @@ namespace Course1
 {
     public partial class AdminForm : Form
     {
-        public AdminForm()
+        
+        public AdminForm(Form MAINFORM)
         {
             InitializeComponent();
+            formMain = MAINFORM;
         }
+        Form formMain;
 
         ManageBook manageBookForUsers;
         ManageClothes manageClothesForUsers;
@@ -198,6 +201,7 @@ namespace Course1
         private void pictureBoxAdminClose_Click(object sender, EventArgs e)
         {
             Form.ActiveForm.Close();
+            formMain.Show();
         }
 
         private void pictureBoxWareHouse_Click(object sender, EventArgs e)

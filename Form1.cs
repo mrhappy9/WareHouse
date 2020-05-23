@@ -12,9 +12,11 @@ namespace Course1
 {
     public partial class Form1 : Form
     {
+        AdminForm adminForm;
         public Form1()
         {
             InitializeComponent();
+            adminForm = new AdminForm(this);
         }
 
         static private string admin = "admin";
@@ -23,7 +25,7 @@ namespace Course1
         private Point mouseOffset;
         private bool isMouseDown = false;
 
-        AdminForm adminForm = new AdminForm();
+        /*AdminForm adminForm = new AdminForm();*/
         SignUp signupForm = new SignUp();
         Recovery recovery = new Recovery();
         WorkServer workserver = new WorkServer();
@@ -33,7 +35,6 @@ namespace Course1
         {
 
         }
-
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -106,7 +107,7 @@ namespace Course1
             {
                 managerOfUsers = new ManageUsers(logintext.Text, passwordtext.Text,
                                                  workserver.getEmailForManageUser(logintext.Text, passwordtext.Text));
-                mainInterface = new MainInterface(logintext.Text);
+                mainInterface = new MainInterface(logintext.Text, this);
                 workserver.loseConnection();
                 this.Hide();
                 mainInterface.Show();

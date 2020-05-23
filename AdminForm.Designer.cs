@@ -2573,10 +2573,11 @@
             // 
             // panelUsersForMenuStrip
             // 
+            this.panelUsersForMenuStrip.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panelUsersForMenuStrip.Controls.Add(this.menuStripUsers);
             this.panelUsersForMenuStrip.Location = new System.Drawing.Point(454, 80);
             this.panelUsersForMenuStrip.Name = "panelUsersForMenuStrip";
-            this.panelUsersForMenuStrip.Size = new System.Drawing.Size(323, 43);
+            this.panelUsersForMenuStrip.Size = new System.Drawing.Size(163, 43);
             this.panelUsersForMenuStrip.TabIndex = 111;
             // 
             // flowLayoutPanelUsers

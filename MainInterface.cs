@@ -31,12 +31,13 @@ namespace Course1
         {
             InitializeComponent();
         }
-        
-        public MainInterface(string user)
+        Form formMain;
+        public MainInterface(string user, Form MAINFORM)
         {
             InitializeComponent();
             UserNameLabel.Text = user;
             basketItems.setUserNameLabel(user);
+            formMain = MAINFORM;
         }
         
         private List<Label> getAllLabels()
@@ -54,7 +55,7 @@ namespace Course1
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Form.ActiveForm.Close();
-            
+            formMain.Show();
         }
 
         private void electroLabel_Click(object sender, EventArgs e)
