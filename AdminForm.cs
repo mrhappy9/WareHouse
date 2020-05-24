@@ -62,8 +62,8 @@ namespace Course1
         }
         private void setDefaultItemsColor()
         {
-            panelUsersItem.BackColor = panelChange.BackColor = panelDelete.BackColor =
-            pictureBoxUsersItem.BackColor = pictureBoxChange.BackColor = pictureBoxDelete.BackColor = defualtColor;
+            panelUsersItem.BackColor = panelChange.BackColor = 
+            pictureBoxUsersItem.BackColor = pictureBoxChange.BackColor = defualtColor;
         }
 
         private void setNonVisibleItemsVisible()
@@ -189,13 +189,6 @@ namespace Course1
             changeItemsColor(pictureBoxUsersItem, panelUsersItem);
 
             panelWithUsersItemVisbile();
-        }
-
-
-        private void deleteLabel_Click(object sender, EventArgs e)
-        {
-            setDefaultItemsColor();
-            changeItemsColor(pictureBoxDelete, panelDelete);
         }
 
         private void pictureBoxAdminClose_Click(object sender, EventArgs e)

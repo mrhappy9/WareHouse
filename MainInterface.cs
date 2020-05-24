@@ -674,5 +674,20 @@ namespace Course1
             basketItems.totalPrice();
             basketItems.Show();
         }
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///// MENU STRIP ITEMS
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void informationMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Склад 'WareHouse' предлагает к просмостру и покупке товары по категориям," +
+                            " представленным ниже.", "Информация о складе");
+        }
+
+        private void salesMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("На данный момент скидки недоступны", "Информация о скидках");
+        }
     }
 }

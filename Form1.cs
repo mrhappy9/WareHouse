@@ -22,10 +22,6 @@ namespace Course1
         static private string admin = "admin";
         static private string adminPassword = "%%a%%d%%m%%i%%n%%";
 
-        private Point mouseOffset;
-        private bool isMouseDown = false;
-
-        /*AdminForm adminForm = new AdminForm();*/
         SignUp signupForm = new SignUp();
         Recovery recovery = new Recovery();
         WorkServer workserver = new WorkServer();
@@ -99,6 +95,11 @@ namespace Course1
             recovery.Show();
             this.TopMost = true;
         }
+        private void cleanTextBoxes()
+        {
+            logintext.Text = "Login";
+            passwordtext.Text = "";
+        }
         private void gobutton_Click(object sender, EventArgs e)
         {
             workserver.createConnection();
@@ -109,15 +110,17 @@ namespace Course1
                                                  workserver.getEmailForManageUser(logintext.Text, passwordtext.Text));
                 mainInterface = new MainInterface(logintext.Text, this);
                 workserver.loseConnection();
+                cleanTextBoxes();
                 this.Hide();
                 mainInterface.Show();
             }
             else if(PassswordWithLogin(logintext.Text, passwordtext.Text) &&
                     logintext.Text == admin && passwordtext.Text == adminPassword)
-            {
-                this.Hide();
-                adminForm.Show();
-            }
+                 {
+                     cleanTextBoxes();
+                     this.Hide();
+                     adminForm.Show();
+                 }
             else { setWarningLabel(true); passwordReset(); }
             workserver.loseConnection();
         }
@@ -160,38 +163,6 @@ namespace Course1
                 timer4.Stop();
         }
 
-        private void Form1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (isMouseDown)
-            {
-                Point mousePos = Control.MousePosition;
-                mousePos.Offset(mouseOffset.X, mouseOffset.Y);
-                Location = mousePos;
-            }
-        }
-
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-            int xOffset;
-            int yOffset;
-
-            if (e.Button == MouseButtons.Left)
-            {
-                xOffset = -e.X - SystemInformation.FrameBorderSize.Width;
-                yOffset = -e.Y - SystemInformation.CaptionHeight -
-                    SystemInformation.FrameBorderSize.Height;
-                mouseOffset = new Point(xOffset, yOffset);
-                isMouseDown = true;
-            }
-        }
-
-        private void Form1_MouseUp(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                isMouseDown = false;
-            }
-        }
         private bool PassswordWithLogin(String password, String login)
         {
             return (password != "" && login != "");

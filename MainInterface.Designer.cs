@@ -94,8 +94,8 @@
             this.UserNameLabel = new System.Windows.Forms.Label();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.информацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.скидкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informationMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panelForFlow = new System.Windows.Forms.Panel();
@@ -876,8 +876,8 @@
             this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.информацияToolStripMenuItem,
-            this.скидкиToolStripMenuItem});
+            this.informationMenuItem,
+            this.salesMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(199, 26);
@@ -885,19 +885,21 @@
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // информацияToolStripMenuItem
+            // informationMenuItem
             // 
-            this.информацияToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.информацияToolStripMenuItem.Name = "информацияToolStripMenuItem";
-            this.информацияToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
-            this.информацияToolStripMenuItem.Text = "Информация";
+            this.informationMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.informationMenuItem.Name = "informationMenuItem";
+            this.informationMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.informationMenuItem.Text = "Информация";
+            this.informationMenuItem.Click += new System.EventHandler(this.informationMenuItem_Click);
             // 
-            // скидкиToolStripMenuItem
+            // salesMenuItem
             // 
-            this.скидкиToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.скидкиToolStripMenuItem.Name = "скидкиToolStripMenuItem";
-            this.скидкиToolStripMenuItem.Size = new System.Drawing.Size(72, 22);
-            this.скидкиToolStripMenuItem.Text = "Скидки";
+            this.salesMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.salesMenuItem.Name = "salesMenuItem";
+            this.salesMenuItem.Size = new System.Drawing.Size(72, 22);
+            this.salesMenuItem.Text = "Скидки";
+            this.salesMenuItem.Click += new System.EventHandler(this.salesMenuItem_Click);
             // 
             // toolTip1
             // 
@@ -1092,7 +1094,7 @@
         private System.Windows.Forms.Panel panelForFlow;
         private System.Windows.Forms.Button buttonAddItems;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem информацияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem скидкиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informationMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salesMenuItem;
     }
 }

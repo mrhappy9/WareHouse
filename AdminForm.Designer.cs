@@ -31,14 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.panelMain = new System.Windows.Forms.Panel();
+            this.pictureBoxAdminClose = new System.Windows.Forms.PictureBox();
             this.panelWarehouse = new System.Windows.Forms.Panel();
             this.pictureBoxWareHouse = new System.Windows.Forms.PictureBox();
-            this.panelDelete = new System.Windows.Forms.Panel();
-            this.pictureBoxAdminClose = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBoxDelete = new System.Windows.Forms.PictureBox();
-            this.deleteLabel = new System.Windows.Forms.Label();
             this.panelUsersItem = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -267,11 +262,9 @@
             this.panelUsersForMenuStrip = new System.Windows.Forms.Panel();
             this.flowLayoutPanelUsers = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdminClose)).BeginInit();
             this.panelWarehouse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWareHouse)).BeginInit();
-            this.panelDelete.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdminClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelete)).BeginInit();
             this.panelUsersItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsersItem)).BeginInit();
             this.panelChange.SuspendLayout();
@@ -294,13 +287,22 @@
             this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.panelMain.Controls.Add(this.pictureBoxAdminClose);
             this.panelMain.Controls.Add(this.panelWarehouse);
-            this.panelMain.Controls.Add(this.panelDelete);
             this.panelMain.Controls.Add(this.panelUsersItem);
             this.panelMain.Controls.Add(this.panelChange);
             this.panelMain.Location = new System.Drawing.Point(0, 0);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1156, 71);
             this.panelMain.TabIndex = 1;
+            // 
+            // pictureBoxAdminClose
+            // 
+            this.pictureBoxAdminClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAdminClose.Image")));
+            this.pictureBoxAdminClose.Location = new System.Drawing.Point(1140, 0);
+            this.pictureBoxAdminClose.Name = "pictureBoxAdminClose";
+            this.pictureBoxAdminClose.Size = new System.Drawing.Size(16, 16);
+            this.pictureBoxAdminClose.TabIndex = 2;
+            this.pictureBoxAdminClose.TabStop = false;
+            this.pictureBoxAdminClose.Click += new System.EventHandler(this.pictureBoxAdminClose_Click);
             // 
             // panelWarehouse
             // 
@@ -320,69 +322,6 @@
             this.pictureBoxWareHouse.TabIndex = 3;
             this.pictureBoxWareHouse.TabStop = false;
             this.pictureBoxWareHouse.Click += new System.EventHandler(this.pictureBoxWareHouse_Click);
-            // 
-            // panelDelete
-            // 
-            this.panelDelete.Controls.Add(this.panel6);
-            this.panelDelete.Controls.Add(this.panel5);
-            this.panelDelete.Controls.Add(this.pictureBoxDelete);
-            this.panelDelete.Controls.Add(this.deleteLabel);
-            this.panelDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelDelete.Location = new System.Drawing.Point(529, 0);
-            this.panelDelete.Name = "panelDelete";
-            this.panelDelete.Size = new System.Drawing.Size(210, 71);
-            this.panelDelete.TabIndex = 8;
-            this.panelDelete.Click += new System.EventHandler(this.deleteLabel_Click);
-            // 
-            // pictureBoxAdminClose
-            // 
-            this.pictureBoxAdminClose.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAdminClose.Image")));
-            this.pictureBoxAdminClose.Location = new System.Drawing.Point(1140, 0);
-            this.pictureBoxAdminClose.Name = "pictureBoxAdminClose";
-            this.pictureBoxAdminClose.Size = new System.Drawing.Size(16, 16);
-            this.pictureBoxAdminClose.TabIndex = 2;
-            this.pictureBoxAdminClose.TabStop = false;
-            this.pictureBoxAdminClose.Click += new System.EventHandler(this.pictureBoxAdminClose_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel6.Location = new System.Drawing.Point(0, 68);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(210, 1);
-            this.panel6.TabIndex = 27;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(210, 1);
-            this.panel5.TabIndex = 26;
-            // 
-            // pictureBoxDelete
-            // 
-            this.pictureBoxDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.pictureBoxDelete.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxDelete.Image")));
-            this.pictureBoxDelete.Location = new System.Drawing.Point(22, 17);
-            this.pictureBoxDelete.Name = "pictureBoxDelete";
-            this.pictureBoxDelete.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxDelete.TabIndex = 3;
-            this.pictureBoxDelete.TabStop = false;
-            this.pictureBoxDelete.Click += new System.EventHandler(this.deleteLabel_Click);
-            // 
-            // deleteLabel
-            // 
-            this.deleteLabel.AutoSize = true;
-            this.deleteLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteLabel.Font = new System.Drawing.Font("Bodoni MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.deleteLabel.Location = new System.Drawing.Point(69, 23);
-            this.deleteLabel.Name = "deleteLabel";
-            this.deleteLabel.Size = new System.Drawing.Size(77, 24);
-            this.deleteLabel.TabIndex = 6;
-            this.deleteLabel.Text = "Удалить";
-            this.deleteLabel.Click += new System.EventHandler(this.deleteLabel_Click);
             // 
             // panelUsersItem
             // 
@@ -2621,12 +2560,9 @@
             this.Text = "AdminForm";
             this.Load += new System.EventHandler(this.AdminForm_Load);
             this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdminClose)).EndInit();
             this.panelWarehouse.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWareHouse)).EndInit();
-            this.panelDelete.ResumeLayout(false);
-            this.panelDelete.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdminClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelete)).EndInit();
             this.panelUsersItem.ResumeLayout(false);
             this.panelUsersItem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsersItem)).EndInit();
@@ -2660,11 +2596,6 @@
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel panelWarehouse;
         private System.Windows.Forms.PictureBox pictureBoxWareHouse;
-        private System.Windows.Forms.Panel panelDelete;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBoxDelete;
-        private System.Windows.Forms.Label deleteLabel;
         private System.Windows.Forms.Panel panelUsersItem;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
