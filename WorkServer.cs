@@ -966,5 +966,90 @@ namespace Course1
                 throw new Exception("Error executing into inster sql statement", e);
             }
         }
+
+
+        ////////////////////////////////////////////////////////////
+        /// FOR StoreKeeper
+        /////////////////////////////////////////////////////////
+        public void newBookRecordOnTable(string tableName, string name, string author, int price, int quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand newBook = new MySqlCommand(connString, connection);
+                newBook.CommandText = $"INSERT INTO {tableName} (Name, Author, Price, Quantity) VALUES " +
+                                      $"('{name}', '{author}', {price}, {quantity});";
+                newBook.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void newClothesRecordOnTable(string tableName, string name, string brand, string material, string sex, int price, int quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand newClothes = new MySqlCommand(connString, connection);
+                newClothes.CommandText = $"INSERT INTO {tableName} (Name, Brand, Material, Sex, Price, Quantity) VALUES " +
+                                      $"('{name}', '{brand}',  '{material}', '{sex}', {price}, {quantity});";
+                newClothes.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void newPcsLaptopsRecordOnTable(string tableName, string name, string cpu, int ram, int ssd, string gpu, string os, int price, int quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand newPcsLaptops = new MySqlCommand(connString, connection);
+                newPcsLaptops.CommandText = $"INSERT INTO {tableName} (Name, CPU, RAM, HDD, SSD, GPU, OS, Price, Quantity) VALUES " +
+                                      $"('{name}', '{cpu}',  {ram}, 0, '{ssd}', '{gpu}', '{os}', {price}, {quantity});";
+                newPcsLaptops.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void newHPhonesRecordOnTable(string tableName, string name, string mic, string type, int hour, int resistance, int price, int quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand newHPhones = new MySqlCommand(connString, connection);
+                newHPhones.CommandText = $"INSERT INTO {tableName} (Name, Microphone, Constaction_type, Working_hours, Resistance, Price, Quantity) VALUES " +
+                                      $"('{name}', '{mic}', '{type}', {hour}, {resistance}, {price}, {quantity});";
+                newHPhones.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void newTvsRecordOnTable(string tableName, string name, double diagonal, string resolution, string features, int price, int quantity)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand newTvs = new MySqlCommand(connString, connection);
+                newTvs.CommandText = $"INSERT INTO {tableName} (Name, Screen_diagonal, Max_resolution, Features, Price, Quantity) VALUES " +
+                                      $"('{name}', {diagonal}, '{resolution}', '{features}', {price}, {quantity});";
+                newTvs.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
     }
 }

@@ -13,14 +13,19 @@ namespace Course1
     public partial class Form1 : Form
     {
         AdminForm adminForm;
+        Storekeeper storekeeperForm;
         public Form1()
         {
             InitializeComponent();
             adminForm = new AdminForm(this);
+            storekeeperForm = new Storekeeper(this);
         }
 
         static private string admin = "admin";
         static private string adminPassword = "%%a%%d%%m%%i%%n%%";
+
+        static private string storekeeper = "keep";
+        static private string storekeeperPassword = "keep";
 
         SignUp signupForm = new SignUp();
         Recovery recovery = new Recovery();
@@ -114,13 +119,19 @@ namespace Course1
                 this.Hide();
                 mainInterface.Show();
             }
-            else if(PassswordWithLogin(logintext.Text, passwordtext.Text) &&
+            else if (PassswordWithLogin(logintext.Text, passwordtext.Text) &&
                     logintext.Text == admin && passwordtext.Text == adminPassword)
-                 {
-                     cleanTextBoxes();
-                     this.Hide();
-                     adminForm.Show();
-                 }
+            {
+                cleanTextBoxes();
+                this.Hide();
+                adminForm.Show();
+            }
+            else if (PassswordWithLogin(passwordtext.Text, logintext.Text) && logintext.Text == storekeeper && passwordtext.Text == storekeeperPassword)
+            {
+                cleanTextBoxes();
+                this.Hide();
+                storekeeperForm.Show();
+            }
             else { setWarningLabel(true); passwordReset(); }
             workserver.loseConnection();
         }

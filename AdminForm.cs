@@ -1592,5 +1592,9 @@ namespace Course1
             showOnFlowSmartPhonesUsers();
         }
 
+        private void panelUsersItem_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

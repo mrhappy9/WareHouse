@@ -335,6 +335,7 @@
             this.panelUsersItem.Size = new System.Drawing.Size(210, 71);
             this.panelUsersItem.TabIndex = 7;
             this.panelUsersItem.Click += new System.EventHandler(this.usersItemsLabel_Click);
+            this.panelUsersItem.Paint += new System.Windows.Forms.PaintEventHandler(this.panelUsersItem_Paint);
             // 
             // panel4
             // 
@@ -1027,7 +1028,7 @@
             this.robotCompToolStripMenuItem,
             this.classicGameToolStripMenuItem});
             this.pcsMenuItem.Name = "pcsMenuItem";
-            this.pcsMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.pcsMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pcsMenuItem.Tag = "PCs";
             this.pcsMenuItem.Text = "Компьютеры";
             this.pcsMenuItem.Click += new System.EventHandler(this.pcsMenuItem_Click);
@@ -1093,7 +1094,7 @@
             this.damixToolStripMenuItem,
             this.qCYT5ToolStripMenuItem});
             this.hPhonesMenuItem.Name = "hPhonesMenuItem";
-            this.hPhonesMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.hPhonesMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hPhonesMenuItem.Tag = "Headphones";
             this.hPhonesMenuItem.Text = "Наушники";
             this.hPhonesMenuItem.Click += new System.EventHandler(this.hPhonesMenuItem_Click);
@@ -1167,7 +1168,7 @@
             this.eCONSMARTToolStripMenuItem,
             this.sonyKDL32RE303ToolStripMenuItem});
             this.tvsMenuItem.Name = "tvsMenuItem";
-            this.tvsMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.tvsMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tvsMenuItem.Tag = "TVs";
             this.tvsMenuItem.Text = "Телевизоры";
             this.tvsMenuItem.Click += new System.EventHandler(this.tvsMenuItem_Click);
@@ -1248,7 +1249,7 @@
             this.honorMagicBookToolStripMenuItem,
             this.acerAspire3ToolStripMenuItem});
             this.laptopsMenuItem.Name = "laptopsMenuItem";
-            this.laptopsMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.laptopsMenuItem.Size = new System.Drawing.Size(180, 22);
             this.laptopsMenuItem.Tag = "Laptops";
             this.laptopsMenuItem.Text = "Ноутбуки";
             this.laptopsMenuItem.Click += new System.EventHandler(this.laptopsMenuItem_Click);
@@ -1339,7 +1340,7 @@
             this.loafersMocMenuItem,
             this.loafersMenuItem});
             this.shoesMenuItem.Name = "shoesMenuItem";
-            this.shoesMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.shoesMenuItem.Size = new System.Drawing.Size(180, 22);
             this.shoesMenuItem.Tag = "Shoes";
             this.shoesMenuItem.Text = "Обувь";
             this.shoesMenuItem.Click += new System.EventHandler(this.shoesMenuItem_Click);
@@ -1396,7 +1397,7 @@
             this.backpackUMenuItem,
             this.backpackLMenuItem});
             this.packPAcksMenuItem.Name = "packPAcksMenuItem";
-            this.packPAcksMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.packPAcksMenuItem.Size = new System.Drawing.Size(180, 22);
             this.packPAcksMenuItem.Tag = "Backpacks";
             this.packPAcksMenuItem.Text = "Рюкзаки";
             this.packPAcksMenuItem.Click += new System.EventHandler(this.packPAcksMenuItem_Click);
@@ -1453,7 +1454,7 @@
             this.underpantsMenuItem,
             this.tShortMenuItem});
             this.UnderWearMenuItem.Name = "UnderWearMenuItem";
-            this.UnderWearMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.UnderWearMenuItem.Size = new System.Drawing.Size(180, 22);
             this.UnderWearMenuItem.Tag = "Underwear";
             this.UnderWearMenuItem.Text = "Нижнее белье";
             this.UnderWearMenuItem.Click += new System.EventHandler(this.UnderWearMenuItem_Click);
@@ -1509,7 +1510,7 @@
             this.jacketAnorakMenuItem,
             this.pantsMenuItem});
             this.diffClothesMenuItem.Name = "diffClothesMenuItem";
-            this.diffClothesMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.diffClothesMenuItem.Size = new System.Drawing.Size(180, 22);
             this.diffClothesMenuItem.Tag = "Clothes";
             this.diffClothesMenuItem.Text = "Разное";
             this.diffClothesMenuItem.Click += new System.EventHandler(this.diffClothesMenuItem_Click);
