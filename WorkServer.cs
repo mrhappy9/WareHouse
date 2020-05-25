@@ -24,7 +24,7 @@ namespace Course1
         {
             connection.Close();
         }
-        
+
         public void addUser(string login, string password, string email)
         {
             createConnection();
@@ -127,7 +127,7 @@ namespace Course1
             }
 
         }
-        public void createInfoStringFields(string table,ref List<String> list, string subject) // fill up info into each string's block
+        public void createInfoStringFields(string table, ref List<String> list, string subject) // fill up info into each string's block
         {
             createConnection();
             MySqlCommand getList = new MySqlCommand(connString, connection);
@@ -195,9 +195,10 @@ namespace Course1
                 createInfoIntFields(table, ref price, "Price");
                 createInfoIntFields(table, ref quantity, "Quantity");
 
-            }catch(Exception ex) { throw new Exception("Error executing with sql statement", ex); }
+            }
+            catch (Exception ex) { throw new Exception("Error executing with sql statement", ex); }
         }
-        public void createInfoHphonesArray(string table, ref List<String> titles, ref List<String> mic, ref List<String> type, ref List<int> workingHours, 
+        public void createInfoHphonesArray(string table, ref List<String> titles, ref List<String> mic, ref List<String> type, ref List<int> workingHours,
                                            ref List<int> resistance, ref List<int> price, ref List<int> quantity)
         {
             try
@@ -209,10 +210,11 @@ namespace Course1
                 createInfoIntFields(table, ref resistance, "Resistance");
                 createInfoIntFields(table, ref price, "Price");
                 createInfoIntFields(table, ref quantity, "Quantity");
-            }catch(Exception ex) { throw new Exception("Error executing with sql statement", ex); }
+            }
+            catch (Exception ex) { throw new Exception("Error executing with sql statement", ex); }
         }
 
-        public void createInfoTvsArray(string table, ref List<String> titles, ref List<double> screenDiagonal, ref List<String> resolution, 
+        public void createInfoTvsArray(string table, ref List<String> titles, ref List<double> screenDiagonal, ref List<String> resolution,
                                        ref List<String> features, ref List<int> price, ref List<int> quantity)
         {
             try
@@ -224,7 +226,8 @@ namespace Course1
                 createInfoIntFields(table, ref price, "Price");
                 createInfoIntFields(table, ref quantity, "Quantity");
 
-            }catch(Exception ex) { throw new Exception("Error executing with sql statement", ex); }
+            }
+            catch (Exception ex) { throw new Exception("Error executing with sql statement", ex); }
         }
 
         public void createInfoSmartWatchArray(string table, ref List<String> titles, ref List<String> compatibleOS, ref List<String> sensors,
@@ -240,7 +243,7 @@ namespace Course1
                 createInfoIntFields(table, ref quantity, "Quantity");
 
             }
-            catch(Exception ex) { throw new Exception("Error executing with sql statement", ex); }
+            catch (Exception ex) { throw new Exception("Error executing with sql statement", ex); }
         }
 
         public void createInfoSmartPhones(string table, ref List<String> titles, ref List<int> internalMemory, ref List<int> ram,
@@ -330,7 +333,7 @@ namespace Course1
             {
                 MySqlCommand command = new MySqlCommand(connString, connection);
                 command.CommandText = "INSERT INTO ClothesPurchase(Name, Brand, Material, Sex, Price, Quantity, Users_id) VALUES" +
-                                      "(@title, @brand, @material, @sex, @price, @quantity, @users_id);" ;
+                                      "(@title, @brand, @material, @sex, @price, @quantity, @users_id);";
                 command.Parameters.AddWithValue("@title", title);
                 command.Parameters.AddWithValue("@brand", brand);
                 command.Parameters.AddWithValue("@material", material);
@@ -419,7 +422,7 @@ namespace Course1
                 throw new Exception("Error executing into inster sql statement", e);
             }
         }
-        public void createSmartWathesTable(string title, string os, string sensors, string resolution, int price, int quantity, int users_id)  
+        public void createSmartWathesTable(string title, string os, string sensors, string resolution, int price, int quantity, int users_id)
         {
             createConnection();
             try
@@ -442,12 +445,12 @@ namespace Course1
                 throw new Exception("Error executing into inster sql statement", e);
             }
         }
-        public void createSmartPhonesTable(string title, int memory, int ram, int resolutionCamera, double screenDiagonal, 
+        public void createSmartPhonesTable(string title, int memory, int ram, int resolutionCamera, double screenDiagonal,
                                            int capacity, int price, int quantity, int users_id)
         {
             createConnection();
-            try 
-            { 
+            try
+            {
                 MySqlCommand command = new MySqlCommand(connString, connection);
                 command.CommandText = "INSERT INTO SmartPhonesPurchase(Name, Internal_memory, RAM, Resolution_main_camera, Screen_diagonal, Capacity, Price," +
                                       "Quantity, Users_id) VALUES" +
@@ -473,7 +476,7 @@ namespace Course1
         ///////
         ///    Updating tables in the MySQL after order is confirmed
         //////
-        
+
         public void updateQuantityItemsInTables(String table, String name, int newQuantityItems)
         {
             createConnection();
@@ -499,7 +502,7 @@ namespace Course1
         ///     For Admin user
         ///     
         ///////
-        
+
 
         ////////////////////////////////////////////////
         ///-------------Changing books---------------///
@@ -606,7 +609,7 @@ namespace Course1
             createConnection();
             try
             {
-                MySqlCommand getlaptopsPcs= new MySqlCommand(connString, connection);
+                MySqlCommand getlaptopsPcs = new MySqlCommand(connString, connection);
                 getlaptopsPcs.CommandText = $" SELECT CPU, GPU, OS, Price, Quantity FROM {table} WHERE Name = '{name}'";
                 MySqlDataReader reader = getlaptopsPcs.ExecuteReader();
                 while (reader.Read())
@@ -746,7 +749,7 @@ namespace Course1
 
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                ///-------------USERS List---------------///
+        ///-------------USERS List---------------///
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         public List<String> getUsersList()
@@ -795,7 +798,7 @@ namespace Course1
                 throw new Exception("Error executing into inster sql statement", e);
             }
         }
-        public void forFlowUsersClothes(string userLogin, ref List<String> name, ref List<String> brand, ref List<String> material, ref List<String> sex, 
+        public void forFlowUsersClothes(string userLogin, ref List<String> name, ref List<String> brand, ref List<String> material, ref List<String> sex,
                                         ref List<int> price, ref List<int> quantity)
         {
             createConnection();
@@ -822,12 +825,12 @@ namespace Course1
                 throw new Exception("Error executing into inster sql statement", e);
             }
         }
-        public void forFlowUsersLaptopsPcs(string userLogin, ref List<string> name, ref List<string> cpu, ref List<int> ram, ref List<int> hdd, 
+        public void forFlowUsersLaptopsPcs(string userLogin, ref List<string> name, ref List<string> cpu, ref List<int> ram, ref List<int> hdd,
                                            ref List<int> ssd, ref List<string> gpu, ref List<String> os, ref List<int> price, ref List<int> quantity)
         {
             createConnection();
-            try 
-            { 
+            try
+            {
                 MySqlCommand forUsersLaptopsPcs = new MySqlCommand(connString, connection);
                 forUsersLaptopsPcs.CommandText = "SELECT l.Name, l.CPU, l.RAM, l.HDD, l.SSD, l.GPU, l.OS, l.Price, l.Quantity FROM LaptopsPcsPurchase l " +
                                                  " JOIN Users u ON u.users_id = l.users_id " +
@@ -852,7 +855,7 @@ namespace Course1
                 throw new Exception("Error executing into inster sql statement", e);
             }
         }
-        public void forFlowUsersTvs(string userLogin, ref List<string> name, ref List<double> diagonal, ref List<string> resolution, 
+        public void forFlowUsersTvs(string userLogin, ref List<string> name, ref List<double> diagonal, ref List<string> resolution,
                                     ref List<string> features, ref List<int> price, ref List<int> quantity)
         {
             createConnection();
@@ -879,7 +882,7 @@ namespace Course1
                 throw new Exception("Error executing into inster sql statement", e);
             }
         }
-        public void forFlowUsersHeadPhones(string userLogin, ref List<String> name, ref List<String>  mic, ref List<String> type, 
+        public void forFlowUsersHeadPhones(string userLogin, ref List<String> name, ref List<String> mic, ref List<String> type,
                                          ref List<int> workingHours, ref List<int> resistance, ref List<int> price, ref List<int> quantity)
         {
             createConnection();
@@ -908,8 +911,8 @@ namespace Course1
                 throw new Exception("Error executing into inster sql statement", e);
             }
         }
-        public void forFlowUsersSmartWatches(string userLogin, ref List<String> name, ref List<String>  compatible, ref List<String> sensors,
-                                             ref List<String> resolution, ref List<int> price, ref List<int>  quantity)
+        public void forFlowUsersSmartWatches(string userLogin, ref List<String> name, ref List<String> compatible, ref List<String> sensors,
+                                             ref List<String> resolution, ref List<int> price, ref List<int> quantity)
         {
             createConnection();
             try
@@ -1044,6 +1047,45 @@ namespace Course1
                 newTvs.CommandText = $"INSERT INTO {tableName} (Name, Screen_diagonal, Max_resolution, Features, Price, Quantity) VALUES " +
                                       $"('{name}', {diagonal}, '{resolution}', '{features}', {price}, {quantity});";
                 newTvs.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        ///////////////////////////////////////
+        ////////for deleting//////////////////
+        //////////////////////////////////////
+        public List<String> getItemNames(string nameTable)
+        {
+            List<String> books = new List<String>();
+            createConnection();
+            try
+            {
+                MySqlCommand getBooks = new MySqlCommand(connString, connection);
+                getBooks.CommandText = $"SELECT Name FROM {nameTable};";
+                MySqlDataReader reader = getBooks.ExecuteReader();
+                while (reader.Read())
+                {
+                    books.Add(reader[0].ToString());
+                }
+                loseConnection();
+                return books;
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void deleteItem(string nameTable, string name)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand deleteBook = new MySqlCommand(connString, connection);
+                deleteBook.CommandText = $"DELETE FROM {nameTable} WHERE Name = '{name}';";
+                deleteBook.ExecuteNonQuery();
                 loseConnection();
             }
             catch (MySqlException e)

@@ -144,6 +144,25 @@
             this.labelTvsQuantity = new System.Windows.Forms.Label();
             this.textTvsDiagonal = new System.Windows.Forms.TextBox();
             this.labelTvsDiagonal = new System.Windows.Forms.Label();
+            this.panelMenuDelete = new System.Windows.Forms.Panel();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.bookDeleteItems = new System.Windows.Forms.ToolStripMenuItem();
+            this.childrenBookDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.artBookDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.comicBookDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBookDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.diffBookDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.foriegnBookDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.electroDeleteItems = new System.Windows.Forms.ToolStripMenuItem();
+            this.pcsDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.hPhonesDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.tvsDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.laptopsDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.clothesDeleteItems = new System.Windows.Forms.ToolStripMenuItem();
+            this.shoesDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.backpacksDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.underWearDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.diffClothesDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain.SuspendLayout();
             this.panelAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd)).BeginInit();
@@ -161,6 +180,8 @@
             this.panelPcsLaptopsAdd.SuspendLayout();
             this.panelHPhonesAdd.SuspendLayout();
             this.panelTvsAdd.SuspendLayout();
+            this.panelMenuDelete.SuspendLayout();
+            this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMain
@@ -349,6 +370,7 @@
             this.deleteLabel.Size = new System.Drawing.Size(77, 24);
             this.deleteLabel.TabIndex = 6;
             this.deleteLabel.Text = "Удалить";
+            this.deleteLabel.Click += new System.EventHandler(this.deleteLabel_Click);
             // 
             // panel1
             // 
@@ -459,7 +481,7 @@
             // компьютерыToolStripMenuItem
             // 
             this.компьютерыToolStripMenuItem.Name = "компьютерыToolStripMenuItem";
-            this.компьютерыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.компьютерыToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.компьютерыToolStripMenuItem.Tag = "PCs";
             this.компьютерыToolStripMenuItem.Text = "Компьютеры";
             this.компьютерыToolStripMenuItem.Click += new System.EventHandler(this.pcsLaptopsNameTableForAddingClick);
@@ -467,7 +489,7 @@
             // наушникиToolStripMenuItem
             // 
             this.наушникиToolStripMenuItem.Name = "наушникиToolStripMenuItem";
-            this.наушникиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.наушникиToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.наушникиToolStripMenuItem.Tag = "Headphones";
             this.наушникиToolStripMenuItem.Text = "Наушники";
             this.наушникиToolStripMenuItem.Click += new System.EventHandler(this.hPhonesNameTableForAddingClick);
@@ -475,7 +497,7 @@
             // телевизорыToolStripMenuItem
             // 
             this.телевизорыToolStripMenuItem.Name = "телевизорыToolStripMenuItem";
-            this.телевизорыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.телевизорыToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.телевизорыToolStripMenuItem.Tag = "TVs";
             this.телевизорыToolStripMenuItem.Text = "Телевизоры";
             this.телевизорыToolStripMenuItem.Click += new System.EventHandler(this.tvsNameTableForAddingClick);
@@ -483,7 +505,7 @@
             // ноутбукиToolStripMenuItem
             // 
             this.ноутбукиToolStripMenuItem.Name = "ноутбукиToolStripMenuItem";
-            this.ноутбукиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ноутбукиToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.ноутбукиToolStripMenuItem.Tag = "Laptops";
             this.ноутбукиToolStripMenuItem.Text = "Ноутбуки";
             this.ноутбукиToolStripMenuItem.Click += new System.EventHandler(this.pcsLaptopsNameTableForAddingClick);
@@ -504,7 +526,7 @@
             // обувьToolStripMenuItem
             // 
             this.обувьToolStripMenuItem.Name = "обувьToolStripMenuItem";
-            this.обувьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.обувьToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.обувьToolStripMenuItem.Tag = "Shoes";
             this.обувьToolStripMenuItem.Text = "Обувь";
             this.обувьToolStripMenuItem.Click += new System.EventHandler(this.clothesNameTableForAddingClick);
@@ -512,7 +534,7 @@
             // рюкзакиToolStripMenuItem
             // 
             this.рюкзакиToolStripMenuItem.Name = "рюкзакиToolStripMenuItem";
-            this.рюкзакиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.рюкзакиToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.рюкзакиToolStripMenuItem.Tag = "Backpacks";
             this.рюкзакиToolStripMenuItem.Text = "Рюкзаки";
             this.рюкзакиToolStripMenuItem.Click += new System.EventHandler(this.clothesNameTableForAddingClick);
@@ -520,7 +542,7 @@
             // нижнееБельеToolStripMenuItem
             // 
             this.нижнееБельеToolStripMenuItem.Name = "нижнееБельеToolStripMenuItem";
-            this.нижнееБельеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.нижнееБельеToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.нижнееБельеToolStripMenuItem.Tag = "Underwear";
             this.нижнееБельеToolStripMenuItem.Text = "Нижнее белье";
             this.нижнееБельеToolStripMenuItem.Click += new System.EventHandler(this.clothesNameTableForAddingClick);
@@ -528,7 +550,7 @@
             // разноеToolStripMenuItem1
             // 
             this.разноеToolStripMenuItem1.Name = "разноеToolStripMenuItem1";
-            this.разноеToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.разноеToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.разноеToolStripMenuItem1.Tag = "Clothes";
             this.разноеToolStripMenuItem1.Text = "Разное";
             this.разноеToolStripMenuItem1.Click += new System.EventHandler(this.clothesNameTableForAddingClick);
@@ -1496,11 +1518,184 @@
             this.labelTvsDiagonal.TabIndex = 52;
             this.labelTvsDiagonal.Text = "Диагональ";
             // 
+            // panelMenuDelete
+            // 
+            this.panelMenuDelete.Controls.Add(this.menuStrip2);
+            this.panelMenuDelete.Location = new System.Drawing.Point(300, 72);
+            this.panelMenuDelete.Name = "panelMenuDelete";
+            this.panelMenuDelete.Size = new System.Drawing.Size(286, 46);
+            this.panelMenuDelete.TabIndex = 112;
+            // 
+            // menuStrip2
+            // 
+            this.menuStrip2.BackColor = System.Drawing.SystemColors.Control;
+            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bookDeleteItems,
+            this.electroDeleteItems,
+            this.clothesDeleteItems});
+            this.menuStrip2.Location = new System.Drawing.Point(7, 9);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(279, 26);
+            this.menuStrip2.TabIndex = 48;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // bookDeleteItems
+            // 
+            this.bookDeleteItems.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.childrenBookDelete,
+            this.artBookDelete,
+            this.comicBookDelete,
+            this.textBookDelete,
+            this.diffBookDelete,
+            this.foriegnBookDelete});
+            this.bookDeleteItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookDeleteItems.Name = "bookDeleteItems";
+            this.bookDeleteItems.Size = new System.Drawing.Size(60, 22);
+            this.bookDeleteItems.Text = "Книги";
+            // 
+            // childrenBookDelete
+            // 
+            this.childrenBookDelete.Name = "childrenBookDelete";
+            this.childrenBookDelete.Size = new System.Drawing.Size(242, 22);
+            this.childrenBookDelete.Tag = "Childrenbooks";
+            this.childrenBookDelete.Text = "Детская лит-ра";
+            this.childrenBookDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // artBookDelete
+            // 
+            this.artBookDelete.Name = "artBookDelete";
+            this.artBookDelete.Size = new System.Drawing.Size(242, 22);
+            this.artBookDelete.Tag = "Artbooks";
+            this.artBookDelete.Text = "Художественная лит-ра";
+            this.artBookDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // comicBookDelete
+            // 
+            this.comicBookDelete.Name = "comicBookDelete";
+            this.comicBookDelete.Size = new System.Drawing.Size(242, 22);
+            this.comicBookDelete.Tag = "Comicbooks";
+            this.comicBookDelete.Text = "Комиксы";
+            this.comicBookDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // textBookDelete
+            // 
+            this.textBookDelete.Name = "textBookDelete";
+            this.textBookDelete.Size = new System.Drawing.Size(242, 22);
+            this.textBookDelete.Tag = "Textbooks";
+            this.textBookDelete.Text = "Учебники";
+            this.textBookDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // diffBookDelete
+            // 
+            this.diffBookDelete.Name = "diffBookDelete";
+            this.diffBookDelete.Size = new System.Drawing.Size(242, 22);
+            this.diffBookDelete.Tag = "Notartbooks";
+            this.diffBookDelete.Text = "Разное";
+            this.diffBookDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // foriegnBookDelete
+            // 
+            this.foriegnBookDelete.Name = "foriegnBookDelete";
+            this.foriegnBookDelete.Size = new System.Drawing.Size(242, 22);
+            this.foriegnBookDelete.Tag = "Foreignbooks";
+            this.foriegnBookDelete.Text = "Зарубежная-литра";
+            this.foriegnBookDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // electroDeleteItems
+            // 
+            this.electroDeleteItems.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pcsDelete,
+            this.hPhonesDelete,
+            this.tvsDelete,
+            this.laptopsDelete});
+            this.electroDeleteItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.electroDeleteItems.Name = "electroDeleteItems";
+            this.electroDeleteItems.Size = new System.Drawing.Size(134, 22);
+            this.electroDeleteItems.Text = "Электротехника";
+            // 
+            // pcsDelete
+            // 
+            this.pcsDelete.Name = "pcsDelete";
+            this.pcsDelete.Size = new System.Drawing.Size(180, 22);
+            this.pcsDelete.Tag = "PCs";
+            this.pcsDelete.Text = "Компьютеры";
+            this.pcsDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // hPhonesDelete
+            // 
+            this.hPhonesDelete.Name = "hPhonesDelete";
+            this.hPhonesDelete.Size = new System.Drawing.Size(180, 22);
+            this.hPhonesDelete.Tag = "Headphones";
+            this.hPhonesDelete.Text = "Наушники";
+            this.hPhonesDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // tvsDelete
+            // 
+            this.tvsDelete.Name = "tvsDelete";
+            this.tvsDelete.Size = new System.Drawing.Size(180, 22);
+            this.tvsDelete.Tag = "TVs";
+            this.tvsDelete.Text = "Телевизоры";
+            this.tvsDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // laptopsDelete
+            // 
+            this.laptopsDelete.Name = "laptopsDelete";
+            this.laptopsDelete.Size = new System.Drawing.Size(180, 22);
+            this.laptopsDelete.Tag = "Laptops";
+            this.laptopsDelete.Text = "Ноутбуки";
+            this.laptopsDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // clothesDeleteItems
+            // 
+            this.clothesDeleteItems.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.shoesDelete,
+            this.backpacksDelete,
+            this.underWearDelete,
+            this.diffClothesDelete});
+            this.clothesDeleteItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.clothesDeleteItems.Name = "clothesDeleteItems";
+            this.clothesDeleteItems.Size = new System.Drawing.Size(77, 22);
+            this.clothesDeleteItems.Text = "Одежда";
+            // 
+            // shoesDelete
+            // 
+            this.shoesDelete.Name = "shoesDelete";
+            this.shoesDelete.Size = new System.Drawing.Size(180, 22);
+            this.shoesDelete.Tag = "Shoes";
+            this.shoesDelete.Text = "Обувь";
+            this.shoesDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // backpacksDelete
+            // 
+            this.backpacksDelete.Name = "backpacksDelete";
+            this.backpacksDelete.Size = new System.Drawing.Size(180, 22);
+            this.backpacksDelete.Tag = "Backpacks";
+            this.backpacksDelete.Text = "Рюкзаки";
+            this.backpacksDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // underWearDelete
+            // 
+            this.underWearDelete.Name = "underWearDelete";
+            this.underWearDelete.Size = new System.Drawing.Size(180, 22);
+            this.underWearDelete.Tag = "Underwear";
+            this.underWearDelete.Text = "Нижнее белье";
+            this.underWearDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // diffClothesDelete
+            // 
+            this.diffClothesDelete.Name = "diffClothesDelete";
+            this.diffClothesDelete.Size = new System.Drawing.Size(180, 22);
+            this.diffClothesDelete.Tag = "Clothes";
+            this.diffClothesDelete.Text = "Разное";
+            this.diffClothesDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
             // Storekeeper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 594);
+            this.Controls.Add(this.panelMenuDelete);
             this.Controls.Add(this.panelTvsAdd);
             this.Controls.Add(this.panelHPhonesAdd);
             this.Controls.Add(this.panelPcsLaptopsAdd);
@@ -1541,6 +1736,10 @@
             this.panelHPhonesAdd.PerformLayout();
             this.panelTvsAdd.ResumeLayout(false);
             this.panelTvsAdd.PerformLayout();
+            this.panelMenuDelete.ResumeLayout(false);
+            this.panelMenuDelete.PerformLayout();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1662,5 +1861,24 @@
         private System.Windows.Forms.Label labelTvsQuantity;
         private System.Windows.Forms.TextBox textTvsDiagonal;
         private System.Windows.Forms.Label labelTvsDiagonal;
+        private System.Windows.Forms.Panel panelMenuDelete;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem bookDeleteItems;
+        private System.Windows.Forms.ToolStripMenuItem childrenBookDelete;
+        private System.Windows.Forms.ToolStripMenuItem artBookDelete;
+        private System.Windows.Forms.ToolStripMenuItem comicBookDelete;
+        private System.Windows.Forms.ToolStripMenuItem textBookDelete;
+        private System.Windows.Forms.ToolStripMenuItem diffBookDelete;
+        private System.Windows.Forms.ToolStripMenuItem foriegnBookDelete;
+        private System.Windows.Forms.ToolStripMenuItem electroDeleteItems;
+        private System.Windows.Forms.ToolStripMenuItem pcsDelete;
+        private System.Windows.Forms.ToolStripMenuItem hPhonesDelete;
+        private System.Windows.Forms.ToolStripMenuItem tvsDelete;
+        private System.Windows.Forms.ToolStripMenuItem laptopsDelete;
+        private System.Windows.Forms.ToolStripMenuItem clothesDeleteItems;
+        private System.Windows.Forms.ToolStripMenuItem shoesDelete;
+        private System.Windows.Forms.ToolStripMenuItem backpacksDelete;
+        private System.Windows.Forms.ToolStripMenuItem underWearDelete;
+        private System.Windows.Forms.ToolStripMenuItem diffClothesDelete;
     }
 }

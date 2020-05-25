@@ -55,6 +55,8 @@ namespace Course1
             panelPcsLaptopsAdd.Visible = false;
             panelHPhonesAdd.Visible = false;
             panelTvsAdd.Visible = false;
+            //////////////DELETE PANELS and ITEMS////////////////
+            panelMenuDelete.Visible = false;
         }
         private void setVisiblePanel(params Panel[] panels)
         {
@@ -80,6 +82,7 @@ namespace Course1
 
         private void labelAdd_Click(object sender, EventArgs e)
         {
+            panelMenuDelete.Visible = false;
             setDefaultItemsColor();
             /*setNonVisiblePanels(Deletpanel, delete menu, listtable)*/   // Вернуться и исправить
             changeItemsColor(pictureBoxAdd, panelAdd);
@@ -303,6 +306,49 @@ namespace Course1
             {
                 MessageBox.Show("Вы допустили ошибку при вводе данных", "Внимание");
             }
+        }
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////Delete panel and Items
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        private void deleteLabel_Click(object sender, EventArgs e)
+        {
+            panelMenuAdd.Visible = false;
+            setDefaultItemsColor();
+            changeItemsColor(pictureBoxDelete, panelDelete);
+            setVisiblePanel(panelMenuDelete);
+        }
+
+        private void fillUpItemsForDelete(string nameTable, ToolStripMenuItem Item)
+        {
+            List<String> items = workServerStore.getItemNames(nameTable);
+            if (items.Count != Item.DropDownItems.Count)
+            {
+                Item.DropDownItems.Clear();
+                for (int i = 0; i < items.Count; i++)
+                {
+                    Item.DropDownItems.Add(items[i]);
+                    Item.DropDownItems[i].Tag = nameTable;
+                    Item.DropDownItems[i].Click += new EventHandler(ItemToBeDeletedClick);
+                }
+            }
+        }
+        private void ItemToBeDeletedClick(object sender, EventArgs e)
+        {
+            if (MessageBox.Show($"Вы уверены, что хотите удалить {((ToolStripMenuItem)sender).Text}?", "Удаление записи",
+                   MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                string deletedRecord = ((ToolStripMenuItem)sender).Text;
+                workServerStore.deleteItem(((ToolStripMenuItem)sender).Tag.ToString(), ((ToolStripMenuItem)sender).Text);
+                MessageBox.Show($"Была удалена запись {deletedRecord}", "Удалено");
+            }
+        }
+        private void fillUpBooksToBeDeleted(object sender, EventArgs e)
+        {
+            fillUpItemsForDelete(((ToolStripMenuItem)sender).Tag.ToString(), ((ToolStripMenuItem)sender));
+        }
+        private void fillItemsToBeDeleted(object sender, EventArgs e)
+        {
+            fillUpItemsForDelete(((ToolStripMenuItem)sender).Tag.ToString(), ((ToolStripMenuItem)sender));
         }
     }
 }
