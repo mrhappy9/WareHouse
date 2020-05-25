@@ -57,6 +57,9 @@ namespace Course1
             panelTvsAdd.Visible = false;
             //////////////DELETE PANELS and ITEMS////////////////
             panelMenuDelete.Visible = false;
+            /////////////Report Items///////////////////////////
+            panelReport.Visible = false;
+            dataGridViewReport.Visible = false;
         }
         private void setVisiblePanel(params Panel[] panels)
         {
@@ -73,7 +76,8 @@ namespace Course1
         private void setDefaultItemsColor()
         {
             panelAdd.BackColor = panelDelete.BackColor =
-            pictureBoxAdd.BackColor = pictureBoxDelete.BackColor = defualtColor;
+            pictureBoxAdd.BackColor = pictureBoxDelete.BackColor = pictureBoxReportsItems.BackColor = 
+            panelReportsItem.BackColor = defualtColor;
         }
         private void Storekeeper_Load(object sender, EventArgs e)
         {
@@ -82,6 +86,8 @@ namespace Course1
 
         private void labelAdd_Click(object sender, EventArgs e)
         {
+            panelReport.Visible = false;
+            dataGridViewReport.Visible = false;
             panelMenuDelete.Visible = false;
             setDefaultItemsColor();
             /*setNonVisiblePanels(Deletpanel, delete menu, listtable)*/   // Вернуться и исправить
@@ -312,6 +318,8 @@ namespace Course1
         ////////////////////////////////////////////////////////////////////////////////////////////////
         private void deleteLabel_Click(object sender, EventArgs e)
         {
+            panelReport.Visible = false;
+            dataGridViewReport.Visible = false;
             panelMenuAdd.Visible = false;
             setDefaultItemsColor();
             changeItemsColor(pictureBoxDelete, panelDelete);
@@ -349,6 +357,296 @@ namespace Course1
         private void fillItemsToBeDeleted(object sender, EventArgs e)
         {
             fillUpItemsForDelete(((ToolStripMenuItem)sender).Tag.ToString(), ((ToolStripMenuItem)sender));
+        }
+
+        private void pictureBoxWareHouse_Click(object sender, EventArgs e)
+        {
+            setNonVisiblePanels();
+            setDefaultItemsColor();
+        }
+        /////////////////////////////////////////////////////////////
+        /////////////                   Report Items
+        ////////////////////////////////////////////////////////////
+        private void reportsItemsLabel_Click(object sender, EventArgs e)
+        {
+            dataGridViewReport.Rows.Clear();
+            dataGridViewReport.Columns.Clear();
+            panelMenuAdd.Visible = false;
+            panelMenuDelete.Visible = false;
+            setNonVisiblePanels();
+            setDefaultItemsColor();
+            
+            /*setNonVisiblePanels(Deletpanel, delete menu, listtable)*/   // Вернуться и исправить
+            changeItemsColor(pictureBoxReportsItems, panelReportsItem);
+            setVisiblePanel(panelReport);
+            dataGridViewReport.Visible = true;
+        }
+
+        private void bookReportMenuItem_Click(object sender, EventArgs e)
+        {
+            fillUpDataGridWithBookItems(dataGridViewReport, ((ToolStripMenuItem)sender).Tag.ToString());
+        }
+        private void fillUpDataGridWithBookItems(DataGridView dataReport, string bookPurchase)
+        {
+            dataReport.Rows.Clear();
+            dataReport.Columns.Clear();
+
+            var column1 = new DataGridViewColumn();
+            column1.HeaderText = "Название книги";
+            column1.ReadOnly = true;
+            column1.Name = "Name";
+            column1.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column2 = new DataGridViewColumn();
+            column2.HeaderText = "Автор";
+            column2.Name = "Author";
+            column2.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column3 = new DataGridViewColumn();
+            column3.HeaderText = "Цена";
+            column3.Name = "Price";
+            column3.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column4 = new DataGridViewColumn();
+            column4.HeaderText = "Кол-во";
+            column4.Name = "Quantity";
+            column4.CellTemplate = new DataGridViewTextBoxCell();
+
+            dataReport.Columns.Add(column1);
+            dataReport.Columns.Add(column2);
+            dataReport.Columns.Add(column3);
+            dataReport.Columns.Add(column4);
+
+            workServerStore.completeBookReport(dataReport, bookPurchase);
+        }
+
+        private void clothesReportMenuItem_Click(object sender, EventArgs e)
+        {
+            fillUpDataGridWithClothesItems(dataGridViewReport, ((ToolStripMenuItem)sender).Tag.ToString());
+        }
+        private void fillUpDataGridWithClothesItems(DataGridView dataReport, string clothesPurchase)
+        {
+            dataReport.Rows.Clear();
+            dataReport.Columns.Clear();
+
+            var column1 = new DataGridViewColumn();
+            column1.HeaderText = "Название вещи";
+            column1.ReadOnly = true;
+            column1.Name = "Name";
+            column1.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column2 = new DataGridViewColumn();
+            column2.HeaderText = "Бренд";
+            column2.Name = "Brand";
+            column2.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column3 = new DataGridViewColumn();
+            column3.HeaderText = "Материал";
+            column3.Name = "Material";
+            column3.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column4 = new DataGridViewColumn();
+            column4.HeaderText = "Пол";
+            column4.Name = "Sex";
+            column4.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column5 = new DataGridViewColumn();
+            column5.HeaderText = "Цена";
+            column5.Name = "Price";
+            column5.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column6 = new DataGridViewColumn();
+            column6.HeaderText = "Кол-во";
+            column6.Name = "Quantity";
+            column6.CellTemplate = new DataGridViewTextBoxCell();
+
+            dataReport.Columns.Add(column1);
+            dataReport.Columns.Add(column2);
+            dataReport.Columns.Add(column3);
+            dataReport.Columns.Add(column4);
+            dataReport.Columns.Add(column5);
+            dataReport.Columns.Add(column6);
+
+            workServerStore.completeClothesReport(dataReport, clothesPurchase);
+        }
+        private void pscLaptopsReportMenuItem_Click(object sender, EventArgs e)
+        {
+            fillUpDataGridWithPcsLaptopsItems(dataGridViewReport, ((ToolStripMenuItem)sender).Tag.ToString());
+        }
+        private void fillUpDataGridWithPcsLaptopsItems(DataGridView dataReport, string nameTable)
+        {
+            dataReport.Rows.Clear();
+            dataReport.Columns.Clear();
+
+            var column1 = new DataGridViewColumn();
+            column1.HeaderText = "Название продукта";
+            column1.ReadOnly = true;
+            column1.Name = "Name";
+            column1.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column2 = new DataGridViewColumn();
+            column2.HeaderText = "CPU";
+            column2.Name = "CPU";
+            column2.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column3 = new DataGridViewColumn();
+            column3.HeaderText = "RAM";
+            column3.Name = "RAM";
+            column3.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column4 = new DataGridViewColumn();
+            column4.HeaderText = "HDD";
+            column4.Name = "HDD";
+            column4.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column5 = new DataGridViewColumn();
+            column5.HeaderText = "SSD";
+            column5.Name = "SSD";
+            column5.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column6 = new DataGridViewColumn();
+            column6.HeaderText = "GPU";
+            column6.Name = "GPU";
+            column6.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column7 = new DataGridViewColumn();
+            column7.HeaderText = "Операционная система";
+            column7.Name = "OS";
+            column7.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column8 = new DataGridViewColumn();
+            column8.HeaderText = "Цена";
+            column8.Name = "Price";
+            column8.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column9 = new DataGridViewColumn();
+            column9.HeaderText = "Кол-во";
+            column9.Name = "Quantity";
+            column9.CellTemplate = new DataGridViewTextBoxCell();
+
+            dataReport.Columns.Add(column1);
+            dataReport.Columns.Add(column2);
+            dataReport.Columns.Add(column3);
+            dataReport.Columns.Add(column4);
+            dataReport.Columns.Add(column5);
+            dataReport.Columns.Add(column6);
+            dataReport.Columns.Add(column7);
+            dataReport.Columns.Add(column8);
+            dataReport.Columns.Add(column9);
+
+            workServerStore.completePcsLaptopsReport(dataReport, nameTable);
+        }
+
+        private void hPhoneReportMenuItem_Click(object sender, EventArgs e)
+        {
+            fillUpDataGridWithHPhonesItems(dataGridViewReport, ((ToolStripMenuItem)sender).Tag.ToString());
+        }
+        private void fillUpDataGridWithHPhonesItems(DataGridView dataReport, string nameTable)
+        {
+            dataReport.Rows.Clear();
+            dataReport.Columns.Clear();
+
+            var column1 = new DataGridViewColumn();
+            column1.HeaderText = "Название наушников";
+            column1.ReadOnly = true;
+            column1.Name = "Name";
+            column1.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column2 = new DataGridViewColumn();
+            column2.HeaderText = "Наличие микрофона";
+            column2.Name = "Microphone";
+            column2.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column3 = new DataGridViewColumn();
+            column3.HeaderText = "Тип наушников";
+            column3.Name = "Constaction_type";
+            column3.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column4 = new DataGridViewColumn();
+            column4.HeaderText = "Часы работы";
+            column4.Name = "Working_hours";
+            column4.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column5 = new DataGridViewColumn();
+            column5.HeaderText = "Сопротивление";
+            column5.Name = "Resistance";
+            column5.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column6 = new DataGridViewColumn();
+            column6.HeaderText = "Цена";
+            column6.Name = "Price";
+            column6.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column7 = new DataGridViewColumn();
+            column7.HeaderText = "Кол-во";
+            column7.Name = "Quantity";
+            column7.CellTemplate = new DataGridViewTextBoxCell();
+
+            dataReport.Columns.Add(column1);
+            dataReport.Columns.Add(column2);
+            dataReport.Columns.Add(column3);
+            dataReport.Columns.Add(column4);
+            dataReport.Columns.Add(column5);
+            dataReport.Columns.Add(column6);
+            dataReport.Columns.Add(column7);
+
+            workServerStore.completeHPhonesReport(dataReport, nameTable);
+        }
+
+        private void tvsReportMenuItem_Click(object sender, EventArgs e)
+        {
+            fillUpDataGridWithTvsItems(dataGridViewReport, ((ToolStripMenuItem)sender).Tag.ToString());
+        }
+        private void fillUpDataGridWithTvsItems(DataGridView dataReport, string nameTable)
+        {
+            dataReport.Rows.Clear();
+            dataReport.Columns.Clear();
+
+            var column1 = new DataGridViewColumn();
+            column1.HeaderText = "Название телевизора";
+            column1.ReadOnly = true;
+            column1.Name = "Name";
+            column1.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column2 = new DataGridViewColumn();
+            column2.HeaderText = "Диагональ экрана";
+            column2.Name = "Screen_diagonal";
+            column2.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column3 = new DataGridViewColumn();
+            column3.HeaderText = "Разрешение экрана";
+            column3.Name = "Max_resolution";
+            column3.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column4 = new DataGridViewColumn();
+            column4.HeaderText = "Особенности";
+            column4.Name = "Features";
+            column4.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column5 = new DataGridViewColumn();
+            column5.HeaderText = "Цена";
+            column5.Name = "Price";
+            column5.CellTemplate = new DataGridViewTextBoxCell();
+
+            var column6 = new DataGridViewColumn();
+            column6.HeaderText = "Кол-во";
+            column6.Name = "Quantity";
+            column6.CellTemplate = new DataGridViewTextBoxCell();
+
+            dataReport.Columns.Add(column1);
+            dataReport.Columns.Add(column2);
+            dataReport.Columns.Add(column3);
+            dataReport.Columns.Add(column4);
+            dataReport.Columns.Add(column5);
+            dataReport.Columns.Add(column6);
+
+            workServerStore.completeTvsReport(dataReport, nameTable);
+        }
+
+        private void pictureBoxSKeeperClose_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Close();
+            mForm.Show();
         }
     }
 }

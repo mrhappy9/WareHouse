@@ -59,6 +59,47 @@ namespace Course1
             }
             return false;
         }
+        public bool adminIn(string login, string password)
+        {
+            createConnection();
+            try { 
+                MySqlCommand command = new MySqlCommand(connString, connection);
+                command.CommandText = "SELECT Login, Password FROM Admin WHERE Login = @Login AND Password = @Password";
+                command.Parameters.AddWithValue("@Login", login);
+                command.Parameters.AddWithValue("@Password", password);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (MySqlException ex)
+            {
+                throw new Exception("Error executing with sql statement", ex);
+            }
+        }
+        public bool storeKeeperIn(string login, string password)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand command = new MySqlCommand(connString, connection);
+                command.CommandText = "SELECT Login, Password FROM StoreKeeper WHERE Login = @Login AND Password = @Password";
+                command.Parameters.AddWithValue("@Login", login);
+                command.Parameters.AddWithValue("@Password", password);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (MySqlException ex)
+            {
+                throw new Exception("Error executing with sql statement", ex);
+            }
+        }
 
         public bool CheckEmail(String email)  // for recovering form
         {
@@ -1086,6 +1127,160 @@ namespace Course1
                 MySqlCommand deleteBook = new MySqlCommand(connString, connection);
                 deleteBook.CommandText = $"DELETE FROM {nameTable} WHERE Name = '{name}';";
                 deleteBook.ExecuteNonQuery();
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        //////////////////////////////////////////////////////////////////
+        /// For booking report
+        /////////////////////////////////////////////////////////////////
+        public void completeBookReport(DataGridView bookGrid, string bookPurchase)
+        {
+            void getDataFromBookTables(params string[] nameTable)
+            {
+                for (int i = 0; i < nameTable.Length; i++)
+                {
+                    createConnection();
+                    try
+                    {
+                        MySqlCommand completeBook = new MySqlCommand(connString, connection);
+                        completeBook.CommandText = $"SELECT Name, Author, Price, Quantity FROM {nameTable[i]}";
+                        MySqlDataReader reader = completeBook.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            bookGrid.Rows.Add();
+                            bookGrid["Name", bookGrid.Rows.Count - 1].Value = reader.GetString(0);
+                            bookGrid["Author", bookGrid.Rows.Count - 1].Value = reader.GetString(1);
+                            bookGrid["Price", bookGrid.Rows.Count - 1].Value = reader.GetInt32(2).ToString();
+                            bookGrid["Quantity", bookGrid.Rows.Count - 1].Value = reader.GetInt32(3).ToString();
+                        }
+
+                        loseConnection();
+                    }
+                    catch (MySqlException e)
+                    {
+                        throw new Exception("Error executing into inster sql statement", e);
+                    }
+                }
+            }
+            if (bookPurchase == "BookPurchase")
+                getDataFromBookTables(new string[] { "BookPurchase" });
+            else
+                getDataFromBookTables(new string[] { "Childrenbooks", "Textbooks", "Artbooks", "Notartbooks", "Comicbooks", "Foreignbooks" });
+        }
+        public void completeClothesReport(DataGridView clothesGrid, string clothesPurchase)
+        {
+            void getDataFromBookTables(params string[] nameTable)
+            {
+                for (int i = 0; i < nameTable.Length; i++)
+                {
+                    createConnection();
+                    try
+                    {
+                        MySqlCommand completeClothes = new MySqlCommand(connString, connection);
+                        completeClothes.CommandText = $"SELECT Name, Brand, Material, Sex, Price, Quantity FROM {nameTable[i]}";
+                        MySqlDataReader reader = completeClothes.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            clothesGrid.Rows.Add();
+                            clothesGrid["Name", clothesGrid.Rows.Count - 1].Value = reader.GetString(0);
+                            clothesGrid["Brand", clothesGrid.Rows.Count - 1].Value = reader.GetString(1);
+                            clothesGrid["Material", clothesGrid.Rows.Count - 1].Value = reader.GetString(2);
+                            clothesGrid["Sex", clothesGrid.Rows.Count - 1].Value = reader.GetString(3);
+                            clothesGrid["Price", clothesGrid.Rows.Count - 1].Value = reader.GetInt32(4).ToString();
+                            clothesGrid["Quantity", clothesGrid.Rows.Count - 1].Value = reader.GetInt32(5).ToString();
+                        }
+
+                        loseConnection();
+                    }
+                    catch (MySqlException e)
+                    {
+                        throw new Exception("Error executing into inster sql statement", e);
+                    }
+                }
+            }
+            if (clothesPurchase == "ClothesPurchase")
+                getDataFromBookTables(new string[] { "ClothesPurchase" });
+            else
+                getDataFromBookTables(new string[] { "Shoes", "Clothes", "Underwear", "Backpacks" });
+        }
+        public void completePcsLaptopsReport(DataGridView clothesGrid, string nameTable)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand completeClothes = new MySqlCommand(connString, connection);
+                completeClothes.CommandText = $"SELECT Name, CPU, RAM, HDD, SSD, GPU, OS, Price, Quantity FROM {nameTable}";
+                MySqlDataReader reader = completeClothes.ExecuteReader();
+                while (reader.Read())
+                {
+                    clothesGrid.Rows.Add();
+                    clothesGrid["Name", clothesGrid.Rows.Count - 1].Value = reader.GetString(0);
+                    clothesGrid["CPU", clothesGrid.Rows.Count - 1].Value = reader.GetString(1);
+                    clothesGrid["RAM", clothesGrid.Rows.Count - 1].Value = reader.GetInt32(2).ToString();
+                    clothesGrid["HDD", clothesGrid.Rows.Count - 1].Value = reader.GetInt32(3).ToString();
+                    clothesGrid["SSD", clothesGrid.Rows.Count - 1].Value = reader.GetInt32(4).ToString();
+                    clothesGrid["GPU", clothesGrid.Rows.Count - 1].Value = reader.GetString(5);
+                    clothesGrid["OS", clothesGrid.Rows.Count - 1].Value = reader.GetString(6);
+                    clothesGrid["Price", clothesGrid.Rows.Count - 1].Value = reader.GetInt32(7).ToString();
+                    clothesGrid["Quantity", clothesGrid.Rows.Count - 1].Value = reader.GetInt32(8).ToString();
+                }
+
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void completeHPhonesReport(DataGridView hPhonesGrid, string nameTable)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand completeHPhones = new MySqlCommand(connString, connection);
+                completeHPhones.CommandText = $"SELECT Name, Microphone, Constaction_type, Working_hours, Resistance, Price, Quantity FROM {nameTable}";
+                MySqlDataReader reader = completeHPhones.ExecuteReader();
+                while (reader.Read())
+                {
+                    hPhonesGrid.Rows.Add();
+                    hPhonesGrid["Name", hPhonesGrid.Rows.Count - 1].Value = reader.GetString(0);
+                    hPhonesGrid["Microphone", hPhonesGrid.Rows.Count - 1].Value = reader.GetString(1);
+                    hPhonesGrid["Constaction_type", hPhonesGrid.Rows.Count - 1].Value = reader.GetString(2);
+                    hPhonesGrid["Working_hours", hPhonesGrid.Rows.Count - 1].Value = reader.GetInt32(3).ToString();
+                    hPhonesGrid["Resistance", hPhonesGrid.Rows.Count - 1].Value = reader.GetInt32(4).ToString();
+                    hPhonesGrid["Price", hPhonesGrid.Rows.Count - 1].Value = reader.GetInt32(5).ToString();
+                    hPhonesGrid["Quantity", hPhonesGrid.Rows.Count - 1].Value = reader.GetInt32(6).ToString();
+                }
+
+                loseConnection();
+            }
+            catch (MySqlException e)
+            {
+                throw new Exception("Error executing into inster sql statement", e);
+            }
+        }
+        public void completeTvsReport(DataGridView tvsGrid, string nameTable)
+        {
+            createConnection();
+            try
+            {
+                MySqlCommand completeTvs = new MySqlCommand(connString, connection);
+                completeTvs.CommandText = $"SELECT Name, Screen_diagonal, Max_resolution, Features, Price, Quantity FROM {nameTable}";
+                MySqlDataReader reader = completeTvs.ExecuteReader();
+                while (reader.Read())
+                {
+                    tvsGrid.Rows.Add();
+                    tvsGrid["Name", tvsGrid.Rows.Count - 1].Value = reader.GetString(0);
+                    tvsGrid["Screen_diagonal", tvsGrid.Rows.Count - 1].Value = reader.GetDouble(1).ToString();
+                    tvsGrid["Max_resolution", tvsGrid.Rows.Count - 1].Value = reader.GetString(2);
+                    tvsGrid["Features", tvsGrid.Rows.Count - 1].Value = reader.GetString(3);
+                    tvsGrid["Price", tvsGrid.Rows.Count - 1].Value = reader.GetInt32(4).ToString();
+                    tvsGrid["Quantity", tvsGrid.Rows.Count - 1].Value = reader.GetInt32(5).ToString();
+                }
                 loseConnection();
             }
             catch (MySqlException e)

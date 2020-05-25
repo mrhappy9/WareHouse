@@ -38,11 +38,11 @@
             this.pictureBoxSKeeperClose = new System.Windows.Forms.PictureBox();
             this.panelWarehouse = new System.Windows.Forms.Panel();
             this.pictureBoxWareHouse = new System.Windows.Forms.PictureBox();
-            this.panelTablesItem = new System.Windows.Forms.Panel();
+            this.panelReportsItem = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBoxTableItems = new System.Windows.Forms.PictureBox();
-            this.tableItemsLabel = new System.Windows.Forms.Label();
+            this.pictureBoxReportsItems = new System.Windows.Forms.PictureBox();
+            this.reportsItemsLabel = new System.Windows.Forms.Label();
             this.panelDelete = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBoxDelete = new System.Windows.Forms.PictureBox();
@@ -163,14 +163,36 @@
             this.backpacksDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.underWearDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.diffClothesDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridViewReport = new System.Windows.Forms.DataGridView();
+            this.panelReport = new System.Windows.Forms.Panel();
+            this.menuStrip3 = new System.Windows.Forms.MenuStrip();
+            this.bookReportMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.hPhoneReportMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tvsReportMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.clothesReportMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockBooksReportMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.turnoverBooksReportMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockPcsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.turnoverPcsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockHPhonesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.turnoverHPhonesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockTvsMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.turnoverTvsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockLaptopsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.turnoverLaptopsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockClothesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.turnoverClothesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain.SuspendLayout();
             this.panelAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSKeeperClose)).BeginInit();
             this.panelWarehouse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWareHouse)).BeginInit();
-            this.panelTablesItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTableItems)).BeginInit();
+            this.panelReportsItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReportsItems)).BeginInit();
             this.panelDelete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelete)).BeginInit();
             this.panelMenuAdd.SuspendLayout();
@@ -182,6 +204,9 @@
             this.panelTvsAdd.SuspendLayout();
             this.panelMenuDelete.SuspendLayout();
             this.menuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReport)).BeginInit();
+            this.panelReport.SuspendLayout();
+            this.menuStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMain
@@ -192,7 +217,7 @@
             this.panelMain.Controls.Add(this.panelAdd);
             this.panelMain.Controls.Add(this.pictureBoxSKeeperClose);
             this.panelMain.Controls.Add(this.panelWarehouse);
-            this.panelMain.Controls.Add(this.panelTablesItem);
+            this.panelMain.Controls.Add(this.panelReportsItem);
             this.panelMain.Controls.Add(this.panelDelete);
             this.panelMain.Location = new System.Drawing.Point(0, 0);
             this.panelMain.Name = "panelMain";
@@ -260,6 +285,7 @@
             this.pictureBoxSKeeperClose.Size = new System.Drawing.Size(16, 16);
             this.pictureBoxSKeeperClose.TabIndex = 2;
             this.pictureBoxSKeeperClose.TabStop = false;
+            this.pictureBoxSKeeperClose.Click += new System.EventHandler(this.pictureBoxSKeeperClose_Click);
             // 
             // panelWarehouse
             // 
@@ -278,18 +304,20 @@
             this.pictureBoxWareHouse.Size = new System.Drawing.Size(108, 69);
             this.pictureBoxWareHouse.TabIndex = 3;
             this.pictureBoxWareHouse.TabStop = false;
+            this.pictureBoxWareHouse.Click += new System.EventHandler(this.pictureBoxWareHouse_Click);
             // 
-            // panelTablesItem
+            // panelReportsItem
             // 
-            this.panelTablesItem.Controls.Add(this.panel4);
-            this.panelTablesItem.Controls.Add(this.panel3);
-            this.panelTablesItem.Controls.Add(this.pictureBoxTableItems);
-            this.panelTablesItem.Controls.Add(this.tableItemsLabel);
-            this.panelTablesItem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panelTablesItem.Location = new System.Drawing.Point(528, 0);
-            this.panelTablesItem.Name = "panelTablesItem";
-            this.panelTablesItem.Size = new System.Drawing.Size(210, 71);
-            this.panelTablesItem.TabIndex = 7;
+            this.panelReportsItem.Controls.Add(this.panel4);
+            this.panelReportsItem.Controls.Add(this.panel3);
+            this.panelReportsItem.Controls.Add(this.pictureBoxReportsItems);
+            this.panelReportsItem.Controls.Add(this.reportsItemsLabel);
+            this.panelReportsItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelReportsItem.Location = new System.Drawing.Point(528, 0);
+            this.panelReportsItem.Name = "panelReportsItem";
+            this.panelReportsItem.Size = new System.Drawing.Size(210, 71);
+            this.panelReportsItem.TabIndex = 7;
+            this.panelReportsItem.Click += new System.EventHandler(this.reportsItemsLabel_Click);
             // 
             // panel4
             // 
@@ -307,27 +335,29 @@
             this.panel3.Size = new System.Drawing.Size(210, 1);
             this.panel3.TabIndex = 24;
             // 
-            // pictureBoxTableItems
+            // pictureBoxReportsItems
             // 
-            this.pictureBoxTableItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.pictureBoxTableItems.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxTableItems.Image")));
-            this.pictureBoxTableItems.Location = new System.Drawing.Point(18, 17);
-            this.pictureBoxTableItems.Name = "pictureBoxTableItems";
-            this.pictureBoxTableItems.Size = new System.Drawing.Size(32, 32);
-            this.pictureBoxTableItems.TabIndex = 3;
-            this.pictureBoxTableItems.TabStop = false;
+            this.pictureBoxReportsItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.pictureBoxReportsItems.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxReportsItems.Image")));
+            this.pictureBoxReportsItems.Location = new System.Drawing.Point(18, 17);
+            this.pictureBoxReportsItems.Name = "pictureBoxReportsItems";
+            this.pictureBoxReportsItems.Size = new System.Drawing.Size(32, 32);
+            this.pictureBoxReportsItems.TabIndex = 3;
+            this.pictureBoxReportsItems.TabStop = false;
+            this.pictureBoxReportsItems.Click += new System.EventHandler(this.reportsItemsLabel_Click);
             // 
-            // tableItemsLabel
+            // reportsItemsLabel
             // 
-            this.tableItemsLabel.AutoSize = true;
-            this.tableItemsLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tableItemsLabel.Font = new System.Drawing.Font("Bodoni MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableItemsLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tableItemsLabel.Location = new System.Drawing.Point(61, 23);
-            this.tableItemsLabel.Name = "tableItemsLabel";
-            this.tableItemsLabel.Size = new System.Drawing.Size(144, 24);
-            this.tableItemsLabel.TabIndex = 6;
-            this.tableItemsLabel.Text = "Таблицы товаров";
+            this.reportsItemsLabel.AutoSize = true;
+            this.reportsItemsLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reportsItemsLabel.Font = new System.Drawing.Font("Bodoni MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportsItemsLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.reportsItemsLabel.Location = new System.Drawing.Point(61, 23);
+            this.reportsItemsLabel.Name = "reportsItemsLabel";
+            this.reportsItemsLabel.Size = new System.Drawing.Size(69, 24);
+            this.reportsItemsLabel.TabIndex = 6;
+            this.reportsItemsLabel.Text = "Отчеты";
+            this.reportsItemsLabel.Click += new System.EventHandler(this.reportsItemsLabel_Click);
             // 
             // panelDelete
             // 
@@ -340,6 +370,7 @@
             this.panelDelete.Name = "panelDelete";
             this.panelDelete.Size = new System.Drawing.Size(210, 71);
             this.panelDelete.TabIndex = 3;
+            this.panelDelete.Click += new System.EventHandler(this.deleteLabel_Click);
             // 
             // panel2
             // 
@@ -358,6 +389,7 @@
             this.pictureBoxDelete.Size = new System.Drawing.Size(32, 32);
             this.pictureBoxDelete.TabIndex = 3;
             this.pictureBoxDelete.TabStop = false;
+            this.pictureBoxDelete.Click += new System.EventHandler(this.deleteLabel_Click);
             // 
             // deleteLabel
             // 
@@ -1523,7 +1555,7 @@
             this.panelMenuDelete.Controls.Add(this.menuStrip2);
             this.panelMenuDelete.Location = new System.Drawing.Point(300, 72);
             this.panelMenuDelete.Name = "panelMenuDelete";
-            this.panelMenuDelete.Size = new System.Drawing.Size(286, 46);
+            this.panelMenuDelete.Size = new System.Drawing.Size(358, 46);
             this.panelMenuDelete.TabIndex = 112;
             // 
             // menuStrip2
@@ -1617,7 +1649,7 @@
             // pcsDelete
             // 
             this.pcsDelete.Name = "pcsDelete";
-            this.pcsDelete.Size = new System.Drawing.Size(180, 22);
+            this.pcsDelete.Size = new System.Drawing.Size(167, 22);
             this.pcsDelete.Tag = "PCs";
             this.pcsDelete.Text = "Компьютеры";
             this.pcsDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
@@ -1625,7 +1657,7 @@
             // hPhonesDelete
             // 
             this.hPhonesDelete.Name = "hPhonesDelete";
-            this.hPhonesDelete.Size = new System.Drawing.Size(180, 22);
+            this.hPhonesDelete.Size = new System.Drawing.Size(167, 22);
             this.hPhonesDelete.Tag = "Headphones";
             this.hPhonesDelete.Text = "Наушники";
             this.hPhonesDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
@@ -1633,7 +1665,7 @@
             // tvsDelete
             // 
             this.tvsDelete.Name = "tvsDelete";
-            this.tvsDelete.Size = new System.Drawing.Size(180, 22);
+            this.tvsDelete.Size = new System.Drawing.Size(167, 22);
             this.tvsDelete.Tag = "TVs";
             this.tvsDelete.Text = "Телевизоры";
             this.tvsDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
@@ -1641,7 +1673,7 @@
             // laptopsDelete
             // 
             this.laptopsDelete.Name = "laptopsDelete";
-            this.laptopsDelete.Size = new System.Drawing.Size(180, 22);
+            this.laptopsDelete.Size = new System.Drawing.Size(167, 22);
             this.laptopsDelete.Tag = "Laptops";
             this.laptopsDelete.Text = "Ноутбуки";
             this.laptopsDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
@@ -1661,7 +1693,7 @@
             // shoesDelete
             // 
             this.shoesDelete.Name = "shoesDelete";
-            this.shoesDelete.Size = new System.Drawing.Size(180, 22);
+            this.shoesDelete.Size = new System.Drawing.Size(176, 22);
             this.shoesDelete.Tag = "Shoes";
             this.shoesDelete.Text = "Обувь";
             this.shoesDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
@@ -1669,7 +1701,7 @@
             // backpacksDelete
             // 
             this.backpacksDelete.Name = "backpacksDelete";
-            this.backpacksDelete.Size = new System.Drawing.Size(180, 22);
+            this.backpacksDelete.Size = new System.Drawing.Size(176, 22);
             this.backpacksDelete.Tag = "Backpacks";
             this.backpacksDelete.Text = "Рюкзаки";
             this.backpacksDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
@@ -1677,7 +1709,7 @@
             // underWearDelete
             // 
             this.underWearDelete.Name = "underWearDelete";
-            this.underWearDelete.Size = new System.Drawing.Size(180, 22);
+            this.underWearDelete.Size = new System.Drawing.Size(176, 22);
             this.underWearDelete.Tag = "Underwear";
             this.underWearDelete.Text = "Нижнее белье";
             this.underWearDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
@@ -1685,16 +1717,221 @@
             // diffClothesDelete
             // 
             this.diffClothesDelete.Name = "diffClothesDelete";
-            this.diffClothesDelete.Size = new System.Drawing.Size(180, 22);
+            this.diffClothesDelete.Size = new System.Drawing.Size(176, 22);
             this.diffClothesDelete.Tag = "Clothes";
             this.diffClothesDelete.Text = "Разное";
             this.diffClothesDelete.Click += new System.EventHandler(this.fillItemsToBeDeleted);
+            // 
+            // dataGridViewReport
+            // 
+            this.dataGridViewReport.AllowUserToAddRows = false;
+            this.dataGridViewReport.AllowUserToDeleteRows = false;
+            this.dataGridViewReport.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewReport.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridViewReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewReport.Location = new System.Drawing.Point(7, 124);
+            this.dataGridViewReport.Name = "dataGridViewReport";
+            this.dataGridViewReport.ReadOnly = true;
+            this.dataGridViewReport.Size = new System.Drawing.Size(1137, 443);
+            this.dataGridViewReport.TabIndex = 117;
+            // 
+            // panelReport
+            // 
+            this.panelReport.Controls.Add(this.menuStrip3);
+            this.panelReport.Location = new System.Drawing.Point(664, 72);
+            this.panelReport.Name = "panelReport";
+            this.panelReport.Size = new System.Drawing.Size(368, 46);
+            this.panelReport.TabIndex = 113;
+            // 
+            // menuStrip3
+            // 
+            this.menuStrip3.BackColor = System.Drawing.SystemColors.Control;
+            this.menuStrip3.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bookReportMenuItem,
+            this.toolStripMenuItem8,
+            this.clothesReportMenuItem});
+            this.menuStrip3.Location = new System.Drawing.Point(7, 9);
+            this.menuStrip3.Name = "menuStrip3";
+            this.menuStrip3.Size = new System.Drawing.Size(279, 26);
+            this.menuStrip3.TabIndex = 48;
+            this.menuStrip3.Text = "menuStrip3";
+            // 
+            // bookReportMenuItem
+            // 
+            this.bookReportMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stockBooksReportMenuItem,
+            this.turnoverBooksReportMenuItem});
+            this.bookReportMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bookReportMenuItem.Name = "bookReportMenuItem";
+            this.bookReportMenuItem.Size = new System.Drawing.Size(60, 22);
+            this.bookReportMenuItem.Text = "Книги";
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem9,
+            this.hPhoneReportMenuItem,
+            this.tvsReportMenuItem,
+            this.toolStripMenuItem12});
+            this.toolStripMenuItem8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(134, 22);
+            this.toolStripMenuItem8.Text = "Электротехника";
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stockPcsMenuItem,
+            this.turnoverPcsMenuItem});
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem9.Tag = "PCs";
+            this.toolStripMenuItem9.Text = "Компьютеры";
+            // 
+            // hPhoneReportMenuItem
+            // 
+            this.hPhoneReportMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stockHPhonesMenuItem,
+            this.turnoverHPhonesMenuItem});
+            this.hPhoneReportMenuItem.Name = "hPhoneReportMenuItem";
+            this.hPhoneReportMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hPhoneReportMenuItem.Tag = "Headphones";
+            this.hPhoneReportMenuItem.Text = "Наушники";
+            // 
+            // tvsReportMenuItem
+            // 
+            this.tvsReportMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stockTvsMenuItem1,
+            this.turnoverTvsMenuItem});
+            this.tvsReportMenuItem.Name = "tvsReportMenuItem";
+            this.tvsReportMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tvsReportMenuItem.Tag = "TVs";
+            this.tvsReportMenuItem.Text = "Телевизоры";
+            // 
+            // toolStripMenuItem12
+            // 
+            this.toolStripMenuItem12.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stockLaptopsMenuItem,
+            this.turnoverLaptopsMenuItem});
+            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem12.Tag = "Laptops";
+            this.toolStripMenuItem12.Text = "Ноутбуки";
+            // 
+            // clothesReportMenuItem
+            // 
+            this.clothesReportMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stockClothesMenuItem,
+            this.turnoverClothesMenuItem});
+            this.clothesReportMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.clothesReportMenuItem.Name = "clothesReportMenuItem";
+            this.clothesReportMenuItem.Size = new System.Drawing.Size(77, 22);
+            this.clothesReportMenuItem.Text = "Одежда";
+            // 
+            // stockBooksReportMenuItem
+            // 
+            this.stockBooksReportMenuItem.Name = "stockBooksReportMenuItem";
+            this.stockBooksReportMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stockBooksReportMenuItem.Tag = "Books";
+            this.stockBooksReportMenuItem.Text = "Запас";
+            this.stockBooksReportMenuItem.Click += new System.EventHandler(this.bookReportMenuItem_Click);
+            // 
+            // turnoverBooksReportMenuItem
+            // 
+            this.turnoverBooksReportMenuItem.Name = "turnoverBooksReportMenuItem";
+            this.turnoverBooksReportMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.turnoverBooksReportMenuItem.Tag = "BookPurchase";
+            this.turnoverBooksReportMenuItem.Text = "Оборот";
+            this.turnoverBooksReportMenuItem.Click += new System.EventHandler(this.bookReportMenuItem_Click);
+            // 
+            // stockPcsMenuItem
+            // 
+            this.stockPcsMenuItem.Name = "stockPcsMenuItem";
+            this.stockPcsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stockPcsMenuItem.Tag = "PCs";
+            this.stockPcsMenuItem.Text = "Запас";
+            this.stockPcsMenuItem.Click += new System.EventHandler(this.pscLaptopsReportMenuItem_Click);
+            // 
+            // turnoverPcsMenuItem
+            // 
+            this.turnoverPcsMenuItem.Name = "turnoverPcsMenuItem";
+            this.turnoverPcsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.turnoverPcsMenuItem.Tag = "LaptopsPcsPurchase";
+            this.turnoverPcsMenuItem.Text = "Оборот";
+            this.turnoverPcsMenuItem.Click += new System.EventHandler(this.pscLaptopsReportMenuItem_Click);
+            // 
+            // stockHPhonesMenuItem
+            // 
+            this.stockHPhonesMenuItem.Name = "stockHPhonesMenuItem";
+            this.stockHPhonesMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stockHPhonesMenuItem.Tag = "Headphones";
+            this.stockHPhonesMenuItem.Text = "Запас";
+            this.stockHPhonesMenuItem.Click += new System.EventHandler(this.hPhoneReportMenuItem_Click);
+            // 
+            // turnoverHPhonesMenuItem
+            // 
+            this.turnoverHPhonesMenuItem.Name = "turnoverHPhonesMenuItem";
+            this.turnoverHPhonesMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.turnoverHPhonesMenuItem.Tag = "HeadPhonesPurchase";
+            this.turnoverHPhonesMenuItem.Text = "Оборот";
+            this.turnoverHPhonesMenuItem.Click += new System.EventHandler(this.hPhoneReportMenuItem_Click);
+            // 
+            // stockTvsMenuItem1
+            // 
+            this.stockTvsMenuItem1.Name = "stockTvsMenuItem1";
+            this.stockTvsMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.stockTvsMenuItem1.Tag = "TVs";
+            this.stockTvsMenuItem1.Text = "Запас";
+            this.stockTvsMenuItem1.Click += new System.EventHandler(this.tvsReportMenuItem_Click);
+            // 
+            // turnoverTvsMenuItem
+            // 
+            this.turnoverTvsMenuItem.Name = "turnoverTvsMenuItem";
+            this.turnoverTvsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.turnoverTvsMenuItem.Tag = "TvsPurchase";
+            this.turnoverTvsMenuItem.Text = "Оборот";
+            this.turnoverTvsMenuItem.Click += new System.EventHandler(this.tvsReportMenuItem_Click);
+            // 
+            // stockLaptopsMenuItem
+            // 
+            this.stockLaptopsMenuItem.Name = "stockLaptopsMenuItem";
+            this.stockLaptopsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stockLaptopsMenuItem.Tag = "Laptops";
+            this.stockLaptopsMenuItem.Text = "Запас";
+            this.stockLaptopsMenuItem.Click += new System.EventHandler(this.pscLaptopsReportMenuItem_Click);
+            // 
+            // turnoverLaptopsMenuItem
+            // 
+            this.turnoverLaptopsMenuItem.Name = "turnoverLaptopsMenuItem";
+            this.turnoverLaptopsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.turnoverLaptopsMenuItem.Tag = "LaptopsPcsPurchase";
+            this.turnoverLaptopsMenuItem.Text = "Оборот";
+            this.turnoverLaptopsMenuItem.Click += new System.EventHandler(this.pscLaptopsReportMenuItem_Click);
+            // 
+            // stockClothesMenuItem
+            // 
+            this.stockClothesMenuItem.Name = "stockClothesMenuItem";
+            this.stockClothesMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stockClothesMenuItem.Tag = "Clothes";
+            this.stockClothesMenuItem.Text = "Запас";
+            this.stockClothesMenuItem.Click += new System.EventHandler(this.clothesReportMenuItem_Click);
+            // 
+            // turnoverClothesMenuItem
+            // 
+            this.turnoverClothesMenuItem.Name = "turnoverClothesMenuItem";
+            this.turnoverClothesMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.turnoverClothesMenuItem.Tag = "ClothesPurchase";
+            this.turnoverClothesMenuItem.Text = "Оборот";
+            this.turnoverClothesMenuItem.Click += new System.EventHandler(this.clothesReportMenuItem_Click);
             // 
             // Storekeeper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 594);
+            this.Controls.Add(this.panelReport);
+            this.Controls.Add(this.dataGridViewReport);
             this.Controls.Add(this.panelMenuDelete);
             this.Controls.Add(this.panelTvsAdd);
             this.Controls.Add(this.panelHPhonesAdd);
@@ -1716,9 +1953,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSKeeperClose)).EndInit();
             this.panelWarehouse.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWareHouse)).EndInit();
-            this.panelTablesItem.ResumeLayout(false);
-            this.panelTablesItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTableItems)).EndInit();
+            this.panelReportsItem.ResumeLayout(false);
+            this.panelReportsItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReportsItems)).EndInit();
             this.panelDelete.ResumeLayout(false);
             this.panelDelete.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelete)).EndInit();
@@ -1740,6 +1977,11 @@
             this.panelMenuDelete.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReport)).EndInit();
+            this.panelReport.ResumeLayout(false);
+            this.panelReport.PerformLayout();
+            this.menuStrip3.ResumeLayout(false);
+            this.menuStrip3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1750,11 +1992,11 @@
         private System.Windows.Forms.PictureBox pictureBoxSKeeperClose;
         private System.Windows.Forms.Panel panelWarehouse;
         private System.Windows.Forms.PictureBox pictureBoxWareHouse;
-        private System.Windows.Forms.Panel panelTablesItem;
+        private System.Windows.Forms.Panel panelReportsItem;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBoxTableItems;
-        private System.Windows.Forms.Label tableItemsLabel;
+        private System.Windows.Forms.PictureBox pictureBoxReportsItems;
+        private System.Windows.Forms.Label reportsItemsLabel;
         private System.Windows.Forms.Panel panelDelete;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBoxDelete;
@@ -1880,5 +2122,27 @@
         private System.Windows.Forms.ToolStripMenuItem backpacksDelete;
         private System.Windows.Forms.ToolStripMenuItem underWearDelete;
         private System.Windows.Forms.ToolStripMenuItem diffClothesDelete;
+        private System.Windows.Forms.DataGridView dataGridViewReport;
+        private System.Windows.Forms.Panel panelReport;
+        private System.Windows.Forms.MenuStrip menuStrip3;
+        private System.Windows.Forms.ToolStripMenuItem bookReportMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem hPhoneReportMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tvsReportMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
+        private System.Windows.Forms.ToolStripMenuItem clothesReportMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stockBooksReportMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem turnoverBooksReportMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stockPcsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem turnoverPcsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stockHPhonesMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem turnoverHPhonesMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stockTvsMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem turnoverTvsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stockLaptopsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem turnoverLaptopsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stockClothesMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem turnoverClothesMenuItem;
     }
 }

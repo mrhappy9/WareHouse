@@ -17,8 +17,8 @@ namespace Course1
         public Form1()
         {
             InitializeComponent();
-            adminForm = new AdminForm(this);
-            storekeeperForm = new Storekeeper(this);
+            /*adminForm = new AdminForm(this);
+            storekeeperForm = new Storekeeper(this);*/
         }
 
         static private string admin = "admin";
@@ -120,16 +120,22 @@ namespace Course1
                 mainInterface.Show();
             }
             else if (PassswordWithLogin(logintext.Text, passwordtext.Text) &&
-                    logintext.Text == admin && passwordtext.Text == adminPassword)
+                    /*logintext.Text == admin && passwordtext.Text == adminPassword*/
+                    workserver.adminIn(logintext.Text, passwordtext.Text))
             {
+                workserver.loseConnection();
                 cleanTextBoxes();
                 this.Hide();
+                adminForm = new AdminForm(this);
                 adminForm.Show();
             }
-            else if (PassswordWithLogin(passwordtext.Text, logintext.Text) && logintext.Text == storekeeper && passwordtext.Text == storekeeperPassword)
+            else if (PassswordWithLogin(passwordtext.Text, logintext.Text) && /*logintext.Text == storekeeper && passwordtext.Text == storekeeperPassword*/
+                     workserver.storeKeeperIn(logintext.Text, passwordtext.Text))
             {
+                workserver.loseConnection();
                 cleanTextBoxes();
                 this.Hide();
+                storekeeperForm = new Storekeeper(this);
                 storekeeperForm.Show();
             }
             else { setWarningLabel(true); passwordReset(); }
